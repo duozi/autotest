@@ -11,7 +11,12 @@ import java.lang.reflect.Type;
 import java.util.Collection;
 import java.util.List;
 
-import static org.apache.commons.lang.StringUtils.*;
+
+import  org.apache.commons.lang.StringUtils.*;
+
+import static org.apache.commons.lang.StringUtils.endsWith;
+import static org.apache.commons.lang.StringUtils.startsWith;
+import static org.apache.commons.lang.StringUtils.trim;
 
 
 public class ListFactory extends InstanceFactory {

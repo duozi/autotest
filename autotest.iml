@@ -37,11 +37,8 @@
         </SOURCES>
       </library>
     </orderEntry>
+    <orderEntry type="library" name="Maven: com.xiaoniu.user:user-server:2.0.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.1.35" level="project" />
-    <orderEntry type="library" name="Maven: cn.xn.user:xn-user-skeleton:1.0.5-SNAPSHOT" level="project" />
-    <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.5" level="project" />
-    <orderEntry type="library" name="Maven: commons-beanutils:commons-beanutils:1.9.2" level="project" />
-    <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2.1" level="project" />
     <orderEntry type="library" name="Maven: org.mockito:mockito-core:1.9.5" level="project" />
     <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.1" level="project" />
     <orderEntry type="library" name="Maven: org.objenesis:objenesis:1.0" level="project" />
@@ -84,5 +81,6 @@
     <orderEntry type="library" name="Maven: net.sf.jexample:jexample:4.4-378" level="project" />
     <orderEntry type="library" name="Maven: net.sf.json:json-lib:jdk15:2.2.2-jdk15" level="project" />
     <orderEntry type="library" name="Maven: net.sf.ezmorph:ezmorph:1.0.6" level="project" />
+    <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.6" level="project" />
   </component>
 </module>

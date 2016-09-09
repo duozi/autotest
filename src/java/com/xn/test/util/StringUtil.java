@@ -1,6 +1,6 @@
 package com.xn.test.util;
 
-import cn.xn.user.utils.RequestSignUtils;
+
 import com.alibaba.dubbo.common.utils.StringUtils;
 import org.apache.commons.lang.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
@@ -183,16 +183,7 @@ public class StringUtil {
         return sign;
     }
 
-    //直接在测试用例里面生成sign
-    public static String addSign(Object obj) {
-        TreeMap<String, String> map = RequestSignUtils.beanToSortMap(obj);
-        String sign = map.remove("sign");
-        String systemType = map.get(SYSTEM_TYPE);
-        String key = StringUtil.getPro("test.properties", "key." + systemType);
 
-        String addSign = RequestSignUtils.addSign(map, key);
-        return addSign;
-    }
 
     //生成随机手机号
     public static int getNum(int start, int end) {
