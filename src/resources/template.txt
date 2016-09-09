@@ -1,0 +1,48 @@
+package com.xn;
+
+import cn.xn.user.domain.*;
+import cn.xn.user.service.ILoginService;
+import cn.xn.user.service.IRegisterService;
+import com.xn.test.service.DBService;
+import com.xn.test.util.StringUtil;
+import junit.framework.TestCase;
+import org.junit.*;
+import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import javax.annotation.Resource;
+
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(locations={"classpath*:spring.xml"})
+public class ${methodName}Test extends TestCase{
+    private static final Logger logger = LoggerFactory.getLogger(${methodName}Test.class);
+    @Resource
+    ${interfaceName} ${interfaceNameImpl} ;
+
+    @BeforeClass
+    public static void beforeClass() {
+${beforeClass}
+        }
+
+    @Before
+    public void before() {
+${before}
+    }
+
+     @After
+     public void after() {
+${after}
+     }
+
+     @AfterClass
+     public static void afterClass() {
+${afterClass}
+     }
+
+${case}
+
+
+}

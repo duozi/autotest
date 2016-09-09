@@ -1,0 +1,38 @@
+package com.xn;
+/**
+ * Created by Administrator on 2016/8/22.
+ */
+
+import cn.xn.user.domain.*;
+import cn.xn.user.service.ILoginService;
+import cn.xn.user.service.IRegisterService;
+import junit.framework.TestCase;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+
+import javax.annotation.Resource;
+
+
+
+@RunWith(SpringJUnit4ClassRunner.class)
+@ContextConfiguration(locations={"classpath*:spring.xml"})
+public class ${methodName}Test extends TestCase{
+    private static final Logger logger = LoggerFactory.getLogger(${methodName}Test.class);
+    @Resource
+    ${interfaceName} ${interfaceNameImpl} ;
+
+
+    @Test
+    public void test_${methodName}() {
+        ${paramType} ${paramTypeImpl} = new ${paramType}();
+${fileInPara}
+
+        ${returnType} result = ${interfaceNameImpl}.${methodName}(${paramTypeImpl});
+        logger.warn(result.toString());
+    }
+
+}

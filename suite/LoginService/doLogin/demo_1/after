@@ -1,0 +1,1 @@
+DB=delete from customer_info where login_name=13111111111
