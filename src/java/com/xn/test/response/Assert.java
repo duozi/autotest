@@ -13,10 +13,9 @@ public class Assert {
     private String interfaceName;
     private String methodName;
     private String caseName;
-
+    private String request;
+    private Response response;
     private AssertItem diff;
-    private Throwable exception;
-
 
     public Assert(String interfaceName, String methodName, String caseName) {
         this.interfaceName = interfaceName;
@@ -24,19 +23,37 @@ public class Assert {
         this.caseName = caseName;
     }
 
+    public String getRequest() {
+        return request;
+    }
+
+
+    public Response getResponse() {
+        return response;
+    }
+
+    public void setRequest(String request) {
+        this.request = request;
+    }
+
+    public void setResponse(Response response) {
+        this.response = response;
+    }
+
+
     public Throwable getException() {
-        return exception;
+        return response.exception;
     }
 
     public void addDiff(AssertItem item) {
-        this.diff=item;
+        this.diff = item;
 
     }
+
     public void addException(Throwable exception) {
-        this.exception=exception;
+        this.response.exception = exception;
 
     }
-
 
     public String getInterfaceName() {
         return interfaceName;

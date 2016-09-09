@@ -143,7 +143,7 @@ public class ReadSuite {
             }
         }
         Assert assertItem = new Assert(serviceDesc.getClazz(), serviceDesc.getMethodName(), caseName);
-        return createCommand.createAssertCommand(null, list, assertItem);
+        return createCommand.createAssertCommand( list, assertItem);
     }
 
     public List<Command> dealBeforeClassFile(File file) {

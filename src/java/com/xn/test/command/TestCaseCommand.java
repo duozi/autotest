@@ -52,8 +52,8 @@ public class TestCaseCommand extends Thread implements Command {
         caseCommand.execute();
         Response response = caseCommand.getResponse();
         String request=caseCommand.getRequest();
-        assertCommand.setResponse(response);
-        assertCommand.setRequest(request);
+        assertCommand.setAssertItem(request,response);
+
         assertCommand.execute();
         if (afterCommand != null) {
             afterCommand.forEach(Command::execute);

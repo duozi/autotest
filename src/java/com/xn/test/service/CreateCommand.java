@@ -32,9 +32,9 @@ public class CreateCommand {
 
         return new CaseCommand(params, serviceDesc,casePath);
     }
-    public Command createAssertCommand(Response response, List<KeyValueStore> processedParams, Assert assertItem) {
+    public Command createAssertCommand( List<KeyValueStore> processedParams, Assert assertItem) {
 
-        return new AssertCommand(response,processedParams,assertItem);
+        return new AssertCommand(processedParams,assertItem);
     }
 
 

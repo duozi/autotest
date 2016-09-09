@@ -20,13 +20,19 @@ import java.util.Map;
 public class AssertCommand implements Command {
     private static final Logger logger = LoggerFactory.getLogger(AssertCommand.class);
     private final static String separator = System.getProperty("line.separator", "\r\n");
-    private Response response;
+
     private List<KeyValueStore> processedParams;
     private Assert assertItem;
-    private String request;
 
-    public AssertCommand(Response response, List<KeyValueStore> processedParams, Assert assertItem) {
-        this.response = response;
+    public void setAssertItem(String request,Response response) {
+        assertItem.setRequest(request);
+        assertItem.setResponse(response);
+    }
+
+
+
+    public AssertCommand( List<KeyValueStore> processedParams, Assert assertItem) {
+
         this.processedParams = processedParams;
         this.assertItem = assertItem;
     }
@@ -61,19 +67,10 @@ public class AssertCommand implements Command {
     @Override
     public void execute() {
 
-        doExecuteInternal(response, processedParams);
+        doExecuteInternal(assertItem.getResponse(), processedParams);
 
     }
 
-    public void setResponse(Response response) {
-        this.response = response;
-    }
 
-    public String getRequest() {
-        return request;
-    }
 
-    public void setRequest(String request) {
-        this.request = request;
-    }
 }
