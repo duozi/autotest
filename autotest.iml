@@ -37,7 +37,9 @@
         </SOURCES>
       </library>
     </orderEntry>
-    <orderEntry type="library" name="Maven: com.xiaoniu.user:user-server:2.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.xiaoniu.user:user-interface:2.0.0-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: commons-beanutils:commons-beanutils:1.9.2" level="project" />
+    <orderEntry type="library" name="Maven: commons-collections:commons-collections:3.2.1" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.1.35" level="project" />
     <orderEntry type="library" name="Maven: org.mockito:mockito-core:1.9.5" level="project" />
     <orderEntry type="library" name="Maven: org.hamcrest:hamcrest-core:1.1" level="project" />
