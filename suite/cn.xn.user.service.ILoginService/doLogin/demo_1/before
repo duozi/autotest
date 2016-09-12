@@ -1,1 +1,0 @@
-DB=select count(*) from customer_info where login_name=13111111111
