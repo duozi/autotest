@@ -2,6 +2,7 @@ package com.xn.test.util;
 
 
 import com.alibaba.dubbo.common.utils.StringUtils;
+import com.xn.test.Exception.CaseErrorEqualException;
 import org.apache.commons.lang.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
 import org.slf4j.Logger;
@@ -77,8 +78,11 @@ public class StringUtil {
 
         List<String> lines = FileUtil.fileReadeForList(file);
         for (String line : lines) {
-            if (line.split("=")[0].equals(properName)) {
-                return line.split("=")[1];
+            if (line.split("=").length == 2) {
+                if (line.split("=")[0].equals(properName)) {
+                    return line.split("=")[1];
+
+                }
 
             }
         }
@@ -115,12 +119,15 @@ public class StringUtil {
         return str.substring(str.lastIndexOf(".") + 1);
     }
 
-    public static List<String> listAddSign(List<String> lines) {
+    public static List<String> listAddSign(List<String> lines) throws CaseErrorEqualException {
         String param = "";
         String key = "";
         for (String line : lines) {
             param += line + "&";
             if (line.startsWith("systemType")) {
+                if(line.split("=").length!=2){
+                    throw new CaseErrorEqualException("systemType is not exist,cannot add sign");
+                }
                 String value = line.split("=")[1];
                 key = getPro("test.properties", "key." + value);
             }
@@ -182,7 +189,6 @@ public class StringUtil {
 
         return sign;
     }
-
 
 
     //生成随机手机号

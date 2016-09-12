@@ -20,8 +20,6 @@ public class TestCaseCommand extends Thread implements Command {
     private List<Command> afterCommand;
 
 
-
-
     public void setCaseCommand(CaseCommand caseCommand) {
         this.caseCommand = caseCommand;
     }
@@ -45,19 +43,19 @@ public class TestCaseCommand extends Thread implements Command {
 
     @Override
     public void execute() {
+        if (caseCommand != null) {
+            if (beforeCommand != null) {
+                beforeCommand.forEach(Command::execute);
+            }
 
-        if (beforeCommand != null) {
-            beforeCommand.forEach(Command::execute);
+            caseCommand.execute();
+            Response response = caseCommand.getResponse();
+            String request = caseCommand.getRequest();
+            assertCommand.setAssertItem(request, response);
+            assertCommand.execute();
+            if (afterCommand != null) {
+                afterCommand.forEach(Command::execute);
+            }
         }
-        caseCommand.execute();
-        Response response = caseCommand.getResponse();
-        String request=caseCommand.getRequest();
-        assertCommand.setAssertItem(request,response);
-
-        assertCommand.execute();
-        if (afterCommand != null) {
-            afterCommand.forEach(Command::execute);
-        }
-
     }
 }

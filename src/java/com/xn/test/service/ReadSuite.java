@@ -2,6 +2,7 @@ package com.xn.test.service;/**
  * Created by xn056839 on 2016/9/2.
  */
 
+import com.xn.test.Exception.CaseErrorEqualException;
 import com.xn.test.command.*;
 import com.xn.test.response.Assert;
 import com.xn.test.model.KeyValueStore;
@@ -27,6 +28,7 @@ public class ReadSuite {
     private ServiceDesc serviceDesc;
     String interfaceName;
     public CreateCommand createCommand = new CreateCommand();
+    public static int totalCase = 0;
 
 
     public List<Suite> getSuites() {
@@ -51,15 +53,17 @@ public class ReadSuite {
      * 以行为单位读取文件，常用于读面向行的格式化文件
      */
     public void readSuitFile() {
-        int totalCase=0;
+
         File folder = new File("suite");
         File[] interfaces = folder.listFiles();
         //接口名层
         for (File interfaceFolder : interfaces) {
+
             if (interfaceFolder.isDirectory()) {
                 File[] methods = interfaceFolder.listFiles();
                 //方法名层
                 for (File methodFolder : methods) {
+                    int jumpMethod = 1;//跳过service 1代表跳过
                     File[] files = methodFolder.listFiles();
                     //配置文件和case
                     List<Command> testCaseCommandList = new ArrayList<>();
@@ -81,11 +85,12 @@ public class ReadSuite {
                         } else if (file.getName().equals("afterClass")) {
                             suite.setAfterClass(dealAfterClassFile(file));
                         } else if (file.isDirectory()) {
+                            int jump = 0;//跳过case,1代表跳过
                             File[] fs = file.listFiles();
 
                             TestCaseCommand testCaseCommand = new TestCaseCommand();
                             String caseName = file.getName();
-                            String casePath=file.getPath()+"/log";
+                            String casePath = file.getPath() + "/log";
                             for (File f : fs) {
                                 if (f.getName().equals("before")) {
                                     testCaseCommand.setBeforeCommand(dealFile(f));
@@ -94,20 +99,36 @@ public class ReadSuite {
                                 } else if (f.getName().equals("assert")) {
 
                                     testCaseCommand.setAssertCommand((AssertCommand) dealAssertFile(f, caseName));
-                                } else if(!f.getName().equals("log")){
-                                    testCaseCommand.setCaseCommand((CaseCommand) dealCaseFile(f,casePath));
-                                    caseName = f.getName();
-                                    totalCase++;
+                                } else if (!f.getName().equals("log")) {
+                                    try {
+                                        testCaseCommand.setCaseCommand((CaseCommand) dealCaseFile(f, casePath));
+                                        jumpMethod = 0;
+                                    } catch (CaseErrorEqualException e) {
+                                        logger.error("jump this case {}", interfaceName + "/" + methodName + "/" + caseName);
+                                        jump = 1;
+
+                                    }
+
+
                                 }
 
                             }
-
-                            testCaseCommandList.add(testCaseCommand);
+                            if (jump == 0) {
+                                testCaseCommandList.add(testCaseCommand);
+                            }
                         }
 
                     }
-                    suite.setTestCase(testCaseCommandList);
-                    suites.add(suite);
+                    if (jumpMethod == 0) {
+                        suite.setTestCase(testCaseCommandList);
+
+                    }
+                    if (suite.getTestCase() != null) {
+
+                        suites.add(suite);
+                    }
+
+
                 }
 
 
@@ -116,7 +137,7 @@ public class ReadSuite {
         Report.getReport().setTotal(totalCase);
     }
 
-    public Command dealCaseFile(File file,String casePath) {
+    public Command dealCaseFile(File file, String casePath) throws CaseErrorEqualException {
         List<KeyValueStore> list = new ArrayList<>();
         List<String> lines = FileUtil.fileReadeForList(file);
         lines = StringUtil.listAddSign(lines);
@@ -128,6 +149,8 @@ public class ReadSuite {
                 list.add(keyValueStore);
             }
         }
+        if (list.size() > 0)
+            totalCase++;
         return createCommand.createCaseCommand(list, serviceDesc, casePath);
     }
 
@@ -143,7 +166,7 @@ public class ReadSuite {
             }
         }
         Assert assertItem = new Assert(serviceDesc.getClazz(), serviceDesc.getMethodName(), caseName);
-        return createCommand.createAssertCommand( list, assertItem);
+        return createCommand.createAssertCommand(list, assertItem);
     }
 
     public List<Command> dealBeforeClassFile(File file) {
