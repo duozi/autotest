@@ -75,7 +75,7 @@ public class ReadSuite {
                             methodName = StringUtil.getConfig(file, "methodName", "");
                             url = StringUtil.getConfig(file, "url", "");
                             appName = StringUtil.getConfig(file, "appName", "");
-                            timeout = StringUtil.getConfig(file, "timeout", "");
+                            timeout = StringUtil.getConfig(file, "timeout", "0");
                             version = StringUtil.getConfig(file, "version", "1.0");
                             group = StringUtil.getConfig(file, "group", "");
 
@@ -142,7 +142,7 @@ public class ReadSuite {
         List<String> lines = FileUtil.fileReadeForList(file);
         lines = StringUtil.listAddSign(lines);
         for (String line : lines) {
-            if (line.contains("=") && line.split("=").length == 2) {
+            if (!line.startsWith("#")&line.contains("=") && line.split("=").length == 2) {
                 String type = line.split("=")[0];
                 String value = line.split("=")[1];
                 KeyValueStore keyValueStore = new KeyValueStore(type, value);

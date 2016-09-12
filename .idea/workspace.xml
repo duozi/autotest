@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f03f9033-a17d-480a-ba82-e1f91e2004da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/java/com/xn/test/Exception/CaseErrorEqualException.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xn/test/command/TestCaseCommand.class" afterPath="$PROJECT_DIR$/target/classes/com/xn/test/command/TestCaseCommand.class" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/demo_1/assert" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/normal/assert" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/demo_1/demo_1" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/normal/demo_1" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/demo_1/log" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/normal/log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xn/test/service/NewGetAll.class" afterPath="$PROJECT_DIR$/target/classes/com/xn/test/service/NewGetAll.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xn/test/service/ReadSuite.class" afterPath="$PROJECT_DIR$/target/classes/com/xn/test/service/ReadSuite.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xn/test/util/StringUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/xn/test/util/StringUtil.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/com/xn/test/command/TestCaseCommand.java" afterPath="$PROJECT_DIR$/src/java/com/xn/test/command/TestCaseCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/com/xn/test/service/NewGetAll.java" afterPath="$PROJECT_DIR$/src/java/com/xn/test/service/NewGetAll.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/com/xn/test/service/ReadSuite.java" afterPath="$PROJECT_DIR$/src/java/com/xn/test/service/ReadSuite.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/java/com/xn/test/util/StringUtil.java" afterPath="$PROJECT_DIR$/src/java/com/xn/test/util/StringUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/config.properties" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/config.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/demo_1/demo_1" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/demo_1/demo_1" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/suite/report.html" afterPath="$PROJECT_DIR$/suite/report.html" />
     </list>
     <ignored path="autotest.iws" />
@@ -38,28 +38,58 @@
       <file leaf-file-name="NewGetAll.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/com/xn/test/service/NewGetAll.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReadSuite.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/com/xn/test/service/ReadSuite.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+            <state relative-caret-position="616">
+              <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="demo_1" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/demo_1/demo_1">
+        <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.IRegisterService/doRegister/demo_1/demo_1">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+            <state relative-caret-position="154">
+              <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.IRegisterService/doRegister/config.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReadSuite.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/java/com/xn/test/service/ReadSuite.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="148">
+              <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CaseCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/java/com/xn/test/command/CaseCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demo_1" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/normal/demo_1">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -75,33 +105,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Suite.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/com/xn/test/model/Suite.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-              <folding>
-                <element signature="e#1164#1165#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/com/xn/test/util/FileUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="305">
-              <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="StringUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/com/xn/test/util/StringUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,7 +117,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.properties" pinned="false" current-in-tab="true">
+      <file leaf-file-name="config.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/config.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="132">
@@ -122,10 +130,11 @@
       <file leaf-file-name="Report.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/com/xn/test/result/Report.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+            <state relative-caret-position="163">
+              <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
               <folding>
                 <element signature="e#1474#1475#0" expanded="true" />
+                <element signature="e#1508#1509#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -152,9 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/java/com/xn/test/objectfactory/BeanUtils.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/xn/doLoginTest.java" />
-        <option value="$PROJECT_DIR$/src/resources/dubbo.xml" />
         <option value="$PROJECT_DIR$/src/java/com/xn/test/fastjson/QunitDoubleSerializer.java" />
         <option value="$PROJECT_DIR$/src/java/com/xn/test/command/DBCommand.java" />
         <option value="$PROJECT_DIR$/src/java/com/xn/test/fastjson/TestDoubleSerializer.java" />
@@ -194,15 +200,18 @@
         <option value="$PROJECT_DIR$/src/java/com/xn/test/service/CreateCommand.java" />
         <option value="$PROJECT_DIR$/src/java/com/xn/test/command/AssertCommand.java" />
         <option value="$PROJECT_DIR$/src/java/com/xn/test/response/Assert.java" />
-        <option value="$PROJECT_DIR$/src/java/com/xn/test/service/NewGetAll.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/java/com/xn/test/result/HTMLReport.java" />
-        <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/demo_1/demo_1" />
         <option value="$PROJECT_DIR$/src/java/com/xn/test/command/TestCaseCommand.java" />
         <option value="$PROJECT_DIR$/src/java/com/xn/test/Exception/CaseErrorEqualException.java" />
-        <option value="$PROJECT_DIR$/src/java/com/xn/test/util/StringUtil.java" />
-        <option value="$PROJECT_DIR$/src/java/com/xn/test/service/ReadSuite.java" />
         <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/config.properties" />
+        <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/demo_1/demo_1" />
+        <option value="$PROJECT_DIR$/src/java/com/xn/test/service/NewGetAll.java" />
+        <option value="$PROJECT_DIR$/suite/cn.xn.user.service.IRegisterService/doRegister/config.properties" />
+        <option value="$PROJECT_DIR$/src/java/com/xn/test/service/ReadSuite.java" />
+        <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/normal/demo_1" />
+        <option value="$PROJECT_DIR$/suite/cn.xn.user.service.IRegisterService/doRegister/demo_1/demo_1" />
+        <option value="$PROJECT_DIR$/src/java/com/xn/test/util/StringUtil.java" />
       </list>
     </option>
   </component>
@@ -332,7 +341,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cn.xn.user.service.ILoginService" />
+              <option name="myItemId" value="cn.xn.user.service.IRegisterService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doRegister" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -350,37 +363,99 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="cn.xn.user.service.ILoginService" />
+              <option name="myItemId" value="cn.xn.user.service.IRegisterService" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="doLogin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="suite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cn.xn.user.service.ILoginService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="doLogin" />
+              <option name="myItemId" value="doRegister" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="demo_1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="suite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cn.xn.user.service.IRegisterService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="suite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cn.xn.user.service.ILoginService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="suite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cn.xn.user.service.ILoginService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doLogin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="suite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cn.xn.user.service.ILoginService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doLogin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="normal" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -417,6 +492,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -443,6 +522,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1068,7 +1169,7 @@
       <workItem from="1473215658475" duration="52435000" />
       <workItem from="1473386069387" duration="12661000" />
       <workItem from="1473406782213" duration="2892000" />
-      <workItem from="1473645316837" duration="11585000" />
+      <workItem from="1473645316837" duration="15149000" />
     </task>
     <servers />
   </component>
@@ -1105,7 +1206,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="220953000" />
+    <option name="totallyTimeSpent" value="224517000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1128,7 +1229,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3988764" sideWeight="0.50214595" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15446717" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5675369" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37003404" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36549374" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1138,7 +1239,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34279227" sideWeight="0.49785408" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38819525" sideWeight="0.49785408" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1165,7 +1266,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/java/com/xn/test/util/StringUtil.java</url>
-          <line>152</line>
+          <line>158</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
@@ -1248,16 +1349,28 @@
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/java/com/xn/test/result/Report.java</url>
-          <line>125</line>
-          <properties />
-          <option name="timeStamp" value="78" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/java/com/xn/test/service/NewGetAll.java</url>
           <line>29</line>
           <properties />
           <option name="timeStamp" value="81" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/java/com/xn/test/result/Report.java</url>
+          <line>128</line>
+          <properties />
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/java/com/xn/test/service/ReadSuite.java</url>
+          <line>136</line>
+          <properties />
+          <option name="timeStamp" value="101" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/java/com/xn/test/util/StringUtil.java</url>
+          <line>122</line>
+          <properties />
+          <option name="timeStamp" value="102" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/xn/ILoginService/doLoginTest.java</url>
@@ -1278,7 +1391,7 @@
           <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="100" />
+      <option name="time" value="103" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -1296,23 +1409,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/java/com/xn/test/command/CloseDBCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding>
-            <element signature="e#383#384#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/com/xn/test/service/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/suite/LoginService/doLogin/demo_2/after" />
     <entry file="file://$PROJECT_DIR$/src/java/com/xn/test/service/DBService.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1408,7 +1504,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/demo_1/log">
+    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/normal/log">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1445,14 +1541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/com/xn/test/command/CaseCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/com/xn/test/command/AssertCommand.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -1466,14 +1554,14 @@
         <state relative-caret-position="1078">
           <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
           <folding>
-            <element signature="e#679#680#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-            <element signature="e#747#748#0" expanded="true" />
-            <element signature="e#778#779#0" expanded="true" />
-            <element signature="e#824#825#0" expanded="true" />
-            <element signature="e#862#863#0" expanded="true" />
-            <element signature="e#912#913#0" expanded="true" />
-            <element signature="e#952#953#0" expanded="true" />
+            <element signature="e#679#680#0" expanded="false" />
+            <element signature="e#709#710#0" expanded="false" />
+            <element signature="e#747#748#0" expanded="false" />
+            <element signature="e#778#779#0" expanded="false" />
+            <element signature="e#824#825#0" expanded="false" />
+            <element signature="e#862#863#0" expanded="false" />
+            <element signature="e#912#913#0" expanded="false" />
+            <element signature="e#952#953#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1526,7 +1614,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/demo_1/assert">
+    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/normal/assert">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1538,14 +1626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/com/xn/test/service/NewGetAll.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1590,16 +1670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/com/xn/test/util/StringUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/com/xn/test/model/Suite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
@@ -1610,20 +1680,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.IRegisterService/doRegister/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/com/xn/test/service/NewGetAll.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/com/xn/test/result/Report.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        <state relative-caret-position="163">
+          <caret line="128" column="0" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
           <folding>
             <element signature="e#1474#1475#0" expanded="true" />
+            <element signature="e#1508#1509#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/com/xn/test/service/ReadSuite.java">
+    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/normal/demo_1">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="99" column="0" selection-start-line="99" selection-start-column="0" selection-end-line="99" selection-end-column="0" />
+        <state relative-caret-position="88">
+          <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/com/xn/test/command/CaseCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="123" column="0" selection-start-line="123" selection-start-column="0" selection-end-line="123" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.IRegisterService/doRegister/demo_1/demo_1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
           <folding />
         </state>
       </provider>
@@ -1636,18 +1747,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/demo_1/demo_1">
+    <entry file="file://$PROJECT_DIR$/src/java/com/xn/test/util/StringUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="170">
+          <caret line="139" column="0" selection-start-line="139" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/config.properties">
+    <entry file="file://$PROJECT_DIR$/src/java/com/xn/test/service/ReadSuite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
+        <state relative-caret-position="148">
+          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -78,12 +78,12 @@ public class NewGetAll {
 
     public static void main(String[] args) {
         try {
-            getParam("cn.xn.user.service.ILoginService");
+//            getParam("cn.xn.user.service.ILoginService");
 //            getParam("cn.xn.user.service.ICustomerInfoService");
 //            getParam("cn.xn.user.service.IFriendService");
 //            getParam("cn.xn.user.service.ICustomerInfoService");
 //            getParam("cn.xn.user.service.IPwdService");
-//            getParam("cn.xn.user.service.IRegisterService");
+            getParam("cn.xn.user.service.IRegisterService");
 
         } catch (Exception e) {
             e.printStackTrace();

@@ -123,16 +123,22 @@ public class StringUtil {
         String param = "";
         String key = "";
         for (String line : lines) {
-            param += line + "&";
-            if (line.startsWith("systemType")) {
-                if(line.split("=").length!=2){
-                    throw new CaseErrorEqualException("systemType is not exist,cannot add sign");
+            if (!line.startsWith("#")&&line.split("=").length==2) {
+                param += line + "&";
+                if (line.startsWith("systemType")) {
+                    if (line.split("=").length != 2) {
+                        throw new CaseErrorEqualException("systemType is not exist,cannot add sign");
+                    } else {
+                        String value = line.split("=")[1];
+                        key = getPro("test.properties", "key." + value);
+                        param += "key=" + key;
+                    }
                 }
-                String value = line.split("=")[1];
-                key = getPro("test.properties", "key." + value);
             }
         }
-        param += "key=" + key;
+        if (param.equals("")) {
+            throw new CaseErrorEqualException("all paramaters are null");
+        }
         String sign = string2MD5(param);
 
         lines.add("sign=" + sign);
