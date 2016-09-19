@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: com.xiaoniu.user:user-interface:2.0.0-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/xiaoniu/user/user-interface/2.0.0-SNAPSHOT/user-interface-2.0.0-20160909.082446-3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/xiaoniu/user/user-interface/2.0.0-SNAPSHOT/user-interface-2.0.0-20160913.051318-9.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/com/xiaoniu/user/user-interface/2.0.0-SNAPSHOT/user-interface-2.0.0-20160909.082446-3-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/xiaoniu/user/user-interface/2.0.0-SNAPSHOT/user-interface-2.0.0-20160913.051318-9-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/com/xiaoniu/user/user-interface/2.0.0-SNAPSHOT/user-interface-2.0.0-20160909.082446-3-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/xiaoniu/user/user-interface/2.0.0-SNAPSHOT/user-interface-2.0.0-20160913.051318-9-sources.jar!/" />
     </SOURCES>
   </library>
 </component>

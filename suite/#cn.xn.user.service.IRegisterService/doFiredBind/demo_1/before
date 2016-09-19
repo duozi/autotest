@@ -1,0 +1,3 @@
+DB=delete from t_customer_bind where member_no="ozbuTt6mNl566ITM6O628OW2w112"
+
+DB=insert into t_customer_bind (system_type, member_no, sys_source, fname, ftoken, funionid, bstatus, expire_date)values ("QGZ", "ozbuTt6mNl566ITM6O628OW2w112", "wechat", "wechat",NULL, "ozbuTt6mNl566ITM6O628OW2w112", "ENABLE", "0000-00-00 00:00:00")

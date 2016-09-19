@@ -1,0 +1,2 @@
+请求参数：{"appVersion":"2.4.0","fName":"wechat","fUnionid":"ozbuTt6mNl566ITM6O628OW2w111","memberNo":"ozbuTt6mNl566ITM6O628OW2w111","sign":"fcf0e0c6b980b022701b246c33ae01be","sourceType":"wechat","sysSource":"android","systemType":"QGZ"}
+返回结果：Response{body='CommonRlt[returnCode=0,returnMsg=成功,data=<null>]', exception=null}

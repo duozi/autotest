@@ -1,0 +1,1 @@
+DB=delete from t_customer where login_name="11111111111" and system_type="QGZ"

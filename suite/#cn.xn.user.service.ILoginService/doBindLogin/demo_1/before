@@ -1,0 +1,3 @@
+DB=insert into t_customer_bind (system_type, member_no, sys_source, fname, ftoken, funionid, bstatus, expire_date)values ("QGZ","00683f51-da44-4f2d-8120-e009ef3bf357" , "wechat", "微信",NULL, "ozbuTt6mNl566ITM6O628OW22222", "ENABLE", "0000-00-00 00:00:00")
+
+DB=insert into t_customer (member_no,login_name,login_pwd,member_name,mobile,system_type,member_level)values ("00683f51-da44-4f2d-8120-e009ef3bf357", "77777777777", "77777777777", "77", "77777777777", "QGZ",1)

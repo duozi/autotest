@@ -1,2 +1,0 @@
-请求参数：{"sign":"a4f6592f2fc923e7d30457d8c16543eb"}
-返回结果：Response{body='CommonRlt[returnCode=110001,returnMsg=参数错误,data=<null>]', exception=null}

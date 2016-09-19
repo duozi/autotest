@@ -6,12 +6,12 @@
     http://code.alibabatech.com/schema/dubbo
     http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-    <dubbo:application name="test-user-service" />
+    <dubbo:application name="xn-user-service" />
 
     <dubbo:registry protocol="zookeeper" address="10.17.2.150:2181,10.17.2.150:2182,10.17.2.150:2183"/>
 
     <dubbo:reference id="iLoginService" interface="cn.xn.user.service.ILoginService" group="p2p" version="1.0"
-                     check="false" timeout="30000"/>
+                     check="false" timeout="30000" />
     <dubbo:reference id="iFriendService" interface="cn.xn.user.service.IFriendService" group="p2p" version="1.0"
                      check="false" timeout="30000"/>
     <dubbo:reference id="iCustomerInfoService" interface="cn.xn.user.service.ICustomerInfoService" group="p2p" version="1.0"
@@ -19,6 +19,11 @@
     <dubbo:reference id="iPwdService" interface="cn.xn.user.service.IPwdService" group="p2p" version="1.0"
                      check="false" timeout="30000"/>
     <dubbo:reference id="iRegisterService" interface="cn.xn.user.service.IRegisterService" group="p2p" version="1.0"
+                     check="false" timeout="30000"/>
+    <dubbo:reference id="commonService" interface="cn.xn.cache.service.ICommonRedisService"   version="1.0"
+                     check="false" timeout="30000" />
+
+    <dubbo:reference id="userService" interface="cn.xn.cache.service.IUserRedisService"   version="1.0"
                      check="false" timeout="30000"/>
     <dubbo:monitor protocol="registry"/>
 

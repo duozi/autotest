@@ -1,0 +1,3 @@
+DB=DELETE FROM t_customer WHERE member_no="00683f51-da44-4f2d-8120-e009ef3bf357"
+
+DB=DELETE FROM t_customer_bind WHERE member_no="00683f51-da44-4f2d-8120-e009ef3bf357"

@@ -3,7 +3,7 @@ package com.xn;
 import cn.xn.user.domain.*;
 import cn.xn.user.service.ILoginService;
 import cn.xn.user.service.IRegisterService;
-import com.xn.test.service.DBService;
+import com.xn.test.util.DBService;
 import com.xn.test.util.StringUtil;
 import junit.framework.TestCase;
 import org.junit.*;
