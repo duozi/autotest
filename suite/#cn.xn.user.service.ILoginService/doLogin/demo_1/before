@@ -1,1 +1,0 @@
-DB=insert into t_customer (member_no,login_name,login_pwd,member_name,mobile,system_type,member_level,status)values ("8880d44d-d907-4e03-bd95-100cfc7b5209", "33333333335", "fEqNCco3Yq9h5ZUglD3CZJT4lBs=", "33", "33333333335", "QGZ",1,1)

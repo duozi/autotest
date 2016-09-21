@@ -1,0 +1,1 @@
+DB=delete from t_customer where cert_no="111111111111111111" and system_type="QGZ"

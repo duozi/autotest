@@ -83,9 +83,9 @@ public class NewGetAll {
         try {
 //            getParam("cn.xn.user.service.ILoginService");
 //            getParam("cn.xn.user.service.ICustomerInfoService");
-//            getParam("cn.xn.user.service.IFriendService");
+            getParam("cn.xn.user.service.IFriendService");
 //            getParam("cn.xn.user.service.ICustomerInfoService");
-            getParam("cn.xn.user.service.IPwdService");
+//            getParam("cn.xn.user.service.IPwdService");
 //            getParam("cn.xn.user.service.IRegisterService");
 
         } catch (Exception e) {

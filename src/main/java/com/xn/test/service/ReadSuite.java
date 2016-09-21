@@ -191,7 +191,7 @@ public class ReadSuite {
         List<String> lines = FileUtil.fileReadeForList(file);
         for (String line : lines) {
             if (line.equalsIgnoreCase("DB")) {
-                beforeClass.add(createCommand.createNewDBCommand());
+//                beforeClass.add(createCommand.createNewDBCommand());
             } else if (line.startsWith("DB")) {
 
                 String sql = line.split("=", 2)[1];
@@ -207,7 +207,7 @@ public class ReadSuite {
         List<String> lines = FileUtil.fileReadeForList(file);
         for (String line : lines) {
             if (line.equalsIgnoreCase("DB")) {
-                afterClass.add(createCommand.createCloseDBCommand());
+//                afterClass.add(createCommand.createCloseDBCommand());
             } else if (line.startsWith("DB")) {
 
                 String sql = line.split("=", 2)[1];
@@ -263,10 +263,24 @@ public class ReadSuite {
         }
         return list;
     }
-
+public static  void dealFile(String path){
+    File folder = new File(path);
+    if (folder.getName().contains("#")) {
+        File file = new File(folder.getPath().replace("#", ""));
+        folder.renameTo(file);
+    }
+    if(folder.isDirectory()) {
+        File[] interfaces = folder.listFiles();
+        for (File interfaceFolder : interfaces) {
+            dealFile(interfaceFolder.getPath());
+        }
+    }
+}
     public static void main(String[] args) {
-        ReadSuite re = new ReadSuite();
-        re.readSuitFile();
+//        ReadSuite re = new ReadSuite();
+//        re.readSuitFile();
+
+        dealFile("suite");
     }
 
 }

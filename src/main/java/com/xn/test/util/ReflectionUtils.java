@@ -1,6 +1,7 @@
 package com.xn.test.util;
 
 
+import com.xn.test.objectfactory.BeanUtils;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -36,6 +37,7 @@ public abstract class ReflectionUtils {
     public static void setFieldValue(Object target, String fieldName, Object value) {
         Field field = getField(target.getClass(), fieldName);
         field.setAccessible(true);
+        value= BeanUtils.create(field.getType(),value);
         setFieldValue(target, field, value);
     }
 

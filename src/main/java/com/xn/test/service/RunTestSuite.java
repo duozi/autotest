@@ -4,6 +4,7 @@ package com.xn.test.service;/**
 
 import com.xn.test.model.Suite;
 import com.xn.test.result.Report;
+import com.xn.test.util.DBUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,6 +25,7 @@ public class RunTestSuite {
 
     public void run() throws InterruptedException {
         Report.getReport().setStartTime(new Date());
+        DBUtil.newDB();
         for (int i = 0; i < testSuites.size(); i++) {
 
             int finalI = i;
@@ -33,6 +35,11 @@ public class RunTestSuite {
                     testSuites.get(finalI).execute();
                 }
             });
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+
+            }
 
         }
         exe.shutdownNow();
@@ -41,7 +48,7 @@ public class RunTestSuite {
                 Report.getReport().setStopTime(new Date());
 
                 int j = Report.getReport().getFailed();
-                logger.warn("---------" + j);
+                DBUtil.closeDB();
                 Report.getReport().generateReport();
                 break;
             }

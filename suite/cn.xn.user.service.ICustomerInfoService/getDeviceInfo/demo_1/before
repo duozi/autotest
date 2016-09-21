@@ -1,0 +1,3 @@
+DB=delete from t_customer_device where member_no="8e299dbf-fd2a-4282-966a-d1f946683120" and system_type="QGZ"
+
+DB=insert into t_customer_device (system_type,member_no,device_id,device_detail,device_resolution,app_version)values ("QGZ","8e299dbf-fd2a-4282-966a-d1f946683120", "333", "333", "1280", "2.4.0")

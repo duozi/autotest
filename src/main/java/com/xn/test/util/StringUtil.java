@@ -3,15 +3,18 @@ package com.xn.test.util;
 
 import com.alibaba.dubbo.common.utils.StringUtils;
 import com.xn.test.Exception.CaseErrorEqualException;
+import org.apache.commons.beanutils.PropertyUtilsBean;
 import org.apache.commons.lang.builder.ReflectionToStringBuilder;
 import org.apache.commons.lang.builder.ToStringStyle;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.beans.PropertyDescriptor;
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.security.MessageDigest;
+import java.util.Iterator;
 import java.util.List;
 import java.util.Properties;
 import java.util.TreeMap;
@@ -24,6 +27,7 @@ import java.util.regex.Pattern;
 public class StringUtil {
     private final static Logger logger = LoggerFactory.getLogger(StringUtil.class);
     private static String SYSTEM_TYPE = "systemType";
+    private static final String CHARSET = "UTF-8";
 
     public static String firstToLow(String s) {
 
@@ -89,30 +93,38 @@ public class StringUtil {
         return defaultValue;
     }
 
-    public static String string2MD5(String inStr) {
-        MessageDigest md5 = null;
+    public static String md5(String str) {
+        return encrypt(str, CHARSET);
+    }
+
+    private static String encrypt(String str, String charset) {
         try {
-            md5 = MessageDigest.getInstance("MD5");
+            MessageDigest md = MessageDigest.getInstance("MD5");
+            if (org.apache.commons.lang.StringUtils.isNotBlank(charset)) {
+                md.update(str.getBytes(charset));
+            } else {
+                md.update(str.getBytes());
+            }
+
+            byte b[] = md.digest();
+
+            int i;
+
+            StringBuffer buf = new StringBuffer("");
+            for (int offset = 0; offset < b.length; offset++) {
+                i = b[offset];
+                if (i < 0)
+                    i += 256;
+                if (i < 16)
+                    buf.append("0");
+                buf.append(Integer.toHexString(i));
+            }
+            str = buf.toString();
         } catch (Exception e) {
-            System.out.println(e.toString());
             e.printStackTrace();
-            return "";
+            return null;
         }
-        char[] charArray = inStr.toCharArray();
-        byte[] byteArray = new byte[charArray.length];
-
-        for (int i = 0; i < charArray.length; i++)
-            byteArray[i] = (byte) charArray[i];
-        byte[] md5Bytes = md5.digest(byteArray);
-        StringBuffer hexValue = new StringBuffer();
-        for (int i = 0; i < md5Bytes.length; i++) {
-            int val = ((int) md5Bytes[i]) & 0xff;
-            if (val < 16)
-                hexValue.append("0");
-            hexValue.append(Integer.toHexString(val));
-        }
-        return hexValue.toString();
-
+        return str;
     }
 
     public static String lastName(String str) {
@@ -123,80 +135,29 @@ public class StringUtil {
         String param = "";
         String key = "";
         for (String line : lines) {
-            if (!line.startsWith("#")&&line.split("=").length==2) {
+            if (line.split("=").length == 2) {
                 param += line + "&";
                 if (line.startsWith("systemType")) {
-                    if (line.split("=").length != 2) {
-                        throw new CaseErrorEqualException("systemType is not exist,cannot add sign");
-                    } else {
-                        String value = line.split("=")[1];
-                        key = getPro("test.properties", "key." + value);
-
-                    }
+                    String value = line.split("=")[1];
+                    key = getPro("test.properties", "key." + value);
                 }
             }
         }
-        if(!key.equals("")){
+        if (!key.equals("")) {
             param += "key=" + key;
         }
         if (param.equals("")) {
-            throw new CaseErrorEqualException("all paramaters are null");
+            throw new CaseErrorEqualException("all parameters are null");
+        } else if (!param.contains("systemType")) {
+            logger.error("systemType is not exist,cannot add sign");
+            throw new CaseErrorEqualException("systemType is not exist,cannot add sign");
         }
-        String sign = string2MD5(param);
+
+        String sign = md5(param);
 
         lines.add("sign=" + sign);
         return lines;
 
-    }
-
-    public static String getSign(String para) {
-        Pattern p1 = Pattern.compile("set(.*?)\\(");
-        Pattern p2 = Pattern.compile("\\((.*?)\\)");
-        Matcher m;
-        String type;
-        String value;
-        String key = "";
-        StringBuffer result = new StringBuffer();
-        String[] list = para.split("\\n");
-        for (String line : list) {
-            if (!line.contains("%")) {
-                m = p1.matcher(line);
-                if (m.find()) {
-                    type = firstToLow(m.group(1));
-
-                    m = p2.matcher(line);
-                    if (m.find()) {
-                        if (m.group(1).contains("\"")) {
-                            value = firstToLow(m.group(1)).replace("\"", "");
-                        } else {
-                            value = firstToLow(m.group(1));
-                        }
-                        //值为“”代表参数没有填，计算sign的时候就不要加上这一项,值为“ ”代表填入的是空的，计算sign的时候还是要加上这一项的
-
-                        if (type.equals("systemType")) {
-                            if (!StringUtils.isNotEmpty(value)) {
-                                return "%";
-                            } else {
-                                key = getPro("test.properties", "key." + value);
-                            }
-                        }
-                        if (!value.equals("")) {
-                            if (value.equals(" ")) {
-                                value = "";
-                            }
-                            result.append(type + "=" + value + "&");
-                        }
-
-                    }
-                }
-
-            }
-        }
-
-        result.append("key=" + key);
-        String sign = string2MD5(result.toString());
-
-        return sign;
     }
 
 
@@ -215,9 +176,63 @@ public class StringUtil {
 
     }
 
+
+    public static String setSign(Object obj) {
+
+        TreeMap<String, String> map = beanToSortMap(obj);
+
+        String systemType = map.get(SYSTEM_TYPE);
+
+        String key = getPro("test.properties", "key."+systemType);
+
+        String addSign = addSign(map, key);
+        if (org.apache.commons.lang.StringUtils.isNotEmpty(addSign)) {
+            return addSign;
+        }
+        return null;
+    }
+
+    public static TreeMap<String, String> beanToSortMap(Object obj) {
+        TreeMap<String, String> params = new TreeMap<String, String>();
+        try {
+            PropertyUtilsBean propertyUtilsBean = new PropertyUtilsBean();
+            PropertyDescriptor[] descriptors = propertyUtilsBean.getPropertyDescriptors(obj);
+            for (int i = 0; i < descriptors.length; i++) {
+                String name = descriptors[i].getName();
+                if (!org.apache.commons.lang.StringUtils.equals(name, "class")) {
+                    Object o = propertyUtilsBean.getNestedProperty(obj, name);
+                    if (o != null)
+                        params.put(name, o.toString());
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return params;
+    }
+
+    public static String addSign(TreeMap<String, String> treeMap, String key) {
+        //遍历签名参数
+        StringBuilder sign_sb = new StringBuilder();
+
+        Iterator<String> it = treeMap.keySet().iterator();
+        while (it.hasNext()) {
+            String mapKey = it.next();
+            if (org.apache.commons.lang.StringUtils.isEmpty(treeMap.get(mapKey)))
+                continue;
+            if (org.apache.commons.lang.StringUtils.isEmpty(sign_sb.toString())) {
+                sign_sb.append(mapKey + "=" + treeMap.get(mapKey));
+            } else {
+                sign_sb.append("&" + mapKey + "=" + treeMap.get(mapKey));
+            }
+        }
+        sign_sb.append("&key=" + key);
+        return md5(sign_sb.toString());
+    }
+
     public static void main(String[] args) {
 //        System.out.println(addLoginName());
-        System.out.println(string2MD5("appVersion=2.4.0&memberNo=00683f51-da44-4f2d-8120-e009ef3bf356&sourceType=android&systemType=QGZ&tokenId=00683f51-da44-4f2d-8120-e009ef3bf356&key=J1IGqSYgjv0pPF6TIgXu4G8KAp6rkd3T"));
+        System.out.println(md5("appVersion=2.4.0&friendJson=[{\"friendMobile\":\"111111111114\",\"friendName\":\"测试05\"}]&memberNo=8e299dbf-fd2a-4282-966a-d1f946683133&mobile=1232545&sourceType=android&systemType=QGZ&key=J1IGqSYgjv0pPF6TIgXu4G8KAp6rkd3T"));
 //        String s = getSign("checkLoginReq.setAppVersion(\"2.4.0\");\n" +
 //                "\t\tcheckLoginReq.setMemberNo(\"05135e9b-7fdb-478a-ba40-569bdf8b7331\");\n" +
 //                "\t\tcheckLoginReq.setSign(\"%\");\n" +

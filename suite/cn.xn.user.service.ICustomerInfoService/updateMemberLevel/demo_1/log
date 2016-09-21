@@ -1,0 +1,2 @@
+请求参数：{"appVersion":"2.4.0","memberNo":"8e299dbf-fd2a-4282-966a-d1f946683125","sign":"5210511e91d040b86b72d27acc0359b0","sourceType":"android","systemType":"QGZ"}
+返回结果：Response{body='CommonRlt[returnCode=0,returnMsg=成功,data=LevelUpdateRlt[memberNo=8e299dbf-fd2a-4282-966a-d1f946683125,memberOldLevel=1,memberNewLevel=1]]', exception=null}

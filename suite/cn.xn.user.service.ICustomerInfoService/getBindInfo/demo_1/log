@@ -1,0 +1,2 @@
+请求参数：{"appVersion":"2.4.0","memberNo":"8e299dbf-fd2a-4282-966a-d1f946683117","sign":"96be76dcb9385427108197f76851cc66","sourceType":"android","systemType":"QGZ"}
+返回结果：Response{body='CommonRlt[returnCode=0,returnMsg=成功,data=BindInfoRlt[loginName=33333333338,memberNo=8e299dbf-fd2a-4282-966a-d1f946683117,memberName=33,mobile=33333333338,refereeNo=<null>,createDate=Wed Sep 21 14:37:41 CST 2016,channel=weibo,unionId=]]', exception=null}

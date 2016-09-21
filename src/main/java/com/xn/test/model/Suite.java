@@ -17,7 +17,7 @@ import java.util.concurrent.Executors;
 
 public class Suite {
     private static final Logger logger = LoggerFactory.getLogger(Suite.class);
-    public static ExecutorService exe = Executors.newFixedThreadPool(70);
+    public static ExecutorService exe = Executors.newFixedThreadPool(80);
     List<Command> beforeClass;
     List<Command> afterClass;
     List<Command> testCase;
@@ -73,20 +73,22 @@ public class Suite {
         if (beforeClass != null) {
             beforeClass.forEach(Command::execute);
             if (testCase != null) {
-                exe.execute(new Runnable() {
-                                @Override
-                                public void run() {
-                                    for (int i = 0; i < testCase.size(); i++) {
-                                        testCase.get(i).execute();
+                for (int i = 0; i < testCase.size(); i++) {
+                    int finalI = i;
+                    exe.execute(new Runnable() {
+                                    @Override
+                                    public void run() {
+                                        testCase.get(finalI).execute();
                                     }
                                 }
-                            }
-                );
-                try {
-                    Thread.sleep(5000);
-                } catch (InterruptedException e) {
+                    );
+                    try {
+                        Thread.sleep(10000);
+                    } catch (InterruptedException e) {
 
+                    }
                 }
+
                 exe.shutdown();
                 while (true) {
 

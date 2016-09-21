@@ -1,0 +1,2 @@
+请求参数：{"appVersion":"2.4.0","memberNo":"8e299dbf-fd2a-4282-966a-d1f946683116","sign":"e6b61c75beb91864493f49dba537b960","sourceType":"android","systemType":"QGZ"}
+返回结果：Response{body='CommonRlt[returnCode=0,returnMsg=成功,data=MemberLevelInfoRlt[memberNo=8e299dbf-fd2a-4282-966a-d1f946683116,loginName=33333333340,memberLevel=2,memberLevelDesc=白银会员,nextLevel=3,nextLevelDesc=黄金会员,needInvest=100000000,isWXUser=false,isFirstLevelUp=false]]', exception=null}
