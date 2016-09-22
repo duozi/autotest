@@ -1,6 +1,7 @@
 package com.xn;
 
 import cn.xn.user.domain.*;
+import cn.xn.user.service.IFriendService;
 import cn.xn.user.service.ILoginService;
 import cn.xn.user.service.IPwdService;
 import cn.xn.user.service.IRegisterService;
@@ -29,7 +30,7 @@ public class friendLineTest extends TestCase {
     @Resource
     ILoginService iLoginService;
     @Resource
-    IPwdService iPwdService;
+    IFriendService iFriendService;
 
     @BeforeClass
     public static void beforeClass() {
@@ -73,18 +74,21 @@ public class friendLineTest extends TestCase {
         String tokenId = loginRltCommonRlt.getData().getTokenId();
 
 
-        ModifyLoginPwdReq modifyLoginPwdReq = new ModifyLoginPwdReq();
-        modifyLoginPwdReq.setAppVersion("2.4.0");
-        modifyLoginPwdReq.setSourceType("android");
-        modifyLoginPwdReq.setSystemType("QGZ");
-        modifyLoginPwdReq.setMemberNo(memberNo);
-        modifyLoginPwdReq.setLoginPwd("555555");
-        modifyLoginPwdReq.setLoginNewPwd("666666");
-        modifyLoginPwdReq.setTokenId(tokenId);
-        modifyLoginPwdReq.setSign(StringUtil.setSign(modifyLoginPwdReq));
-        logger.warn("modify----" + modifyLoginPwdReq);
-        CommonRlt<EmptyObject> emptyObjectCommonRlt = iPwdService.doModifyLoginPwd(modifyLoginPwdReq);
-        logger.warn("修改密码" + emptyObjectCommonRlt.toString());
+
+        UpdateFriendReq updateFriendReq=new UpdateFriendReq();
+        updateFriendReq.setAppVersion("2.4.0");
+        updateFriendReq.setSourceType("android");
+        updateFriendReq.setSystemType("QGZ");
+        updateFriendReq.setMemberNo(memberNo);
+        updateFriendReq.setMobile("1234567");
+        updateFriendReq.setFriendJson("[{\"friendMemberNo\":\"e0a77f8e-92c3-447b-9196-0167f533e1bb\",\"friendMobile\":\"17777777777\",\"friendName\":\"测试88\",\"friendUserName\":\"\",\"isRegister\":\"Y\"}]");
+        updateFriendReq.setSign(StringUtil.setSign(updateFriendReq));
+        logger.warn("updateFriendReq-------"+updateFriendReq);
+        CommonRlt<Boolean> booleanCommonRlt=iFriendService.updateFriend(updateFriendReq);
+        logger.warn("更新朋友"+booleanCommonRlt.toString());
+
+
+
 
         LoginOutReq loginOutReq=new LoginOutReq();
         loginOutReq.setAppVersion("2.4.0");
@@ -94,7 +98,7 @@ public class friendLineTest extends TestCase {
         loginOutReq.setMemberNo(memberNo);
         loginOutReq.setSign(StringUtil.setSign(loginOutReq));
         logger.warn("logout----" + loginOutReq);
-        CommonRlt<EmptyObject> emptyObjectCommonRlt1=iLoginService.doLoginOut(loginOutReq);
+        CommonRlt<EmptyObject> emptyObjectCommonRlt=iLoginService.doLoginOut(loginOutReq);
         logger.warn("登出"+emptyObjectCommonRlt.toString());
 
 

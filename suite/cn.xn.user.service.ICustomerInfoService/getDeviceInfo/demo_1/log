@@ -1,2 +1,2 @@
 请求参数：{"appVersion":"2.4.0","memberNo":"8e299dbf-fd2a-4282-966a-d1f946683120","sign":"47eb87db8e864b5f93390bea049a3933","sourceType":"android","systemType":"QGZ"}
-返回结果：Response{body='CommonRlt[returnCode=0,returnMsg=成功,data=DeviceInfoRlt[memberNo=8e299dbf-fd2a-4282-966a-d1f946683120,deviceId=333,deviceDetail=333,deviceType=<null>,deviceResolution=1280,systemVersion=<null>,token=<null>,appVersion=2.4.0,loginLastTime=Wed Sep 21 14:37:41 CST 2016]]', exception=null}
+返回结果：Response{body='CommonRlt[returnCode=0,returnMsg=成功,data=DeviceInfoRlt[memberNo=8e299dbf-fd2a-4282-966a-d1f946683120,deviceId=333,deviceDetail=333,deviceType=<null>,deviceResolution=1280,systemVersion=<null>,token=<null>,appVersion=2.4.0,loginLastTime=Thu Sep 22 19:23:33 CST 2016]]', exception=null}

@@ -21,6 +21,11 @@ public class Suite {
     List<Command> beforeClass;
     List<Command> afterClass;
     List<Command> testCase;
+//    public static int size = 0;
+
+//    private synchronized static void addSize() {
+//        size = size + 1;
+//    }
 
     public static Logger getLogger() {
         return logger;
@@ -64,10 +69,6 @@ public class Suite {
     public Suite() {
     }
 
-    public void run() {
-        execute();
-
-    }
 
     public void execute() {
         if (beforeClass != null) {
@@ -78,27 +79,34 @@ public class Suite {
                     exe.execute(new Runnable() {
                                     @Override
                                     public void run() {
+//                                        addSize();
                                         testCase.get(finalI).execute();
                                     }
                                 }
                     );
-                    try {
-                        Thread.sleep(10000);
-                    } catch (InterruptedException e) {
 
-                    }
+                }
+                try {
+                    Thread.sleep(10000);
+                } catch (InterruptedException e) {
+
                 }
 
                 exe.shutdown();
                 while (true) {
+//                    if(size==Report.getReport().getTotal()){
+//
+//                    }
 
                     if (exe.isTerminated()) {
+                        System.out.println("-----------");
                         if (afterClass != null) {
                             afterClass.forEach(Command::execute);
                         }
                         Report.getReport().setStopTime(new Date());
                         break;
                     }
+
                 }
 
             }

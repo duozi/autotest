@@ -36,10 +36,7 @@ public class TestCaseCommand  implements Command {
         this.afterCommand = afterCommand;
     }
 
-//    public void run() {
-//        execute();
-//        logger.warn(String.valueOf(Thread.currentThread().getId()));
-//    }
+
 
     @Override
     public void execute() {

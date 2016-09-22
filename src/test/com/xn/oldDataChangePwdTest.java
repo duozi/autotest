@@ -46,13 +46,16 @@ public class oldDataChangePwdTest extends TestCase {
     @Test
     public void changePwdTest() {
 
-
+        String deleteLoginName = "delete from t_customer where member_no=\"8880d44d-d907-4e03-bd95-100cfc7b999\" and login_name=\"99999999444\" and system_type=\"QGZ\"";
+        DBUtil.updateDB(deleteLoginName);
+        String insert = "insert into t_customer (member_no,login_name,login_pwd,member_name,mobile,system_type,member_level,status)values (\"8880d44d-d907-4e03-bd95-100cfc7b999\", \"99999999444\", \"fEqNCco3Yq9h5ZUglD3CZJT4lBs=\", \"33\", \"99999999444\", \"QGZ\",1,1)";
+        DBUtil.updateDB(insert);
         LoginReq loginReq = new LoginReq();
         loginReq.setAppVersion("2.4.0");
         loginReq.setSourceType("android");
         loginReq.setSystemType("QGZ");
-        loginReq.setLoginName("15914169844");
-        loginReq.setLoginPwd("111111");
+        loginReq.setLoginName("99999999444");
+        loginReq.setLoginPwd("123456");
         loginReq.setSign(StringUtil.setSign(loginReq));
         logger.warn("loginReq------" + loginReq);
         CommonRlt<LoginRlt> loginRltCommonRlt = iLoginService.doLogin(loginReq);
@@ -66,7 +69,7 @@ public class oldDataChangePwdTest extends TestCase {
         modifyLoginPwdReq.setSourceType("android");
         modifyLoginPwdReq.setSystemType("QGZ");
         modifyLoginPwdReq.setMemberNo(memberNo);
-        modifyLoginPwdReq.setLoginPwd("111111");
+        modifyLoginPwdReq.setLoginPwd("123456");
         modifyLoginPwdReq.setLoginNewPwd("666666");
         modifyLoginPwdReq.setTokenId(tokenId);
         modifyLoginPwdReq.setSign(StringUtil.setSign(modifyLoginPwdReq));
@@ -74,7 +77,7 @@ public class oldDataChangePwdTest extends TestCase {
         CommonRlt<EmptyObject> emptyObjectCommonRlt = iPwdService.doModifyLoginPwd(modifyLoginPwdReq);
         logger.warn("修改密码" + emptyObjectCommonRlt.toString());
 
-        LoginOutReq loginOutReq=new LoginOutReq();
+        LoginOutReq loginOutReq = new LoginOutReq();
         loginOutReq.setAppVersion("2.4.0");
         loginOutReq.setSourceType("android");
         loginOutReq.setSystemType("QGZ");
@@ -82,8 +85,8 @@ public class oldDataChangePwdTest extends TestCase {
         loginOutReq.setMemberNo(memberNo);
         loginOutReq.setSign(StringUtil.setSign(loginOutReq));
         logger.warn("logout----" + loginOutReq);
-        CommonRlt<EmptyObject> emptyObjectCommonRlt1=iLoginService.doLoginOut(loginOutReq);
-        logger.warn("登出"+emptyObjectCommonRlt.toString());
+        CommonRlt<EmptyObject> emptyObjectCommonRlt1 = iLoginService.doLoginOut(loginOutReq);
+        logger.warn("登出" + emptyObjectCommonRlt1.toString());
 
 
     }

@@ -1,0 +1,2 @@
+请求参数：{"appVersion":"2.4.0","loginName":"333333333311","sign":"e500efb4f33f450f7a7b656c38b2425d","sourceType":"android","systemType":"QGZ"}
+返回结果：Response{body='CommonRlt[returnCode=0,returnMsg=成功,data=LoginErrorTimeRlt[loginName=333333333311,loginErrorTime=0,systemType=QGZ]]', exception=null}

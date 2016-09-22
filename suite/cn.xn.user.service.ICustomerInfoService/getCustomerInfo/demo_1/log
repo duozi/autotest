@@ -1,2 +1,2 @@
 请求参数：{"appVersion":"2.4.0","memberNo":"8e299dbf-fd2a-4282-966a-d1f946683118","sign":"0f80eeeb225ddebebebc63f074e818ec","sourceType":"android","systemType":"QGZ"}
-返回结果：Response{body='CommonRlt[returnCode=0,returnMsg=成功,data=CustomerInfoBaseRlt[memberNo=8e299dbf-fd2a-4282-966a-d1f946683118,memberName=33,bankCardNo=62222222222222,bankCode=cbc,bankMobile=11111111111,certType=<null>,certNo=<null>,bankName=bank,userFlag=false,memberLevel=1]]', exception=null}
+返回结果：Response{body='CommonRlt[returnCode=0,returnMsg=成功,data=CustomerInfoBaseRlt[memberNo=8e299dbf-fd2a-4282-966a-d1f946683118,memberName=33,bankCardNo=62222222222222,bankCode=cbc,bankMobile=11111111111,certType=SFZ,certNo=<null>,bankName=bank,userFlag=false,memberLevel=1]]', exception=null}

@@ -29,16 +29,20 @@ public class RunTestSuite {
         for (int i = 0; i < testSuites.size(); i++) {
 
             int finalI = i;
-            exe.execute(new Runnable() {
-                @Override
-                public void run() {
-                    testSuites.get(finalI).execute();
-                }
-            });
-            try {
-                Thread.sleep(100);
-            } catch (InterruptedException e) {
+            if (!exe.isShutdown()) {
+                exe.execute(new Runnable() {
+                    @Override
+                    public void run() {
+//                    System.out.println("1--------"+Thread.currentThread().getName());
+                        testSuites.get(finalI).execute();
+                    }
+                });
 
+            }
+            try {
+                Thread.sleep(50);
+
+            } catch (InterruptedException e) {
             }
 
         }
@@ -47,7 +51,6 @@ public class RunTestSuite {
             if (exe.isTerminated()) {
                 Report.getReport().setStopTime(new Date());
 
-                int j = Report.getReport().getFailed();
                 DBUtil.closeDB();
                 Report.getReport().generateReport();
                 break;
