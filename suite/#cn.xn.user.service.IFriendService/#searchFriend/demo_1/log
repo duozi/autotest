@@ -1,0 +1,2 @@
+请求参数：{"appVersion":"2.4.0","currPage":1,"keyword":"6","memberNo":"8e299dbf-fd2a-4282-966a-d1f946683132","pageSize":20,"sign":"663612b516d89bc61598c740518bba78","sourceType":"android","systemType":"QGZ"}
+返回结果：Response{body='CommonRlt[returnCode=0,returnMsg=成功,data=Page[totalCount=2,result=[FriendInfoRlt[friendMemberNo=e0a77f8e-92c3-447b-9196-0167f533e1bb,friendMobile=18607602913,friendName=测试05,isRegister=Y,secret=N,createTime=<null>], FriendInfoRlt[friendMemberNo=,friendMobile=15800047982,friendName=测试6,isRegister=N,secret=N,createTime=<null>]]]]', exception=null}

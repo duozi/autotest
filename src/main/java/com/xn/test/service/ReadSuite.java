@@ -64,19 +64,19 @@ public class ReadSuite {
                 //方法名层
                 for (File methodFolder : methods) {
 
-                        if (methodFolder.getName().equals("serviceConfig.properties")) {
-                            url = StringUtil.getConfig(methodFolder, "url", "");
-                            appName = StringUtil.getConfig(methodFolder, "appName", "");
-                            timeout = StringUtil.getConfig(methodFolder, "timeout", "0");
-                            version = StringUtil.getConfig(methodFolder, "version", "1.0");
-                            group = StringUtil.getConfig(methodFolder, "group", "");
-                            break;
-                        }
+                    if (methodFolder.getName().equals("serviceConfig.properties")) {
+                        url = StringUtil.getConfig(methodFolder, "url", "");
+                        appName = StringUtil.getConfig(methodFolder, "appName", "");
+                        timeout = StringUtil.getConfig(methodFolder, "timeout", "0");
+                        version = StringUtil.getConfig(methodFolder, "version", "1.0");
+                        group = StringUtil.getConfig(methodFolder, "group", "");
+                        break;
+                    }
 
                 }
                 for (File methodFolder : methods) {
                     if (!methodFolder.getName().startsWith("#")) {
-                        if(methodFolder.getName().equals("serviceConfig.properties")){
+                        if (methodFolder.getName().equals("serviceConfig.properties")) {
                             continue;
                         }
 
@@ -86,11 +86,17 @@ public class ReadSuite {
                         List<Command> testCaseCommandList = new ArrayList<>();
                         suite = new Suite();
                         for (File file : files) {
-
                             if (file.getName().equals("config.properties")) {
                                 interfaceName = StringUtil.getConfig(file, "interfaceName", "");
                                 methodName = StringUtil.getConfig(file, "methodName", "");
                                 this.serviceDesc = new ServiceDesc(interfaceName, methodName, url, version, group, timeout, appName);
+                                break;
+                            }
+                        }
+                        for (File file : files) {
+
+                            if (file.getName().equals("config.properties")) {
+                                continue;
                             } else if (file.getName().equals("beforeClass")) {
                                 suite.setBeforeClass(dealBeforeClassFile(file));
                             } else if (file.getName().equals("afterClass")) {
@@ -129,7 +135,7 @@ public class ReadSuite {
                                     if (jump == 0) {
                                         testCaseCommandList.add(testCaseCommand);
                                     }
-                                }else{
+                                } else {
                                     logger.error("jump this case {}", interfaceName + "/" + methodName + "/" + caseName);
                                 }
                             }
@@ -156,7 +162,7 @@ public class ReadSuite {
     public Command dealCaseFile(File file, String casePath) throws CaseErrorEqualException {
         List<KeyValueStore> list = new ArrayList<>();
         List<String> lines = FileUtil.fileReadeForList(file);
-        lines = StringUtil.listAddSign(lines);
+//        lines = StringUtil.listAddSign(lines);
         for (String line : lines) {
             if (!line.startsWith("#") & line.contains("=") && line.split("=").length == 2) {
                 String type = line.split("=")[0];
@@ -243,7 +249,8 @@ public class ReadSuite {
                     redisFlag = 0;
                     list.add(redisCommand);
                 } else {
-                    if (line.split("=").length == 2) {
+
+                    if (!line.startsWith("#") && line.split("=").length == 2) {
                         if (line.startsWith("loginName")) {
                             redisCommand.setLoginName(line.split("=")[1]);
                         } else if (line.startsWith("systemType")) {
@@ -258,38 +265,41 @@ public class ReadSuite {
                             redisCommand.setTokenId(line.split("=")[1]);
                         }
                     }
+
                 }
             }
         }
         return list;
     }
-public static  void dealFile(String path){
-    File folder = new File(path);
-    if (folder.getName().contains("#")) {
-        File file = new File(folder.getPath().replace("#", ""));
-        folder.renameTo(file);
-    }
-    if(folder.isDirectory()) {
-        File[] interfaces = folder.listFiles();
-        for (File interfaceFolder : interfaces) {
-            dealFile(interfaceFolder.getPath());
-        }
-    }
-}
 
-    public static  void dealDBFile(String path){
+    public static void dealFile(String path) {
         File folder = new File(path);
-        if (folder.getName().equals("beforeClass")||folder.getName().equals("afterClass")) {
-          String paths=folder.getPath();
-            FileUtil.fileWrite(paths,"");
+        if (folder.getName().contains("#")) {
+            File file = new File(folder.getPath().replace("#", ""));
+            folder.renameTo(file);
         }
-        if(folder.isDirectory()) {
+        if (folder.isDirectory()) {
+            File[] interfaces = folder.listFiles();
+            for (File interfaceFolder : interfaces) {
+                dealFile(interfaceFolder.getPath());
+            }
+        }
+    }
+
+    public static void dealDBFile(String path) {
+        File folder = new File(path);
+        if (folder.getName().equals("beforeClass") || folder.getName().equals("afterClass")) {
+            String paths = folder.getPath();
+            FileUtil.fileWrite(paths, "");
+        }
+        if (folder.isDirectory()) {
             File[] interfaces = folder.listFiles();
             for (File interfaceFolder : interfaces) {
                 dealDBFile(interfaceFolder.getPath());
             }
         }
     }
+
     public static void main(String[] args) {
 //        ReadSuite re = new ReadSuite();
 //        re.readSuitFile();

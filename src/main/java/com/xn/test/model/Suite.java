@@ -87,9 +87,10 @@ public class Suite {
 
                 }
                 try {
+                    System.out.println("sleep------------");
                     Thread.sleep(10000);
                 } catch (InterruptedException e) {
-
+                    System.out.println("inter----------");
                 }
 
                 exe.shutdown();
@@ -99,7 +100,7 @@ public class Suite {
 //                    }
 
                     if (exe.isTerminated()) {
-                        System.out.println("-----------");
+//                        System.out.println("-----------");
                         if (afterClass != null) {
                             afterClass.forEach(Command::execute);
                         }

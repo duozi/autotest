@@ -1,2 +1,0 @@
-请求参数：{"appVersion":"2.4.0","loginName":"33333333335","loginPwd":"123456","sign":"6ddc76a5fd58f30c05a039c9f105f00c","sourceType":"android","systemType":"QGZ"}
-返回结果：Response{body='CommonRlt[returnCode=0,returnMsg=成功,data=LoginRlt[memberNo=8880d44d-d907-4e03-bd95-100cfc7b5209,tokenId=70611b2e-efaa-434c-81de-b58545fe0223]]', exception=null}

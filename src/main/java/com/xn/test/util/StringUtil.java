@@ -82,12 +82,14 @@ public class StringUtil {
 
         List<String> lines = FileUtil.fileReadeForList(file);
         for (String line : lines) {
-            if (line.split("=").length == 2) {
-                if (line.split("=")[0].equals(properName)) {
-                    return line.split("=")[1];
+            if (!line.startsWith("#")) {
+                if (line.split("=").length == 2) {
+                    if (line.split("=")[0].equals(properName)) {
+                        return line.split("=")[1];
+
+                    }
 
                 }
-
             }
         }
         return defaultValue;
@@ -183,7 +185,7 @@ public class StringUtil {
 
         String systemType = map.get(SYSTEM_TYPE);
 
-        String key = getPro("test.properties", "key."+systemType);
+        String key = getPro("test.properties", "key." + systemType);
 
         String addSign = addSign(map, key);
         if (org.apache.commons.lang.StringUtils.isNotEmpty(addSign)) {

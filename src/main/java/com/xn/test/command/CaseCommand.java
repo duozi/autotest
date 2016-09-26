@@ -37,6 +37,11 @@ public class CaseCommand implements Command {
     private Response response = new Response();
     private String request;
     private String casePath;
+    private  String result;
+
+    public String getResult() {
+        return result;
+    }
 
     public Response getResponse() {
         return response;
@@ -84,7 +89,7 @@ public class CaseCommand implements Command {
         }
         reference.setTimeout(Integer.valueOf(serviceDesc.getTimeout()));
         service = reference.get();
-
+//        reference.destroy();
 
         return service;
     }
@@ -109,13 +114,16 @@ public class CaseCommand implements Command {
         } catch (InvocationTargetException ite) {
             logger.error("call rpc error", ite.getTargetException());
             Report.errorPlus();
+            result="error";
             response.setException(ite.getTargetException());
         } catch (IllegalAccessException e) {
             Report.errorPlus();
+            result="error";
             throw new RuntimeException("illegal access", e);
         } catch (Exception e) {
             logger.error("call rpc error", e);
             response.setException(e);
+            result="error";
             Report.errorPlus();
         }
 

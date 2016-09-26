@@ -30,6 +30,11 @@ public class Report {
     private int error;
     private int failed;
     private int total;
+
+    public ArrayList<Assert> getAssertList() {
+        return assertList;
+    }
+
     private ArrayList<Assert> assertList = new ArrayList<>();
 
     private Report() {
@@ -41,6 +46,11 @@ public class Report {
         }
         return report;
     }
+
+    public Date getStartTime() {
+        return startTime;
+    }
+
 
     public synchronized int getError() {
         return error;
@@ -80,7 +90,7 @@ public class Report {
         assertList.add(assertItem);
     }
 
-    public String getTimeLong(Date stopTime, Date startTime) {
+    public String getTimeLong() {
 
         long between = 0;
         try {
@@ -104,7 +114,7 @@ public class Report {
                 "<body style=\"height: 100%\"><div class=\"heading\"><h1 align=\"center\">dubbo接口测试报告</h1></div>");
         content.append("<table style=\"font-weight:bold;\" align=\"center\"><tr><td>开始时间:</td><td>" + format.format(startTime.getTime()) + "</td></tr>");
         content.append("<tr ><td>结束时间:</td><td>" + format.format(stopTime.getTime()) + "</td></tr>");
-        content.append("<tr><td>执行时长:</td><td>" + getTimeLong(stopTime, startTime) + "ms</td></tr>");
+        content.append("<tr><td>执行时长:</td><td>" + getTimeLong() + "ms</td></tr>");
         content.append("<tr><td>用例总数:</td><td>" + total + "</td></tr>");
         content.append("<tr><td>失败个数:</td><td>" + failed + "</td></tr>");
         content.append("<tr><td>异常个数:</td><td>" + error + "</td></tr></table></br>");

@@ -13,6 +13,8 @@ import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+import static com.xn.test.result.HTMLReport.generateResultReport;
+
 public class RunTestSuite {
     private static final Logger logger = LoggerFactory.getLogger(RunTestSuite.class);
     public static ExecutorService exe = Executors.newFixedThreadPool(50);
@@ -43,6 +45,7 @@ public class RunTestSuite {
                 Thread.sleep(50);
 
             } catch (InterruptedException e) {
+
             }
 
         }
@@ -53,6 +56,7 @@ public class RunTestSuite {
 
                 DBUtil.closeDB();
                 Report.getReport().generateReport();
+                generateResultReport();
                 break;
             }
         }
@@ -64,6 +68,7 @@ public class RunTestSuite {
         List<Suite> suites = readSuite.getSuites();
         runTestSuite.setTestSites(suites);
         runTestSuite.run();
+
 
     }
 }

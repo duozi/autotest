@@ -83,10 +83,11 @@ public class NewGetAll {
         try {
 //            getParam("cn.xn.user.service.ILoginService");
 //            getParam("cn.xn.user.service.ICustomerInfoService");
-            getParam("cn.xn.user.service.IFriendService");
+//            getParam("cn.xn.user.service.IFriendService");
 //            getParam("cn.xn.user.service.ICustomerInfoService");
 //            getParam("cn.xn.user.service.IPwdService");
 //            getParam("cn.xn.user.service.IRegisterService");
+            getParam("com.xiaoniu.dataplatform.tongduncredit.service.ITongDunCreditService");
 
         } catch (Exception e) {
             e.printStackTrace();

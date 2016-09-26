@@ -8,9 +8,6 @@
     <artifactId>autotest</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    <modules>
-        <module>lineTest</module>
-    </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.version>4.1.4.RELEASE</spring.version>
@@ -22,6 +19,11 @@
         <log4j.version>1.2.12</log4j.version>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>com.xiaoniu.dataplatform.tongduncredit</groupId>
+            <artifactId>tongduncredit-skeleton</artifactId>
+            <version>1.0.0</version>
+        </dependency>
         <dependency>
             <groupId>com.xiaoniu.user</groupId>
             <artifactId>user-interface</artifactId>
@@ -39,11 +41,11 @@
             <artifactId>xn-cache-skeleton</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
-        <!--<dependency>-->
-            <!--<groupId>cn.xn.user</groupId>-->
-            <!--<artifactId>xn-user-skeleton</artifactId>-->
-            <!--<version>1.0.5-SNAPSHOT</version>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>cn.xn.user</groupId>
+            <artifactId>xn-user-skeleton</artifactId>
+            <version>1.0.5-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>

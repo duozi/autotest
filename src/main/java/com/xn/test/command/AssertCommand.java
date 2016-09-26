@@ -24,9 +24,10 @@ public class AssertCommand implements Command {
     private List<KeyValueStore> processedParams;
     private Assert assertItem;
 
-    public void setAssertItem(String request,Response response) {
+    public void setAssertItem(String request,Response response,String result) {
         assertItem.setRequest(request);
         assertItem.setResponse(response);
+        assertItem.setResult(result);
     }
 
 

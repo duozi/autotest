@@ -16,6 +16,7 @@ public class Assert {
     private String request;
     private Response response;
     private AssertItem diff;
+    private String result;
 
     public Assert(String interfaceName, String methodName, String caseName) {
         this.interfaceName = interfaceName;
@@ -40,6 +41,13 @@ public class Assert {
         this.response = response;
     }
 
+    public String getResult() {
+        return result;
+    }
+
+    public void setResult(String result) {
+        this.result = result;
+    }
 
     public Throwable getException() {
         return response.exception;

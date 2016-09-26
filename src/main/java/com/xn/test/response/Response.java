@@ -58,6 +58,7 @@ public class Response {
         try {
             validate(expected, assertItem);
         } catch (AssertNotEqualException e) {
+            assertItem.setResult("failed");
             throw new AssertNotEqualException("assert is  not Equal");
         }finally {
             Report.getReport().assertAdd(assertItem);

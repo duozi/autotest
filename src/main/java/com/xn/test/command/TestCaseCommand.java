@@ -48,7 +48,8 @@ public class TestCaseCommand  implements Command {
             caseCommand.execute();
             Response response = caseCommand.getResponse();
             String request = caseCommand.getRequest();
-            assertCommand.setAssertItem(request, response);
+            String result=caseCommand.getResult();
+            assertCommand.setAssertItem(request, response,result);
             assertCommand.execute();
             if (afterCommand != null) {
                 afterCommand.forEach(Command::execute);
