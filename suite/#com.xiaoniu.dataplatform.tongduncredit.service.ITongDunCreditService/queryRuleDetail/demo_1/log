@@ -1,2 +1,0 @@
-请求参数：{"accessToken":"","appId":"","is_challenger":false,"reqId":""}
-返回结果：Response{body='RuleDetailRsp[result=<null>,returnCode=2180001,returnMsg=appId字段为空]', exception=null}

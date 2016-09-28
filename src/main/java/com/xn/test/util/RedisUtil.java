@@ -9,6 +9,7 @@ import cn.xn.user.enums.SystemType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
+import redis.clients.jedis.JedisCluster;
 
 import javax.annotation.Resource;
 import java.util.Date;
@@ -23,7 +24,9 @@ public class RedisUtil {
     
     @Resource
     private ICommonRedisService commonService;
-    
+    @Resource
+    JedisCluster jedisCluster;
+
     /**
      * 登录token保存时间
      */
@@ -196,5 +199,13 @@ public class RedisUtil {
             sb.append(source);
         }
         return sb.toString();
+    }
+    private  void set(String key,String value){
+        jedisCluster.set(key, value);
+    }
+
+    public static void main(String[] args) {
+        RedisUtil redisUtil=new RedisUtil();
+        redisUtil.set("test","test");
     }
 }
