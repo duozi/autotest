@@ -8,6 +8,8 @@ import cn.xn.user.enums.SourceType;
 import cn.xn.user.enums.SystemType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Service;
 import redis.clients.jedis.JedisCluster;
 
@@ -16,27 +18,29 @@ import java.util.Date;
 
 import static com.xn.test.command.RedisCommand.PREFIX_LOGINPWD;
 
-@Service("redisUtil")
+
 public class RedisUtil {
     private static final Logger logger = LoggerFactory.getLogger(RedisUtil.class);
+    public  ApplicationContext context = new ClassPathXmlApplicationContext(
+            "spring.xml");
+    public  JedisCluster jedisCluster = (JedisCluster) context.getBean("jedisCluster");
     @Resource
     private IUserRedisService userService;
-    
+
     @Resource
     private ICommonRedisService commonService;
-    @Resource
-    JedisCluster jedisCluster;
+
 
     /**
      * 登录token保存时间
      */
     private static int loginExpire;
-    
+
     /**
      * 登录密码失败次数保存时间
      */
     private static int loginPwdErrorExpire;
-    
+
     /**
      * 支付密码失败次数保存时间
      */
@@ -45,20 +49,22 @@ public class RedisUtil {
     public static final int PWD_EXPIRE = 24 * 60 * 1000;// 密码默认失效1天
     public static final String BID = "UNIUSER";//缓存的业务id
     public static final String PREFIX_LOGIN = "login";
+
     static {
-        String obj = StringUtil.getPro("redis.login.expire","2");
+        String obj = StringUtil.getPro("redis.login.expire", "2");
         loginExpire = null == obj ? LOGIN_EXPIRE : Integer.parseInt(obj);
-        obj = StringUtil.getPro("redis.loginpwderror.expire","2");
+        obj = StringUtil.getPro("redis.loginpwderror.expire", "2");
         loginPwdErrorExpire = null == obj ? PWD_EXPIRE : Integer.parseInt(obj);
-        obj = StringUtil.getPro("redis.paypwderror.expire","2");
+        obj = StringUtil.getPro("redis.paypwderror.expire", "2");
         payPwdErrorExpire = null == obj ? PWD_EXPIRE : Integer.parseInt(obj);
     }
-    
+
     /**
      * token保存到redis中
+     *
      * @param memberNo 用户id（用户数据分离后加上了systemType）
-     * @param tokenId token
-     * @param source 来源（ios和安卓统一为app）
+     * @param tokenId  token
+     * @param source   来源（ios和安卓统一为app）
      * @throws Exception
      */
     public void setTokenId(String memberNo, String tokenId, String source) throws Exception {
@@ -70,12 +76,13 @@ public class RedisUtil {
         p.setSource(source);
         userService.set(p);
     }
-    
+
     /**
      * 删除token
+     *
      * @param memberNo 用户id（用户数据分离后加上了systemType）
-     * @param tokenId token
-     * @param source 来源（ios和安卓统一为app）
+     * @param tokenId  token
+     * @param source   来源（ios和安卓统一为app）
      * @throws Exception
      */
     public void delTokenId(String memberNo, String tokenId, String source) throws Exception {
@@ -86,16 +93,18 @@ public class RedisUtil {
         p.setSource(source);
         userService.del(p);
     }
-    public void logout(String systemType, String sourceType, String tokenId,String memberNo) throws Exception {
+
+    public void logout(String systemType, String sourceType, String tokenId, String memberNo) throws Exception {
         String tmpSource = getSourceType(systemType, sourceType);
         String tmpSystemType = convertSystemType(systemType);
         delTokenId(tmpSystemType + "-" + memberNo, tokenId, tmpSource);
     }
-    
+
     /**
      * 获取token
+     *
      * @param memberNo 用户id（用户数据分离后加上了systemType）
-     * @param tokenId token
+     * @param tokenId  token
      * @return
      * @throws Exception
      */
@@ -107,12 +116,13 @@ public class RedisUtil {
         p.setDate(new Date());
         return userService.get(p, loginExpire);
     }
-    
+
     /**
      * 延长token过期时间
+     *
      * @param memberNo 用户id（用户数据分离后加上了systemType）
-     * @param tokenId token
-     * @param source 来源（ios和安卓统一为app）
+     * @param tokenId  token
+     * @param source   来源（ios和安卓统一为app）
      * @throws Exception
      */
     public void delayToken(String memberNo, String tokenId, String source) throws Exception {
@@ -124,9 +134,10 @@ public class RedisUtil {
         p.setSource(source);
         userService.delayToken(p);
     }
-    
+
     /**
      * 获取登录失败次数
+     *
      * @param key 登录手机号（用户数据分离后加上了systemType）
      * @return
      * @throws Exception
@@ -139,10 +150,11 @@ public class RedisUtil {
         }
         return count;
     }
-    
+
     /**
      * 保存登录失败次数
-     * @param key 登录手机号（用户数据分离后加上了systemType）
+     *
+     * @param key   登录手机号（用户数据分离后加上了systemType）
      * @param count 次数
      * @param flag
      * @throws Exception
@@ -155,16 +167,20 @@ public class RedisUtil {
             commonService.set(BID, key, String.valueOf(count), payPwdErrorExpire);
         }
     }
-    
+
     /**
      * 删除登录失败次数
+     *
      * @param key 登录手机号（用户数据分离后加上了systemType）
      * @throws Exception
      */
     public void deleteErrorTime(String key) throws Exception {
         commonService.del(BID, key);
     }
-    /** 登录令牌存入redis中并返回给前置系统 */
+
+    /**
+     * 登录令牌存入redis中并返回给前置系统
+     */
     public void saveToken2Redis(String systemType, String sourceType, String loginName, String tokenId, String memberNo) {
         try {
             String tmpSystemType = convertSystemType(systemType);
@@ -178,14 +194,20 @@ public class RedisUtil {
             logger.error(String.format("~~~[%s]-[%s]用户token存入redis中报错：[%s]~~~~", memberNo, tokenId, e));
         }
     }
-    /** 处理特殊的系统类型（业务编码) */
+
+    /**
+     * 处理特殊的系统类型（业务编码)
+     */
     private String convertSystemType(String systemType) {
         if (SystemType.CHANNEL2.getText().equals(systemType)) {
             return SystemType.CHANNEL.getText();
         }
         return systemType;
     }
-    /** 获取用户的登录来源 */
+
+    /**
+     * 获取用户的登录来源
+     */
     private String getSourceType(String systemType, String source) {
         StringBuffer sb = new StringBuffer();
 
@@ -200,12 +222,28 @@ public class RedisUtil {
         }
         return sb.toString();
     }
-    private  void set(String key,String value){
+
+    public  void set(String key, String value) {
         jedisCluster.set(key, value);
+        logger.warn("set to redis key:{} value:{},limit time is forever",key,value);
+    }
+    public void del(String key){
+        jedisCluster.del(key);
+        logger.warn("del from redis key:{}",key);
+    }
+    public  String get(String key){
+        String value=jedisCluster.get(key);
+        logger.warn("get value from redis,key:{},value:{}",key,value);
+        return value;
+    }
+    public void expire(String key,int expire){
+        jedisCluster.expire(key,expire);
+        logger.warn("set expire ,key:{},exprie:{}second",key,expire);
     }
 
     public static void main(String[] args) {
         RedisUtil redisUtil=new RedisUtil();
-        redisUtil.set("test","test");
+//       redisUtil.set("test", "test2");
+        redisUtil.expire("test",200);
     }
 }
