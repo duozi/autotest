@@ -1,0 +1,2 @@
+请求参数：{"appVersion":"2.4.0","loginNewPwd":"222222","loginPwd":"111111","sign":"742345f42633845e7e822fa8a73f8fa8","sourceType":"android","systemType":"QGZ","tokenId":"8e299dbf-fd2a-4282-966a-d1f946683111"}
+返回结果：Response{body='CommonRlt[returnCode=110001,returnMsg=参数错误,data=<null>]', exception=null}

@@ -19,11 +19,16 @@
         <log4j.version>1.2.12</log4j.version>
     </properties>
     <dependencies>
-        <dependency>
-            <groupId>com.xiaoniu.dataplatform.tongduncredit</groupId>
-            <artifactId>tongduncredit-skeleton</artifactId>
-            <version>1.0.0</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>cn.xn.user</groupId>-->
+            <!--<artifactId>xn-user-backskeleton</artifactId>-->
+            <!--<version>1.0.3-SNAPSHOT</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>com.xiaoniu.dataplatform.tongduncredit</groupId>-->
+            <!--<artifactId>tongduncredit-skeleton</artifactId>-->
+            <!--<version>1.0.0</version>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>com.xiaoniu.user</groupId>
             <artifactId>user-interface</artifactId>

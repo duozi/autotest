@@ -55,7 +55,7 @@ public class RunTestSuite {
                 Report.getReport().setStopTime(new Date());
 
                 DBUtil.closeDB();
-                Report.getReport().generateReport();
+//                Report.getReport().generateReport();
                 generateResultReport();
                 break;
             }

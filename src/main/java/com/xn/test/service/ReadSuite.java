@@ -162,7 +162,7 @@ public class ReadSuite {
     public Command dealCaseFile(File file, String casePath) throws CaseErrorEqualException {
         List<KeyValueStore> list = new ArrayList<>();
         List<String> lines = FileUtil.fileReadeForList(file);
-//        lines = StringUtil.listAddSign(lines);
+        lines = StringUtil.listAddSign(lines);
         for (String line : lines) {
             if (!line.startsWith("#") & line.contains("=") && line.split("=").length == 2) {
                 String type = line.split("=")[0];

@@ -37,6 +37,9 @@ a.popup_link:hover {
     color: red;
 }
 
+.popup_link{
+    margin-left: 50%;
+}
 .popup_window {
     display: none;
     position: relative;
@@ -48,7 +51,7 @@ a.popup_link:hover {
     font-family: "Lucida Console", "Courier New", Courier, monospace;
     text-align: left;
     font-size: 10pt;
-    width: 800px;
+    width: 98%;
 }
 
 /* -- report ------------------------------------------------------------------------ */
@@ -57,7 +60,7 @@ a.popup_link:hover {
     margin-bottom: 1ex;
 }
 #result_table {
-    width: 80%;
+    width: 90%;
     border-collapse: collapse;
     border: 1px solid #777;
 }
@@ -105,7 +108,14 @@ function showCase(level) {
                 tr.className = '';
             }
         }
-        if (id.substr(0,2) == 'pt') {
+        if (id.substr(0,2) == 'et') {
+            if (level < 1) {
+                tr.className = 'hiddenRow';
+            }
+            else {
+                tr.className = '';
+            }
+        }        if (id.substr(0,2) == 'pt') {
             if (level > 1) {
                 tr.className = '';
             }
@@ -121,14 +131,17 @@ function showClassDetail(cid, count) {
     var id_list = Array(count);
     var toHide = 1;
     for (var i = 0; i < count; i++) {
-        tid0 = 't' + cid.substr(1) + '.' + (i+1);
+        tid0 = 't' + cid.substr(1) + '.' + (i + 1);
         tid = 'f' + tid0;
         tr = document.getElementById(tid);
         if (!tr) {
-            tid = 'p' + tid0;
+            tid = 'e' + tid0;
             tr = document.getElementById(tid);
-        }
-        id_list[i] = tid;
+            if (!tr) {
+                tid = 'p' + tid0;
+                tr = document.getElementById(tid);
+            }
+        }        id_list[i] = tid;
         if (tr.className) {
             toHide = 0;
         }
@@ -186,12 +199,11 @@ function showOutput(id, name) {
 <div class='heading'>
 <h1>dubbo接口测试报告</h1>
 </div></br><div class='heading'>
-<p class='attribute'><strong>startTime:</strong> 2016-09-26 14:38:54:107</p><p class='attribute'><strong>duration:</strong> 4232</p><p class='attribute'><strong>total:</strong> 1</p><p class='attribute'><strong>pass:</strong> 1</p><p class='attribute'><strong>fail:</strong> 0</p><p class='attribute'><strong>error:</strong> 0</p>
-<p class='description'>用例执行报告</p>
+<p class='attribute'><strong>startTime:</strong> 2016-09-27 19:41:40:860</p><p class='attribute'><strong>duration:</strong> 36937</p><p class='attribute'><strong>total:</strong> 6</p><p class='attribute'><strong>pass:</strong> 3</p><p class='attribute'><strong>fail:</strong> 2</p><p class='attribute'><strong>error:</strong> 1</p>
 </div>
 <p id='show_detail_line'>Show
 <a href='javascript:showCase(0)'>Summary</a>
-<a href='javascript:showCase(1)'>Failed</a>
+<a href='javascript:showCase(1)'>Fail&amp;Error</a>
 <a href='javascript:showCase(2)'>All</a>
 </p>
 <table id='result_table'>
@@ -204,28 +216,186 @@ function showOutput(id, name) {
 <col align='right' />
 </colgroup>
 <tr id='header_row'>
-    <td>Test Group/Test case</td>
-    <td>Count</td>
-    <td>Pass</td>
-    <td>Fail</td>
-    <td>Error</td>
-    <td>View</td>
+    <td  width="40%">Test case</td>
+    <td width="12%">Count</td>
+    <td width="12%">Pass</td>
+    <td width="12%">Fail</td>
+    <td width="12%">Error</td>
+    <td width="12%">View</td>
 </tr>
-<tr class='passClass'>
-    <td>com.xiaoniu.dataplatform.tongduncredit.service.ITongDunCreditService</td>
-    <td>2</td>
-    <td>2</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1',2)">Detail</a></td>
+<tr class='errorClass'>
+    <td >cn.xn.user.service.IPwdService</td>
+    <td>3</td>
+    <td>1</td>
+    <td>1</td>
+    <td>1</td>
+    <td><a href="javascript:showClassDetail('c1',3)">Detail</a></td>
 </tr>
+<tr id='et1.1' class='none'>
+    <td class='errorCase'><div class='testcase'>doModifyLoginPwd/demo_2</div></td>
+    <td colspan='5' >
 
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_et1.1')" >
+        error</a>
+
+    <div id='div_et1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_et1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre style="white-space:pre-wrap;word-wrap:break-word">
+【请求参数】：
+null
+【返回结果】：
+Response{body='null', exception=java.lang.RuntimeException: Field: test}
+<pre style='white-space:pre-wrap;word-wrap:break-word;color: red'>【Exception】
+test</pre>
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr><tr id='ft1.2' class='none'>
+    <td class='failCase'><div class='testcase'>doModifyLoginPwd/demo_1</div></td>
+    <td colspan='5' >
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.2')" >
+        fail</a>
+
+    <div id='div_ft1.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre style="white-space:pre-wrap;word-wrap:break-word">
+【请求参数】：
+{"appVersion":"2.4.0","loginNewPwd":"222222","loginPwd":"111111","memberNo":"8e299dbf-fd2a-4282-966a-d1f946683111","sign":"a226639a6ef93050780b41221a295336","sourceType":"android","systemType":"QGZ","tokenId":"8e299dbf-fd2a-4282-966a-d1f946683111"}
+【返回结果】：
+Response{body='CommonRlt[returnCode=110011,returnMsg=未获取到数据,data=&lt;null&gt;]', exception=null}
+<pre style='white-space:pre-wrap;word-wrap:break-word;color: red'>【AssertError】
+assertKey:returnCode
+expectValue:0
+exactValeu:110011
+</pre>
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr><tr id='pt1.3' class='none'>
+    <td class='none'><div class='testcase'>doResetLoginPwd/demo_1</div></td>
+    <td colspan='5' >
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3')" >
+        pass</a>
+
+    <div id='div_pt1.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre style="white-space:pre-wrap;word-wrap:break-word">
+【请求参数】：
+{"appVersion":"2.4.0","loginName":"33333333337","loginNewPwd":"222222","sign":"eae0cac0fdc4ca8cf401cc6461b3b69a","sourceType":"android","systemType":"QGZ"}
+【返回结果】：
+Response{body='CommonRlt[returnCode=0,returnMsg=成功,data=&lt;null&gt;]', exception=null}
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr><tr class='failClass'>
+    <td >cn.xn.user.service.IFriendService</td>
+    <td>3</td>
+    <td>2</td>
+    <td>1</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c2',3)">Detail</a></td>
+</tr>
+<tr id='ft2.1' class='none'>
+    <td class='failCase'><div class='testcase'>updateSecret/N</div></td>
+    <td colspan='5' >
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.1')" >
+        fail</a>
+
+    <div id='div_ft2.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre style="white-space:pre-wrap;word-wrap:break-word">
+【请求参数】：
+{"appVersion":"2.4.0","memberNo":"12299dbf-fd2a-4282-966a-d1f946683134","secretFlag":"N","sign":"ac73e6c01d63da5351fbd98783e65ca3","sourceType":"android","systemType":"QGZ"}
+【返回结果】：
+Response{body='CommonRlt[returnCode=0,returnMsg=成功,data=true]', exception=null}
+<pre style='white-space:pre-wrap;word-wrap:break-word;color: red'>【AssertError】
+assertKey:returnCode
+expectValue:5
+exactValeu:0
+</pre>
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr><tr id='pt2.2' class='none'>
+    <td class='none'><div class='testcase'>updateSecret/demo_1</div></td>
+    <td colspan='5' >
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.2')" >
+        pass</a>
+
+    <div id='div_pt2.2' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.2').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre style="white-space:pre-wrap;word-wrap:break-word">
+【请求参数】：
+{"appVersion":"2.4.0","memberNo":"8e299dbf-fd2a-4282-966a-d1f946683134","secretFlag":"Y","sign":"c1240702acbc71e64b708ac24512968f","sourceType":"android","systemType":"QGZ"}
+【返回结果】：
+Response{body='CommonRlt[returnCode=0,returnMsg=成功,data=true]', exception=null}
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr><tr id='pt2.3' class='none'>
+    <td class='none'><div class='testcase'>updateFriend/demo_1</div></td>
+    <td colspan='5' >
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.3')" >
+        pass</a>
+
+    <div id='div_pt2.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre style="white-space:pre-wrap;word-wrap:break-word">
+【请求参数】：
+{"appVersion":"2.4.0","friendJson":"[{\"friendMemberNo\":\"e0a77f8e-92c3-447b-9196-0167f533e1bb\",\"friendMobile\":\"17777777777\",\"friendName\":\"测试88\",\"friendUserName\":\"\",\"isRegister\":\"Y\"}]","memberNo":"8e299dbf-fd2a-4282-966a-d1f946683133","mobile":"1232545","sign":"dbec983f72f06a3413f945b16f4226cd","sourceType":"android","systemType":"QGZ"}
+【返回结果】：
+Response{body='CommonRlt[returnCode=0,returnMsg=成功,data=true]', exception=null}
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
 <tr id='total_row'>
-    <td>Total</td>
+    <td  >Total</td>
+    <td>6</td>
+    <td>3</td>
+    <td>2</td>
     <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
     <td>&nbsp;</td>
 </tr>
 </table>

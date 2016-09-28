@@ -41,6 +41,14 @@ public class HTMLReport {
             "                tr.className = '';\n" +
             "            }\n" +
             "        }\n" +
+            "        if (id.substr(0,2) == 'et') {\n" +
+            "            if (level < 1) {\n" +
+            "                tr.className = 'hiddenRow';\n" +
+            "            }\n" +
+            "            else {\n" +
+            "                tr.className = '';\n" +
+            "            }\n" +
+            "        }" +
             "        if (id.substr(0,2) == 'pt') {\n" +
             "            if (level > 1) {\n" +
             "                tr.className = '';\n" +
@@ -57,13 +65,17 @@ public class HTMLReport {
             "    var id_list = Array(count);\n" +
             "    var toHide = 1;\n" +
             "    for (var i = 0; i < count; i++) {\n" +
-            "        tid0 = 't' + cid.substr(1) + '.' + (i+1);\n" +
+            "        tid0 = 't' + cid.substr(1) + '.' + (i + 1);\n" +
             "        tid = 'f' + tid0;\n" +
             "        tr = document.getElementById(tid);\n" +
             "        if (!tr) {\n" +
-            "            tid = 'p' + tid0;\n" +
+            "            tid = 'e' + tid0;\n" +
             "            tr = document.getElementById(tid);\n" +
-            "        }\n" +
+            "            if (!tr) {\n" +
+            "                tid = 'p' + tid0;\n" +
+            "                tr = document.getElementById(tid);\n" +
+            "            }\n" +
+            "        }" +
             "        id_list[i] = tid;\n" +
             "        if (tr.className) {\n" +
             "            toHide = 0;\n" +
@@ -158,6 +170,9 @@ public class HTMLReport {
             "    color: red;\n" +
             "}\n" +
             "\n" +
+            ".popup_link{\n" +
+            "    margin-left: 50%;\n" +
+            "}\n" +
             ".popup_window {\n" +
             "    display: none;\n" +
             "    position: relative;\n" +
@@ -169,7 +184,7 @@ public class HTMLReport {
             "    font-family: \"Lucida Console\", \"Courier New\", Courier, monospace;\n" +
             "    text-align: left;\n" +
             "    font-size: 10pt;\n" +
-            "    width: 800px;\n" +
+            "    width: 98%;\n" +
             "}\n" +
             "\n" +
             "/* -- report ------------------------------------------------------------------------ */\n" +
@@ -178,7 +193,7 @@ public class HTMLReport {
             "    margin-bottom: 1ex;\n" +
             "}\n" +
             "#result_table {\n" +
-            "    width: 80%;\n" +
+            "    width: 90%;\n" +
             "    border-collapse: collapse;\n" +
             "    border: 1px solid #777;\n" +
             "}\n" +
@@ -212,13 +227,12 @@ public class HTMLReport {
             "</div></br>";
     public static String HEADING_TMPL = "<div class='heading'>\n" +
             "%(parameters)s\n" +
-            "<p class='description'>%(description)s</p>\n" +
             "</div>";
 
     public static String HEADING_ATTRIBUTE_TMPL = "<p class='attribute'><strong>%(name)s:</strong> %(value)s</p>";
     public static String REPORT_TMPL = "<p id='show_detail_line'>Show\n" +
             "<a href='javascript:showCase(0)'>Summary</a>\n" +
-            "<a href='javascript:showCase(1)'>Failed</a>\n" +
+            "<a href='javascript:showCase(1)'>Fail&amp;Error</a>\n" +
             "<a href='javascript:showCase(2)'>All</a>\n" +
             "</p>\n" +
             "<table id='result_table'>\n" +
@@ -231,16 +245,16 @@ public class HTMLReport {
             "<col align='right' />\n" +
             "</colgroup>\n" +
             "<tr id='header_row'>\n" +
-            "    <td>Test Group/Test case</td>\n" +
-            "    <td>Count</td>\n" +
-            "    <td>Pass</td>\n" +
-            "    <td>Fail</td>\n" +
-            "    <td>Error</td>\n" +
-            "    <td>View</td>\n" +
+            "    <td  width=\"40%\">Test case</td>\n" +
+            "    <td width=\"12%\">Count</td>\n" +
+            "    <td width=\"12%\">Pass</td>\n" +
+            "    <td width=\"12%\">Fail</td>\n" +
+            "    <td width=\"12%\">Error</td>\n" +
+            "    <td width=\"12%\">View</td>\n" +
             "</tr>\n" +
             "%(test_list)s\n" +
             "<tr id='total_row'>\n" +
-            "    <td>Total</td>\n" +
+            "    <td  >Total</td>\n" +
             "    <td>%(count)s</td>\n" +
             "    <td>%(pass)s</td>\n" +
             "    <td>%(fail)s</td>\n" +
@@ -250,16 +264,41 @@ public class HTMLReport {
             "</table>";
 
     public static String REPORT_CLASS_TMPL = "<tr class='%(style)s'>\n" +
-            "    <td>%(desc)s</td>\n" +
+            "    <td >%(desc)s</td>\n" +
             "    <td>%(count)s</td>\n" +
             "    <td>%(pass)s</td>\n" +
             "    <td>%(fail)s</td>\n" +
             "    <td>%(error)s</td>\n" +
             "    <td><a href=\"javascript:showClassDetail('%(cid)s',%(count)s)\">Detail</a></td>\n" +
             "</tr>\n";
+//    public static String METHOD_START = "<tr id='%(tid)s' class='%(Class)s'>\n" +
+//            "    <td class='%(methodnamestyle)s' rowspan=\"%(methodcount)s\">" +
+//            "       <div class='testcase'>%(methodname)s</div>" +
+//            "    </td>" +
+//            "    <td class='%(style)s' >" +
+//            "       <div class='testcase'>%(desc)s</div>" +
+//            "    </td>\n" +
+//            "    <td colspan='5' >\n" +
+//            "    <!--css div popup start-->\n" +
+//            "    <a class=\"popup_link\" onfocus='this.blur();' href=\"javascript:showTestDetail('div_%(tid)s')\" >\n" +
+//            "        %(status)s</a>\n" +
+//            "\n" +
+//            "    <div id='div_%(tid)s' class=\"popup_window\">\n" +
+//            "        <div style='text-align: right; color:red;cursor:pointer'>\n" +
+//            "        <a onfocus='this.blur();' onclick=\"document.getElementById('div_%(tid)s').style.display = 'none' \" >\n" +
+//            "           [x]</a>\n" +
+//            "        </div>\n" +
+//            "        <pre style=\"white-space:pre-wrap;word-wrap:break-word\">\n" +
+//            "%(script)s\n" +
+//            "        </pre>\n" +
+//            "    </div>\n" +
+//            "    <!--css div popup end-->\n" +
+//            "\n" +
+//            "    </td>\n" +
+//            "</tr>";
     public static String REPORT_TEST_WITH_OUTPUT_TMPL = "<tr id='%(tid)s' class='%(Class)s'>\n" +
             "    <td class='%(style)s'><div class='testcase'>%(desc)s</div></td>\n" +
-            "    <td colspan='5' align='center'>\n" +
+            "    <td colspan='5' >\n" +
             "\n" +
             "    <!--css div popup start-->\n" +
             "    <a class=\"popup_link\" onfocus='this.blur();' href=\"javascript:showTestDetail('div_%(tid)s')\" >\n" +
@@ -271,7 +310,7 @@ public class HTMLReport {
             "           [x]</a>\n" +
             "        </div>\n" +
             "        <pre style=\"white-space:pre-wrap;word-wrap:break-word\">\n" +
-            "        %(script)s\n" +
+            "%(script)s\n" +
             "        </pre>\n" +
             "    </div>\n" +
             "    <!--css div popup end-->\n" +
@@ -280,9 +319,10 @@ public class HTMLReport {
             "</tr>";
     public static String REPORT_TEST_NO_OUTPUT_TMPL = "<tr id='%(tid)s' class='%(Class)s'>\n" +
             "    <td class='%(style)s'><div class='testcase'>%(desc)s</div></td>\n" +
-            "    <td colspan='5' align='center'>%(status)s</td>\n" +
+            "    <td colspan='5' >%(status)s</td>\n" +
             "</tr>";
-    public static String REPORT_TEST_OUTPUT_TMPL = "REPORT_TEST_OUTPUT_TMPL";
+    public static String ERROR_STRING = "<pre style='white-space:pre-wrap;word-wrap:break-word;color: red'>%(content)s</pre>";
+    public static String REPORT_TEST_OUTPUT_TMPL = "%(output)s";
     public static String ENDING_TMPL = "<div id='ending'>&nbsp;</div>";
     public static String Title = "dubbo接口测试报告";
 
@@ -358,16 +398,16 @@ public class HTMLReport {
 
 
             String line = REPORT_CLASS_TMPL.replace("%(desc)s", interfaceName).replace("%(count)s", String.valueOf(methodT)).replace("%(pass)s", String.valueOf(methodP)).replace("%(fail)s", String.valueOf(methodF)).replace("%(error)s", String.valueOf(methodE)).replace("%(cid)s", "c" + i);
-            i++;
-            if (methodF > 0) {
-                line = line.replace("%(style)s", "failClass");
-            } else if (methodE > 0) {
+            if (methodE > 0) {
                 line = line.replace("%(style)s", "errorClass");
+            } else if (methodF > 0) {
+                line = line.replace("%(style)s", "failClass");
             } else {
                 line = line.replace("%(style)s", "passClass");
             }
             results.add(line);
             generateReportTest(methodMap, results, i);
+            i++;
         }
 
 
@@ -377,28 +417,78 @@ public class HTMLReport {
 
     private static void generateReportTest(LinkedHashMap<String, ArrayList<Assert>> methodMap, ArrayList<String> results, int i) {
         String tmpl = REPORT_TEST_WITH_OUTPUT_TMPL;
-
-        for(String methodName:methodMap.keySet()){
-            ArrayList<Assert> caseList=methodMap.get(methodName);
-            int j=1;
+//        String tmpl_start = METHOD_START;
+        String testString = "";
+        int j = 0;
+        for (String methodName : methodMap.keySet()) {
+//            int k = 0;
+            ArrayList<Assert> caseList = methodMap.get(methodName);
+//            int f = 0;
+//            int e = 0;
+//            for (Assert ass : caseList) {
+//                if (ass.getResult() != null && ass.getResult().equals("error")) {
+//                    e++;
+//                    break;
+//
+//                } else if (ass.getResult() != null && ass.getResult().equals("failed")) {
+//                    f++;
+//                    break;
+//                }
+//            }
             String tid = "";
-            String desc="";
-            String scripte="";
-            for(Assert ass:caseList){
-                desc=methodName+"/"+ass.getCaseName();
-            if(ass.getResult() != null && ass.getResult().equals("error")){
-                tid="et"+i+"."+j;
-            }else if(ass.getResult() != null && ass.getResult().equals("failed")){
-                tid="ft"+i+"."+j;
-            }else{
-                tid="pt"+i+"."+j;
-            }
-            j++;
-                String request=ass.getRequest();
+            String desc = "";
+            String script = "";
+            for (Assert ass : caseList) {
+//                k++;
+                j++;
+//                if (k == 1) {
+//                    testString = tmpl_start;
+//                    if (e > 0) {
+//                        testString = testString.replace("%(methodcount)s", String.valueOf(caseList.size())).replace("%(methodname)s", methodName).replace("%(methodnamestyle)s", "errorCase");
+//                    } else if (f > 0) {
+//                        testString = testString.replace("%(methodcount)s", String.valueOf(caseList.size())).replace("%(methodname)s", methodName).replace("%(methodnamestyle)s", "failCase");
+//                    } else {
+//                        testString = testString.replace("%(methodcount)s", String.valueOf(caseList.size())).replace("%(methodname)s", methodName).replace("%(methodnamestyle)s", "none");
+//                    }
+//                } else {
+                    testString = tmpl;
+//                }
+                desc = ass.getMethodName()+"/"+ass.getCaseName();
+                if (ass.getResult() != null && ass.getResult().equals("error")) {
+                    tid = "et" + i + "." + j;
+                    testString = testString.replace("%(style)s", "errorCase").replace("%(status)s", "error");
 
-                scripte=REPORT_TEST_OUTPUT_TMPL.replace("%(id)s",tid).replace("%(output)s","");
+                } else if (ass.getResult() != null && ass.getResult().equals("failed")) {
+                    tid = "ft" + i + "." + j;
+                    testString = testString.replace("%(style)s", "failCase").replace("%(status)s", "fail");
+                } else {
+                    tid = "pt" + i + "." + j;
+                    testString = testString.replace("%(style)s", "none").replace("%(status)s", "pass");
+                }
+
+                String request = "【请求参数】：\n" + dealString(ass.getRequest());
+                String response = "【返回结果】：\n" + dealString(ass.getResponse().toString());
+                String assertError = "";
+                String exception = "";
+                if (tid.startsWith("f")) {
+                    assertError = "【AssertError】\nassertKey:" + ass.getDiff().getAssertKey() + "\nexpectValue:" + ass.getDiff().getExpect() + "\nexactValeu:" + ass.getDiff().getExact() + "\n";
+                    assertError = ERROR_STRING.replace("%(content)s", assertError);
+                    response = request + "\n" + response + "\n" + assertError;
+                } else if (tid.startsWith("e")) {
+                    exception = "【Exception】\n" + ass.getResponse().getException().getCause().getMessage();
+                    exception = ERROR_STRING.replace("%(content)s", exception);
+                    response = request + "\n" + response + "\n" + exception;
+                } else {
+                    response = request + "\n" + response;
+                }
+
+
+                script = REPORT_TEST_OUTPUT_TMPL.replace("%(output)s", response);
+                testString = testString.replace("%(tid)s", tid).replace("%(Class)s", "none").replace("%(desc)s", desc).replace("%(script)s", script);
+
+                results.add(testString);
             }
-         }
+        }
 
     }
 
@@ -409,13 +499,32 @@ public class HTMLReport {
             String line = HEADING_ATTRIBUTE_TMPL.replace("%(name)s", key).replace("%(value)s", att.get(key));
             lines.add(line);
         }
-        String heading = HEADING_TMPL.replace("%(title)s", Title).replace("%(parameters)s", StringUtils.join(lines, "")).replace("%(description)s", "用例执行报告");
+        String heading = HEADING_TMPL.replace("%(title)s", Title).replace("%(parameters)s", StringUtils.join(lines, ""));
         return heading;
     }
 
     private static String generateStyleSheet() {
         return STYLESHEET_TMPL;
 
+    }
+
+    private static String dealString(String input) {
+        if (input == null) {
+            return null;
+        }
+
+        if (input.contains("&")) {
+            input = input.replace("&", "&amp;");
+        } else {
+            if (input.contains(">")) {
+                input = input.replace(">", "&gt;");
+
+            }
+            if (input.contains("<")) {
+                input = input.replace("<", "&lt;");
+            }
+        }
+        return input;
     }
 
     private static LinkedHashMap<String, String> getReportAttributes() {
