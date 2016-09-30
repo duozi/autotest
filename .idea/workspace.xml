@@ -2,97 +2,213 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f03f9033-a17d-480a-ba82-e1f91e2004da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xn/test/common/Property.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/xn/test/common/PropertyPlaceholderConfigurer.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/cobertura/cobertura.ser" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/cobertura.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/dubbo.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/jdbc.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/log4j.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/mybatis.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/spring.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/template.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/test.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/xn/com/test/common/JsonReflect$MyComparator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/xn/com/test/common/JsonReflect.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/xn/com/test/service/Generate.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/xn/com/test/service/GetAll.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/generated-classes/cobertura/xn/com/test/util/StringUtil.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cobertura/coverage.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cobertura/css/help.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cobertura/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cobertura/css/sortabletable.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cobertura/css/source-viewer.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cobertura/css/tooltip.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cobertura/frame-packages.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cobertura/frame-sourcefiles-xn.com.test.common.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cobertura/frame-sourcefiles-xn.com.test.service.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cobertura/frame-sourcefiles-xn.com.test.util.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cobertura/frame-sourcefiles.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cobertura/frame-summary-xn.com.test.common.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cobertura/frame-summary-xn.com.test.service.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cobertura/frame-summary-xn.com.test.util.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cobertura/frame-summary.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cobertura/help.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cobertura/images/blank.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cobertura/images/downsimple.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cobertura/images/upsimple.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cobertura/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cobertura/js/customsorttypes.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cobertura/js/popup.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cobertura/js/sortabletable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cobertura/js/stringbuilder.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cobertura/xn.com.test.common.JsonReflect.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cobertura/xn.com.test.service.Generate.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cobertura/xn.com.test.service.GetAll.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/cobertura/xn.com.test.util.StringUtil.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/site/surefire-report.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.xn.MyTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.xn.doBindTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.xn.doCheckMobileTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.xn.doFiredBindTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.xn.doLoginTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.xn.doRegisterTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.xn.getAllFriendTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.xn.iRegisterService.doBindTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.xn.iRegisterService.doCheckMobileTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.xn.iRegisterService.doFiredBindTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.xn.iRegisterService.doRegisterTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.xn.register.regiestTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.xn.zxTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-iLoginService.delayTokenTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-iLoginService.doBindLoginTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-iLoginService.doIsLoginTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-iLoginService.doLoginOutTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-iLoginService.doLoginTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-iLoginService.docheckLoginPwdByMemberNoTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-iLoginService.docheckLoginPwdTest.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/com.xn.MyTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/com.xn.doBindTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/com.xn.doCheckMobileTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/com.xn.doFiredBindTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/com.xn.doLoginTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/com.xn.doRegisterTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/com.xn.getAllFriendTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/com.xn.iRegisterService.doBindTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/com.xn.iRegisterService.doCheckMobileTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/com.xn.iRegisterService.doFiredBindTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/com.xn.iRegisterService.doRegisterTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/com.xn.register.regiestTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/com.xn.zxTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/iLoginService.delayTokenTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/iLoginService.doBindLoginTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/iLoginService.doIsLoginTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/iLoginService.doLoginOutTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/iLoginService.doLoginTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/iLoginService.docheckLoginPwdByMemberNoTest.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/surefire-reports/iLoginService.docheckLoginPwdTest.txt" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/beforeClass" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/demo_2/assert" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/demo_2/before" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/demo_2/demo_1" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/demo_2/log" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/delayToken/afterClass" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getAllFriend/afterClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/delayToken/beforeClass" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getAllFriend/beforeClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/delayToken/config.properties" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#delayToken/config.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/delayToken/demo_1/after" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#delayToken/demo_1/after" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/delayToken/demo_1/assert" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#searchFriend/demo_1/assert" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/delayToken/demo_1/before" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#delayToken/demo_1/before" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/delayToken/demo_1/demo_1" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#delayToken/demo_1/demo_1" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/delayToken/demo_1/log" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#delayToken/demo_1/log" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doBindLogin/afterClass" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getFriendList/afterClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doBindLogin/beforeClass" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getFriendList/beforeClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doBindLogin/config.properties" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#doBindLogin/config.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doBindLogin/demo_1/after" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#doBindLogin/demo_1/after" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doBindLogin/demo_1/assert" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#searchFriend/no_keyword/assert" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doBindLogin/demo_1/before" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#doBindLogin/demo_1/before" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doBindLogin/demo_1/demo_1" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#doBindLogin/demo_1/demo_1" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doBindLogin/demo_1/log" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#doBindLogin/demo_1/log" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doIsLogin/afterClass" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getSecret/afterClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doIsLogin/beforeClass" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getSecret/beforeClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doIsLogin/config.properties" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/config.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doIsLogin/demo_1/after" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/demo_2/after" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doIsLogin/demo_1/assert" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#docheckLoginPwdByMemberNo/demo_1/assert" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doIsLogin/demo_1/before" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/#demo_1/before" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doIsLogin/demo_1/demo_1" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/#demo_1/demo_1" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doIsLogin/demo_1/log" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/#demo_1/log" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doLogin/afterClass" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#searchFriend/afterClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doLogin/beforeClass" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#searchFriend/beforeClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doLogin/config.properties" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#doLogin/config.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doLogin/demo_1/after" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#doLogin/demo_1/after" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doLogin/demo_1/assert" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IPwdService/doModifyLoginPwd/demo_1/assert" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doLogin/demo_1/before" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#doLogin/demo_1/before" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doLogin/demo_1/demo_1" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#doLogin/demo_1/demo_1" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doLogin/demo_1/log" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#doLogin/demo_1/log" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doLoginOut/afterClass" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/updateFriend/afterClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doLoginOut/beforeClass" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/updateFriend/beforeClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doLoginOut/config.properties" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#doLoginOut/config.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doLoginOut/demo_1/after" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#doLoginOut/demo_1/after" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doLoginOut/demo_1/assert" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IPwdService/doModifyLoginPwd/demo_2/assert" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doLoginOut/demo_1/before" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#doLoginOut/demo_1/before" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doLoginOut/demo_1/demo_1" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#doLoginOut/demo_1/demo_1" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/doLoginOut/demo_1/log" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#doLoginOut/demo_1/log" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/docheckLoginPwd/afterClass" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/updateSecret/afterClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/docheckLoginPwd/beforeClass" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/updateSecret/beforeClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/docheckLoginPwd/config.properties" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#docheckLoginPwd/config.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/docheckLoginPwd/demo_1/after" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#docheckLoginPwd/demo_1/after" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/docheckLoginPwd/demo_1/assert" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/updateFriend/demo_1/assert" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/docheckLoginPwd/demo_1/before" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#docheckLoginPwd/demo_1/before" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/docheckLoginPwd/demo_1/demo_1" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#docheckLoginPwd/demo_1/demo_1" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/docheckLoginPwd/demo_1/log" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#docheckLoginPwd/demo_1/log" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/docheckLoginPwdByMemberNo/afterClass" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IPwdService/doModifyLoginPwd/afterClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/docheckLoginPwdByMemberNo/beforeClass" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IPwdService/doModifyLoginPwd/beforeClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/docheckLoginPwdByMemberNo/config.properties" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#docheckLoginPwdByMemberNo/config.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/docheckLoginPwdByMemberNo/demo_1/after" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#docheckLoginPwdByMemberNo/demo_1/after" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/docheckLoginPwdByMemberNo/demo_1/assert" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/#demo_1/assert" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/docheckLoginPwdByMemberNo/demo_1/before" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#docheckLoginPwdByMemberNo/demo_1/before" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/docheckLoginPwdByMemberNo/demo_1/demo_1" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#docheckLoginPwdByMemberNo/demo_1/demo_1" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/docheckLoginPwdByMemberNo/demo_1/log" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#docheckLoginPwdByMemberNo/demo_1/log" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/getLoginErrorTime/afterClass" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IPwdService/doResetLoginPwd/afterClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/getLoginErrorTime/beforeClass" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IPwdService/doResetLoginPwd/beforeClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/getLoginErrorTime/config.properties" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#getLoginErrorTime/config.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/getLoginErrorTime/demo_1/after" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#getLoginErrorTime/demo_1/after" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/getLoginErrorTime/demo_1/assert" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#getLoginErrorTime/demo_1/assert" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/getLoginErrorTime/demo_1/before" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#getLoginErrorTime/demo_1/before" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/getLoginErrorTime/demo_1/demo_1" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#getLoginErrorTime/demo_1/demo_1" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/getLoginErrorTime/demo_1/log" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#getLoginErrorTime/demo_1/log" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/getLoginErrorTime/demo_2/after" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#getLoginErrorTime/demo_2/after" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/getLoginErrorTime/demo_2/assert" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#getLoginErrorTime/demo_2/assert" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/getLoginErrorTime/demo_2/before" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#getLoginErrorTime/demo_2/before" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/getLoginErrorTime/demo_2/demo_1" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#getLoginErrorTime/demo_2/demo_1" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/getLoginErrorTime/demo_2/log" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#getLoginErrorTime/demo_2/log" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/#cn.xn.user.service.ILoginService/serviceConfig.properties" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/serviceConfig.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getAllFriend/#demo_1/after" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getAllFriend/#demo_1/after" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getAllFriend/#demo_1/assert" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getAllFriend/#demo_1/assert" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getAllFriend/#demo_1/before" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getAllFriend/#demo_1/before" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getAllFriend/#demo_1/demo_1" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getAllFriend/#demo_1/demo_1" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getAllFriend/#demo_1/log" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getAllFriend/#demo_1/log" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getAllFriend/afterClass" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#delayToken/afterClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getAllFriend/beforeClass" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#delayToken/beforeClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getAllFriend/config.properties" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getAllFriend/config.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getAllFriend/type_1/after" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getAllFriend/type_1/after" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getAllFriend/type_1/assert" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getAllFriend/type_1/assert" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getAllFriend/type_1/before" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getAllFriend/type_1/before" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getAllFriend/type_1/demo_1" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getAllFriend/type_1/demo_1" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getAllFriend/type_1/log" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getAllFriend/type_1/log" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getAllFriend/type_2/after" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getAllFriend/type_2/after" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getAllFriend/type_2/assert" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getAllFriend/type_2/assert" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getAllFriend/type_2/before" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getAllFriend/type_2/before" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getAllFriend/type_2/demo_1" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getAllFriend/type_2/demo_1" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getAllFriend/type_2/log" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getAllFriend/type_2/log" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getFriendList/afterClass" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#doBindLogin/afterClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getFriendList/beforeClass" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#doBindLogin/beforeClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getFriendList/config.properties" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getFriendList/config.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getFriendList/demo_1/after" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getFriendList/demo_1/after" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getFriendList/demo_1/assert" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getFriendList/demo_1/assert" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getFriendList/demo_1/before" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getFriendList/demo_1/before" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getFriendList/demo_1/demo_1" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getFriendList/demo_1/demo_1" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getFriendList/demo_1/log" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getFriendList/demo_1/log" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getFriendList/type_1/after" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getFriendList/type_1/after" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getFriendList/type_1/assert" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getFriendList/type_1/assert" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getFriendList/type_1/before" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getFriendList/type_1/before" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getFriendList/type_1/demo_1" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getFriendList/type_1/demo_1" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getFriendList/type_1/log" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getFriendList/type_1/log" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getFriendList/type_2/after" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getFriendList/type_2/after" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getFriendList/type_2/assert" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getFriendList/type_2/assert" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getFriendList/type_2/before" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getFriendList/type_2/before" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getFriendList/type_2/demo_1" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getFriendList/type_2/demo_1" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getFriendList/type_2/log" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getFriendList/type_2/log" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getSecret/N/after" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getSecret/N/after" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getSecret/N/assert" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getSecret/N/assert" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getSecret/N/before" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getSecret/N/before" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getSecret/N/demo_1" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getSecret/N/demo_1" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getSecret/N/log" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getSecret/N/log" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getSecret/afterClass" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#doLogin/afterClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getSecret/beforeClass" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#doLogin/beforeClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getSecret/config.properties" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getSecret/config.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getSecret/demo_1/after" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getSecret/demo_1/after" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getSecret/demo_1/assert" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getSecret/demo_1/assert" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getSecret/demo_1/before" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getSecret/demo_1/before" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getSecret/demo_1/demo_1" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getSecret/demo_1/demo_1" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#getSecret/demo_1/log" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#getSecret/demo_1/log" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#searchFriend/afterClass" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#doLoginOut/afterClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#searchFriend/beforeClass" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#doLoginOut/beforeClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#searchFriend/config.properties" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#searchFriend/config.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#searchFriend/demo_1/after" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#searchFriend/demo_1/after" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#searchFriend/demo_1/assert" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IPwdService/doResetLoginPwd/demo_1/assert" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#searchFriend/demo_1/before" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#searchFriend/demo_1/before" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#searchFriend/demo_1/demo_1" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#searchFriend/demo_1/demo_1" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#searchFriend/demo_1/log" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#searchFriend/demo_1/log" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#searchFriend/no_keyword/after" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#searchFriend/no_keyword/after" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#searchFriend/no_keyword/assert" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#delayToken/demo_1/assert" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#searchFriend/no_keyword/before" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#searchFriend/no_keyword/before" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#searchFriend/no_keyword/demo_1" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#searchFriend/no_keyword/demo_1" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/#searchFriend/no_keyword/log" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/#searchFriend/no_keyword/log" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/serviceConfig.properties" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/serviceConfig.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/updateFriend/afterClass" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#docheckLoginPwd/afterClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/updateFriend/beforeClass" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#docheckLoginPwd/beforeClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/updateFriend/config.properties" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/updateFriend/config.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/updateFriend/demo_1/after" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/updateFriend/demo_1/after" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/updateFriend/demo_1/assert" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/updateSecret/demo_1/assert" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/updateFriend/demo_1/before" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/updateFriend/demo_1/before" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/updateFriend/demo_1/demo_1" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/updateFriend/demo_1/demo_1" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/updateFriend/demo_1/log" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/updateFriend/demo_1/log" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/updateSecret/N/after" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/updateSecret/N/after" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/updateSecret/N/assert" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/updateSecret/N/assert" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/updateSecret/N/before" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/updateSecret/N/before" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/updateSecret/N/demo_1" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/updateSecret/N/demo_1" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/updateSecret/N/log" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/updateSecret/N/log" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/updateSecret/afterClass" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#docheckLoginPwdByMemberNo/afterClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/updateSecret/beforeClass" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#docheckLoginPwdByMemberNo/beforeClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/updateSecret/config.properties" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/updateSecret/config.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/updateSecret/demo_1/after" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/updateSecret/demo_1/after" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/updateSecret/demo_1/assert" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#docheckLoginPwd/demo_1/assert" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/updateSecret/demo_1/before" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/updateSecret/demo_1/before" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/updateSecret/demo_1/demo_1" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/updateSecret/demo_1/demo_1" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/updateSecret/demo_1/log" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/updateSecret/demo_1/log" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IPwdService/doModifyLoginPwd/afterClass" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#getLoginErrorTime/afterClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IPwdService/doModifyLoginPwd/beforeClass" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#getLoginErrorTime/beforeClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IPwdService/doModifyLoginPwd/config.properties" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IPwdService/doModifyLoginPwd/config.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IPwdService/doModifyLoginPwd/demo_1/after" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IPwdService/doModifyLoginPwd/demo_1/after" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IPwdService/doModifyLoginPwd/demo_1/assert" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#doBindLogin/demo_1/assert" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IPwdService/doModifyLoginPwd/demo_1/before" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IPwdService/doModifyLoginPwd/demo_1/before" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IPwdService/doModifyLoginPwd/demo_1/demo_1" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IPwdService/doModifyLoginPwd/demo_1/demo_1" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IPwdService/doModifyLoginPwd/demo_1/log" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IPwdService/doModifyLoginPwd/demo_1/log" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IPwdService/doModifyLoginPwd/demo_2/after" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IPwdService/doModifyLoginPwd/demo_2/after" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IPwdService/doModifyLoginPwd/demo_2/assert" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#doLogin/demo_1/assert" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IPwdService/doModifyLoginPwd/demo_2/before" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IPwdService/doModifyLoginPwd/demo_2/before" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IPwdService/doModifyLoginPwd/demo_2/demo_1" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IPwdService/doModifyLoginPwd/demo_2/demo_1" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IPwdService/doModifyLoginPwd/demo_2/log" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IPwdService/doModifyLoginPwd/demo_2/log" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IPwdService/doResetLoginPwd/afterClass" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/#demo_1/after" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IPwdService/doResetLoginPwd/beforeClass" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/afterClass" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IPwdService/doResetLoginPwd/config.properties" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IPwdService/doResetLoginPwd/config.properties" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IPwdService/doResetLoginPwd/demo_1/after" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IPwdService/doResetLoginPwd/demo_1/after" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IPwdService/doResetLoginPwd/demo_1/assert" afterPath="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#doLoginOut/demo_1/assert" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IPwdService/doResetLoginPwd/demo_1/before" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IPwdService/doResetLoginPwd/demo_1/before" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IPwdService/doResetLoginPwd/demo_1/demo_1" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IPwdService/doResetLoginPwd/demo_1/demo_1" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IPwdService/doResetLoginPwd/demo_1/log" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IPwdService/doResetLoginPwd/demo_1/log" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/suite/cn.xn.user.service.IPwdService/serviceConfig.properties" afterPath="$PROJECT_DIR$/suite/#cn.xn.user.service.IPwdService/serviceConfig.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xn/test/command/AssertCommand.class" afterPath="$PROJECT_DIR$/target/classes/com/xn/test/command/AssertCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xn/test/command/CaseCommand.class" afterPath="$PROJECT_DIR$/target/classes/com/xn/test/command/CaseCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xn/test/command/CloseDBCommand.class" afterPath="$PROJECT_DIR$/target/classes/com/xn/test/command/CloseDBCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xn/test/command/Command.class" afterPath="$PROJECT_DIR$/target/classes/com/xn/test/command/Command.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xn/test/command/DBCommand.class" afterPath="$PROJECT_DIR$/target/classes/com/xn/test/command/DBCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xn/test/command/NewDBCommand.class" afterPath="$PROJECT_DIR$/target/classes/com/xn/test/command/NewDBCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xn/test/command/RedisCommand.class" afterPath="$PROJECT_DIR$/target/classes/com/xn/test/command/RedisCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xn/test/command/TestCaseCommand.class" afterPath="$PROJECT_DIR$/target/classes/com/xn/test/command/TestCaseCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xn/test/response/Response.class" afterPath="$PROJECT_DIR$/target/classes/com/xn/test/response/Response.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xn/test/service/CreateCommand.class" afterPath="$PROJECT_DIR$/target/classes/com/xn/test/service/CreateCommand.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xn/test/service/ReadSuite.class" afterPath="$PROJECT_DIR$/target/classes/com/xn/test/service/ReadSuite.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/xn/test/util/RedisUtil.class" afterPath="$PROJECT_DIR$/target/classes/com/xn/test/util/RedisUtil.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xn/test/command/AssertCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/xn/test/command/AssertCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xn/test/command/CaseCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/xn/test/command/CaseCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xn/test/command/CloseDBCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/xn/test/command/CloseDBCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xn/test/command/Command.java" afterPath="$PROJECT_DIR$/src/main/java/com/xn/test/command/Command.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xn/test/command/DBCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/xn/test/command/DBCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xn/test/command/NewDBCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/xn/test/command/NewDBCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xn/test/command/RedisCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/xn/test/command/RedisCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xn/test/command/TestCaseCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/xn/test/command/TestCaseCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xn/test/response/Response.java" afterPath="$PROJECT_DIR$/src/main/java/com/xn/test/response/Response.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xn/test/service/CreateCommand.java" afterPath="$PROJECT_DIR$/src/main/java/com/xn/test/service/CreateCommand.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xn/test/service/ReadSuite.java" afterPath="$PROJECT_DIR$/src/main/java/com/xn/test/service/ReadSuite.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/xn/test/util/RedisUtil.java" afterPath="$PROJECT_DIR$/src/main/java/com/xn/test/util/RedisUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/redis.properties" afterPath="$PROJECT_DIR$/src/resources/redis.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resources/spring.xml" afterPath="$PROJECT_DIR$/src/resources/spring.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring.xml" afterPath="$PROJECT_DIR$/target/classes/spring.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/suite/report2.html" afterPath="$PROJECT_DIR$/suite/report2.html" />
     </list>
     <ignored path="autotest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -116,28 +232,120 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="spring.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resources/spring.xml">
+      <file leaf-file-name="ReadSuite.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/service/ReadSuite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+            <state relative-caret-position="-114">
+              <caret line="209" column="0" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RedisAssertCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/command/RedisAssertCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-102">
+              <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
               <folding>
-                <element signature="e#1487#1510#0" expanded="true" />
-                <element signature="e#1568#1591#0" expanded="true" />
-                <element signature="e#1725#1748#0" expanded="true" />
-                <element signature="e#1806#1829#0" expanded="true" />
-                <element signature="e#1963#1986#0" expanded="true" />
-                <element signature="e#2044#2067#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RedisUtil.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RedisUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/util/RedisUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="246" column="37" selection-start-line="246" selection-start-column="37" selection-end-line="246" selection-end-column="37" />
+            <state relative-caret-position="123">
+              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AssertNotEqualException.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/Exception/AssertNotEqualException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+              <folding>
+                <element signature="e#338#339#0" expanded="true" />
+                <element signature="e#368#369#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Exception.java" pinned="false" current-in-tab="false">
+        <entry file="jar://D:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/Exception.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="858">
+              <caret line="65" column="10" selection-start-line="65" selection-start-column="10" selection-end-line="65" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#4059#0" expanded="false" />
+                <element signature="e#1247#1248#0" expanded="false" />
+                <element signature="e#1270#1271#0" expanded="false" />
+                <element signature="e#2406#2407#0" expanded="false" />
+                <element signature="e#2443#2444#0" expanded="false" />
+                <element signature="e#3173#3174#0" expanded="false" />
+                <element signature="e#3201#3202#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="assert" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/demo_2/assert">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AssertCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/command/AssertCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="125" column="31" selection-start-line="125" selection-start-column="31" selection-end-line="125" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RedisCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/command/RedisCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="171" column="0" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ParaAssertCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/command/ParaAssertCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="184">
+              <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Response.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/response/Response.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="206">
+              <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -164,25 +372,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/searchFriend/demo_1/after" />
-        <option value="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/searchFriend/demo_1/before" />
-        <option value="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/searchFriend/demo_1/assert" />
-        <option value="$PROJECT_DIR$/suite/cn.xn.user.service.IFriendService/searchFriend/demo_1/demo_1" />
-        <option value="$PROJECT_DIR$/lineTest/pom.xml" />
-        <option value="$PROJECT_DIR$/src/resources/test.properties" />
-        <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ICustomerInfoService/getUserInfoByLoginName/demo_1/after" />
-        <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ICustomerInfoService/updateCertInfo/demo_1/before" />
-        <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ICustomerInfoService/findMobileById/demo_1/before" />
-        <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ICustomerInfoService/findMobileById/demo_1/after" />
-        <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ICustomerInfoService/findMobileById/demo_1/demo_1" />
-        <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ICustomerInfoService/checkUser/demo_1/before" />
-        <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ICustomerInfoService/getUserInfoByLoginName/demo_1/before" />
-        <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ICustomerInfoService/getUserInfoByCertNo/demo_1/before" />
-        <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ICustomerInfoService/getUserInfoByLoginName/demo_1/demo_1" />
-        <option value="$PROJECT_DIR$/lineTest/src/java/com/xn/linetest/util/DBUtil.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xn/test/util/DBUtil.java" />
-        <option value="$PROJECT_DIR$/lineTest/src/resource/spring.xml" />
-        <option value="$PROJECT_DIR$/lineTest/src/java/com/xn/linetest/test/ChangePwd.java" />
         <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/demo_1/before" />
         <option value="$PROJECT_DIR$/lineTest/src/resource/dubbo.xml" />
         <option value="$PROJECT_DIR$/lineTest/src/test/changePwdTest.java" />
@@ -199,11 +388,9 @@
         <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#getLoginErrorTime/demo_2/after" />
         <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#getLoginErrorTime/demo_2/demo_1" />
         <option value="$PROJECT_DIR$/src/test/com/xn/friendLineTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xn/test/command/TestCaseCommand.java" />
         <option value="$PROJECT_DIR$/src/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/getLoginErrorTime/demo_2/demo_1" />
         <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/getLoginErrorTime/demo_2/log" />
-        <option value="$PROJECT_DIR$/src/main/java/com/xn/test/service/ReadSuite.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xn/test/util/FileUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xn/test/service/RunTestSuite.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xn/test/model/Suite.java" />
@@ -214,7 +401,28 @@
         <option value="$PROJECT_DIR$/src/resources/spring.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/xn/test/common/Property.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xn/test/common/PropertyPlaceholderConfigurer.java" />
+        <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/demo_2/log" />
+        <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/demo_2/demo_1" />
+        <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/demo_1/after" />
+        <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/demo_2/before" />
+        <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/demo_2/after" />
+        <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/#demo_1/before" />
+        <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/#demo_1/after" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xn/test/service/CreateCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xn/test/command/Command.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xn/test/command/CaseCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xn/test/command/CloseDBCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xn/test/command/DBCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xn/test/command/NewDBCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xn/test/command/RedisCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xn/test/command/TestCaseCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xn/test/command/ParaAssertCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xn/test/service/ReadSuite.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xn/test/response/Response.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xn/test/util/RedisUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xn/test/command/RedisAssertCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/xn/test/command/AssertCommand.java" />
+        <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/demo_2/assert" />
       </list>
     </option>
   </component>
@@ -240,8 +448,8 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
+    <option name="x" value="-15" />
+    <option name="y" value="-2" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
@@ -298,8 +506,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -328,6 +537,86 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="suite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="suite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cn.xn.user.service.ILoginService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="suite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cn.xn.user.service.ILoginService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doIsLogin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="suite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cn.xn.user.service.ILoginService" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="doIsLogin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo_2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -346,7 +635,71 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xn" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -402,13 +755,12 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
+              <option name="myItemId" value="command" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -423,23 +775,6 @@
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="xn.com.test.service" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\xn056839\IdeaProjects\autotest\suite\cn.xn.user.service.ILoginService\#getLoginErrorTime" />
-      <recent name="C:\Users\xn056839\IdeaProjects\autotest\suite\cn.xn.user.service.ILoginService\doLogin" />
-      <recent name="C:\Users\xn056839\IdeaProjects\autotest\lineTest\src\testResource" />
-      <recent name="C:\Users\xn056839\IdeaProjects\autotest\lineTest\src\resource" />
-      <recent name="C:\Users\xn056839\IdeaProjects\autotest\suite\#cn.xn.user.service.ILoginService\doLogin" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.xn.test.common" />
-      <recent name="com.xn" />
-      <recent name="com.xn.linetest.util" />
-      <recent name="com.xn.test.util" />
-      <recent name="com.xn.test.service" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\xn056839\IdeaProjects\autotest\src\test" />
       <recent name="C:\Users\xn056839\IdeaProjects\autotest\src\main" />
@@ -447,34 +782,25 @@
       <recent name="C:\Users\xn056839\IdeaProjects\autotest\suite\LoginService\doLogin\demo_1" />
       <recent name="C:\Users\xn056839\IdeaProjects\autotest\src\test\java\com\xn" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\xn056839\IdeaProjects\autotest\suite\cn.xn.user.service.ILoginService\doIsLogin" />
+      <recent name="C:\Users\xn056839\IdeaProjects\autotest\suite\cn.xn.user.service.ILoginService\#getLoginErrorTime" />
+      <recent name="C:\Users\xn056839\IdeaProjects\autotest\suite\cn.xn.user.service.ILoginService\doLogin" />
+      <recent name="C:\Users\xn056839\IdeaProjects\autotest\lineTest\src\testResource" />
+      <recent name="C:\Users\xn056839\IdeaProjects\autotest\lineTest\src\resource" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.xn.test.command" />
+      <recent name="com.xn.test.common" />
+      <recent name="com.xn" />
+      <recent name="com.xn.linetest.util" />
+      <recent name="com.xn.test.util" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="xn.com.test.service" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.RedisUtil">
-    <configuration default="false" name="oldDataChangePwdTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.xn.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="autotest" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.xn" />
-      <option name="MAIN_CLASS_NAME" value="com.xn.oldDataChangePwdTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.RunTestSuite">
     <configuration default="false" name="RunTestSuite" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -549,6 +875,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.xn.test.util.RedisUtil" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="autotest" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="RedisCommand" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.xn.test.command.AssertCommand" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.xn.test.command.RedisCommand" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -998,19 +1344,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.oldDataChangePwdTest" />
-      <item index="1" class="java.lang.String" itemvalue="Application.RunTestSuite" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.friendLineTest" />
-      <item index="3" class="java.lang.String" itemvalue="Application.ReadSuite" />
-      <item index="4" class="java.lang.String" itemvalue="Application.RedisUtil" />
+      <item index="0" class="java.lang.String" itemvalue="Application.RunTestSuite" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.friendLineTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.ReadSuite" />
+      <item index="3" class="java.lang.String" itemvalue="Application.RedisUtil" />
+      <item index="4" class="java.lang.String" itemvalue="Application.RedisCommand" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.RedisUtil" />
-        <item index="1" class="java.lang.String" itemvalue="Application.RunTestSuite" />
+        <item index="0" class="java.lang.String" itemvalue="Application.RunTestSuite" />
+        <item index="1" class="java.lang.String" itemvalue="Application.RedisUtil" />
         <item index="2" class="java.lang.String" itemvalue="Application.ReadSuite" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.friendLineTest" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.oldDataChangePwdTest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.RedisCommand" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.friendLineTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1042,7 +1388,9 @@
       <workItem from="1474519290971" duration="984000" />
       <workItem from="1474523416631" duration="14728000" />
       <workItem from="1475028597344" duration="3000" />
-      <workItem from="1475033694600" duration="9034000" />
+      <workItem from="1475033694600" duration="19229000" />
+      <workItem from="1475114194517" duration="23648000" />
+      <workItem from="1475200880983" duration="3847000" />
     </task>
     <task id="LOCAL-00001" summary="delete long name">
       <created>1475033772575</created>
@@ -1051,7 +1399,14 @@
       <option name="project" value="LOCAL" />
       <updated>1475033772575</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="redis">
+      <created>1475051088925</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1475051088925</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1087,7 +1442,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="399352000" />
+    <option name="totallyTimeSpent" value="437042000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1099,18 +1454,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="-15" y="-2" width="1936" height="1056" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4565993" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21419977" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3988764" sideWeight="0.50214595" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15446717" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18170878" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7472924" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28950405" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1121,7 +1476,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37742302" sideWeight="0.49785408" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55595666" sideWeight="0.49785408" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1129,7 +1484,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298913" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6214367" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24187726" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1146,19 +1501,19 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37742302" sideWeight="0.49785408" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4524669" sideWeight="0.49785408" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4565993" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26955476" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40528128" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29241878" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28950405" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40712744" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24298055" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6214367" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19855596" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -1175,7 +1530,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="delete long name" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete long name" />
+    <MESSAGE value="redis" />
+    <option name="LAST_COMMIT_MESSAGE" value="redis" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1254,13 +1610,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/xn/test/util/RedisUtil.java</url>
-          <line>160</line>
+          <line>162</line>
           <properties />
           <option name="timeStamp" value="110" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/xn/test/command/RedisCommand.java</url>
-          <line>110</line>
+          <line>162</line>
           <properties />
           <option name="timeStamp" value="117" />
         </line-breakpoint>
@@ -1284,9 +1640,45 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/xn/test/service/ReadSuite.java</url>
-          <line>296</line>
+          <line>345</line>
           <properties />
           <option name="timeStamp" value="146" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xn/test/command/RedisCommand.java</url>
+          <line>171</line>
+          <properties />
+          <option name="timeStamp" value="151" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xn/test/command/AssertCommand.java</url>
+          <line>110</line>
+          <properties />
+          <option name="timeStamp" value="153" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xn/test/command/RedisAssertCommand.java</url>
+          <line>100</line>
+          <properties />
+          <option name="timeStamp" value="155" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xn/test/command/AssertCommand.java</url>
+          <line>120</line>
+          <properties />
+          <option name="timeStamp" value="157" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xn/test/service/ReadSuite.java</url>
+          <line>209</line>
+          <properties />
+          <option name="timeStamp" value="158" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/xn/test/service/ReadSuite.java</url>
+          <line>205</line>
+          <properties />
+          <option name="timeStamp" value="159" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/test/java/com/xn/ILoginService/doLoginTest.java</url>
@@ -1307,7 +1699,7 @@
           <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="150" />
+      <option name="time" value="160" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -1327,154 +1719,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/#wrong_pwd/after" />
-    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/#wrong_pwd/demo_1" />
-    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/#wrong_pwd/before" />
-    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/getLoginErrorTime/demo_2/assert" />
-    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/getLoginErrorTime/demo_1/demo_1" />
-    <entry file="file://$PROJECT_DIR$/src/test/com/xn/friendLineTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="35" column="38" selection-start-line="35" selection-start-column="38" selection-end-line="35" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/command/Command.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ICustomerInfoService/getUserInfo/demo_1/before" />
-    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ICustomerInfoService/getUserInfo/demo_1/demo_1" />
-    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ICustomerInfoService/getUserInfo/demo_1/after" />
-    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ICustomerInfoService/getUserInfo/demo_1/log" />
-    <entry file="file://$PROJECT_DIR$/src/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/getLoginErrorTime/demo_2/before" />
-    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/getLoginErrorTime/demo_2/after" />
-    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/getLoginErrorTime/demo_2/demo_1" />
-    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/getLoginErrorTime/demo_2/log" />
-    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/demo_1/before" />
-    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doLogin/demo_1/after" />
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1189" column="11" selection-start-line="1189" selection-start-column="11" selection-end-line="1189" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/concurrent/Executors.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="88" column="30" selection-start-line="88" selection-start-column="30" selection-end-line="88" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/util/StringUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/response/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/command/AssertCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/command/TestCaseCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="56" column="0" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/searchFriend/demo_1/log" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/command/CaseCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-110">
-          <caret line="71" column="30" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/suite/#cn.xn.user.service.IPwdService/doModifyLoginPwd/beforeClass" />
-    <entry file="file://$PROJECT_DIR$/suite/#cn.xn.user.service.IPwdService/doModifyLoginPwd/demo_1/after" />
-    <entry file="file://$PROJECT_DIR$/suite/#cn.xn.user.service.IPwdService/doModifyLoginPwd/demo_1/before" />
-    <entry file="file://$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/getFriendList/demo_1/before" />
-    <entry file="file://$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/getFriendList/demo_1/demo_1" />
-    <entry file="file://$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/getFriendList/beforeClass" />
-    <entry file="file://$PROJECT_DIR$/suite/#cn.xn.user.service.IFriendService/getFriendList/afterClass" />
-    <entry file="file://$PROJECT_DIR$/suite/#cn.xn.user.service.IPwdService/doModifyLoginPwd/afterClass" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/util/FileUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/service/RunTestSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="36" column="39" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/model/Suite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/result/HTMLReport.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="483" column="0" selection-start-line="483" selection-start-column="0" selection-end-line="483" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/service/ReadSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
-          <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/command/RedisCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="66" column="67" selection-start-line="66" selection-start-column="3" selection-end-line="66" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/com/xn/changePwdTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1482,15 +1730,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="266" column="19" selection-start-line="266" selection-start-column="19" selection-end-line="266" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1498,7 +1737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1506,7 +1744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1514,7 +1751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1522,7 +1758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-100">
           <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1530,7 +1765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1538,31 +1772,718 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="479">
           <caret line="22" column="3" selection-start-line="0" selection-start-column="2" selection-end-line="22" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/xiaoniu/user/user-interface/2.0.0-SNAPSHOT/user-interface-2.0.0-20160926.085005-12.jar!/cn/xn/user/enums/SystemType.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/#doLogin/demo_1/before">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.7.2/jedis-2.7.2-sources.jar!/redis/clients/jedis/JedisCommands.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.7.2/jedis-2.7.2-sources.jar!/redis/clients/jedis/Jedis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="76" column="59" selection-start-line="76" selection-start-column="59" selection-end-line="76" selection-end-column="59" />
           <folding>
-            <element signature="e#0#452#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#551#552#0" expanded="false" />
+            <element signature="e#568#569#0" expanded="false" />
+            <element signature="e#605#606#0" expanded="false" />
+            <element signature="e#626#627#0" expanded="false" />
+            <element signature="e#679#680#0" expanded="false" />
+            <element signature="e#706#707#0" expanded="false" />
+            <element signature="e#778#779#0" expanded="false" />
+            <element signature="e#814#815#0" expanded="false" />
+            <element signature="e#1018#1019#0" expanded="false" />
+            <element signature="e#1044#1045#0" expanded="false" />
+            <element signature="e#1071#1072#0" expanded="false" />
+            <element signature="e#1091#1092#0" expanded="false" />
+            <element signature="e#1143#1144#0" expanded="false" />
+            <element signature="e#1172#1173#0" expanded="false" />
+            <element signature="e#60403#60404#0" expanded="false" />
+            <element signature="e#60459#60460#0" expanded="false" />
+            <element signature="e#61376#61377#0" expanded="false" />
+            <element signature="e#61420#61421#0" expanded="false" />
+            <element signature="e#61563#61564#0" expanded="false" />
+            <element signature="e#61607#61608#0" expanded="false" />
+            <element signature="e#66197#66198#0" expanded="false" />
+            <element signature="e#66253#66254#0" expanded="false" />
+            <element signature="e#78894#78901#0" expanded="false" />
+            <element signature="e#95498#95499#0" expanded="false" />
+            <element signature="e#95553#95554#0" expanded="false" />
+            <element signature="e#99762#99763#0" expanded="false" />
+            <element signature="e#99794#99795#0" expanded="false" />
+            <element signature="e#99836#99837#0" expanded="false" />
+            <element signature="e#99871#99872#0" expanded="false" />
+            <element signature="e#99907#99908#0" expanded="false" />
+            <element signature="e#99951#99952#0" expanded="false" />
+            <element signature="e#100199#100207#0" expanded="false" />
+            <element signature="e#100992#101001#0" expanded="false" />
+            <element signature="e#102915#102944#0" expanded="false" />
+            <element signature="e#103173#103194#0" expanded="false" />
+            <element signature="e#104896#104925#0" expanded="false" />
+            <element signature="e#105180#105201#0" expanded="false" />
+            <element signature="e#106814#106815#0" expanded="false" />
+            <element signature="e#106864#106865#0" expanded="false" />
+            <element signature="e#108945#108946#0" expanded="false" />
+            <element signature="e#108992#108993#0" expanded="false" />
+            <element signature="e#109506#109514#0" expanded="false" />
+            <element signature="e#110651#110678#0" expanded="false" />
+            <element signature="e#111337#111338#0" expanded="false" />
+            <element signature="e#111390#111391#0" expanded="false" />
+            <element signature="e#111929#111937#0" expanded="false" />
+            <element signature="e#112418#112419#0" expanded="false" />
+            <element signature="e#112471#112472#0" expanded="false" />
+            <element signature="e#113008#113015#0" expanded="false" />
+            <element signature="e#113417#113418#0" expanded="false" />
+            <element signature="e#113464#113465#0" expanded="false" />
+            <element signature="e#113762#113770#0" expanded="false" />
+            <element signature="e#114490#114517#0" expanded="false" />
+            <element signature="e#115351#115359#0" expanded="false" />
+            <element signature="e#115639#115640#0" expanded="false" />
+            <element signature="e#115692#115693#0" expanded="false" />
+            <element signature="e#116013#116020#0" expanded="false" />
+            <element signature="e#120431#120432#0" expanded="false" />
+            <element signature="e#120468#120469#0" expanded="false" />
+            <element signature="e#121156#121157#0" expanded="false" />
+            <element signature="e#121208#121209#0" expanded="false" />
+            <element signature="e#121276#121277#0" expanded="false" />
+            <element signature="e#121328#121329#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/redis/clients/jedis/2.7.2/jedis-2.7.2-sources.jar!/redis/clients/jedis/JedisCluster.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="129" column="14" selection-start-line="129" selection-start-column="14" selection-end-line="129" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#706#707#0" expanded="false" />
+            <element signature="e#762#763#0" expanded="false" />
+            <element signature="e#811#812#0" expanded="false" />
+            <element signature="e#849#850#0" expanded="false" />
+            <element signature="e#2175#2176#0" expanded="false" />
+            <element signature="e#2226#2227#0" expanded="false" />
+            <element signature="e#2525#2526#0" expanded="false" />
+            <element signature="e#2594#2595#0" expanded="false" />
+            <element signature="e#2812#2813#0" expanded="false" />
+            <element signature="e#2856#2857#0" expanded="false" />
+            <element signature="e#3080#3081#0" expanded="false" />
+            <element signature="e#3127#3128#0" expanded="false" />
+            <element signature="e#3343#3344#0" expanded="false" />
+            <element signature="e#3391#3392#0" expanded="false" />
+            <element signature="e#3610#3611#0" expanded="false" />
+            <element signature="e#3655#3656#0" expanded="false" />
+            <element signature="e#3889#3890#0" expanded="false" />
+            <element signature="e#3945#3946#0" expanded="false" />
+            <element signature="e#4186#4187#0" expanded="false" />
+            <element signature="e#4248#4249#0" expanded="false" />
+            <element signature="e#4486#4487#0" expanded="false" />
+            <element signature="e#4545#4546#0" expanded="false" />
+            <element signature="e#4797#4798#0" expanded="false" />
+            <element signature="e#4870#4871#0" expanded="false" />
+            <element signature="e#5082#5083#0" expanded="false" />
+            <element signature="e#5126#5127#0" expanded="false" />
+            <element signature="e#5390#5391#0" expanded="false" />
+            <element signature="e#5452#5453#0" expanded="false" />
+            <element signature="e#5715#5716#0" expanded="false" />
+            <element signature="e#5777#5778#0" expanded="false" />
+            <element signature="e#6020#6021#0" expanded="false" />
+            <element signature="e#6075#6076#0" expanded="false" />
+            <element signature="e#6331#6332#0" expanded="false" />
+            <element signature="e#6395#6396#0" expanded="false" />
+            <element signature="e#6664#6665#0" expanded="false" />
+            <element signature="e#6737#6738#0" expanded="false" />
+            <element signature="e#6978#6979#0" expanded="false" />
+            <element signature="e#7032#7033#0" expanded="false" />
+            <element signature="e#7266#7267#0" expanded="false" />
+            <element signature="e#7319#7320#0" expanded="false" />
+            <element signature="e#7578#7579#0" expanded="false" />
+            <element signature="e#7640#7641#0" expanded="false" />
+            <element signature="e#7875#7876#0" expanded="false" />
+            <element signature="e#7931#7932#0" expanded="false" />
+            <element signature="e#8144#8145#0" expanded="false" />
+            <element signature="e#8189#8190#0" expanded="false" />
+            <element signature="e#8424#8425#0" expanded="false" />
+            <element signature="e#8480#8481#0" expanded="false" />
+            <element signature="e#8726#8727#0" expanded="false" />
+            <element signature="e#8785#8786#0" expanded="false" />
+            <element signature="e#8998#8999#0" expanded="false" />
+            <element signature="e#9043#9044#0" expanded="false" />
+            <element signature="e#9278#9279#0" expanded="false" />
+            <element signature="e#9332#9333#0" expanded="false" />
+            <element signature="e#9585#9586#0" expanded="false" />
+            <element signature="e#9644#9645#0" expanded="false" />
+            <element signature="e#9897#9898#0" expanded="false" />
+            <element signature="e#9956#9957#0" expanded="false" />
+            <element signature="e#10195#10196#0" expanded="false" />
+            <element signature="e#10247#10248#0" expanded="false" />
+            <element signature="e#10502#10503#0" expanded="false" />
+            <element signature="e#10563#10564#0" expanded="false" />
+            <element signature="e#10815#10816#0" expanded="false" />
+            <element signature="e#10867#10868#0" expanded="false" />
+            <element signature="e#11129#11130#0" expanded="false" />
+            <element signature="e#11183#11184#0" expanded="false" />
+            <element signature="e#11437#11438#0" expanded="false" />
+            <element signature="e#11499#11500#0" expanded="false" />
+            <element signature="e#11744#11745#0" expanded="false" />
+            <element signature="e#11799#11800#0" expanded="false" />
+            <element signature="e#12035#12036#0" expanded="false" />
+            <element signature="e#12087#12088#0" expanded="false" />
+            <element signature="e#12300#12301#0" expanded="false" />
+            <element signature="e#12345#12346#0" expanded="false" />
+            <element signature="e#12580#12581#0" expanded="false" />
+            <element signature="e#12626#12627#0" expanded="false" />
+            <element signature="e#12864#12865#0" expanded="false" />
+            <element signature="e#12910#12911#0" expanded="false" />
+            <element signature="e#13171#13172#0" expanded="false" />
+            <element signature="e#13219#13220#0" expanded="false" />
+            <element signature="e#13457#13458#0" expanded="false" />
+            <element signature="e#13511#13512#0" expanded="false" />
+            <element signature="e#13749#13750#0" expanded="false" />
+            <element signature="e#13803#13804#0" expanded="false" />
+            <element signature="e#14016#14017#0" expanded="false" />
+            <element signature="e#14061#14062#0" expanded="false" />
+            <element signature="e#14334#14335#0" expanded="false" />
+            <element signature="e#14393#14394#0" expanded="false" />
+            <element signature="e#14647#14648#0" expanded="false" />
+            <element signature="e#14705#14706#0" expanded="false" />
+            <element signature="e#14944#14945#0" expanded="false" />
+            <element signature="e#14998#14999#0" expanded="false" />
+            <element signature="e#15255#15256#0" expanded="false" />
+            <element signature="e#15314#15315#0" expanded="false" />
+            <element signature="e#15565#15566#0" expanded="false" />
+            <element signature="e#15624#15625#0" expanded="false" />
+            <element signature="e#15843#15844#0" expanded="false" />
+            <element signature="e#15888#15889#0" expanded="false" />
+            <element signature="e#16107#16108#0" expanded="false" />
+            <element signature="e#16152#16153#0" expanded="false" />
+            <element signature="e#16389#16390#0" expanded="false" />
+            <element signature="e#16442#16443#0" expanded="false" />
+            <element signature="e#16680#16681#0" expanded="false" />
+            <element signature="e#16729#16730#0" expanded="false" />
+            <element signature="e#16966#16967#0" expanded="false" />
+            <element signature="e#17019#17020#0" expanded="false" />
+            <element signature="e#17238#17239#0" expanded="false" />
+            <element signature="e#17283#17284#0" expanded="false" />
+            <element signature="e#17535#17536#0" expanded="false" />
+            <element signature="e#17587#17588#0" expanded="false" />
+            <element signature="e#17801#17802#0" expanded="false" />
+            <element signature="e#17847#17848#0" expanded="false" />
+            <element signature="e#18095#18096#0" expanded="false" />
+            <element signature="e#18153#18154#0" expanded="false" />
+            <element signature="e#18379#18380#0" expanded="false" />
+            <element signature="e#18431#18432#0" expanded="false" />
+            <element signature="e#18692#18693#0" expanded="false" />
+            <element signature="e#18751#18752#0" expanded="false" />
+            <element signature="e#18966#18967#0" expanded="false" />
+            <element signature="e#19013#19014#0" expanded="false" />
+            <element signature="e#19267#19268#0" expanded="false" />
+            <element signature="e#19327#19328#0" expanded="false" />
+            <element signature="e#19580#19581#0" expanded="false" />
+            <element signature="e#19639#19640#0" expanded="false" />
+            <element signature="e#19909#19910#0" expanded="false" />
+            <element signature="e#19968#19969#0" expanded="false" />
+            <element signature="e#20205#20206#0" expanded="false" />
+            <element signature="e#20258#20259#0" expanded="false" />
+            <element signature="e#20521#20522#0" expanded="false" />
+            <element signature="e#20584#20585#0" expanded="false" />
+            <element signature="e#20819#20820#0" expanded="false" />
+            <element signature="e#20873#20874#0" expanded="false" />
+            <element signature="e#21111#21112#0" expanded="false" />
+            <element signature="e#21168#21169#0" expanded="false" />
+            <element signature="e#21441#21442#0" expanded="false" />
+            <element signature="e#21503#21504#0" expanded="false" />
+            <element signature="e#21780#21781#0" expanded="false" />
+            <element signature="e#21849#21850#0" expanded="false" />
+            <element signature="e#22129#22130#0" expanded="false" />
+            <element signature="e#22201#22202#0" expanded="false" />
+            <element signature="e#22415#22416#0" expanded="false" />
+            <element signature="e#22461#22462#0" expanded="false" />
+            <element signature="e#22703#22704#0" expanded="false" />
+            <element signature="e#22758#22759#0" expanded="false" />
+            <element signature="e#22995#22996#0" expanded="false" />
+            <element signature="e#23040#23041#0" expanded="false" />
+            <element signature="e#23316#23317#0" expanded="false" />
+            <element signature="e#23380#23381#0" expanded="false" />
+            <element signature="e#23631#23632#0" expanded="false" />
+            <element signature="e#23688#23689#0" expanded="false" />
+            <element signature="e#23939#23940#0" expanded="false" />
+            <element signature="e#23996#23997#0" expanded="false" />
+            <element signature="e#24275#24276#0" expanded="false" />
+            <element signature="e#24339#24340#0" expanded="false" />
+            <element signature="e#24618#24619#0" expanded="false" />
+            <element signature="e#24682#24683#0" expanded="false" />
+            <element signature="e#24964#24965#0" expanded="false" />
+            <element signature="e#25031#25032#0" expanded="false" />
+            <element signature="e#25351#25352#0" expanded="false" />
+            <element signature="e#25430#25431#0" expanded="false" />
+            <element signature="e#25712#25713#0" expanded="false" />
+            <element signature="e#25779#25780#0" expanded="false" />
+            <element signature="e#26099#26100#0" expanded="false" />
+            <element signature="e#26178#26179#0" expanded="false" />
+            <element signature="e#26501#26502#0" expanded="false" />
+            <element signature="e#26583#26584#0" expanded="false" />
+            <element signature="e#26869#26870#0" expanded="false" />
+            <element signature="e#26943#26944#0" expanded="false" />
+            <element signature="e#27232#27233#0" expanded="false" />
+            <element signature="e#27309#27310#0" expanded="false" />
+            <element signature="e#28048#28049#0" expanded="false" />
+            <element signature="e#28130#28131#0" expanded="false" />
+            <element signature="e#28416#28417#0" expanded="false" />
+            <element signature="e#28490#28491#0" expanded="false" />
+            <element signature="e#28779#28780#0" expanded="false" />
+            <element signature="e#28856#28857#0" expanded="false" />
+            <element signature="e#30374#30375#0" expanded="false" />
+            <element signature="e#30442#30443#0" expanded="false" />
+            <element signature="e#30705#30706#0" expanded="false" />
+            <element signature="e#30774#30775#0" expanded="false" />
+            <element signature="e#31037#31038#0" expanded="false" />
+            <element signature="e#31106#31107#0" expanded="false" />
+            <element signature="e#31360#31361#0" expanded="false" />
+            <element signature="e#31420#31421#0" expanded="false" />
+            <element signature="e#31697#31698#0" expanded="false" />
+            <element signature="e#31759#31760#0" expanded="false" />
+            <element signature="e#32077#32078#0" expanded="false" />
+            <element signature="e#32154#32155#0" expanded="false" />
+            <element signature="e#32434#32435#0" expanded="false" />
+            <element signature="e#32499#32500#0" expanded="false" />
+            <element signature="e#32820#32821#0" expanded="false" />
+            <element signature="e#32900#32901#0" expanded="false" />
+            <element signature="e#33159#33160#0" expanded="false" />
+            <element signature="e#33224#33225#0" expanded="false" />
+            <element signature="e#33513#33514#0" expanded="false" />
+            <element signature="e#33582#33583#0" expanded="false" />
+            <element signature="e#33821#33822#0" expanded="false" />
+            <element signature="e#33876#33877#0" expanded="false" />
+            <element signature="e#34115#34116#0" expanded="false" />
+            <element signature="e#34170#34171#0" expanded="false" />
+            <element signature="e#34508#34509#0" expanded="false" />
+            <element signature="e#34554#34555#0" expanded="false" />
+            <element signature="e#34892#34893#0" expanded="false" />
+            <element signature="e#34938#34939#0" expanded="false" />
+            <element signature="e#35150#35151#0" expanded="false" />
+            <element signature="e#35194#35195#0" expanded="false" />
+            <element signature="e#35416#35417#0" expanded="false" />
+            <element signature="e#35464#35465#0" expanded="false" />
+            <element signature="e#35697#35698#0" expanded="false" />
+            <element signature="e#35751#35752#0" expanded="false" />
+            <element signature="e#35968#35969#0" expanded="false" />
+            <element signature="e#36017#36018#0" expanded="false" />
+            <element signature="e#36268#36269#0" expanded="false" />
+            <element signature="e#36329#36330#0" expanded="false" />
+            <element signature="e#36637#36638#0" expanded="false" />
+            <element signature="e#36679#36680#0" expanded="false" />
+            <element signature="e#36988#36989#0" expanded="false" />
+            <element signature="e#37030#37031#0" expanded="false" />
+            <element signature="e#37342#37343#0" expanded="false" />
+            <element signature="e#37387#37388#0" expanded="false" />
+            <element signature="e#37692#37693#0" expanded="false" />
+            <element signature="e#37736#37737#0" expanded="false" />
+            <element signature="e#38062#38063#0" expanded="false" />
+            <element signature="e#38111#38112#0" expanded="false" />
+            <element signature="e#38424#38425#0" expanded="false" />
+            <element signature="e#38470#38471#0" expanded="false" />
+            <element signature="e#38800#38801#0" expanded="false" />
+            <element signature="e#38850#38851#0" expanded="false" />
+            <element signature="e#39159#39160#0" expanded="false" />
+            <element signature="e#39201#39202#0" expanded="false" />
+            <element signature="e#39512#39513#0" expanded="false" />
+            <element signature="e#39556#39557#0" expanded="false" />
+            <element signature="e#39873#39874#0" expanded="false" />
+            <element signature="e#39923#39924#0" expanded="false" />
+            <element signature="e#40230#40231#0" expanded="false" />
+            <element signature="e#40276#40277#0" expanded="false" />
+            <element signature="e#40589#40590#0" expanded="false" />
+            <element signature="e#40635#40636#0" expanded="false" />
+            <element signature="e#40944#40945#0" expanded="false" />
+            <element signature="e#40986#40987#0" expanded="false" />
+            <element signature="e#41315#41316#0" expanded="false" />
+            <element signature="e#41364#41365#0" expanded="false" />
+            <element signature="e#41709#41710#0" expanded="false" />
+            <element signature="e#41764#41765#0" expanded="false" />
+            <element signature="e#42081#42082#0" expanded="false" />
+            <element signature="e#42131#42132#0" expanded="false" />
+            <element signature="e#42435#42436#0" expanded="false" />
+            <element signature="e#42478#42479#0" expanded="false" />
+            <element signature="e#42812#42813#0" expanded="false" />
+            <element signature="e#42861#42862#0" expanded="false" />
+            <element signature="e#43181#43182#0" expanded="false" />
+            <element signature="e#43234#43235#0" expanded="false" />
+            <element signature="e#43308#43309#0" expanded="false" />
+            <element signature="e#43353#43354#0" expanded="false" />
+            <element signature="e#44105#44106#0" expanded="false" />
+            <element signature="e#44159#44160#0" expanded="false" />
+            <element signature="e#44644#44645#0" expanded="false" />
+            <element signature="e#44698#44699#0" expanded="false" />
+            <element signature="e#45180#45181#0" expanded="false" />
+            <element signature="e#45234#45235#0" expanded="false" />
+            <element signature="e#45565#45566#0" expanded="false" />
+            <element signature="e#45619#45620#0" expanded="false" />
+            <element signature="e#45896#45897#0" expanded="false" />
+            <element signature="e#45950#45951#0" expanded="false" />
+            <element signature="e#46224#46225#0" expanded="false" />
+            <element signature="e#46278#46279#0" expanded="false" />
+            <element signature="e#46518#46519#0" expanded="false" />
+            <element signature="e#46574#46575#0" expanded="false" />
+            <element signature="e#46790#46791#0" expanded="false" />
+            <element signature="e#46838#46839#0" expanded="false" />
+            <element signature="e#47095#47096#0" expanded="false" />
+            <element signature="e#47150#47151#0" expanded="false" />
+            <element signature="e#47407#47408#0" expanded="false" />
+            <element signature="e#47462#47463#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/util/StringUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="70" column="50" selection-start-line="70" selection-start-column="50" selection-end-line="70" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/commons-lang/commons-lang/2.6/commons-lang-2.6.jar!/org/apache/commons/lang/StringUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/demo_2/log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="47" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/xn/cache/xn-cache-skeleton/1.0.0-SNAPSHOT/xn-cache-skeleton-1.0.0-20160115.013847-4-sources.jar!/cn/xn/cache/service/IUserRedisService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="36" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/Date.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="883" column="16" selection-start-line="883" selection-start-column="16" selection-end-line="883" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/objectfactory/BeanUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="41" column="34" selection-start-line="41" selection-start-column="34" selection-end-line="41" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/Integer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="71" column="40" selection-start-line="71" selection-start-column="40" selection-end-line="71" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/objectfactory/IntFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/demo_2/demo_1">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/#demo_1/before">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/#demo_1/after">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/response/Assert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/service/CreateCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="33" column="5" selection-start-line="33" selection-start-column="5" selection-end-line="33" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/command/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_101/src.zip!/java/util/function/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-88">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/command/CaseCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/command/CloseDBCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/command/DBCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/command/NewDBCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/command/TestCaseCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/demo_2/after">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/demo_2/before">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="58" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/config.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/serviceConfig.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/spring.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        <state relative-caret-position="132">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/com/xn/changePwdTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="52" column="41" selection-start-line="52" selection-start-column="41" selection-end-line="52" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="23" column="64" selection-start-line="23" selection-start-column="64" selection-end-line="23" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/Throwable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5214">
+          <caret line="263" column="11" selection-start-line="263" selection-start-column="11" selection-end-line="263" selection-end-column="11" />
           <folding>
-            <element signature="e#1487#1510#0" expanded="true" />
-            <element signature="e#1568#1591#0" expanded="true" />
-            <element signature="e#1725#1748#0" expanded="true" />
-            <element signature="e#1806#1829#0" expanded="true" />
-            <element signature="e#1963#1986#0" expanded="true" />
-            <element signature="e#2044#2067#0" expanded="true" />
+            <element signature="e#0#44534#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#10280#10281#0" expanded="false" />
+            <element signature="e#10314#10315#0" expanded="false" />
+            <element signature="e#15711#15712#0" expanded="false" />
+            <element signature="e#15747#15748#0" expanded="false" />
+            <element signature="e#16192#16193#0" expanded="false" />
+            <element signature="e#16227#16228#0" expanded="false" />
+            <element signature="e#17326#17327#0" expanded="false" />
+            <element signature="e#17377#17378#0" expanded="false" />
+            <element signature="e#26222#26223#0" expanded="false" />
+            <element signature="e#26265#26266#0" expanded="false" />
+            <element signature="e#26470#26471#0" expanded="false" />
+            <element signature="e#26528#26529#0" expanded="false" />
+            <element signature="e#29535#29536#0" expanded="false" />
+            <element signature="e#29593#29594#0" expanded="false" />
+            <element signature="e#30191#30192#0" expanded="false" />
+            <element signature="e#30245#30246#0" expanded="false" />
+            <element signature="e#30270#30271#0" expanded="false" />
+            <element signature="e#30312#30313#0" expanded="false" />
+            <element signature="e#30346#30347#0" expanded="false" />
+            <element signature="e#30392#30393#0" expanded="false" />
+            <element signature="e#30575#30576#0" expanded="false" />
+            <element signature="e#30629#30630#0" expanded="false" />
+            <element signature="e#30654#30655#0" expanded="false" />
+            <element signature="e#30696#30697#0" expanded="false" />
+            <element signature="e#30730#30731#0" expanded="false" />
+            <element signature="e#30776#30777#0" expanded="false" />
+            <element signature="e#33047#33048#0" expanded="false" />
+            <element signature="e#33096#33097#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_101/src.zip!/java/lang/Exception.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="65" column="10" selection-start-line="65" selection-start-column="10" selection-end-line="65" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#4059#0" expanded="false" />
+            <element signature="e#1247#1248#0" expanded="false" />
+            <element signature="e#1270#1271#0" expanded="false" />
+            <element signature="e#2406#2407#0" expanded="false" />
+            <element signature="e#2443#2444#0" expanded="false" />
+            <element signature="e#3173#3174#0" expanded="false" />
+            <element signature="e#3201#3202#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/util/RedisUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="246" column="37" selection-start-line="246" selection-start-column="37" selection-end-line="246" selection-end-column="37" />
+        <state relative-caret-position="123">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/service/ReadSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114">
+          <caret line="209" column="0" selection-start-line="209" selection-start-column="0" selection-end-line="209" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/command/RedisCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="171" column="0" selection-start-line="171" selection-start-column="0" selection-end-line="171" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/command/ParaAssertCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/response/Response.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/Exception/AssertNotEqualException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
+          <folding>
+            <element signature="e#338#339#0" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/command/RedisAssertCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102">
+          <caret line="68" column="30" selection-start-line="68" selection-start-column="30" selection-end-line="68" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/command/AssertCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="125" column="31" selection-start-line="125" selection-start-column="31" selection-end-line="125" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/demo_2/assert">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
           <folding />
         </state>
       </provider>

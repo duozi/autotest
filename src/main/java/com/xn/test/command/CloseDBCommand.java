@@ -13,4 +13,9 @@ public class CloseDBCommand implements Command {
     public void execute() {
         DBUtil.closeDB();
     }
+
+    @Override
+    public void executeWithException() throws Exception {
+
+    }
 }

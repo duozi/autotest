@@ -32,9 +32,9 @@ public class CreateCommand {
 
         return new CaseCommand(params, serviceDesc,casePath);
     }
-    public Command createAssertCommand( List<KeyValueStore> processedParams, Assert assertItem) {
+    public Command createAssertCommand(Command paraAssertCommand,List<Command> redisAssertCommandList,List<Command> DBAssertCommandList,Assert assertItem ) {
 
-        return new AssertCommand(processedParams,assertItem);
+        return new AssertCommand(paraAssertCommand,redisAssertCommandList,DBAssertCommandList,assertItem);
     }
 
 

@@ -18,17 +18,19 @@ import java.util.Date;
 
 import static com.xn.test.command.RedisCommand.PREFIX_LOGINPWD;
 
-
+@Service("redisUtil")
 public class RedisUtil {
     private static final Logger logger = LoggerFactory.getLogger(RedisUtil.class);
-    public  ApplicationContext context = new ClassPathXmlApplicationContext(
-            "spring.xml");
-    public  JedisCluster jedisCluster = (JedisCluster) context.getBean("jedisCluster");
+//    public ApplicationContext context = new ClassPathXmlApplicationContext(
+//            "spring.xml");
+//    public JedisCluster jedisCluster = (JedisCluster) context.getBean("jedisCluster");
     @Resource
     private IUserRedisService userService;
 
     @Resource
     private ICommonRedisService commonService;
+    @Resource
+    private JedisCluster jedisCluster;
 
 
     /**
@@ -223,27 +225,58 @@ public class RedisUtil {
         return sb.toString();
     }
 
-    public  void set(String key, String value) {
+    public void set(String key, String value ,int time) {
+
         jedisCluster.set(key, value);
-        logger.warn("set to redis key:{} value:{},limit time is forever",key,value);
-    }
-    public void del(String key){
-        jedisCluster.del(key);
-        logger.warn("del from redis key:{}",key);
-    }
-    public  String get(String key){
-        String value=jedisCluster.get(key);
-        logger.warn("get value from redis,key:{},value:{}",key,value);
-        return value;
-    }
-    public void expire(String key,int expire){
-        jedisCluster.expire(key,expire);
-        logger.warn("set expire ,key:{},exprie:{}second",key,expire);
+        if(time!=0){
+            jedisCluster.expire(key,time);
+            logger.warn("set to redis key:{} value:{},limit time is "+time+" seconds", key, value);
+        }else{
+
+        logger.warn("set to redis key:{} value:{},limit time is forever", key, value);
+        return;}
     }
 
+    public void del(String key) {
+        jedisCluster.del(key);
+        logger.warn("del from redis key:{}", key);
+    }
+
+    public String get(String key) {
+        String value = jedisCluster.get(key);
+        logger.warn("get value from redis,key:{},value:{}", key, value);
+        return value;
+    }
+
+    public void setTime(String key, int expire) {
+        jedisCluster.expire(key, expire);
+        logger.warn("set expire ,key:{},exprie:{}second", key, expire);
+    }
+
+    public boolean isExit(String key) {
+        Boolean isExit = jedisCluster.exists(key);
+        if (isExit) {
+            logger.warn("key:{} is exit in redis", key);
+        } else {
+            logger.warn("key:{} is not exit in redis", key);
+        }
+        return isExit;
+    }
+
+    public int getTime(String key) {
+        int time = Math.toIntExact(jedisCluster.ttl(key));
+        logger.warn("key:{} expire time is {}", key, time);
+        return time;
+    }
+
+
     public static void main(String[] args) {
-        RedisUtil redisUtil=new RedisUtil();
-//       redisUtil.set("test", "test2");
-        redisUtil.expire("test",200);
+        RedisUtil redisUtil = new RedisUtil();
+       redisUtil.set("test", "{\"data\":\"111\"}",0);
+//        redisUtil.expire("test",200);
+//        redisUtil.isExit("UNIUSER-login-QGZ-00683f51-da44-4f2d-8120-e009ef3bf351");
+//        System.out.println(redisUtil.isExit("UNIUSER-login-QGZ-00683f51-da44-4f2d-8120-e009ef3bf351"));
+
+//        System.out.println(new Date().getTime());
     }
 }

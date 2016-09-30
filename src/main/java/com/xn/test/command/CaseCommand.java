@@ -128,4 +128,9 @@ public class CaseCommand implements Command {
         }
 
     }
+
+    @Override
+    public void executeWithException() throws Exception {
+
+    }
 }

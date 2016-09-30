@@ -4,6 +4,8 @@ package com.xn.test.command;/**
 
 
 import com.xn.test.util.RedisUtil;
+import com.xn.test.util.StringUtil;
+import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +14,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.Date;
 import java.util.UUID;
 
 public class RedisCommand implements Command {
@@ -26,6 +29,26 @@ public class RedisCommand implements Command {
     private String sourceType;
     private String memberNo;
     private String tokenId;
+    private String key;
+    private String value;
+    private int time;
+
+    public void setKey(String key) {
+        this.key = key;
+    }
+
+    public void setValue(String value) {
+        if(value.contains("getTime")){
+            value=value.replace("getTime",String.valueOf(new Date().getTime()));
+        }
+
+        this.value = value;
+        System.out.println("--------"+this.value);
+    }
+
+    public void setTime(int time) {
+        this.time = time;
+    }
 
     public void setTokenId(String tokenId) {
         this.tokenId = tokenId;
@@ -63,6 +86,17 @@ public class RedisCommand implements Command {
         this.times = times;
     }
 
+    public String getKey() {
+        return key;
+    }
+
+    public String getValue() {
+        return value;
+    }
+
+    public int getTime() {
+        return time;
+    }
 
     RedisUtil redisUtil = (RedisUtil) context.getBean("redisUtil");
 
@@ -94,18 +128,36 @@ public class RedisCommand implements Command {
 
 
     }
+
     private void logoutDelToken() {
         try {
-            redisUtil.logout(systemType,sourceType,tokenId,memberNo);
+            redisUtil.logout(systemType, sourceType, tokenId, memberNo);
         } catch (Exception e) {
             logger.error("delete logout error");
             e.printStackTrace();
         }
     }
+
     private void loginSaveToken() {
         redisUtil.saveToken2Redis(systemType, sourceType, loginName, tokenId, memberNo);
     }
 
+    private void set(String key,String value,int time) {
+        if(StringUtil.isEmpty(key)||StringUtil.isEmpty(value)){
+            return ;
+        }
+        redisUtil.set(key,value,time);
+    }
+
+    private String get(String key) {
+        if(StringUtil.isEmpty(key)){
+            return null;
+        }
+        return redisUtil.get(key);
+    }
+    private  void del(String key){
+        redisUtil.del(key);
+    }
     @Override
     public void execute() {
         if (methodName.equalsIgnoreCase("saveErrorTime")) {
@@ -114,8 +166,24 @@ public class RedisCommand implements Command {
             getErrorTimes();
         } else if (methodName.equalsIgnoreCase("loginSaveToken")) {
             loginSaveToken();
-        }else if (methodName.equalsIgnoreCase("logoutDelToken")) {
+        } else if (methodName.equalsIgnoreCase("logoutDelToken")) {
             logoutDelToken();
+        }else if (methodName.equalsIgnoreCase("set")) {
+            set(key,value,time);
+        }else if (methodName.equalsIgnoreCase("del")) {
+            del(key);
         }
+    }
+
+    @Override
+    public void executeWithException() throws Exception {
+
+    }
+
+    public static void main(String[] args) {
+        RedisCommand redisCommand=new RedisCommand();
+        redisCommand.setKey("UNIUSER-login-QGZ-77683f51-da44-4f2d-8120-e009ef3bf351");
+        redisCommand.setValue("[{\"bid\":\"UNIUSER\",\"date\":1474513018036,\"source\":\"app\",\"tokenId\":\"77683f51-da44-4f2d-8120-e009ef3bf351\",\"uid\":\"login-QGZ-77683f51-da44-4f2d-8120-e009ef3bf351\"}]");
+        redisCommand.del(redisCommand.getKey());
     }
 }

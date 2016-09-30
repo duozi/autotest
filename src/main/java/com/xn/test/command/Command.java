@@ -6,4 +6,6 @@ package com.xn.test.command;
 public interface Command {
 
      void execute();
+
+     void executeWithException() throws Exception;
 }

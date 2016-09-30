@@ -13,4 +13,9 @@ public class NewDBCommand implements Command {
     public void execute() {
         DBUtil.newDB();
     }
+
+    @Override
+    public void executeWithException() throws Exception {
+
+    }
 }

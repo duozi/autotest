@@ -2,8 +2,10 @@ package com.xn.test.service;/**
  * Created by xn056839 on 2016/9/2.
  */
 
+import com.google.common.collect.Lists;
 import com.xn.test.Exception.CaseErrorEqualException;
 import com.xn.test.command.*;
+import com.xn.test.objectfactory.IntFactory;
 import com.xn.test.response.Assert;
 import com.xn.test.model.KeyValueStore;
 import com.xn.test.model.ServiceDesc;
@@ -13,6 +15,7 @@ import com.xn.test.util.FileUtil;
 import com.xn.test.util.StringUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import redis.clients.jedis.BinaryClient;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -177,18 +180,58 @@ public class ReadSuite {
     }
 
     public Command dealAssertFile(File file, String caseName) {
-        List<KeyValueStore> list = new ArrayList<>();
-        List<String> lines = FileUtil.fileReadeForList(file);
-        for (String line : lines) {
-            if (line.contains("=") && line.split("=").length == 2) {
-                String type = line.split("=")[0];
-                String value = line.split("=")[1];
-                KeyValueStore keyValueStore = new KeyValueStore(type, value);
-                list.add(keyValueStore);
-            }
-        }
         Assert assertItem = new Assert(serviceDesc.getClazz(), serviceDesc.getMethodName(), caseName);
-        return createCommand.createAssertCommand(list, assertItem);
+        List<KeyValueStore> paralist = new ArrayList<>();
+        List<KeyValueStore> redislist = new ArrayList<>();
+        List<Command> redisAssertCommandList = new ArrayList<>();
+        List<Command> dbAssertCommandList = new ArrayList<>();
+        ParaAssertCommand paraAssertCommand;
+        List<String> lines = FileUtil.fileReadeForList(file);
+        int redisFlag = 0;
+        RedisAssertCommand redisAssertCommand = null;
+        for (String line : lines) {
+            if (!line.startsWith("#")) {
+                if (redisFlag == 0) {
+                    if (line.contains("=") && line.split("=").length == 2) {
+                        String type = line.split("=")[0];
+                        String value = line.split("=")[1];
+                        KeyValueStore keyValueStore = new KeyValueStore(type, value);
+                        paralist.add(keyValueStore);
+                    } else if (line.trim().equalsIgnoreCase("redis")) {
+                        redisFlag = 1;
+                        redisAssertCommand = new RedisAssertCommand();
+                    }
+                } else if (redisFlag == 1) {
+                    if (line.trim().equalsIgnoreCase("redis end")) {
+                        redisFlag = 0;
+                        redisAssertCommand.setRedisParams( Lists.newArrayList(redislist));
+                        redisAssertCommand.setAssertItem(assertItem);
+                        redislist.clear();
+                        redisAssertCommandList.add(redisAssertCommand);
+                    } else if (line.contains("=") && line.split("=").length == 2) {
+                        String key = line.split("=")[0];
+                        String value = line.split("=")[1];
+                        if (key.equalsIgnoreCase("redisMethod")) {
+                            redisAssertCommand.setRedisMethod(value);
+
+                        } else if (key.equalsIgnoreCase("key")) {
+                            redisAssertCommand.setKey(value);
+                        } else {
+                            KeyValueStore keyValueStore = new KeyValueStore(key, value);
+                            redislist.add(keyValueStore);
+                        }
+                    }
+                }
+
+
+            }
+
+        }
+
+        paraAssertCommand = new ParaAssertCommand(paralist);
+        paraAssertCommand.setAssertItem(assertItem);
+        return createCommand.createAssertCommand(paraAssertCommand, redisAssertCommandList, dbAssertCommandList, assertItem);
+
     }
 
     public List<Command> dealBeforeClassFile(File file) {
@@ -233,12 +276,10 @@ public class ReadSuite {
             if (redisFlag == 0 && line.startsWith("DB")) {
                 String sql = line.split("=", 2)[1];
                 list.add(createCommand.createDBCommand(sql));
-            }
-            if (line.trim().equalsIgnoreCase("redis")) {
+            } else if (line.trim().equalsIgnoreCase("redis")) {
                 redisFlag = 1;
                 redisCommand = new RedisCommand();
-            }
-            if (redisFlag == 1) {
+            } else if (redisFlag == 1) {
 
                 if (line.startsWith("redisMethod")) {
                     if (line.split("=").length == 2) {
@@ -251,6 +292,8 @@ public class ReadSuite {
                 } else {
 
                     if (!line.startsWith("#") && line.split("=").length == 2) {
+                        String key = line.split("=")[0];
+                        String value = line.split("=")[1];
                         if (line.startsWith("loginName")) {
                             redisCommand.setLoginName(line.split("=")[1]);
                         } else if (line.startsWith("systemType")) {
@@ -263,6 +306,12 @@ public class ReadSuite {
                             redisCommand.setMemberNo(line.split("=")[1]);
                         } else if (line.startsWith("tokenId")) {
                             redisCommand.setTokenId(line.split("=")[1]);
+                        } else if (key.equalsIgnoreCase("key")) {
+                            redisCommand.setKey(value);
+                        } else if (key.equalsIgnoreCase("value")) {
+                            redisCommand.setValue(value);
+                        } else if (key.equalsIgnoreCase("time")) {
+                            redisCommand.setTime(Integer.parseInt(value));
                         }
                     }
 

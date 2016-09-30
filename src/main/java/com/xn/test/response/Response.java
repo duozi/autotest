@@ -22,6 +22,7 @@ import org.slf4j.LoggerFactory;
 
 import java.util.*;
 
+import static com.xn.test.command.AssertCommand.deepAssert;
 import static org.junit.Assert.assertThat;
 
 public class Response {
@@ -45,7 +46,7 @@ public class Response {
 
     private boolean isJson(String json) {
         try {
-            JSONObject jsonObject = JSONObject.fromObject(json);
+            JSONObject.fromObject(json);
 
             return true;
         } catch (Exception e) {
@@ -53,19 +54,21 @@ public class Response {
         }
     }
 
-    public void verify(Map<String, String> expected, Assert assertItem) throws AssertNotEqualException {
+    public void paraVerify(Map<String, String> expected, Assert assertItem) throws AssertNotEqualException {
 
         try {
             validate(expected, assertItem);
         } catch (AssertNotEqualException e) {
             assertItem.setResult("failed");
-            throw new AssertNotEqualException("assert is  not Equal");
-        }finally {
-            Report.getReport().assertAdd(assertItem);
+            logger.error("parameter assert is  not Equal");
+
         }
 
 
+
     }
+
+
 
 //    private void assertBody(String expected) {
 //        if (expected != null) {
@@ -90,45 +93,6 @@ public class Response {
         }
     }
 
-    private void deepAssert(JSONObject jsonObject, String key, String value, Assert assertItem) throws AssertNotEqualException {
-        if (key.contains(".")) {
-            String[] array = key.split("\\.", 2);
-            if (jsonObject.containsKey(array[0])) {
-
-                deepAssert(jsonObject.getJSONObject(array[0]), array[1], value, assertItem);
-
-
-            } else {
-                Report.failedPlus();
-                AssertItem item = new AssertItem(key, value, "检验字段不存在");
-                assertItem.addDiff(item);
-
-                throw new AssertNotEqualException("assert is not Equal");
-            }
-        } else {
-            if (jsonObject.containsKey(key)) {
-                String returnValue = String.valueOf(jsonObject.get(key));
-                if (!returnValue.equals(value)) {
-                    Report.failedPlus();
-//                int error=Report.getReport().getError();
-//                int failed=Report.getReport().getFailed();
-                    AssertItem item = new AssertItem(key, value, returnValue);
-                    assertItem.addDiff(item);
-//                    Report.getReport().assertAdd(assertItem);
-                    throw new AssertNotEqualException("assert is not Equal");
-
-                }
-            } else {
-                Report.failedPlus();
-                AssertItem item = new AssertItem(key, value, "检验字段不存在");
-                assertItem.addDiff(item);
-//                Report.getReport().assertAdd(assertItem);
-                throw new AssertNotEqualException("assert is not Equal");
-            }
-
-
-        }
-    }
 
     private void assertString(String actual, String expected) {
         if (!isJson(actual)) {

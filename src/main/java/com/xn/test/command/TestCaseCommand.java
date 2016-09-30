@@ -56,4 +56,9 @@ public class TestCaseCommand  implements Command {
             }
         }
     }
+
+    @Override
+    public void executeWithException() throws Exception {
+
+    }
 }
