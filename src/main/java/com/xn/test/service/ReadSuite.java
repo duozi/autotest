@@ -186,25 +186,47 @@ public class ReadSuite {
         List<Command> redisAssertCommandList = new ArrayList<>();
         List<Command> dbAssertCommandList = new ArrayList<>();
         ParaAssertCommand paraAssertCommand;
+        DBAssertCommand dbAssertCommand = null;
         List<String> lines = FileUtil.fileReadeForList(file);
         int redisFlag = 0;
+        int dbFlag = 0;
         RedisAssertCommand redisAssertCommand = null;
         for (String line : lines) {
             if (!line.startsWith("#")) {
                 if (redisFlag == 0) {
-                    if (line.contains("=") && line.split("=").length == 2) {
-                        String type = line.split("=")[0];
-                        String value = line.split("=")[1];
-                        KeyValueStore keyValueStore = new KeyValueStore(type, value);
-                        paralist.add(keyValueStore);
-                    } else if (line.trim().equalsIgnoreCase("redis")) {
-                        redisFlag = 1;
-                        redisAssertCommand = new RedisAssertCommand();
+                    if (dbFlag == 0) {
+                        if (line.contains("=") && line.split("=").length == 2) {
+                            String type = line.split("=")[0];
+                            String value = line.split("=")[1];
+                            KeyValueStore keyValueStore = new KeyValueStore(type, value);
+                            paralist.add(keyValueStore);
+                        } else if (line.trim().equalsIgnoreCase("redis")) {
+                            redisFlag = 1;
+                            redisAssertCommand = new RedisAssertCommand();
+                        } else if (line.trim().equalsIgnoreCase("DB")) {
+                            dbFlag = 1;
+                            dbAssertCommand = new DBAssertCommand();
+                        }
+                    } else if (dbFlag == 1) {
+                        if (line.contains("=") ) {
+                            String type = line.split("=",2)[0];
+                            String value = line.split("=",2)[1];
+                            if (type.equalsIgnoreCase("sql")) {
+                                dbAssertCommand.setSql(value);
+
+                            } else if (type.equalsIgnoreCase("count")) {
+                                dbAssertCommand.setExpectCount(value);
+                            }
+                        } else if (line.trim().equalsIgnoreCase("DB end")) {
+                            dbFlag = 0;
+                            dbAssertCommand.setAssertItem(assertItem);
+                            dbAssertCommandList.add(dbAssertCommand);
+                        }
                     }
                 } else if (redisFlag == 1) {
                     if (line.trim().equalsIgnoreCase("redis end")) {
                         redisFlag = 0;
-                        redisAssertCommand.setRedisParams( Lists.newArrayList(redislist));
+                        redisAssertCommand.setRedisParams(Lists.newArrayList(redislist));
                         redisAssertCommand.setAssertItem(assertItem);
                         redislist.clear();
                         redisAssertCommandList.add(redisAssertCommand);

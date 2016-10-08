@@ -1,13 +1,14 @@
 data=true
 returnCode=0
 returnMsg=成功
-redis
-redisMethod=getTime
-key=UNIUSER-login-QGZ-77683f51-da44-4f2d-8120-e009ef3bf351
-time=-1
-redis end
+
 redis
 redisMethod=getValue
 key=test
-data=112
+data=111
 redis end
+
+DB
+sql=select count(*) from t_customer where member_no="11111"
+count=1
+DB end

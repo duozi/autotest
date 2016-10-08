@@ -35,18 +35,6 @@ public class AssertCommand implements Command {
         assertItem.setResult(result);
     }
 
-    public void setParamAssertCommand(ParaAssertCommand paramAssertCommand) {
-        this.paramAssertCommand = paramAssertCommand;
-    }
-
-    public void setRedisAssertCommand(List<Command> redisAssertCommand) {
-        this.redisAssertCommandList = redisAssertCommand;
-    }
-
-    public void setDBAssertCommand(List<Command> DBAssertCommand) {
-        this.DBAssertCommandList = DBAssertCommand;
-    }
-
     public AssertCommand(Command paramAssertCommand, List<Command> redisAssertCommandList, List<Command> DBAssertCommandList, Assert assertItem) {
         this.paramAssertCommand = paramAssertCommand;
         this.assertItem = assertItem;
@@ -75,7 +63,7 @@ public class AssertCommand implements Command {
 
             } else {
                 Report.failedPlus();
-                AssertItem item = new AssertItem(key, value, "检验字段不存在");
+                AssertItem item = new AssertItem(key, value, "校验字段不存在");
                 assertItem.addDiff(item);
 
                 throw new AssertNotEqualException("assert is not Equal");
@@ -95,7 +83,7 @@ public class AssertCommand implements Command {
                 }
             } else {
                 Report.failedPlus();
-                AssertItem item = new AssertItem(key, value, "检验字段不存在");
+                AssertItem item = new AssertItem(key, value, "校验字段不存在");
                 assertItem.addDiff(item);
 //                Report.getReport().assertAdd(assertItem);
                 throw new AssertNotEqualException("assert is not Equal");
