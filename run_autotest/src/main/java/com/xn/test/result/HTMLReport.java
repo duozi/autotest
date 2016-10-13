@@ -334,7 +334,7 @@ public class HTMLReport {
         String report = generateReport(reportAttrs);
         String ending = generateEnding();
         String result = HTML_TMPL.replace("%(title)s", Title).replace("%(stylesheet)s", styleSheet).replace("%(heading)s", heading).replace("%(report)s", report).replace("%(ending)s", ending);
-        FileUtil.fileWrite("suite/report2.html", result);
+        FileUtil.fileWrite("e:\\suite/report2.html", result);
     }
 
     private static String generateEnding() {

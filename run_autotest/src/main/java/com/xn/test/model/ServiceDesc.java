@@ -5,7 +5,7 @@ import com.alibaba.dubbo.common.utils.ConfigUtils;
 import com.xn.test.util.ReflectionUtils;
 import org.apache.commons.lang.StringUtils;
 
-import static com.xn.test.service.NewGetAll.loader;
+import static com.xn.test.service.RunTestSuite.loader;
 
 
 public class ServiceDesc {

@@ -13,7 +13,8 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-import static com.xn.test.service.NewGetAll.loader;
+import static com.xn.test.service.RunTestSuite.loader;
+
 
 public class MapFactory extends InstanceFactory {
     @Override

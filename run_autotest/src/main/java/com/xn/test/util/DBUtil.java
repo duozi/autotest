@@ -4,10 +4,13 @@ import com.mysql.jdbc.Connection;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.File;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+
+import static com.xn.test.service.RunTestSuite.path;
 
 /**
  * Created by xn056839 on 2016/8/30.
@@ -22,9 +25,10 @@ public class DBUtil {
     public static void newDB() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            String url = StringUtil.getPro("jdbc.properties", "jdbc_url");
-            String user = StringUtil.getPro("jdbc.properties", "jdbc_username");
-            String pwd = StringUtil.getPro("jdbc.properties", "jdbc_password");
+            File file=new File(path+"suite\\jdbc.properties");
+            String url = StringUtil.getConfig(file, "jdbc_url","");
+            String user = StringUtil.getConfig(file, "jdbc_username","");
+            String pwd = StringUtil.getConfig(file, "jdbc_password","");
             con = (Connection) DriverManager.getConnection(url, user, pwd);
             stmt = con.createStatement();
             logger.warn("new DB connection");

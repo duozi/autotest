@@ -199,7 +199,7 @@ function showOutput(id, name) {
 <div class='heading'>
 <h1>dubbo接口测试报告</h1>
 </div></br><div class='heading'>
-<p class='attribute'><strong>startTime:</strong> 2016-10-13 09:39:29:290</p><p class='attribute'><strong>duration:</strong> 4754</p><p class='attribute'><strong>total:</strong> 2</p><p class='attribute'><strong>pass:</strong> 1</p><p class='attribute'><strong>fail:</strong> 1</p><p class='attribute'><strong>error:</strong> 0</p>
+<p class='attribute'><strong>startTime:</strong> 2016-10-13 16:24:22:161</p><p class='attribute'><strong>duration:</strong> 4369</p><p class='attribute'><strong>total:</strong> 1</p><p class='attribute'><strong>pass:</strong> 1</p><p class='attribute'><strong>fail:</strong> 0</p><p class='attribute'><strong>error:</strong> 0</p>
 </div>
 <p id='show_detail_line'>Show
 <a href='javascript:showCase(0)'>Summary</a>
@@ -223,68 +223,32 @@ function showOutput(id, name) {
     <td width="12%">Error</td>
     <td width="12%">View</td>
 </tr>
-<tr class='failClass'>
+<tr class='passClass'>
     <td >cn.xn.user.service.IRegisterService</td>
     <td>1</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
 </tr>
-<tr id='ft1.1' class='none'>
-    <td class='failCase'><div class='testcase'>doRegister/demo_1</div></td>
+<tr id='pt1.1' class='none'>
+    <td class='none'><div class='testcase'>doRegister/demo_1</div></td>
     <td colspan='5' >
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
-        fail</a>
-
-    <div id='div_ft1.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre style="white-space:pre-wrap;word-wrap:break-word">
-【请求参数】：
-{"appVersion":"2.4.0","loginName":"1111111888","loginPwd":"111111","sign":"2bd1188eb8fa5aef8c8bf3e6122abf56","sourceType":"android","systemType":"QGZ"}
-【返回结果】：
-Response{body='CommonRlt[returnCode=110009,returnMsg=登录名已存在,data=&lt;null&gt;]', exception=null}
-<pre style='white-space:pre-wrap;word-wrap:break-word;color: red'>【AssertError】
-assertKey:returnCode
-expectValue:0
-exactValeu:110009
-</pre>
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-</tr><tr class='passClass'>
-    <td >cn.xn.user.service.IPwdService</td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c2',1)">Detail</a></td>
-</tr>
-<tr id='pt2.1' class='none'>
-    <td class='none'><div class='testcase'>doResetLoginPwd/demo_2</div></td>
-    <td colspan='5' >
-
-    <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.1')" >
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
         pass</a>
 
-    <div id='div_pt2.1' class="popup_window">
+    <div id='div_pt1.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre style="white-space:pre-wrap;word-wrap:break-word">
 【请求参数】：
-{"appVersion":"2.4.0","loginName":"1111111888","loginNewPwd":"99999999","sign":"e7c716b23173a74df4f38b63a0d2f603","sourceType":"android","systemType":"QGZ"}
+{"appVersion":"2.4.0","loginName":"11111111111","loginPwd":"111111","sign":"63d5fe7f270cce7fb1eacb980a5a5a29","sourceType":"android","systemType":"QGZ"}
 【返回结果】：
-Response{body='CommonRlt[returnCode=0,returnMsg=成功,data=&lt;null&gt;]', exception=null}
+Response{body='CommonRlt[returnCode=0,returnMsg=成功,data=RegisterRlt[memberNo=30f40248-5adf-47b9-9581-9c26ea74833e,tokenId=369ea67b-d171-4da4-8d2a-58ddc5e7f59c]]', exception=null}
         </pre>
     </div>
     <!--css div popup end-->
@@ -293,9 +257,9 @@ Response{body='CommonRlt[returnCode=0,returnMsg=成功,data=&lt;null&gt;]', exce
 </tr>
 <tr id='total_row'>
     <td  >Total</td>
-    <td>2</td>
     <td>1</td>
     <td>1</td>
+    <td>0</td>
     <td>0</td>
     <td>&nbsp;</td>
 </tr>

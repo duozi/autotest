@@ -21,6 +21,8 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.xn.test.service.RunTestSuite.path;
+
 public class ReadSuite {
     private static final Logger logger = LoggerFactory.getLogger(ReadSuite.class);
     /**
@@ -57,7 +59,7 @@ public class ReadSuite {
      */
     public void readSuitFile() {
 
-        File folder = new File("d:\\suite");
+        File folder = new File(path+"suite");
         File[] interfaces = folder.listFiles();
         //接口名层
         for (File interfaceFolder : interfaces) {

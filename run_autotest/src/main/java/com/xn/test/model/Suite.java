@@ -87,10 +87,10 @@ public class Suite {
 
                 }
                 try {
-                    System.out.println("sleep------------");
+//                    System.out.println("sleep------------");
                     Thread.sleep(10000);
                 } catch (InterruptedException e) {
-                    System.out.println("inter----------");
+//                    System.out.println("inter----------");
                 }
 
                 exe.shutdown();

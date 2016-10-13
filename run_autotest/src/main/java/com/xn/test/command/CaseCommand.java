@@ -25,9 +25,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.List;
 
-import net.sf.json.JSONArray;
-
-import static com.xn.test.service.NewGetAll.loader;
+import static com.xn.test.service.RunTestSuite.loader;
 
 
 public class CaseCommand implements Command {

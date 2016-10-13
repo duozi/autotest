@@ -16,7 +16,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import static com.xn.test.service.NewGetAll.loader;
+
+import static com.xn.test.service.RunTestSuite.loader;
 import static org.apache.commons.lang.StringUtils.trim;
 
 public class ObjectFactory extends InstanceFactory {

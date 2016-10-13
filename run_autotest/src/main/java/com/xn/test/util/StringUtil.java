@@ -66,6 +66,7 @@ public class StringUtil {
         }
     }
 
+
     public static Boolean isEmpty(Object value) {
         if (value == null) return true;
         if (org.apache.commons.lang.StringUtils.isBlank(value.toString())) return true;
@@ -83,9 +84,10 @@ public class StringUtil {
         List<String> lines = FileUtil.fileReadeForList(file);
         for (String line : lines) {
             if (!line.startsWith("#")) {
-                if (line.split("=").length == 2) {
-                    if (line.split("=")[0].equals(properName)) {
-                        return line.split("=")[1];
+                if (line.contains("=")) {
+                    String split[]=line.split("=",2);
+                    if (split[0].equals(properName)) {
+                        return split[1];
 
                     }
 

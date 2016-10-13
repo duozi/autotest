@@ -2,14 +2,11 @@ C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\c
 C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\objectfactory\ListFactory.java
 C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\service\RunTestSuite.java
 C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\util\EncryptUtil.java
-C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\service\NewGetAll.java
 C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\command\RedisCommand.java
 C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\command\NewDBCommand.java
-C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\service\Test.java
 C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\common\NewReflect.java
 C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\command\NewGetAll.java
 C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\command\AssertCommand.java
-C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\common\PropertyPlaceholderConfigurer.java
 C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\model\Suite.java
 C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\objectfactory\ObjectFactory.java
 C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\objectfactory\DoubleFactory.java
@@ -33,7 +30,6 @@ C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\o
 C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\result\HTMLReport.java
 C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\objectfactory\DateTimeFactory.java
 C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\util\CollectionUtils.java
-C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\common\Reflect.java
 C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\objectfactory\BigDecimalFactory.java
 C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\command\Command.java
 C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\objectfactory\BooleanFactory.java
@@ -41,13 +37,10 @@ C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\m
 C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\objectfactory\StringFactory.java
 C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\command\DBCommand.java
 C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\command\DBAssertCommand.java
-C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\common\testCase.java
 C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\command\ParaAssertCommand.java
-C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\common\Property.java
 C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\objectfactory\StreamFactory.java
 C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\service\ReadSuite.java
 C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\objectfactory\BigIntegerFactory.java
-C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\service\GetAll.java
 C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\util\ReflectionUtils.java
 C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\Exception\CaseErrorEqualException.java
 C:\Users\xn056839\IdeaProjects\autotest\run_autotest\src\main\java\com\xn\test\response\Assert.java

@@ -13,14 +13,12 @@ com\xn\test\service\CreateCommand.class
 com\xn\test\util\DBUtil.class
 com\xn\test\objectfactory\CharFactory.class
 com\xn\test\objectfactory\ListFactory.class
-com\xn\test\service\Test.class
 com\xn\test\objectfactory\DateTimeFactory.class
 com\xn\test\objectfactory\DoubleFactory.class
 com\xn\test\objectfactory\ArrayFactory.class
 com\xn\test\util\EncryptUtil.class
 com\xn\test\util\MapUtils.class
 com\xn\test\command\ParaAssertCommand.class
-com\xn\test\common\Reflect.class
 com\xn\test\service\Generate.class
 com\xn\test\command\Command.class
 com\xn\test\command\NewGetAll.class
@@ -34,7 +32,6 @@ com\xn\test\objectfactory\BigDecimalFactory.class
 com\xn\test\objectfactory\MapFactory.class
 com\xn\test\objectfactory\StreamFactory.class
 com\xn\test\service\RunTestSuite$1.class
-com\xn\test\service\GetAll.class
 com\xn\test\util\RedisUtil.class
 com\xn\test\model\Suite.class
 com\xn\test\response\AssertItem.class
@@ -45,7 +42,6 @@ com\xn\test\command\DBAssertCommand.class
 com\xn\test\Exception\CaseErrorEqualException.class
 com\xn\test\objectfactory\LongFactory.class
 com\xn\test\objectfactory\InstanceFactory.class
-com\xn\test\service\NewGetAll.class
 com\xn\test\result\Report.class
 com\xn\test\util\CollectionUtils.class
 com\xn\test\command\AssertCommand.class
