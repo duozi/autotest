@@ -7,157 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f03f9033-a17d-480a-ba82-e1f91e2004da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generate/src/resources/log4j.properties" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/generate/target/classes/com/xn/generate/NewGetAll2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/generate/target/generated-classes/cobertura/com/xn/generate/NewGetAll2.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/generate/target/site/cobertura/com.xn.generate.NewGetAll2.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/common/Property.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/common/PropertyPlaceholderConfigurer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/common/Reflect.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/common/testCase.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/service/GetAll.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/service/NewGetAll.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/service/Test.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/run_autotest/target/classes/com/xn/test/common/Reflect.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/run_autotest/target/classes/com/xn/test/service/GetAll.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/run_autotest/target/classes/com/xn/test/service/NewGetAll.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/run_autotest/target/classes/com/xn/test/service/Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/run_autotest/target/classes/jdbc.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/com/xn/test/common/Reflect.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/com/xn/test/service/GetAll.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/com/xn/test/service/NewGetAll.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/com/xn/test/service/Test.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/jdbc.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.common.Reflect.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.service.GetAll.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.service.NewGetAll.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.service.Test.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/NewGetAll2.java" afterPath="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/NewGetAll.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/run_autotest/src/resources/jdbc.properties" afterPath="$PROJECT_DIR$/suite/jdbc.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/target/cobertura/cobertura.ser" afterPath="$PROJECT_DIR$/generate/target/cobertura/cobertura.ser" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/target/generateSuite.jar" afterPath="$PROJECT_DIR$/generate/target/generateSuite.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/classes/com/xn/test/command/CaseCommand.class" afterPath="$PROJECT_DIR$/run_autotest/target/classes/com/xn/test/command/CaseCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/classes/com/xn/test/model/ServiceDesc.class" afterPath="$PROJECT_DIR$/run_autotest/target/classes/com/xn/test/model/ServiceDesc.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/classes/com/xn/test/model/Suite.class" afterPath="$PROJECT_DIR$/run_autotest/target/classes/com/xn/test/model/Suite.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/classes/com/xn/test/objectfactory/MapFactory.class" afterPath="$PROJECT_DIR$/run_autotest/target/classes/com/xn/test/objectfactory/MapFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/classes/com/xn/test/objectfactory/ObjectFactory.class" afterPath="$PROJECT_DIR$/run_autotest/target/classes/com/xn/test/objectfactory/ObjectFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/classes/com/xn/test/result/HTMLReport.class" afterPath="$PROJECT_DIR$/run_autotest/target/classes/com/xn/test/result/HTMLReport.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/classes/com/xn/test/service/ReadSuite.class" afterPath="$PROJECT_DIR$/run_autotest/target/classes/com/xn/test/service/ReadSuite.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/classes/com/xn/test/service/RunTestSuite$1.class" afterPath="$PROJECT_DIR$/run_autotest/target/classes/com/xn/test/service/RunTestSuite$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/classes/com/xn/test/service/RunTestSuite.class" afterPath="$PROJECT_DIR$/run_autotest/target/classes/com/xn/test/service/RunTestSuite.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/classes/com/xn/test/util/DBUtil.class" afterPath="$PROJECT_DIR$/run_autotest/target/classes/com/xn/test/util/DBUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/classes/com/xn/test/util/StringUtil.class" afterPath="$PROJECT_DIR$/run_autotest/target/classes/com/xn/test/util/StringUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/cobertura/cobertura.ser" afterPath="$PROJECT_DIR$/run_autotest/target/cobertura/cobertura.ser" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/com/xn/test/command/CaseCommand.class" afterPath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/com/xn/test/command/CaseCommand.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/com/xn/test/model/ServiceDesc.class" afterPath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/com/xn/test/model/ServiceDesc.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/com/xn/test/model/Suite.class" afterPath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/com/xn/test/model/Suite.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/com/xn/test/objectfactory/MapFactory.class" afterPath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/com/xn/test/objectfactory/MapFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/com/xn/test/objectfactory/ObjectFactory.class" afterPath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/com/xn/test/objectfactory/ObjectFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/com/xn/test/result/HTMLReport.class" afterPath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/com/xn/test/result/HTMLReport.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/com/xn/test/service/ReadSuite.class" afterPath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/com/xn/test/service/ReadSuite.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/com/xn/test/service/RunTestSuite$1.class" afterPath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/com/xn/test/service/RunTestSuite$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/com/xn/test/service/RunTestSuite.class" afterPath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/com/xn/test/service/RunTestSuite.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/com/xn/test/util/DBUtil.class" afterPath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/com/xn/test/util/DBUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/com/xn/test/util/StringUtil.class" afterPath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/com/xn/test/util/StringUtil.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/run_autotest.jar" afterPath="$PROJECT_DIR$/run_autotest/target/run_autotest.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/generate.iml" afterPath="$PROJECT_DIR$/generate/generate.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/pom.xml" afterPath="$PROJECT_DIR$/generate/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/target/generated-classes/cobertura/cobertura.properties" afterPath="$PROJECT_DIR$/generate/target/generated-classes/cobertura/cobertura.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/generate/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/generate/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/generate/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/target/site/cobertura/coverage.xml" afterPath="$PROJECT_DIR$/generate/target/site/cobertura/coverage.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/target/site/cobertura/frame-sourcefiles-com.xn.generate.html" afterPath="$PROJECT_DIR$/generate/target/site/cobertura/frame-sourcefiles-com.xn.generate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/target/site/cobertura/frame-sourcefiles.html" afterPath="$PROJECT_DIR$/generate/target/site/cobertura/frame-sourcefiles.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/target/site/cobertura/frame-summary-com.xn.generate.html" afterPath="$PROJECT_DIR$/generate/target/site/cobertura/frame-summary-com.xn.generate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/target/site/cobertura/frame-summary.html" afterPath="$PROJECT_DIR$/generate/target/site/cobertura/frame-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/command/CaseCommand.java" afterPath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/command/CaseCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/model/ServiceDesc.java" afterPath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/model/ServiceDesc.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/model/Suite.java" afterPath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/model/Suite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/objectfactory/MapFactory.java" afterPath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/objectfactory/MapFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/objectfactory/ObjectFactory.java" afterPath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/objectfactory/ObjectFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/result/HTMLReport.java" afterPath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/result/HTMLReport.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/service/ReadSuite.java" afterPath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/service/ReadSuite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/service/RunTestSuite.java" afterPath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/service/RunTestSuite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/util/DBUtil.java" afterPath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/util/DBUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/util/StringUtil.java" afterPath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/util/StringUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/src/resources/log4j.properties" afterPath="$PROJECT_DIR$/run_autotest/src/resources/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/classes/log4j.properties" afterPath="$PROJECT_DIR$/run_autotest/target/classes/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/cobertura.properties" afterPath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/cobertura.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/log4j.properties" afterPath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/run_autotest/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/run_autotest/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/run_autotest/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.Exception.AssertNotEqualException.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.Exception.AssertNotEqualException.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.Exception.CaseErrorEqualException.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.Exception.CaseErrorEqualException.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.AssertCommand.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.AssertCommand.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.CaseCommand.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.CaseCommand.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.CloseDBCommand.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.CloseDBCommand.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.Command.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.Command.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.DBAssertCommand.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.DBAssertCommand.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.DBCommand.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.DBCommand.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.NewDBCommand.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.NewDBCommand.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.NewGetAll.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.NewGetAll.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.ParaAssertCommand.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.ParaAssertCommand.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.RedisAssertCommand.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.RedisAssertCommand.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.RedisCommand.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.RedisCommand.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.common.NewReflect.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.common.NewReflect.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.fastjson.TestDoubleSerializer.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.fastjson.TestDoubleSerializer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.model.KeyValueStore.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.model.KeyValueStore.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.model.ServiceDesc.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.model.ServiceDesc.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.model.Suite.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.model.Suite.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.ArrayFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.ArrayFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.BeanUtils.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.BeanUtils.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.BigDecimalFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.BigDecimalFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.BigIntegerFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.BigIntegerFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.BooleanFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.BooleanFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.CharFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.CharFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.DateTimeFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.DateTimeFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.DoubleFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.DoubleFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.EnumFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.EnumFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.FloatFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.FloatFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.InstanceFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.InstanceFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.IntFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.IntFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.ListFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.ListFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.LongFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.LongFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.MapFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.MapFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.ObjectFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.ObjectFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.StreamFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.StreamFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.StringFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.StringFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.response.Assert.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.response.Assert.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.response.AssertItem.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.response.AssertItem.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.response.Response.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.response.Response.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.result.HTMLReport.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.result.HTMLReport.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.result.Report.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.result.Report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.service.CreateCommand.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.service.CreateCommand.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.service.Generate.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.service.Generate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.service.ReadSuite.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.service.ReadSuite.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.service.RunTestSuite.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.service.RunTestSuite.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.CollectionUtils.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.CollectionUtils.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.DBUtil.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.DBUtil.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.EncryptUtil.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.EncryptUtil.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.FileUtil.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.FileUtil.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.MapUtils.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.MapUtils.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.RedisUtil.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.RedisUtil.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.ReflectionUtils.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.ReflectionUtils.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.StringUtil.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.StringUtil.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/coverage.xml" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/coverage.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-sourcefiles-com.xn.test.common.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-sourcefiles-com.xn.test.common.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-sourcefiles-com.xn.test.service.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-sourcefiles-com.xn.test.service.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-sourcefiles.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-sourcefiles.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.Exception.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.Exception.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.command.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.command.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.common.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.common.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.fastjson.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.fastjson.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.model.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.model.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.objectfactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.objectfactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.response.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.response.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.result.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.result.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.service.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.service.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.util.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.util.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/suite/report2.html" afterPath="$PROJECT_DIR$/suite/report2.html" />
     </list>
     <ignored path="autotest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -256,8 +106,8 @@
       <file leaf-file-name="DBUtil.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/util/DBUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -530,254 +380,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="suite" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="run_autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="run_autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="run_autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="run_autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="run_autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="result" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="run_autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generate" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1360,7 +962,7 @@
       <workItem from="1476166442433" duration="8768000" />
       <workItem from="1476175980619" duration="9840000" />
       <workItem from="1476240437921" duration="16453000" />
-      <workItem from="1476322043576" duration="20158000" />
+      <workItem from="1476322043576" duration="21528000" />
     </task>
     <task id="LOCAL-00001" summary="delete long name">
       <created>1475033772575</created>
@@ -1376,7 +978,14 @@
       <option name="project" value="LOCAL" />
       <updated>1475051088925</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="jekins&#10;">
+      <created>1476352592201</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1476352592201</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1412,7 +1021,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="534503000" />
+    <option name="totallyTimeSpent" value="535873000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1437,13 +1046,13 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27095294" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41275573" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4259472" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4259472" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2640389" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991362" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11940298" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3834673" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1471,7 +1080,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="delete long name" />
     <MESSAGE value="redis" />
-    <option name="LAST_COMMIT_MESSAGE" value="redis" />
+    <MESSAGE value="jekins&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="jekins&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2090,8 +1700,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/util/DBUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="153">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
           <folding />
         </state>
       </provider>
