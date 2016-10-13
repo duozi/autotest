@@ -1,0 +1,2 @@
+请求参数：{"appVersion":"2.4.0","fUnionid":"ae52ed28-7f2d-480e-a0b0-c1d325b7452b","sign":"8bb06a5000370ff3359257027f4049d3","sourceType":"android","sysSource":"android","systemType":"QGZ"}
+返回结果：Response{body='CommonRlt[returnCode=0,returnMsg=成功,data=LoginRlt[memberNo=ae52ed28-7f2d-480e-a0b0-c1d325b7452a,tokenId=d9897796-00af-4be3-8cf4-99467fe85e73]]', exception=null}

@@ -1,0 +1,2 @@
+请求参数：{"appVersion":"2.4.0","currPage":1,"keyword":"qq","memberNo":"10299dbf-fd2a-4282-966a-d1f946683132","pageSize":20,"sign":"ea5d0cd71d07b0dd62240bcbd3e2debe","sourceType":"android","systemType":"QGZ"}
+返回结果：Response{body='CommonRlt[returnCode=0,returnMsg=成功,data=Page[totalCount=0,result=[]]]', exception=null}

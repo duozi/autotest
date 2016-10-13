@@ -1,0 +1,2 @@
+请求参数：{"appVersion":"2.4.0","loginNewPwd":"222222","loginPwd":"111111","memberNo":"7af1ae6b-a16a-4b3e-86a0-ec042d0da1f2","sign":"9a3a0b861a9b9fb836fa68a9504cf992","sourceType":"android","systemType":"QGZ","tokenId":"2c3ff5bb-9324-4f12-837f-d3325bb5ce53"}
+返回结果：Response{body='CommonRlt[returnCode=110011,returnMsg=未获取到数据,data=<null>]', exception=null}

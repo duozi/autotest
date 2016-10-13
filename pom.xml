@@ -8,6 +8,10 @@
     <artifactId>autotest</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>generate</module>
+        <module>run_autotest</module>
+    </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <spring.version>4.1.4.RELEASE</spring.version>
@@ -19,21 +23,11 @@
         <log4j.version>1.2.12</log4j.version>
     </properties>
     <dependencies>
-        <!--<dependency>-->
-            <!--<groupId>cn.xn.user</groupId>-->
-            <!--<artifactId>xn-user-backskeleton</artifactId>-->
-            <!--<version>1.0.3-SNAPSHOT</version>-->
+
+        <!--<groupId>com.xiaoniu.user</groupId>-->
+        <!--<artifactId>user-interface</artifactId>-->
+        <!--<version>2.0.0-SNAPSHOT</version>-->
         <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>com.xiaoniu.dataplatform.tongduncredit</groupId>-->
-            <!--<artifactId>tongduncredit-skeleton</artifactId>-->
-            <!--<version>1.0.0</version>-->
-        <!--</dependency>-->
-        <dependency>
-            <groupId>com.xiaoniu.user</groupId>
-            <artifactId>user-interface</artifactId>
-            <version>2.0.0-SNAPSHOT</version>
-        </dependency>
 
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -143,6 +137,11 @@
             <version>4.11</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit-dep</artifactId>
+            <version>4.11</version>
+        </dependency>
         <!-- 阿里巴巴数据源包 -->
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -208,21 +207,6 @@
             <version>4.4-378</version>
         </dependency>
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.11</version>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit-dep</artifactId>
-            <version>4.11</version>
-        </dependency>
-        <dependency>
-            <groupId>org.mockito</groupId>
-            <artifactId>mockito-core</artifactId>
-            <version>1.9.5</version>
-        </dependency>
-        <dependency>
             <groupId>net.sf.json</groupId>
             <artifactId>json-lib</artifactId>
             <version>2.2.2-jdk15</version>
@@ -266,6 +250,7 @@
 
     </dependencies>
     <build>
+        <finalName>autotest</finalName>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -311,6 +296,16 @@
                     </execution>
                 </executions>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
         </plugins>
     </build>
+
 </project>

@@ -1,0 +1,3 @@
+DB=delete from  t_customer_extend where member_no="7e299dbf-fd2a-4282-966a-d1f946683131" and system_type="QGZ"
+
+#DB=insert into t_customer_extend (member_no,system_type,secret) values("8e299dbf-fd2a-4282-966a-d1f946683131","QGZ","Y")

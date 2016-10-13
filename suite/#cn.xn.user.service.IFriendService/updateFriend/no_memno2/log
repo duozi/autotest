@@ -1,0 +1,2 @@
+请求参数：{"appVersion":"2.4.0","friendJson":"[{\"friendMemberNo\":\"e0a77f8e-92c3-447b-9196-0167f533e1bb\",\"friendMobile\":\"17777777777\",\"friendName\":\"测试88\",\"friendUserName\":\"\",\"isRegister\":\"Y\"}]","memberNo":"5e299dbf-fd2a-4282-966a-d1f946683133","mobile":"1232545","sign":"1c9b747b815e8e0ff1f0a2986b571aba","sourceType":"android","systemType":"QGZ"}
+返回结果：Response{body='CommonRlt[returnCode=110001,returnMsg=参数错误,data=false]', exception=null}

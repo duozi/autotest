@@ -1,0 +1,2 @@
+请求参数：{"appVersion":"2.4.0","loginName":"1111111888","loginPwd":"111111","sign":"2bd1188eb8fa5aef8c8bf3e6122abf56","sourceType":"android","systemType":"QGZ"}
+返回结果：Response{body='CommonRlt[returnCode=110009,returnMsg=登录名已存在,data=<null>]', exception=null}

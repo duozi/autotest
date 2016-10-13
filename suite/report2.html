@@ -199,7 +199,7 @@ function showOutput(id, name) {
 <div class='heading'>
 <h1>dubbo接口测试报告</h1>
 </div></br><div class='heading'>
-<p class='attribute'><strong>startTime:</strong> 2016-09-30 18:22:33:985</p><p class='attribute'><strong>duration:</strong> 920</p><p class='attribute'><strong>total:</strong> 1</p><p class='attribute'><strong>pass:</strong> 1</p><p class='attribute'><strong>fail:</strong> 0</p><p class='attribute'><strong>error:</strong> 0</p>
+<p class='attribute'><strong>startTime:</strong> 2016-10-13 09:39:29:290</p><p class='attribute'><strong>duration:</strong> 4754</p><p class='attribute'><strong>total:</strong> 2</p><p class='attribute'><strong>pass:</strong> 1</p><p class='attribute'><strong>fail:</strong> 1</p><p class='attribute'><strong>error:</strong> 0</p>
 </div>
 <p id='show_detail_line'>Show
 <a href='javascript:showCase(0)'>Summary</a>
@@ -224,7 +224,7 @@ function showOutput(id, name) {
     <td width="12%">View</td>
 </tr>
 <tr class='failClass'>
-    <td >cn.xn.user.service.ILoginService</td>
+    <td >cn.xn.user.service.IRegisterService</td>
     <td>1</td>
     <td>0</td>
     <td>1</td>
@@ -232,7 +232,7 @@ function showOutput(id, name) {
     <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
 </tr>
 <tr id='ft1.1' class='none'>
-    <td class='failCase'><div class='testcase'>doIsLogin/demo_2</div></td>
+    <td class='failCase'><div class='testcase'>doRegister/demo_1</div></td>
     <td colspan='5' >
 
     <!--css div popup start-->
@@ -246,14 +246,45 @@ function showOutput(id, name) {
         </div>
         <pre style="white-space:pre-wrap;word-wrap:break-word">
 【请求参数】：
-{"appVersion":"2.4.0","memberNo":"77683f51-da44-4f2d-8120-e009ef3bf351","sign":"3a4b4cbace7ee838ae17c7e17f8207f2","sourceType":"android","systemType":"QGZ","tokenId":"77683f51-da44-4f2d-8120-e009ef3bf351"}
+{"appVersion":"2.4.0","loginName":"1111111888","loginPwd":"111111","sign":"2bd1188eb8fa5aef8c8bf3e6122abf56","sourceType":"android","systemType":"QGZ"}
 【返回结果】：
-Response{body='CommonRlt[returnCode=0,returnMsg=成功,data=true]', exception=null}
+Response{body='CommonRlt[returnCode=110009,returnMsg=登录名已存在,data=&lt;null&gt;]', exception=null}
 <pre style='white-space:pre-wrap;word-wrap:break-word;color: red'>【AssertError】
-assertKey:DB.getCount
-expectValue:1
-exactValeu:0
+assertKey:returnCode
+expectValue:0
+exactValeu:110009
 </pre>
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr><tr class='passClass'>
+    <td >cn.xn.user.service.IPwdService</td>
+    <td>1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+    <td><a href="javascript:showClassDetail('c2',1)">Detail</a></td>
+</tr>
+<tr id='pt2.1' class='none'>
+    <td class='none'><div class='testcase'>doResetLoginPwd/demo_2</div></td>
+    <td colspan='5' >
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.1')" >
+        pass</a>
+
+    <div id='div_pt2.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre style="white-space:pre-wrap;word-wrap:break-word">
+【请求参数】：
+{"appVersion":"2.4.0","loginName":"1111111888","loginNewPwd":"99999999","sign":"e7c716b23173a74df4f38b63a0d2f603","sourceType":"android","systemType":"QGZ"}
+【返回结果】：
+Response{body='CommonRlt[returnCode=0,returnMsg=成功,data=&lt;null&gt;]', exception=null}
         </pre>
     </div>
     <!--css div popup end-->
@@ -262,9 +293,9 @@ exactValeu:0
 </tr>
 <tr id='total_row'>
     <td  >Total</td>
+    <td>2</td>
     <td>1</td>
     <td>1</td>
-    <td>0</td>
     <td>0</td>
     <td>&nbsp;</td>
 </tr>
