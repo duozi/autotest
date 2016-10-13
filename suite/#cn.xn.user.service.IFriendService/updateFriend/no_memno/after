@@ -1,1 +1,0 @@
-DB=delete from t_customer_friend where member_no="6e299dbf-fd2a-4282-966a-d1f946683133" and system_type="QGZ"

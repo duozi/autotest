@@ -1,2 +1,0 @@
-请求参数：{"appVersion":"2.4.0","currPage":1,"memberNo":"84299dbf-fd2a-4282-966a-d1f946683130","pageSize":20,"sign":"400a41d5ade26e75387f59d10b9b335a","sourceType":"android","systemType":"QGZ","type":0}
-返回结果：Response{body='CommonRlt[returnCode=0,returnMsg=成功,data=Page[totalCount=0,result=[]]]', exception=null}

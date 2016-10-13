@@ -1,1 +1,0 @@
-DB=delete from t_customer where member_no = "8880d44d-d907-4e03-bd95-100cfc7b5209"

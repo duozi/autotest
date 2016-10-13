@@ -1,2 +1,0 @@
-请求参数：{"appVersion":"2.4.0","bankCardNo":"633333333333","certNo":"62222222222223","memberName":"24","memberNo":"740bc586-102c-49a8-9710-8969ea1da856","sign":"b8ef21160bfda66576fa1c724730a72d","sourceType":"android","systemType":"QGZ"}
-返回结果：Response{body='CommonRlt[returnCode=0,returnMsg=成功,data=<null>]', exception=null}

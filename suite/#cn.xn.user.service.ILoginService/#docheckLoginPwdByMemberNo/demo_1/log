@@ -1,2 +1,0 @@
-请求参数：{"appVersion":"2.4.0","loginPwd":"111111","memberNo":"00683f51-da44-4f2d-8120-e009ef3bf005","sign":"dbe1c371d4cde7aba963ebf09dcffa0d","sourceType":"android","systemType":"QGZ"}
-返回结果：Response{body='CommonRlt[returnCode=0,returnMsg=成功,data=true]', exception=null}

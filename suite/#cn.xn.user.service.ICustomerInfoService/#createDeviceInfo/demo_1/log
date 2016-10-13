@@ -1,2 +1,0 @@
-请求参数：{"appVersion":"2.4.0","deviceDetail":"xiaomi","deviceId":"11111","memberNo":"8e299dbf-fd2a-4282-966a-d1f946683115","sign":"5240a611f9c82fa13099d61c48bc0882","sourceType":"android","systemType":"QGZ"}
-返回结果：Response{body='CommonRlt[returnCode=0,returnMsg=成功,data=<null>]', exception=null}

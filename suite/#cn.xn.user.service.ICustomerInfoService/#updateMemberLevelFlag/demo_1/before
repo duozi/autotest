@@ -1,3 +1,0 @@
-DB=delete from t_customer_extend where member_no="8e299dbf-fd2a-4282-966a-d1f946683126" and system_type="QGZ"
-
-DB=insert into t_customer_extend (system_type, member_no, source, channel,upgrade_flag)values ("QGZ", "8e299dbf-fd2a-4282-966a-d1f946683126", "wechat", "weibo",2)

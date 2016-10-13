@@ -1,8 +1,0 @@
-DB=delete from t_customer where member_no="5e299dbf-fd2a-4282-966a-d1f946683133" and system_type="QGZ"
-
-#DB=insert into  t_customer (member_no,system_type,login_pwd) values ("6e299dbf-fd2a-4282-966a-d1f946683133","QGZ","111111")
-
-#DB=delete from t_customer_friend where member_no="6e299dbf-fd2a-4282-966a-d1f946683133" and system_type="QGZ"
-
-#DB=insert into t_customer_friend (system_type,member_no,mobile, register_friend,unregister_friend,status) values ("QGZ","8e299dbf-fd2a-4282-966a-d1f946683133","11111111111","[{\"friendMemberNo\":\"e0a77f8e-92c3-447b-9196-0167f533e1bb\",\"friendMobile\":\"18607602913\",\"friendName\":\"测试05\",\"friendUserName\":\"\",\"isRegister\":\"Y\"}]","[{\"friendMemberNo\":\"\",\"friendMobile\":\"15800047982\",\"friendName\":\"非用户\",\"friendUserName\":\"\",\"isRegister\":\"N\"}]","Y")
-

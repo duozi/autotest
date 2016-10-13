@@ -1,3 +1,0 @@
-DB=delete from t_customer where cert_no="111111111111111111" and system_type="QGZ"
-
-DB=insert into t_customer (member_no,login_name,login_pwd,member_name,mobile,system_type,member_level,status,cert_no)values ("8e299dbf-fd2a-4282-966a-d1f946683121", "33333333356", "PU8r8H3BvjiyDNbkaUmhBx+dDj0=", "33", "33333333356", "QGZ",1,1,"111111111111111111")

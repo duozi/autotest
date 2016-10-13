@@ -1,7 +1,0 @@
-DB=delete from t_customer where member_no="8e299dbf-fd2a-4282-966a-d1f946683122" and system_type="QGZ"
-
-DB=insert into t_customer (member_no,login_name,login_pwd,member_name,mobile,system_type,member_level,status)values ("8e299dbf-fd2a-4282-966a-d1f946683122", "33333333354", "PU8r8H3BvjiyDNbkaUmhBx+dDj0=", "33", "33333333354", "QGZ",1,1)
-
-DB=delete from t_customer_extend where member_no="8e299dbf-fd2a-4282-966a-d1f946683122" and system_type="QGZ"
-
-DB=insert into t_customer_extend (system_type, member_no, channel, search_keyword,qr_code)values ("QGZ", "8e299dbf-fd2a-4282-966a-d1f946683122", "weibo", "11111","ae52ed28-7f2d-480e-a0b0-c1d325b7452a")

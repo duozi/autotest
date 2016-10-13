@@ -1,3 +1,0 @@
-DB=delete from t_customer where member_no="8e299dbf-fd2a-4282-966a-d1f946683150" and system_type="QGZ"
-
-DB=insert into t_customer (member_no,login_name,login_pwd,member_name,mobile,system_type,member_level,status,name_auth_flag)values ("8e299dbf-fd2a-4282-966a-d1f946683150", "33333333347", "PU8r8H3BvjiyDNbkaUmhBx+dDj0=", "33", "33333333347", "QGZ",1,1,"Y")

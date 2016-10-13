@@ -1,3 +1,0 @@
-DB=delete from  t_customer_extend where member_no="00299dbf-fd2a-4282-966a-d1f946683132" and system_type="QGZ"
-
-

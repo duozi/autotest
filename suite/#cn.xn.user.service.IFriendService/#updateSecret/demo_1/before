@@ -1,4 +1,0 @@
-DB=delete from t_customer where member_no="8e299dbf-fd2a-4282-966a-d1f946683134" and system_type="QGZ"
-DB=insert into  t_customer (member_no,system_type,login_pwd) values ("8e299dbf-fd2a-4282-966a-d1f946683134","QGZ","111111")
-
-DB=delete from t_customer_extend where member_no="8e299dbf-fd2a-4282-966a-d1f946683134" and system_type="QGZ"

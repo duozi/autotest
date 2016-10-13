@@ -1,2 +1,0 @@
-请求参数：{"appVersion":"2.4.0","expireMinute":5,"sign":"c36a7df58e82cb2985b817b316338967","sourceType":"android","systemType":"QGZ"}
-返回结果：Response{body='CommonRlt[returnCode=0,returnMsg=成功,data=StatisticRlt[registerCount=579026]]', exception=null}

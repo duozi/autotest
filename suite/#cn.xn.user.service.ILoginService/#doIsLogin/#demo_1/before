@@ -1,5 +1,0 @@
-redis
-redisMethod=set
-key=UNIUSER-login-QGZ-00683f51-da44-4f2d-8120-e009ef3bf351
-value=[{"bid":"UNIUSER","date":getTime,"source":"app","tokenId":"00683f51-da44-4f2d-8120-e009ef3bf351","uid":"login-QGZ-00683f51-da44-4f2d-8120-e009ef3bf351"}]
-redis end
