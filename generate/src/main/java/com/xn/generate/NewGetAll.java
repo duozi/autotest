@@ -86,12 +86,14 @@ public class NewGetAll {
     public static void main(String[] args) {
         String path = "e:\\";
         try {
-            if (args.length != 2) {
-                logger.error("输入参数错误：[依赖jar地址] [要测试服务名]");
-                return ;
-            }
-            loader = ReflectionUtils.addJar(args[0]);
-            getParam(args[1], loader, "e:\\");
+//            if (args.length != 2) {
+//                logger.error("输入参数错误：[依赖jar地址] [要测试服务名]");
+//                return ;
+//            }
+//            loader = ReflectionUtils.addJar(args[0]);
+            loader=ReflectionUtils.addJar("D:\\ruleengine-skeleton-1.0.0.jar");
+//            getParam(args[1], loader, "e:\\");
+            getParam("com.xiaoniu.dataplatform.ruleengine.service.IRuleEngineService",loader,"e:\\");
             logger.warn("存放地址在本地 {}suite", path);
         } catch (Exception e) {
             e.printStackTrace();

@@ -41,7 +41,7 @@
                             <mainClass>com.xn.generate.NewGetAll</mainClass>
                         </manifest>
                     </archive>
-                    <outputDirectory>d:/</outputDirectory>
+                    <outputDirectory>/data/autotest</outputDirectory>
                 </configuration>
                 <executions>
                     <execution>

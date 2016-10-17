@@ -4,6 +4,7 @@ import cn.xn.user.domain.*;
 import cn.xn.user.service.ILoginService;
 import cn.xn.user.service.IPwdService;
 import cn.xn.user.service.IRegisterService;
+
 import com.xn.test.util.DBUtil;
 import com.xn.test.util.StringUtil;
 import junit.framework.TestCase;

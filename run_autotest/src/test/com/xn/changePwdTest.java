@@ -6,7 +6,8 @@ import cn.xn.user.service.ILoginService;
 import cn.xn.user.service.IPwdService;
 import cn.xn.user.service.IRegisterService;
 
-import com.xn.test.util.DBUtil;
+import com.xn.test.*;
+
 import com.xn.test.util.StringUtil;
 import junit.framework.TestCase;
 import org.junit.*;

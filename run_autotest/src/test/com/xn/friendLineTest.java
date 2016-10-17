@@ -3,7 +3,6 @@ package com.xn;
 import cn.xn.user.domain.*;
 import cn.xn.user.service.IFriendService;
 import cn.xn.user.service.ILoginService;
-import cn.xn.user.service.IPwdService;
 import cn.xn.user.service.IRegisterService;
 import com.xn.test.util.DBUtil;
 import com.xn.test.util.StringUtil;
@@ -35,7 +34,6 @@ public class friendLineTest extends TestCase {
     @BeforeClass
     public static void beforeClass() {
         DBUtil.newDB();
-
     }
 
     @AfterClass

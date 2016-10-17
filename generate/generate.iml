@@ -13,6 +13,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="run_autotest" />
+    <orderEntry type="library" name="Maven: com.xiaoniu.dataplatform.ruleengine:ruleengine-skeleton:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.1.35" level="project" />
     <orderEntry type="library" name="Maven: cn.xn.cache:xn-cache-skeleton:1.0.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: cn.xn.user:xn-user-skeleton:1.0.5-SNAPSHOT" level="project" />
