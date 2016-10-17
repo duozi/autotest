@@ -59,9 +59,9 @@ public class RedisAssertCommand implements Command {
         return redisUtil.get(key);
     }
 
-    private int getTime(String key) {
+    private Long getTime(String key) {
         if (StringUtil.isEmpty(key)) {
-            return -3;
+            return Long.valueOf(-3);
         }
         return redisUtil.getTime(key);
     }
@@ -78,7 +78,7 @@ public class RedisAssertCommand implements Command {
                     logger.warn("redis assert getValue method command<{}> is starting... ", expectation);
                     redisVerifyValue(expectation,redisValue);
                 } else if (redisMethod.equalsIgnoreCase("getTime")) {
-                    int time = getTime(key);
+                    Long time = getTime(key);
                     exact=String.valueOf(time);
                     logger.warn("redis assert getTime method command<{}> is starting... ", expectation);
                     redisVerifyTime(expectation,time);
@@ -95,10 +95,10 @@ public class RedisAssertCommand implements Command {
 
     }
 
-    private void redisVerifyTime(Map<String, String> expectation,int exactTime)throws AssertNotEqualException {
+    private void redisVerifyTime(Map<String, String> expectation,Long exactTime)throws AssertNotEqualException {
 
 
-                int time= Integer.parseInt(expectation.get("time"));
+                Long time= Long.valueOf(expectation.get("time"));
                 if(time!=exactTime){
                     AssertItem item = new AssertItem("redis.getTime", expectation.get("time"), String.valueOf(exactTime));
                     assertItem.addDiff(item);

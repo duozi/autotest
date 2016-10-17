@@ -71,6 +71,7 @@ public class RunTestSuite {
             logger.error("输入参数错误：[依赖jar地址]");
             return;
         }
+
         loader = ReflectionUtils.addJar(args[0]);
         ReadSuite readSuite = new ReadSuite();
         RunTestSuite runTestSuite = new RunTestSuite();

@@ -72,10 +72,13 @@ public class Suite {
 
     public void execute() {
         if (beforeClass != null) {
-            beforeClass.forEach(Command::execute);
+
+            for(Command command:beforeClass){
+                command.execute();
+            }
             if (testCase != null) {
                 for (int i = 0; i < testCase.size(); i++) {
-                    int finalI = i;
+                    final int finalI = i;
                     exe.execute(new Runnable() {
                                     @Override
                                     public void run() {
@@ -102,7 +105,10 @@ public class Suite {
                     if (exe.isTerminated()) {
 //                        System.out.println("-----------");
                         if (afterClass != null) {
-                            afterClass.forEach(Command::execute);
+
+                            for(Command comand:afterClass){
+                                comand.execute();
+                            }
                         }
                         Report.getReport().setStopTime(new Date());
                         break;

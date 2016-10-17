@@ -44,7 +44,7 @@ public class BeanUtils {
         for (int i = 0; i < parameterTypes.length; ++i) {
 
                 try {
-                    Class<?> clazz = Class.forName(parameterTypes[i].getTypeName());
+                    Class<?> clazz = Class.forName(parameterTypes[i].toString().split(" ")[1]);
                     Object obj = clazz.newInstance();
                     for(KeyValueStore keyValueStore:params){
                         ReflectionUtils.setFieldValue(obj,keyValueStore.getName(),keyValueStore.getValue());
@@ -62,6 +62,7 @@ public class BeanUtils {
 //            KeyValueStore keyValuePair = params.get(i);
 //            result[i] = create(parameterTypes[i], keyValuePair.getValue());
         }
+
         return result;
     }
 
