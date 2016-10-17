@@ -41,7 +41,7 @@
                             <mainClass>com.xn.generate.NewGetAll</mainClass>
                         </manifest>
                     </archive>
-                    <outputDirectory>/data/autotest</outputDirectory>
+                    <outputDirectory>http://10.17.2.187/data/autotest</outputDirectory>
                 </configuration>
                 <executions>
                     <execution>

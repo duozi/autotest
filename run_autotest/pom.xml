@@ -34,7 +34,7 @@
                             <mainClass>com.xn.test.service.RunTestSuite</mainClass>
                         </manifest>
                     </archive>
-                    <outputDirectory>/data/autotest</outputDirectory>
+                    <outputDirectory>http://10.17.2.187/data/autotest</outputDirectory>
                 </configuration>
                 <executions>
                     <execution>
