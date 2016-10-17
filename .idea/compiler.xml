@@ -27,10 +27,10 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="autotest" target="1.8" />
-      <module name="generate" target="1.8" />
+      <module name="autotest" target="1.7" />
+      <module name="generate" target="1.7" />
       <module name="lineTest" target="1.8" />
-      <module name="run_autotest" target="1.8" />
+      <module name="run_autotest" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

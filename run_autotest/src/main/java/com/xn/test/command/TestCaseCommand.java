@@ -42,7 +42,10 @@ public class TestCaseCommand  implements Command {
     public void execute() {
         if (caseCommand != null) {
             if (beforeCommand != null) {
-                beforeCommand.forEach(Command::execute);
+
+                for(Command command:beforeCommand){
+                    command.execute();
+                }
             }
 
             caseCommand.execute();
@@ -52,7 +55,9 @@ public class TestCaseCommand  implements Command {
             assertCommand.setAssertItem(request, response,result);
             assertCommand.execute();
             if (afterCommand != null) {
-                afterCommand.forEach(Command::execute);
+                for(Command command:afterCommand){
+                    command.execute();
+                }
             }
         }
     }

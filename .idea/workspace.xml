@@ -7,87 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f03f9033-a17d-480a-ba82-e1f91e2004da" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/generate/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/target/classes/com/xn/generate/NewGetAll.class" afterPath="$PROJECT_DIR$/generate/target/classes/com/xn/generate/NewGetAll.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/target/generateSuite.jar" afterPath="$PROJECT_DIR$/generate/target/generateSuite.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/target/generated-classes/cobertura/com/xn/generate/NewGetAll.class" afterPath="$PROJECT_DIR$/generate/target/generated-classes/cobertura/com/xn/generate/NewGetAll.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/classes/com/xn/test/service/RunTestSuite.class" afterPath="$PROJECT_DIR$/run_autotest/target/classes/com/xn/test/service/RunTestSuite.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/com/xn/test/service/RunTestSuite.class" afterPath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/com/xn/test/service/RunTestSuite.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/run_autotest.jar" afterPath="$PROJECT_DIR$/run_autotest/target/run_autotest.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/target/generated-classes/cobertura/cobertura.properties" afterPath="$PROJECT_DIR$/generate/target/generated-classes/cobertura/cobertura.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/generate/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/target/site/cobertura/com.xn.generate.NewGetAll.html" afterPath="$PROJECT_DIR$/generate/target/site/cobertura/com.xn.generate.NewGetAll.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/target/site/cobertura/coverage.xml" afterPath="$PROJECT_DIR$/generate/target/site/cobertura/coverage.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/target/site/cobertura/frame-summary-com.xn.generate.html" afterPath="$PROJECT_DIR$/generate/target/site/cobertura/frame-summary-com.xn.generate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/target/site/cobertura/frame-summary.html" afterPath="$PROJECT_DIR$/generate/target/site/cobertura/frame-summary.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/cobertura.properties" afterPath="$PROJECT_DIR$/run_autotest/target/generated-classes/cobertura/cobertura.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/run_autotest/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.Exception.AssertNotEqualException.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.Exception.AssertNotEqualException.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.Exception.CaseErrorEqualException.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.Exception.CaseErrorEqualException.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.AssertCommand.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.AssertCommand.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.CaseCommand.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.CaseCommand.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.CloseDBCommand.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.CloseDBCommand.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.Command.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.Command.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.DBAssertCommand.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.DBAssertCommand.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.DBCommand.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.DBCommand.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.NewDBCommand.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.NewDBCommand.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.NewGetAll.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.NewGetAll.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.ParaAssertCommand.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.ParaAssertCommand.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.RedisAssertCommand.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.RedisAssertCommand.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.RedisCommand.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.command.RedisCommand.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.common.NewReflect.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.common.NewReflect.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.fastjson.TestDoubleSerializer.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.fastjson.TestDoubleSerializer.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.model.KeyValueStore.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.model.KeyValueStore.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.model.ServiceDesc.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.model.ServiceDesc.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.model.Suite.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.model.Suite.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.ArrayFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.ArrayFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.BeanUtils.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.BeanUtils.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.BigDecimalFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.BigDecimalFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.BigIntegerFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.BigIntegerFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.BooleanFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.BooleanFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.CharFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.CharFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.DateTimeFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.DateTimeFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.DoubleFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.DoubleFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.EnumFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.EnumFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.FloatFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.FloatFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.InstanceFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.InstanceFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.IntFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.IntFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.ListFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.ListFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.LongFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.LongFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.MapFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.MapFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.ObjectFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.ObjectFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.StreamFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.StreamFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.StringFactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.objectfactory.StringFactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.response.Assert.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.response.Assert.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.response.AssertItem.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.response.AssertItem.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.response.Response.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.response.Response.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.result.HTMLReport.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.result.HTMLReport.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.result.Report.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.result.Report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.service.CreateCommand.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.service.CreateCommand.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.service.Generate.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.service.Generate.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.service.ReadSuite.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.service.ReadSuite.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.service.RunTestSuite.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.service.RunTestSuite.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.CollectionUtils.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.CollectionUtils.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.DBUtil.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.DBUtil.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.EncryptUtil.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.EncryptUtil.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.FileUtil.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.FileUtil.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.MapUtils.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.MapUtils.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.RedisUtil.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.RedisUtil.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.ReflectionUtils.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.ReflectionUtils.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.StringUtil.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/com.xn.test.util.StringUtil.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/coverage.xml" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/coverage.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.Exception.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.Exception.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.command.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.command.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.common.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.common.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.fastjson.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.fastjson.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.model.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.model.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.objectfactory.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.objectfactory.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.response.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.response.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.result.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.result.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.service.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.service.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.util.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary-com.xn.test.util.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary.html" afterPath="$PROJECT_DIR$/run_autotest/target/site/cobertura/frame-summary.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autotest.iml" afterPath="$PROJECT_DIR$/autotest.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/generate.iml" afterPath="$PROJECT_DIR$/generate/generate.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/run_autotest.iml" afterPath="$PROJECT_DIR$/run_autotest/run_autotest.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/command/TestCaseCommand.java" afterPath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/command/TestCaseCommand.java" />
     </list>
     <ignored path="autotest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -113,38 +40,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ReadSuite.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/service/ReadSuite.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
-              <caret line="61" column="31" selection-start-line="61" selection-start-column="31" selection-end-line="61" selection-end-column="31" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1238#1239#0" expanded="false" />
-                <element signature="e#1272#1273#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DBUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/util/DBUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="FileUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/util/FileUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
+            <state relative-caret-position="1254">
               <caret line="67" column="5" selection-start-line="54" selection-start-column="3" selection-end-line="67" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -152,18 +53,26 @@
       <file leaf-file-name="StringUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/util/StringUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
+            <state relative-caret-position="3234">
               <caret line="169" column="2" selection-start-line="169" selection-start-column="2" selection-end-line="172" selection-end-column="5" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#2909#2910#0" expanded="false" />
+                <element signature="e#2953#2954#0" expanded="false" />
+                <element signature="e#3903#3904#0" expanded="false" />
+                <element signature="e#3965#3966#0" expanded="false" />
+                <element signature="e#5048#5049#0" expanded="false" />
+                <element signature="e#5120#5121#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_autotest/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="44">
-              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+            <state relative-caret-position="-332">
+              <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -172,8 +81,28 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+            <state relative-caret-position="390">
+              <caret line="310" column="10" selection-start-line="310" selection-start-column="10" selection-end-line="310" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestCaseCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/command/TestCaseCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="56" column="39" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RedisAssertCommand.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/command/RedisAssertCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -184,7 +113,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="88">
               <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -192,9 +123,12 @@
       <file leaf-file-name="RunTestSuite.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/service/RunTestSuite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-154">
+            <state relative-caret-position="242">
               <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-              <folding />
+              <folding>
+                <element signature="e#840#841#0" expanded="false" />
+                <element signature="e#883#884#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -202,9 +136,13 @@
       <file leaf-file-name="HTMLReport.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/result/HTMLReport.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-279">
+            <state relative-caret-position="11528">
               <caret line="535" column="40" selection-start-line="535" selection-start-column="40" selection-end-line="535" selection-end-column="40" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#15049#15050#0" expanded="false" />
+                <element signature="e#15083#15084#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -212,9 +150,33 @@
       <file leaf-file-name="Report.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/result/Report.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-858">
+            <state relative-caret-position="132">
               <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#544#545#0" expanded="false" />
+                <element signature="e#586#587#0" expanded="false" />
+                <element signature="e#632#633#0" expanded="false" />
+                <element signature="e#672#673#0" expanded="false" />
+                <element signature="e#846#847#0" expanded="false" />
+                <element signature="e#879#880#0" expanded="false" />
+                <element signature="e#1163#1164#0" expanded="false" />
+                <element signature="e#1195#1196#0" expanded="false" />
+                <element signature="e#1238#1239#0" expanded="false" />
+                <element signature="e#1266#1267#0" expanded="false" />
+                <element signature="e#1318#1319#0" expanded="false" />
+                <element signature="e#1352#1353#0" expanded="false" />
+                <element signature="e#1395#1396#0" expanded="false" />
+                <element signature="e#1424#1425#0" expanded="false" />
+                <element signature="e#1478#1479#0" expanded="false" />
+                <element signature="e#1514#1515#0" expanded="false" />
+                <element signature="e#1556#1557#0" expanded="false" />
+                <element signature="e#1584#1585#0" expanded="false" />
+                <element signature="e#1623#1624#0" expanded="false" />
+                <element signature="e#1657#1658#0" expanded="false" />
+                <element signature="e#2009#2010#0" expanded="false" />
+                <element signature="e#2051#2052#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -236,6 +198,9 @@
         <entry key="$PROJECT_DIR$" value="zhouxi" />
       </map>
     </option>
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -245,7 +210,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ICustomerInfoService/serviceConfig.properties" />
         <option value="$PROJECT_DIR$/src/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/xn/test/util/FileUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/xn/test/util/StringUtil.java" />
@@ -276,7 +240,6 @@
         <option value="$PROJECT_DIR$/generate/src/main/java/com/xn/service/NewReflect.java" />
         <option value="$PROJECT_DIR$/generate/src/main/java/com/xn/util/StringUtil.java" />
         <option value="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/NewGetAll2.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/service/GetAll.java" />
         <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/common/Reflect.java" />
         <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/model/Suite.java" />
@@ -296,6 +259,8 @@
         <option value="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/NewGetAll.java" />
         <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/service/RunTestSuite.java" />
         <option value="$PROJECT_DIR$/run_autotest/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/command/TestCaseCommand.java" />
       </list>
     </option>
   </component>
@@ -366,10 +331,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1928" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -424,8 +389,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -523,82 +489,9 @@
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="util" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="run_autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="run_autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="result" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1178,6 +1071,7 @@
       <workItem from="1476240437921" duration="16453000" />
       <workItem from="1476322043576" duration="23268000" />
       <workItem from="1476425811284" duration="5659000" />
+      <workItem from="1476681809913" duration="1332000" />
     </task>
     <task id="LOCAL-00001" summary="delete long name">
       <created>1475033772575</created>
@@ -1236,7 +1130,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="543272000" />
+    <option name="totallyTimeSpent" value="544604000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1248,29 +1142,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31228474" sideWeight="0.30561554" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31208792" sideWeight="0.30833334" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15442765" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41275573" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27095294" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41275573" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31228474" sideWeight="0.69438446" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.09584296" sideWeight="0.69166666" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2640389" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26354167" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991362" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.543054" sideWeight="0.49785408" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1514,8 +1408,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/objectfactory/InstanceFactory.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/objectfactory/BeanUtils.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/common/NewReflect.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/objectfactory/ObjectFactory.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/xn/test/objectfactory/MapFactory.java" />
@@ -1550,7 +1442,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1558,7 +1449,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1566,7 +1456,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
           <caret line="92" column="60" selection-start-line="92" selection-start-column="60" selection-end-line="92" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1599,14 +1488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1034">
           <caret line="74" column="86" selection-start-line="74" selection-start-column="86" selection-end-line="74" selection-end-column="86" />
-          <folding>
-            <element signature="e#1207#1208#0" expanded="false" />
-            <element signature="e#1236#1237#0" expanded="false" />
-            <element signature="e#1273#1274#0" expanded="false" />
-            <element signature="e#1304#1305#0" expanded="false" />
-            <element signature="e#1338#1339#0" expanded="false" />
-            <element signature="e#1368#1369#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1614,26 +1495,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="946">
           <caret line="59" column="64" selection-start-line="59" selection-start-column="64" selection-end-line="59" selection-end-column="64" />
-          <folding>
-            <element signature="e#859#860#0" expanded="false" />
-            <element signature="e#889#890#0" expanded="false" />
-            <element signature="e#935#936#0" expanded="false" />
-            <element signature="e#973#974#0" expanded="false" />
-            <element signature="e#1009#1010#0" expanded="false" />
-            <element signature="e#1042#1043#0" expanded="false" />
-            <element signature="e#1247#1248#0" expanded="false" />
-            <element signature="e#1273#1274#0" expanded="false" />
-            <element signature="e#1305#1306#0" expanded="false" />
-            <element signature="e#1341#1342#0" expanded="false" />
-            <element signature="e#1379#1380#0" expanded="false" />
-            <element signature="e#1454#1455#0" expanded="false" />
-            <element signature="e#1486#1487#0" expanded="false" />
-            <element signature="e#1519#1520#0" expanded="false" />
-            <element signature="e#1553#1554#0" expanded="false" />
-            <element signature="e#1583#1584#0" expanded="false" />
-            <element signature="e#1629#1630#0" expanded="false" />
-            <element signature="e#1667#1668#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1641,10 +1502,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1254">
           <caret line="72" column="63" selection-start-line="72" selection-start-column="63" selection-end-line="72" selection-end-column="63" />
-          <folding>
-            <element signature="e#2023#2024#0" expanded="false" />
-            <element signature="e#2081#2082#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1652,14 +1509,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1870">
           <caret line="109" column="63" selection-start-line="109" selection-start-column="63" selection-end-line="109" selection-end-column="63" />
-          <folding>
-            <element signature="e#1973#1974#0" expanded="false" />
-            <element signature="e#2036#2037#0" expanded="false" />
-            <element signature="e#2251#2252#0" expanded="false" />
-            <element signature="e#2316#2317#0" expanded="false" />
-            <element signature="e#2374#2375#0" expanded="false" />
-            <element signature="e#2402#2403#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1667,7 +1516,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1675,7 +1523,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1760">
           <caret line="91" column="13" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1693,9 +1540,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/util/DBUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="330">
           <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1703,64 +1552,119 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/service/RunTestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-154">
+        <state relative-caret-position="242">
           <caret line="11" column="31" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
-          <folding />
+          <folding>
+            <element signature="e#840#841#0" expanded="false" />
+            <element signature="e#883#884#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/util/FileUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
+        <state relative-caret-position="1254">
           <caret line="67" column="5" selection-start-line="54" selection-start-column="3" selection-end-line="67" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/util/StringUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
+        <state relative-caret-position="3234">
           <caret line="169" column="2" selection-start-line="169" selection-start-column="2" selection-end-line="172" selection-end-column="5" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2909#2910#0" expanded="false" />
+            <element signature="e#2953#2954#0" expanded="false" />
+            <element signature="e#3903#3904#0" expanded="false" />
+            <element signature="e#3965#3966#0" expanded="false" />
+            <element signature="e#5048#5049#0" expanded="false" />
+            <element signature="e#5120#5121#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/result/Report.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-858">
+        <state relative-caret-position="132">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#544#545#0" expanded="false" />
+            <element signature="e#586#587#0" expanded="false" />
+            <element signature="e#632#633#0" expanded="false" />
+            <element signature="e#672#673#0" expanded="false" />
+            <element signature="e#846#847#0" expanded="false" />
+            <element signature="e#879#880#0" expanded="false" />
+            <element signature="e#1163#1164#0" expanded="false" />
+            <element signature="e#1195#1196#0" expanded="false" />
+            <element signature="e#1238#1239#0" expanded="false" />
+            <element signature="e#1266#1267#0" expanded="false" />
+            <element signature="e#1318#1319#0" expanded="false" />
+            <element signature="e#1352#1353#0" expanded="false" />
+            <element signature="e#1395#1396#0" expanded="false" />
+            <element signature="e#1424#1425#0" expanded="false" />
+            <element signature="e#1478#1479#0" expanded="false" />
+            <element signature="e#1514#1515#0" expanded="false" />
+            <element signature="e#1556#1557#0" expanded="false" />
+            <element signature="e#1584#1585#0" expanded="false" />
+            <element signature="e#1623#1624#0" expanded="false" />
+            <element signature="e#1657#1658#0" expanded="false" />
+            <element signature="e#2009#2010#0" expanded="false" />
+            <element signature="e#2051#2052#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/result/HTMLReport.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-279">
+        <state relative-caret-position="11528">
           <caret line="535" column="40" selection-start-line="535" selection-start-column="40" selection-end-line="535" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#15049#15050#0" expanded="false" />
+            <element signature="e#15083#15084#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_autotest/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-332">
+          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
+        <state relative-caret-position="390">
+          <caret line="310" column="10" selection-start-line="310" selection-start-column="10" selection-end-line="310" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_autotest/pom.xml">
+    <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/command/TestCaseCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        <state relative-caret-position="263">
+          <caret line="56" column="39" selection-start-line="56" selection-start-column="39" selection-end-line="56" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/command/RedisAssertCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
           <folding />
         </state>
       </provider>
