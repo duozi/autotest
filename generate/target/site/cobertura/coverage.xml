@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
 
-<coverage line-rate="0.0" branch-rate="0.0" lines-covered="0" lines-valid="58" branches-covered="0" branches-valid="10" complexity="6.5" version="1.9.4.1" timestamp="1476349677496">
+<coverage line-rate="0.0" branch-rate="0.0" lines-covered="0" lines-valid="58" branches-covered="0" branches-valid="10" complexity="6.5" version="1.9.4.1" timestamp="1476357499255">
 	<sources>
 		<source>C:/Users/xn056839/IdeaProjects/autotest/generate/target/generated-sources/annotations</source>
 		<source>C:/Users/xn056839/IdeaProjects/autotest/generate/src/main/java</source>
