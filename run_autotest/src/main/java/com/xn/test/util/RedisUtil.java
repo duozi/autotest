@@ -8,6 +8,8 @@ import cn.xn.user.enums.SourceType;
 import cn.xn.user.enums.SystemType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Service;
 import redis.clients.jedis.JedisCluster;
 
@@ -16,19 +18,19 @@ import java.util.Date;
 
 import static com.xn.test.command.RedisCommand.PREFIX_LOGINPWD;
 
-@Service("redisUtil")
+//@Service("redisUtil")
 public class RedisUtil {
     private static final Logger logger = LoggerFactory.getLogger(RedisUtil.class);
-//    public ApplicationContext context = new ClassPathXmlApplicationContext(
-//            "spring.xml");
-//    public JedisCluster jedisCluster = (JedisCluster) context.getBean("jedisCluster");
+    public ApplicationContext context = new ClassPathXmlApplicationContext(
+            "spring.xml");
+    public JedisCluster jedisCluster = (JedisCluster) context.getBean("jedisCluster");
     @Resource
     private IUserRedisService userService;
 
     @Resource
     private ICommonRedisService commonService;
-    @Resource
-    private JedisCluster jedisCluster;
+//    @Resource
+//    private JedisCluster jedisCluster;
 
 
     /**
