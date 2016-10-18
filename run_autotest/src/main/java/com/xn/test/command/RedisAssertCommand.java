@@ -42,8 +42,7 @@ public class RedisAssertCommand implements Command {
         this.redisMethod = redisMethod;
     }
 
-    RedisUtil redisUtil = new RedisUtil();
-//    (RedisUtil) context.getBean("redisUtil");
+    RedisUtil redisUtil = (RedisUtil) context.getBean("redisUtil");
 
     public void setRedisParams(List<KeyValueStore> redisParams) {
         this.redisParams = redisParams;

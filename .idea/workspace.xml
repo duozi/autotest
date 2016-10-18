@@ -38,8 +38,8 @@
       <file leaf-file-name="RedisUtil.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/util/RedisUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
+            <state relative-caret-position="246">
+              <caret line="57" column="67" selection-start-line="57" selection-start-column="67" selection-end-line="57" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,8 +50,8 @@
       <file leaf-file-name="RedisAssertCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/command/RedisAssertCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state relative-caret-position="-1826">
+              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -60,7 +60,7 @@
       <file leaf-file-name="RedisCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/command/RedisCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
+            <state relative-caret-position="1471">
               <caret line="107" column="37" selection-start-line="107" selection-start-column="28" selection-end-line="107" selection-end-column="37" />
               <folding />
             </state>
@@ -217,8 +217,8 @@
         <option value="$PROJECT_DIR$/suite/golable.properties" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/run_autotest/src/resources/spring.xml" />
-        <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/command/RedisAssertCommand.java" />
         <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/util/RedisUtil.java" />
+        <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/command/RedisAssertCommand.java" />
       </list>
     </option>
   </component>
@@ -1206,7 +1206,7 @@
       <workItem from="1476240437921" duration="16453000" />
       <workItem from="1476322043576" duration="23268000" />
       <workItem from="1476425811284" duration="5659000" />
-      <workItem from="1476681809913" duration="19289000" />
+      <workItem from="1476681809913" duration="19535000" />
     </task>
     <task id="LOCAL-00001" summary="delete long name">
       <created>1475033772575</created>
@@ -1306,7 +1306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1476776662158</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="redis">
+      <created>1476777284604</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1476777284604</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1342,7 +1349,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="562561000" />
+    <option name="totallyTimeSpent" value="562807000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2058,26 +2065,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/command/RedisAssertCommand.java">
+    <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/command/RedisCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="1471">
+          <caret line="107" column="37" selection-start-line="107" selection-start-column="28" selection-end-line="107" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/command/RedisCommand.java">
+    <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/command/RedisAssertCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="107" column="37" selection-start-line="107" selection-start-column="28" selection-end-line="107" selection-end-column="37" />
+        <state relative-caret-position="-1826">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/util/RedisUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
+        <state relative-caret-position="246">
+          <caret line="57" column="67" selection-start-line="57" selection-start-column="67" selection-end-line="57" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
