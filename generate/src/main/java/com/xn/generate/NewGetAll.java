@@ -13,6 +13,8 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Type;
 import java.net.URLClassLoader;
 
+import static com.xn.test.service.RunTestSuite.path;
+
 
 /**
  * Created by Administrator on 2016/8/22.
@@ -39,7 +41,7 @@ public class NewGetAll {
                 result.append("interfaceName=" + interface_Name + "\n");
                 result.append("methodName=" + methodName + "\n");
 
-                String folder = writePath + "suite/" + interface_Name + "/" + methodName + "/";
+                String folder = writePath + "/suite/" + interface_Name + "/" + methodName + "/";
                 Type[] types = method.getGenericParameterTypes();//参数类型
                 Type returnType = method.getGenericReturnType();// 返回类型
                 String[] returnTypeList = returnType.toString().split("<");
@@ -84,16 +86,16 @@ public class NewGetAll {
     }
 
     public static void main(String[] args) {
-        String path = "e:\\";
+
         try {
-//            if (args.length != 2) {
-//                logger.error("输入参数错误：[依赖jar地址] [要测试服务名]");
-//                return ;
-//            }
-//            loader = ReflectionUtils.addJar(args[0]);
-            loader=ReflectionUtils.addJar("D:\\ruleengine-skeleton-1.0.0.jar");
-//            getParam(args[1], loader, "e:\\");
-            getParam("com.xiaoniu.dataplatform.ruleengine.service.IRuleEngineService",loader,"e:\\");
+            if (args.length != 2) {
+                logger.error("输入参数错误：[依赖jar地址] [要测试服务名]");
+                return ;
+            }
+            loader = ReflectionUtils.addJar(args[0]);
+
+            getParam(args[1], loader, "/data/generate");
+
             logger.warn("存放地址在本地 {}suite", path);
         } catch (Exception e) {
             e.printStackTrace();

@@ -25,7 +25,7 @@ public class DBUtil {
     public static void newDB() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            File file=new File(path+"suite\\jdbc.properties");
+            File file=new File(path+"suite/jdbc.properties");
             String url = StringUtil.getConfig(file, "jdbc_url","");
             String user = StringUtil.getConfig(file, "jdbc_username","");
             String pwd = StringUtil.getConfig(file, "jdbc_password","");
