@@ -27,8 +27,7 @@ import static com.xn.test.command.AssertCommand.deepAssert;
 public class RedisAssertCommand implements Command {
     private static final Logger logger = LoggerFactory.getLogger(RedisAssertCommand.class);
     private final static String separator = System.getProperty("line.separator", "\r\n");
-    ApplicationContext context = new ClassPathXmlApplicationContext(
-            "spring.xml");
+
     private List<KeyValueStore> redisParams;
     private Assert assertItem;
     private String key;
@@ -42,7 +41,7 @@ public class RedisAssertCommand implements Command {
         this.redisMethod = redisMethod;
     }
 
-    RedisUtil redisUtil = (RedisUtil) context.getBean("redisUtil");
+    RedisUtil redisUtil = new RedisUtil();
 
     public void setRedisParams(List<KeyValueStore> redisParams) {
         this.redisParams = redisParams;

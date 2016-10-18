@@ -18,6 +18,7 @@ import org.slf4j.LoggerFactory;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 
 public class AssertCommand implements Command {
@@ -69,7 +70,8 @@ public class AssertCommand implements Command {
                 throw new AssertNotEqualException("assert is not Equal");
             }
         } else {
-            if (jsonObject.containsKey(key)) {
+            Set set=jsonObject.keySet();
+            if (set.contains(key)) {
                 String returnValue = String.valueOf(jsonObject.get(key));
                 if (!returnValue.equals(value)) {
                     Report.failedPlus();

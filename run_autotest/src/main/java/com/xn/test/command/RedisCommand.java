@@ -18,8 +18,7 @@ import java.util.Date;
 import java.util.UUID;
 
 public class RedisCommand implements Command {
-    ApplicationContext context = new ClassPathXmlApplicationContext(
-            "spring.xml");
+
     private static final Logger logger = LoggerFactory.getLogger(RedisCommand.class);
     public static final String PREFIX_LOGINPWD = "loginPwd";
     private String systemType;
@@ -98,7 +97,7 @@ public class RedisCommand implements Command {
         return time;
     }
 
-    RedisUtil redisUtil = (RedisUtil) context.getBean("redisUtil");
+    RedisUtil redisUtil = new RedisUtil();
 
     /**
      * 从redis中获取登录错误次数
@@ -129,18 +128,18 @@ public class RedisCommand implements Command {
 
     }
 
-    private void logoutDelToken() {
-        try {
-            redisUtil.logout(systemType, sourceType, tokenId, memberNo);
-        } catch (Exception e) {
-            logger.error("delete logout error");
-            e.printStackTrace();
-        }
-    }
+//    private void logoutDelToken() {
+//        try {
+//            redisUtil.logout(systemType, sourceType, tokenId, memberNo);
+//        } catch (Exception e) {
+//            logger.error("delete logout error");
+//            e.printStackTrace();
+//        }
+//    }
 
-    private void loginSaveToken() {
-        redisUtil.saveToken2Redis(systemType, sourceType, loginName, tokenId, memberNo);
-    }
+//    private void loginSaveToken() {
+//        redisUtil.saveToken2Redis(systemType, sourceType, loginName, tokenId, memberNo);
+//    }
 
     private void set(String key,String value,int time) {
         if(StringUtil.isEmpty(key)||StringUtil.isEmpty(value)){
@@ -165,9 +164,9 @@ public class RedisCommand implements Command {
         } else if (methodName.equalsIgnoreCase("getErrorTimes")) {
             getErrorTimes();
         } else if (methodName.equalsIgnoreCase("loginSaveToken")) {
-            loginSaveToken();
+//            loginSaveToken();
         } else if (methodName.equalsIgnoreCase("logoutDelToken")) {
-            logoutDelToken();
+//            logoutDelToken();
         }else if (methodName.equalsIgnoreCase("set")) {
             set(key,value,time);
         }else if (methodName.equalsIgnoreCase("del")) {

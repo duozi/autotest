@@ -68,11 +68,12 @@ public class RunTestSuite {
 
     public static void main(String[] args) throws InterruptedException {
         if (args.length < 1) {
-            logger.error("输入参数错误：[依赖jar地址]");
-            return;
+//            logger.error("输入参数错误：[依赖jar地址]");
+//            return;
         }
-
+//path="d:/";
         loader = ReflectionUtils.addJar(args[0]);
+//        loader=ReflectionUtils.addJar("d:/user-interface-2.0.0-20160926.085005-12.jar");
         ReadSuite readSuite = new ReadSuite();
         RunTestSuite runTestSuite = new RunTestSuite();
         List<Suite> suites = readSuite.getSuites();

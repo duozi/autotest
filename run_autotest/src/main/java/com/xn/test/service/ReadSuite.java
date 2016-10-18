@@ -59,7 +59,8 @@ public class ReadSuite {
      */
     public void readSuitFile() {
 
-        File folder = new File(path+"suite");
+        File folder = new File(path + "suite");
+//        File folder = new File( "suite");
         File[] interfaces = folder.listFiles();
         //接口名层
         for (File interfaceFolder : interfaces) {
@@ -187,7 +188,7 @@ public class ReadSuite {
         List<KeyValueStore> redislist = new ArrayList<>();
         List<Command> redisAssertCommandList = new ArrayList<>();
         List<Command> dbAssertCommandList = new ArrayList<>();
-        ParaAssertCommand paraAssertCommand;
+        ParaAssertCommand paraAssertCommand=null;
         DBAssertCommand dbAssertCommand = null;
         List<String> lines = FileUtil.fileReadeForList(file);
         int redisFlag = 0;
@@ -210,9 +211,9 @@ public class ReadSuite {
                             dbAssertCommand = new DBAssertCommand();
                         }
                     } else if (dbFlag == 1) {
-                        if (line.contains("=") ) {
-                            String type = line.split("=",2)[0];
-                            String value = line.split("=",2)[1];
+                        if (line.contains("=")) {
+                            String type = line.split("=", 2)[0];
+                            String value = line.split("=", 2)[1];
                             if (type.equalsIgnoreCase("sql")) {
                                 dbAssertCommand.setSql(value);
 
@@ -251,9 +252,10 @@ public class ReadSuite {
             }
 
         }
-
-        paraAssertCommand = new ParaAssertCommand(paralist);
-        paraAssertCommand.setAssertItem(assertItem);
+        if (paralist.size() > 0) {
+            paraAssertCommand = new ParaAssertCommand(paralist);
+            paraAssertCommand.setAssertItem(assertItem);
+        }
         return createCommand.createAssertCommand(paraAssertCommand, redisAssertCommandList, dbAssertCommandList, assertItem);
 
     }
@@ -344,7 +346,8 @@ public class ReadSuite {
         }
         return list;
     }
-//给所有文件去掉#
+
+    //给所有文件去掉#
     public static void dealFile(String path) {
         File folder = new File(path);
         if (folder.getName().contains("#")) {
@@ -358,7 +361,8 @@ public class ReadSuite {
             }
         }
     }
-//删除beforeClass和afterClass的文件内容
+
+    //删除beforeClass和afterClass的文件内容
     public static void dealDBFile(String path) {
         File folder = new File(path);
         if (folder.getName().equals("beforeClass") || folder.getName().equals("afterClass")) {
@@ -376,7 +380,7 @@ public class ReadSuite {
     public static void main(String[] args) {
 //        ReadSuite re = new ReadSuite();
 //        re.readSuitFile();
-dealFile("suite");
+        dealFile("suite");
 //        dealDBFile("suite");
     }
 

@@ -13,6 +13,8 @@ import org.slf4j.LoggerFactory;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
+import static com.xn.test.service.RunTestSuite.path;
+
 public class HTMLReport {
     private static final Logger logger = LoggerFactory.getLogger(HTMLReport.class);
     private static String HTML_TMPL = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
@@ -334,7 +336,7 @@ public class HTMLReport {
         String report = generateReport(reportAttrs);
         String ending = generateEnding();
         String result = HTML_TMPL.replace("%(title)s", Title).replace("%(stylesheet)s", styleSheet).replace("%(heading)s", heading).replace("%(report)s", report).replace("%(ending)s", ending);
-        FileUtil.fileWrite("/data/autotest/report2.html", result);
+        FileUtil.fileWrite(path+"report2.html", result);
     }
 
     private static String generateEnding() {
