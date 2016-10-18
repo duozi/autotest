@@ -21,6 +21,15 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Downloads/org.springframework.transaction-3.2.4.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
     <orderEntry type="module" module-name="run_autotest" />
     <orderEntry type="library" name="Maven: com.xiaoniu.dataplatform.ruleengine:ruleengine-skeleton:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.1.35" level="project" />
@@ -82,14 +91,5 @@
     <orderEntry type="library" name="Maven: com.fasterxml:classmate:1.1.0" level="project" />
     <orderEntry type="library" name="Maven: redis.clients:jedis:2.7.2" level="project" />
     <orderEntry type="library" name="Maven: org.apache.commons:commons-pool2:2.3" level="project" />
-    <orderEntry type="module-library">
-      <library>
-        <CLASSES>
-          <root url="jar://$USER_HOME$/Downloads/org.springframework.transaction-3.2.4.RELEASE.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
   </component>
 </module>
