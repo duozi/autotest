@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task.xsd">
+    <context:property-placeholder location="classpath*:redis.properties"/>
+    <context:component-scan base-package="com.xn.test.service,com.xn.test.util">
+
+        <!--<context:exclude-filter expression="org.springframework.stereotype.Controller" type="annotation"/>-->
+    </context:component-scan>
+    
+    <context:annotation-config/>
+    <!--<bean id="propertyConfigurer" class="com.xn.test.common.PropertyPlaceholderConfigurer">-->
+        <!--<property name="locations">-->
+            <!--<list>-->
+                <!--<value>classpath*:redis.properties</value>-->
+            <!--</list>-->
+        <!--</property>-->
+    <!--</bean>-->
+    <import resource="dubbo.xml"/>
+    <bean id="jedisCluster" class="redis.clients.jedis.JedisCluster">
+
+        <constructor-arg index="0">
+            <set>
+                <bean class="redis.clients.jedis.HostAndPort">
+                    <constructor-arg value="${redis.slaver.host1}" />
+                    <constructor-arg type="int" value="${redis.slaver.port1}" />
+                </bean>
+                <bean class="redis.clients.jedis.HostAndPort">
+                    <constructor-arg value="${redis.slaver.host2}" />
+                    <constructor-arg type="int" value="${redis.slaver.port2}" />
+                </bean>
+                <bean class="redis.clients.jedis.HostAndPort">
+                    <constructor-arg value="${redis.slaver.host3}" />
+                    <constructor-arg type="int" value="${redis.slaver.port3}" />
+                </bean>
+            </set>
+        </constructor-arg>
+        <constructor-arg index="1" value="${redis.timeout}">
+        </constructor-arg>
+        <constructor-arg index="2" value="${redis.max.redirections}">
+        </constructor-arg>
+
+    </bean>
+</beans>
