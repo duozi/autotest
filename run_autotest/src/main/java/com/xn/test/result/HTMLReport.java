@@ -2,7 +2,7 @@ package com.xn.test.result;/**
  * Created by xn056839 on 2016/9/12.
  */
 
-import com.google.common.base.Joiner;
+import com.xn.test.mail.JavaMailWithAttachment;
 import com.xn.test.response.Assert;
 import com.xn.test.util.FileUtil;
 import com.xn.test.util.StringUtil;
@@ -10,8 +10,12 @@ import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.File;
 import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 import static com.xn.test.service.RunTestSuite.path;
 
@@ -338,7 +342,13 @@ public class HTMLReport {
         String result = HTML_TMPL.replace("%(title)s", Title).replace("%(stylesheet)s", styleSheet).replace("%(heading)s", heading).replace("%(report)s", report).replace("%(ending)s", ending);
         SimpleDateFormat format = new SimpleDateFormat("yyyyMMddHHmm");
         String timeStmp=format.format(new Date());
-        FileUtil.fileWrite(path+"report/report.html", result);
+        String reportName=path+"report/report_"+timeStmp+".html";
+        FileUtil.fileWrite(reportName, result);
+        JavaMailWithAttachment se = new JavaMailWithAttachment(true);
+        File affix = new File(reportName);
+        File file=new File(path+"suite/sendMail.properties");
+        String sendTo= StringUtil.getConfig(file,"sendTo","zhouxi2@xiaoniu66.com");
+        se.doSendHtmlEmail("dubbo接口测试报告", "dubbo接口测试报告", sendTo, affix);
     }
 
     private static String generateEnding() {
