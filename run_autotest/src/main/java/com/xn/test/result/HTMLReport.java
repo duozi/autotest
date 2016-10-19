@@ -338,7 +338,7 @@ public class HTMLReport {
         String result = HTML_TMPL.replace("%(title)s", Title).replace("%(stylesheet)s", styleSheet).replace("%(heading)s", heading).replace("%(report)s", report).replace("%(ending)s", ending);
         SimpleDateFormat format = new SimpleDateFormat("yyyyMMddHHmm");
         String timeStmp=format.format(new Date());
-        FileUtil.fileWrite(path+"retort/report.html", result);
+        FileUtil.fileWrite(path+"report/report.html", result);
     }
 
     private static String generateEnding() {
