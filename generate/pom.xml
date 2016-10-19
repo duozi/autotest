@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>generateSuite</artifactId>
+    <artifactId>generate_suite</artifactId>
     <packaging>jar</packaging>
     <dependencies>
         <dependency>
@@ -20,7 +20,7 @@
     </dependencies>
 
     <build>
-        <finalName>generateSuite</finalName>
+        <finalName>generate_suite</finalName>
         <resources>
             <resource>
                 <directory>${project.basedir}/src/resources</directory>

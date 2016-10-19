@@ -73,6 +73,15 @@ public class NewGetAll {
             //数据库配置文件
             String jdbcString = "jdbc_url=\njdbc_username=\njdbc_password=";
             FileUtil.fileWrite(writePath + "suite/jdbc.properties", jdbcString);
+            String redisString="redis.slaver.host1=\n" +
+                    "redis.slaver.port1=\n" +
+                    "redis.slaver.host2=\n" +
+                    "redis.slaver.port2=\n" +
+                    "redis.slaver.host3=\n" +
+                    "redis.slaver.port3=\n" +
+                    "redis.timeout=\n" +
+                    "redis.max.redirections=";
+            FileUtil.fileWrite(writePath + "suite/redis.properties", redisString);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
             throw new Exception("interface or class is not exit");
@@ -94,9 +103,9 @@ public class NewGetAll {
             }
             loader = ReflectionUtils.addJar(args[0]);
 
-            getParam(args[1], loader, "/data/generate");
+            getParam(args[1], loader, "/data/autotest/generate/");
 
-            logger.warn("存放地址在本地 {}suite", path);
+            logger.warn("存放地址在本地 {}suite","/data/autotest/generate/" );
         } catch (Exception e) {
             e.printStackTrace();
         }
