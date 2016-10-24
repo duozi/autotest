@@ -5,6 +5,7 @@ package com.xn.test.service;/**
 import com.xn.test.model.Suite;
 import com.xn.test.result.Report;
 import com.xn.test.util.DBUtil;
+import com.xn.test.util.ReflectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -67,14 +68,14 @@ public class RunTestSuite {
     }
 
     public static void main(String[] args) throws InterruptedException {
-//        if (args.length < 2) {
-//            logger.error("输入参数错误：[依赖jar地址] [测试报告邮件接受人]");
-//            return;
-//        }
-path="C:\\Users\\xn056839\\IdeaProjects\\autotest\\";
-//        loader = ReflectionUtils.addJar(args[0]);
+        if (args.length < 2) {
+            logger.error("输入参数错误：[依赖jar地址] [测试报告邮件接受人]");
+            return;
+        }
+//path="C:\\Users\\xn056839\\IdeaProjects\\autotest\\";
+        loader = ReflectionUtils.addJar(args[0]);
 //        loader=ReflectionUtils.addJar("d:/user-interface-2.0.0-20160926.085005-12.jar");
-//        sendMailTo=args[1];
+        sendMailTo=args[1];
         ReadSuite readSuite = new ReadSuite();
         RunTestSuite runTestSuite = new RunTestSuite();
         List<Suite> suites = readSuite.getSuites();
