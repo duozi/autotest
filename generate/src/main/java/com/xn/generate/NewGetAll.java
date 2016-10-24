@@ -7,13 +7,10 @@ import com.xn.test.util.StringUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Type;
 import java.net.URLClassLoader;
-
-import static com.xn.test.service.RunTestSuite.path;
 
 
 /**
@@ -82,6 +79,8 @@ public class NewGetAll {
                     "redis.timeout=\n" +
                     "redis.max.redirections=";
             FileUtil.fileWrite(writePath + "suite/redis.properties", redisString);
+            String mailString="sendTo=";
+            FileUtil.fileWrite(writePath + "suite/sendMail.properties", mailString);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
             throw new Exception("interface or class is not exit");

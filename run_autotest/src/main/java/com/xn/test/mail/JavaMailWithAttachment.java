@@ -39,7 +39,7 @@ public class JavaMailWithAttachment {
         }
         properties.setProperty("mail.smtp.auth", "true");
         session = Session.getInstance(properties);
-        session.setDebug(debug);// 开启后有调试信息
+//        session.setDebug(debug);// 开启后有调试信息
         message = new MimeMessage(session);
     }
 

@@ -5,7 +5,6 @@ package com.xn.test.result;/**
 import com.xn.test.mail.JavaMailWithAttachment;
 import com.xn.test.response.Assert;
 import com.xn.test.util.FileUtil;
-import com.xn.test.util.StringUtil;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,6 +17,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 
 import static com.xn.test.service.RunTestSuite.path;
+import static com.xn.test.service.RunTestSuite.sendMailTo;
 
 public class HTMLReport {
     private static final Logger logger = LoggerFactory.getLogger(HTMLReport.class);
@@ -346,9 +346,9 @@ public class HTMLReport {
         FileUtil.fileWrite(reportName, result);
         JavaMailWithAttachment se = new JavaMailWithAttachment(true);
         File affix = new File(reportName);
-        File file=new File(path+"suite/sendMail.properties");
-        String sendTo= StringUtil.getConfig(file,"sendTo","zhouxi2@xiaoniu66.com");
-        se.doSendHtmlEmail("dubbo接口测试报告", "dubbo接口测试报告", sendTo, affix);
+
+
+        se.doSendHtmlEmail("dubbo接口测试报告", "dubbo接口测试报告", sendMailTo, affix);
     }
 
     private static String generateEnding() {
