@@ -4,6 +4,7 @@ import com.xn.test.common.NewReflect;
 import com.xn.test.mail.JavaMailWithAttachment;
 import com.xn.test.util.FileUtil;
 
+import com.xn.test.util.FileZip;
 import com.xn.test.util.ReflectionUtils;
 import com.xn.test.util.StringUtil;
 import org.slf4j.Logger;
@@ -15,7 +16,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Type;
 import java.net.URLClassLoader;
 
-import static com.xn.test.util.FileZip.zipFile;
+
 
 
 /**
@@ -110,7 +111,8 @@ public class NewGetAll {
 
             logger.warn("存放地址在 {}suite","/data/autotest/generate/" );
             String zipOut="/data/autotest/generate/suite.zip";
-            zipFile("/data/autotest/generate/suite",zipOut);
+            FileZip fileZip=new FileZip();
+            fileZip.zipFile("/data/autotest/generate/suite",zipOut);
             JavaMailWithAttachment se = new JavaMailWithAttachment(true);
             File affix = new File(zipOut);
             se.doSendHtmlEmail("dubbo接口测试文件", "dubbo接口测试文件", args[2], affix);

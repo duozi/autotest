@@ -12,13 +12,9 @@ import java.util.zip.ZipOutputStream;
 public class FileZip {
     private static final Logger logger = LoggerFactory.getLogger(FileZip.class);
 
-    public static void main(String[] args)
-            throws Exception {
-        zipFile("d:/suite","d:/suite.zip")  ;
 
-    }
 
-    public static void zipFile(String input, String output) {
+    public  void zipFile(String input, String output) {
         File f = new File(input);
         ZipOutputStream out = null;
         try {
