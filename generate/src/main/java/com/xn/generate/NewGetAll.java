@@ -58,8 +58,8 @@ public class NewGetAll {
                     }
                 }
                 FileUtil.fileWrite(folder + "config.properties", result.toString());
-                FileUtil.fileWrite(folder + "beforeClass.txt", "");
-                FileUtil.fileWrite(folder + "afterClass.txt", "");
+                FileUtil.fileWrite(folder + "beforeClass", "");
+                FileUtil.fileWrite(folder + "afterClass", "");
                 StringBuffer config = new StringBuffer();
                 config.append("url=\n");
                 config.append("appName=\n");
@@ -101,12 +101,15 @@ public class NewGetAll {
                 logger.error("输入参数错误：[依赖jar地址] [要测试服务名] [测试文件接收邮箱地址]");
                 return;
             }
+
             loader = ReflectionUtils.addJar(args[0]);
+
             String[] service = args[1].trim().split(",");
+//            String[] service = "cn.xn.user.service.ICustomerInfoService".trim().split(",");
             for (String s : service) {
                 getParam(s, loader, "/data/autotest/generate/");
+//                getParam(s, loader, "d:\\test\\");
             }
-
 
             logger.warn("存放地址在 {}suite", "/data/autotest/generate/");
             String zipOut = "/data/autotest/generate/suite.zip";
@@ -115,7 +118,7 @@ public class NewGetAll {
             JavaMailWithAttachment se = new JavaMailWithAttachment(true);
             File affix = new File(zipOut);
             se.doSendHtmlEmail("dubbo接口测试文件", "dubbo接口测试文件", args[2], affix);
-            affix.delete();
+//            affix.delete();
 
         } catch (Exception e) {
             e.printStackTrace();

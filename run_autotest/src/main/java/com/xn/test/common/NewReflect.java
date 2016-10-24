@@ -107,10 +107,10 @@ public class NewReflect {
             result.append( s + "\n");
         }
 
-        FileUtil.fileWrite(folder + "demo_1/demo_1.txt", result.toString());
-        FileUtil.fileWrite(folder + "demo_1/assert.txt", "");
-        FileUtil.fileWrite(folder+"demo_1/before.txt","");
-        FileUtil.fileWrite(folder+"demo_1/after.txt","");
+        FileUtil.fileWrite(folder + "demo_1/demo_1", result.toString());
+        FileUtil.fileWrite(folder + "demo_1/assert", "");
+        FileUtil.fileWrite(folder+"demo_1/before","");
+        FileUtil.fileWrite(folder+"demo_1/after","");
     }
 
 

@@ -1,11 +1,10 @@
 package com.xn.test.util;
 
 
-import com.alibaba.dubbo.common.utils.StringUtils;
+import cn.xn.user.utils.RequestSignUtils;
 import com.xn.test.Exception.CaseErrorEqualException;
 import org.apache.commons.beanutils.PropertyUtilsBean;
-import org.apache.commons.lang.builder.ReflectionToStringBuilder;
-import org.apache.commons.lang.builder.ToStringStyle;
+import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,8 +17,6 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Properties;
 import java.util.TreeMap;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 /**
  * Created by zhouxi.zhou on 2016/3/9.
@@ -131,9 +128,6 @@ public class StringUtil {
         return str;
     }
 
-    public static String lastName(String str) {
-        return str.substring(str.lastIndexOf(".") + 1);
-    }
 
     public static List<String> listAddSign(List<String> lines) throws CaseErrorEqualException {
         String param = "";
@@ -235,10 +229,30 @@ public class StringUtil {
         sign_sb.append("&key=" + key);
         return md5(sign_sb.toString());
     }
+    public static boolean validateSign(Object obj){
 
+        TreeMap<String,String> map = RequestSignUtils.beanToSortMap(obj);
+        String sign = map.remove("sign");
+
+
+        String key = getPro("test.properties", "key.QGZ" );
+
+        String addSign = RequestSignUtils.addSign(map, key);
+        if(StringUtils.isNotEmpty(addSign) && addSign.equals(sign)) {
+            return true;
+        }else{
+            logger.warn("isPassSign@, 签名错误，传入签名:{},计算出的签名:{}", sign, addSign);
+            return false;
+        }
+    }
     public static void main(String[] args) {
 //        System.out.println(addLoginName());
-        System.out.println(md5("appVersion=2.4.0&friendJson=[{\"friendMobile\":\"111111111114\",\"friendName\":\"测试05\"}]&memberNo=8e299dbf-fd2a-4282-966a-d1f946683133&mobile=1232545&sourceType=android&systemType=QGZ&key=J1IGqSYgjv0pPF6TIgXu4G8KAp6rkd3T"));
+//        System.out.println(md5("appVersion=2.4.0&friendJson=[{\"friendMobile\":\"111111111114\",\"friendName\":\"测试05\"}]&memberNo=8e299dbf-fd2a-4282-966a-d1f946683133&mobile=1232545&sourceType=android&systemType=QGZ&key=J1IGqSYgjv0pPF6TIgXu4G8KAp6rkd3T"));
+        System.out.println(md5("appVersion=2.4.0&days=3&hour=72&isDay=false&memberNo=b4f3904f-cfe7-4572-8a07-f0e48bb80a74&refereeNo=1256097325667&sourceType=android&systemType=QGZ&key=J1IGqSYgjv0pPF6TIgXu4G8KAp6rkd3T"));
+//        appVersion=2.4.0&day=false&days=3&hour=72&memberNo=b4f3904f-cfe7-4572-8a07-f0e48bb80a74&refereeNo=1256097325667&sourceType=android&systemType=QGZ&key=J1IGqSYgjv0pPF6TIgXu4G8KAp6rkd3T
+
+
+
 //        String s = getSign("checkLoginReq.setAppVersion(\"2.4.0\");\n" +
 //                "\t\tcheckLoginReq.setMemberNo(\"05135e9b-7fdb-478a-ba40-569bdf8b7331\");\n" +
 //                "\t\tcheckLoginReq.setSign(\"%\");\n" +
@@ -252,6 +266,15 @@ public class StringUtil {
 //                null);
 //        JOptionPane.showMessageDialog(null, getSign(str), "显示ID",JOptionPane.PLAIN_MESSAGE);
 //
+//        UpdateRefereeReq updateRefereeReq=new UpdateRefereeReq();
+//        updateRefereeReq.setAppVersion("2.4.0");
+//        updateRefereeReq.setMemberNo("b4f3904f-cfe7-4572-8a07-f0e48bb80a74");
+//        updateRefereeReq.setDay(false);
+//        updateRefereeReq.setRefereeNo("1256097325667");
+//        updateRefereeReq.setDays(3);
+//        updateRefereeReq.setSourceType("android");
+//        updateRefereeReq.setSystemType("QGZ");
+//        validateSign(updateRefereeReq);
 
     }
 
