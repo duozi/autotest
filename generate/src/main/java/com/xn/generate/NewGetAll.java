@@ -4,7 +4,6 @@ import com.xn.test.common.NewReflect;
 import com.xn.test.mail.JavaMailWithAttachment;
 import com.xn.test.util.FileUtil;
 
-import com.xn.test.util.FileZip;
 import com.xn.test.util.ReflectionUtils;
 import com.xn.test.util.StringUtil;
 import org.slf4j.Logger;

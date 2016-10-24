@@ -1,4 +1,4 @@
-package com.xn.test.util;/**
+package com.xn.generate;/**
  * Created by xn056839 on 2016/10/24.
  */
 
@@ -11,8 +11,6 @@ import java.util.zip.ZipOutputStream;
 
 public class FileZip {
     private static final Logger logger = LoggerFactory.getLogger(FileZip.class);
-
-
 
     public  void zipFile(String input, String output) {
         File f = new File(input);
