@@ -99,7 +99,7 @@ public class JavaMailWithAttachment {
             // 发送
             transport.sendMessage(message, message.getAllRecipients());
 
-            System.out.println("send success!");
+            System.out.println("send e-mail success! please check ");
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

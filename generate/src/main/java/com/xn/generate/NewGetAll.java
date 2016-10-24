@@ -3,7 +3,6 @@ package com.xn.generate;
 import com.xn.test.common.NewReflect;
 import com.xn.test.mail.JavaMailWithAttachment;
 import com.xn.test.util.FileUtil;
-
 import com.xn.test.util.ReflectionUtils;
 import com.xn.test.util.StringUtil;
 import org.slf4j.Logger;
@@ -14,8 +13,6 @@ import java.io.IOException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Type;
 import java.net.URLClassLoader;
-
-
 
 
 /**
@@ -75,7 +72,7 @@ public class NewGetAll {
             //数据库配置文件
             String jdbcString = "jdbc_url=\njdbc_username=\njdbc_password=";
             FileUtil.fileWrite(writePath + "suite/jdbc.properties", jdbcString);
-            String redisString="redis.slaver.host1=\n" +
+            String redisString = "redis.slaver.host1=\n" +
                     "redis.slaver.port1=\n" +
                     "redis.slaver.host2=\n" +
                     "redis.slaver.port2=\n" +
@@ -102,16 +99,19 @@ public class NewGetAll {
         try {
             if (args.length != 3) {
                 logger.error("输入参数错误：[依赖jar地址] [要测试服务名] [测试文件接收邮箱地址]");
-                return ;
+                return;
             }
             loader = ReflectionUtils.addJar(args[0]);
+            String[] service = args[1].trim().split(",");
+            for (String s : service) {
+                getParam(s, loader, "/data/autotest/generate/");
+            }
 
-            getParam(args[1], loader, "/data/autotest/generate/");
 
-            logger.warn("存放地址在 {}suite","/data/autotest/generate/" );
-            String zipOut="/data/autotest/generate/suite.zip";
-            FileZip fileZip=new FileZip();
-            fileZip.zipFile("/data/autotest/generate/suite",zipOut);
+            logger.warn("存放地址在 {}suite", "/data/autotest/generate/");
+            String zipOut = "/data/autotest/generate/suite.zip";
+            FileZip fileZip = new FileZip();
+            fileZip.zipFile("/data/autotest/generate/suite", zipOut);
             JavaMailWithAttachment se = new JavaMailWithAttachment(true);
             File affix = new File(zipOut);
             se.doSendHtmlEmail("dubbo接口测试文件", "dubbo接口测试文件", args[2], affix);
@@ -123,4 +123,6 @@ public class NewGetAll {
 
 
     }
+
+
 }
