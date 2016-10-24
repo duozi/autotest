@@ -8,10 +8,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f03f9033-a17d-480a-ba82-e1f91e2004da" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/NewGetAll.java" afterPath="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/NewGetAll.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/mail/JavaMailWithAttachment.java" afterPath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/mail/JavaMailWithAttachment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/result/HTMLReport.java" afterPath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/result/HTMLReport.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/service/RunTestSuite.java" afterPath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/service/RunTestSuite.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/src/resources/log4j.properties" afterPath="$PROJECT_DIR$/run_autotest/src/resources/log4j.properties" />
     </list>
     <ignored path="autotest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -126,11 +123,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RunTestSuite.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RunTestSuite.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/service/RunTestSuite.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="464">
               <caret line="81" column="42" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/run_autotest/src/resources/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -141,16 +148,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="880">
               <caret line="58" column="34" selection-start-line="58" selection-start-column="34" selection-end-line="58" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5566">
-              <caret line="253" column="21" selection-start-line="253" selection-start-column="21" selection-end-line="253" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -195,7 +192,6 @@
         <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/common/Reflect.java" />
         <option value="$PROJECT_DIR$/run_autotest/src/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/util/StringUtil.java" />
-        <option value="$PROJECT_DIR$/run_autotest/src/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/service/NewGetAll.java" />
         <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/model/ServiceDesc.java" />
         <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/objectfactory/MapFactory.java" />
@@ -236,6 +232,7 @@
         <option value="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/NewGetAll.java" />
         <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/result/HTMLReport.java" />
         <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/service/RunTestSuite.java" />
+        <option value="$PROJECT_DIR$/run_autotest/src/resources/log4j.properties" />
       </list>
     </option>
   </component>
@@ -1381,7 +1378,7 @@
       <workItem from="1476842408017" duration="6445000" />
       <workItem from="1476862337293" duration="7835000" />
       <workItem from="1476932620504" duration="1776000" />
-      <workItem from="1477274160362" duration="702000" />
+      <workItem from="1477274160362" duration="1320000" />
     </task>
     <task id="LOCAL-00001" summary="delete long name">
       <created>1475033772575</created>
@@ -1516,7 +1513,14 @@
       <option name="project" value="LOCAL" />
       <updated>1476872495276</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="mail">
+      <created>1477274882289</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1477274882289</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1552,7 +1556,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="582944000" />
+    <option name="totallyTimeSpent" value="583562000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1901,6 +1905,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1916,6 +1921,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
           <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1990,6 +1996,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4554">
           <caret line="228" column="21" selection-start-line="228" selection-start-column="21" selection-end-line="228" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2058,13 +2065,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="19" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run_autotest/src/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -2199,6 +2199,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="464">
           <caret line="81" column="42" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_autotest/src/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
           <folding />
         </state>
       </provider>
