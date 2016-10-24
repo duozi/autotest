@@ -116,6 +116,6 @@ public class JavaMailWithAttachment {
     public static void main(String[] args) {
         JavaMailWithAttachment se = new JavaMailWithAttachment(true);
         File affix = new File("d:\\suite.zip");
-        se.doSendHtmlEmail("dubbo接口测试报告", "dubbo接口测试报告", "zhouxi2@xiaoniu66.com", affix);//
+        se.doSendHtmlEmail("dubbo接口测试文件", "dubbo接口测试文件", "zhouxi2@xiaoniu66.com", affix);//
     }
 }
