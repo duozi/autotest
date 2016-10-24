@@ -52,4 +52,10 @@ public class FileZip {
             in.close();
         }
     }
+
+    public static void main(String[] args) {
+        FileZip f=new FileZip();
+
+        f.zipFile("d:\\suite","d:\\suite.zip");
+    }
 }

@@ -115,7 +115,14 @@ public class NewGetAll {
             String zipOut = "/data/autotest/generate/suite.zip";
             FileZip fileZip = new FileZip();
             fileZip.zipFile("/data/autotest/generate/suite", zipOut);
-            JavaMailWithAttachment se = new JavaMailWithAttachment(true);
+            File f=new File(zipOut);
+            if(f.exists()){
+                System.out.println(f.getAbsolutePath());
+
+            }
+            else {
+                System.out.println("not exists");
+            }JavaMailWithAttachment se = new JavaMailWithAttachment(true);
             File affix = new File(zipOut);
             se.doSendHtmlEmail("dubbo接口测试文件", "dubbo接口测试文件", args[2], affix);
 //            affix.delete();
