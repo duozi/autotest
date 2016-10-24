@@ -5,17 +5,15 @@ package com.xn.test.service;/**
 import com.google.common.collect.Lists;
 import com.xn.test.Exception.CaseErrorEqualException;
 import com.xn.test.command.*;
-import com.xn.test.objectfactory.IntFactory;
-import com.xn.test.response.Assert;
 import com.xn.test.model.KeyValueStore;
 import com.xn.test.model.ServiceDesc;
 import com.xn.test.model.Suite;
+import com.xn.test.response.Assert;
 import com.xn.test.result.Report;
 import com.xn.test.util.FileUtil;
 import com.xn.test.util.StringUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import redis.clients.jedis.BinaryClient;
 
 import java.io.File;
 import java.util.ArrayList;
@@ -29,7 +27,7 @@ public class ReadSuite {
      * 以行为单位读取文件，常用于读面向行的格式化文件
      */
     private Suite suite;
-    List<Suite> suites = new ArrayList<>();
+    List<Suite> suites = new ArrayList();
     private ServiceDesc serviceDesc;
     String interfaceName;
     public CreateCommand createCommand = new CreateCommand();

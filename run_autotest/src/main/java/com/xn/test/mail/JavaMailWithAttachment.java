@@ -115,7 +115,7 @@ public class JavaMailWithAttachment {
 
     public static void main(String[] args) {
         JavaMailWithAttachment se = new JavaMailWithAttachment(true);
-        File affix = new File("d:\\suite.zip");
-        se.doSendHtmlEmail("dubbo接口测试文件", "dubbo接口测试文件", "zhouxi2@xiaoniu66.com", affix);//
+        File affix = new File("d:\\suite.rar");
+        se.doSendHtmlEmail("dubbo接口测试文件目录结构", "这是程序自动生成的dubbo接口测试文件目录结构，文件名为suite不能修改,其余case可以参照现有的结构编写", "zhouxi2@xiaoniu66.com", affix);//
     }
 }

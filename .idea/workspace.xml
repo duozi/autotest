@@ -8,8 +8,13 @@
   <component name="ChangeListManager">
     <list default="true" id="f03f9033-a17d-480a-ba82-e1f91e2004da" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/NewGetAll.java" afterPath="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/NewGetAll.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/FileZip.java" afterPath="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/FileZip.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/common/NewReflect.java" afterPath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/common/NewReflect.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/mail/JavaMailWithAttachment.java" afterPath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/mail/JavaMailWithAttachment.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/result/HTMLReport.java" afterPath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/result/HTMLReport.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/result/Report.java" afterPath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/result/Report.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/service/ReadSuite.java" afterPath="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/service/ReadSuite.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_autotest/src/resources/mail.properties" afterPath="$PROJECT_DIR$/run_autotest/src/resources/mail.properties" />
     </list>
     <ignored path="autotest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,21 +40,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StringUtil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/util/StringUtil.java">
+      <file leaf-file-name="HTMLReport.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/result/HTMLReport.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="211" column="5" selection-start-line="211" selection-start-column="5" selection-end-line="211" selection-end-column="5" />
+            <state relative-caret-position="154">
+              <caret line="372" column="62" selection-start-line="372" selection-start-column="62" selection-end-line="372" selection-end-column="62" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NewGetAll.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Report.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/result/Report.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="35" column="59" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="59" />
+              <folding>
+                <element signature="e#469#470#0" expanded="true" />
+                <element signature="e#511#512#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NewGetAll.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/generate/src/main/java/com/xn/generate/NewGetAll.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="120" column="42" selection-start-line="120" selection-start-column="42" selection-end-line="120" selection-end-column="42" />
+            <state relative-caret-position="209">
+              <caret line="122" column="21" selection-start-line="122" selection-start-column="21" selection-end-line="122" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -67,11 +85,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JavaMailWithAttachment.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="JavaMailWithAttachment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/mail/JavaMailWithAttachment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="118" column="54" selection-start-line="118" selection-start-column="54" selection-end-line="118" selection-end-column="54" />
+            <state relative-caret-position="373">
+              <caret line="113" column="5" selection-start-line="113" selection-start-column="5" selection-end-line="113" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mail.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/run_autotest/src/resources/mail.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -80,8 +108,8 @@
       <file leaf-file-name="ReadSuite.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/service/ReadSuite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="384" column="5" selection-start-line="384" selection-start-column="5" selection-end-line="384" selection-end-column="5" />
+            <state relative-caret-position="395">
+              <caret line="378" column="41" selection-start-line="378" selection-start-column="41" selection-end-line="378" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -90,18 +118,8 @@
       <file leaf-file-name="NewReflect.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/common/NewReflect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-88">
-              <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/generate/src/resources/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
-              <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+              <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -110,8 +128,8 @@
       <file leaf-file-name="FileZip.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/generate/src/main/java/com/xn/generate/FileZip.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-385">
-              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+            <state relative-caret-position="139">
+              <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -124,16 +142,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="348">
               <caret line="82" column="25" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="log4j.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/run_autotest/src/resources/log4j.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="31" selection-start-line="14" selection-start-column="31" selection-end-line="14" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -168,7 +176,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/common/Reflect.java" />
         <option value="$PROJECT_DIR$/run_autotest/src/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/service/NewGetAll.java" />
         <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/model/ServiceDesc.java" />
@@ -190,7 +197,6 @@
         <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/command/AssertCommand.java" />
         <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ILoginService/doIsLogin/demo_2/assert" />
         <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/util/RedisUtil.java" />
-        <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/service/ReadSuite.java" />
         <option value="$PROJECT_DIR$/run_autotest/src/resources/spring.xml" />
         <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/command/RedisCommand.java" />
         <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/command/RedisAssertCommand.java" />
@@ -202,23 +208,25 @@
         <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/mail/MailSenderFactory.java" />
         <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/mail/ProductPriceObserver.java" />
         <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/mail/JavaMail.java" />
-        <option value="$PROJECT_DIR$/run_autotest/src/resources/mail.properties" />
         <option value="$PROJECT_DIR$/suite/sendMail.properties" />
-        <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/result/HTMLReport.java" />
         <option value="$PROJECT_DIR$/generate/src/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/util/FileZip.java" />
-        <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/common/NewReflect.java" />
         <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ICustomerInfoService/serviceConfig.properties" />
         <option value="$PROJECT_DIR$/suite/jdbc.properties" />
         <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/service/test.java" />
         <option value="$PROJECT_DIR$/suite/cn.xn.user.service.ICustomerInfoService/updateRefereeInfo/demo_1/demo_1" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/util/StringUtil.java" />
-        <option value="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/FileZip.java" />
         <option value="$PROJECT_DIR$/run_autotest/src/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/service/RunTestSuite.java" />
-        <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/mail/JavaMailWithAttachment.java" />
         <option value="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/NewGetAll.java" />
+        <option value="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/FileZip.java" />
+        <option value="$PROJECT_DIR$/run_autotest/src/resources/mail.properties" />
+        <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/mail/JavaMailWithAttachment.java" />
+        <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/common/NewReflect.java" />
+        <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/result/HTMLReport.java" />
+        <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/result/Report.java" />
+        <option value="$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/service/ReadSuite.java" />
       </list>
     </option>
   </component>
@@ -289,10 +297,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="-1928" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -379,6 +387,88 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="run_autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="run_autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="run_autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="run_autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1078,7 +1168,7 @@
       <workItem from="1476842408017" duration="6445000" />
       <workItem from="1476862337293" duration="7835000" />
       <workItem from="1476932620504" duration="1776000" />
-      <workItem from="1477274160362" duration="18980000" />
+      <workItem from="1477274160362" duration="24729000" />
     </task>
     <task id="LOCAL-00001" summary="delete long name">
       <created>1475033772575</created>
@@ -1297,7 +1387,14 @@
       <option name="project" value="LOCAL" />
       <updated>1477300957686</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="generate&#10;">
+      <created>1477301809129</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1477301809129</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1333,7 +1430,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="601222000" />
+    <option name="totallyTimeSpent" value="606971000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1345,7 +1442,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1356,7 +1453,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5421687" sideWeight="0.504329" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15422077" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.62891567" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2939759" sideWeight="0.63906926" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.07586207" sideWeight="0.63906926" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28554216" sideWeight="0.6861472" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1738,17 +1835,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/result/Report.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
-          <folding>
-            <element signature="e#1163#1164#0" expanded="false" />
-            <element signature="e#1195#1196#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/mail/test.java" />
     <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/mail/MailAuthenticator.java" />
     <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/mail/MailSenderFactory.java" />
@@ -1801,14 +1887,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_autotest/src/resources/mail.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/suite/sendMail.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1838,16 +1916,6 @@
         <state relative-caret-position="330">
           <caret line="46" column="31" selection-start-line="46" selection-start-column="31" selection-end-line="46" selection-end-column="31" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/result/HTMLReport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="348" column="0" selection-start-line="348" selection-start-column="0" selection-end-line="348" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1971,37 +2039,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/common/NewReflect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-88">
-          <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/service/ReadSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="384" column="5" selection-start-line="384" selection-start-column="5" selection-end-line="384" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/service/RunTestSuite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="348">
           <caret line="82" column="25" selection-start-line="82" selection-start-column="25" selection-end-line="82" selection-end-column="25" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/generate/src/main/java/com/xn/generate/FileZip.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-385">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2013,21 +2055,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/mail/JavaMailWithAttachment.java">
+    <entry file="file://$PROJECT_DIR$/generate/src/main/java/com/xn/generate/FileZip.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="118" column="54" selection-start-line="118" selection-start-column="54" selection-end-line="118" selection-end-column="54" />
-          <folding />
+        <state relative-caret-position="139">
+          <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/generate/src/main/java/com/xn/generate/NewGetAll.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="120" column="42" selection-start-line="120" selection-start-column="42" selection-end-line="120" selection-end-column="42" />
+        <state relative-caret-position="209">
+          <caret line="122" column="21" selection-start-line="122" selection-start-column="21" selection-end-line="122" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_autotest/src/resources/mail.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/common/NewReflect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="36" column="27" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/result/HTMLReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="372" column="62" selection-start-line="372" selection-start-column="62" selection-end-line="372" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/result/Report.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="35" column="59" selection-start-line="35" selection-start-column="59" selection-end-line="35" selection-end-column="59" />
+          <folding>
+            <element signature="e#469#470#0" expanded="true" />
+            <element signature="e#511#512#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/service/ReadSuite.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="378" column="41" selection-start-line="378" selection-start-column="41" selection-end-line="378" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_autotest/src/main/java/com/xn/test/mail/JavaMailWithAttachment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="113" column="5" selection-start-line="113" selection-start-column="5" selection-end-line="113" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>

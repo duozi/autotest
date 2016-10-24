@@ -4,10 +4,8 @@ package com.xn.test.result;/**
 
 import com.xn.test.response.Assert;
 import com.xn.test.util.FileUtil;
-import com.xn.test.util.StringUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import sun.util.calendar.BaseCalendar;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -35,7 +33,7 @@ public class Report {
         return assertList;
     }
 
-    private ArrayList<Assert> assertList = new ArrayList<>();
+    private ArrayList<Assert> assertList = new ArrayList();
 
     private Report() {
     }

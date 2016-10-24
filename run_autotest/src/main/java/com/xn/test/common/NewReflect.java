@@ -30,8 +30,8 @@ public class NewReflect {
     /**
      * 存放set方法
      */
-    public List<String> setMethods = new ArrayList<>();
-    public ArrayList<Method> getMethods = new ArrayList<>();
+    public List<String> setMethods = new ArrayList();
+    public ArrayList<Method> getMethods = new ArrayList();
 
     /**
      * 定义构造方法 -- 一般来说是个pojo

@@ -56,6 +56,6 @@ public class FileZip {
     public static void main(String[] args) {
         FileZip f=new FileZip();
 
-        f.zipFile("d:\\suite","d:\\suite.zip");
+        f.zipFile("d:\\suite1","d:\\suite1.zip");
     }
 }

@@ -370,7 +370,7 @@ public class HTMLReport {
                     ArrayList<Assert> caseList = methodMap.get(methodName);
                     caseList.add(ass);
                 } else {
-                    ArrayList<Assert> caseList = new ArrayList<>();
+                    ArrayList<Assert> caseList = new ArrayList();
                     caseList.add(ass);
                     methodMap.put(methodName, caseList);
                 }
