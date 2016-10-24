@@ -1,16 +1,20 @@
 package com.xn.generate;
 
 import com.xn.test.common.NewReflect;
+import com.xn.test.mail.JavaMailWithAttachment;
 import com.xn.test.util.FileUtil;
 import com.xn.test.util.ReflectionUtils;
 import com.xn.test.util.StringUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.File;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Type;
 import java.net.URLClassLoader;
+
+import static com.xn.test.util.FileZip.zipFile;
 
 
 /**
@@ -56,8 +60,8 @@ public class NewGetAll {
                     }
                 }
                 FileUtil.fileWrite(folder + "config.properties", result.toString());
-                FileUtil.fileWrite(folder + "beforeClass", "");
-                FileUtil.fileWrite(folder + "afterClass", "");
+                FileUtil.fileWrite(folder + "beforeClass.txt", "");
+                FileUtil.fileWrite(folder + "afterClass.txt", "");
                 StringBuffer config = new StringBuffer();
                 config.append("url=\n");
                 config.append("appName=\n");
@@ -79,8 +83,7 @@ public class NewGetAll {
                     "redis.timeout=\n" +
                     "redis.max.redirections=";
             FileUtil.fileWrite(writePath + "suite/redis.properties", redisString);
-            String mailString="sendTo=";
-            FileUtil.fileWrite(writePath + "suite/sendMail.properties", mailString);
+
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
             throw new Exception("interface or class is not exit");
@@ -96,15 +99,22 @@ public class NewGetAll {
     public static void main(String[] args) {
 
         try {
-            if (args.length != 2) {
-                logger.error("输入参数错误：[依赖jar地址] [要测试服务名]");
+            if (args.length != 3) {
+                logger.error("输入参数错误：[依赖jar地址] [要测试服务名] [测试文件接收邮箱地址]");
                 return ;
             }
             loader = ReflectionUtils.addJar(args[0]);
 
             getParam(args[1], loader, "/data/autotest/generate/");
 
-            logger.warn("存放地址在本地 {}suite","/data/autotest/generate/" );
+            logger.warn("存放地址在 {}suite","/data/autotest/generate/" );
+            String zipOut="/data/autotest/generate/suite.zip";
+            zipFile("/data/autotest/generate/suite",zipOut);
+            JavaMailWithAttachment se = new JavaMailWithAttachment(true);
+            File affix = new File(zipOut);
+            se.doSendHtmlEmail("dubbo接口测试文件", "dubbo接口测试文件", args[2], affix);
+            affix.delete();
+
         } catch (Exception e) {
             e.printStackTrace();
         }

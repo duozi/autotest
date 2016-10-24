@@ -6,9 +6,7 @@ import com.xn.test.util.StringUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import java.lang.reflect.Type;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.ArrayList;
@@ -109,10 +107,10 @@ public class NewReflect {
             result.append( s + "\n");
         }
 
-        FileUtil.fileWrite(folder + "demo_1/demo_1", result.toString());
-        FileUtil.fileWrite(folder + "demo_1/assert", "");
-        FileUtil.fileWrite(folder+"demo_1/before","");
-        FileUtil.fileWrite(folder+"demo_1/after","");
+        FileUtil.fileWrite(folder + "demo_1/demo_1.txt", result.toString());
+        FileUtil.fileWrite(folder + "demo_1/assert.txt", "");
+        FileUtil.fileWrite(folder+"demo_1/before.txt","");
+        FileUtil.fileWrite(folder+"demo_1/after.txt","");
     }
 
 
