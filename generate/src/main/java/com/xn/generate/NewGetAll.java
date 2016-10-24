@@ -97,10 +97,10 @@ public class NewGetAll {
     public static void main(String[] args) {
 
         try {
-//            if (args.length != 3) {
-//                logger.error("输入参数错误：[依赖jar地址] [要测试服务名] [测试文件接收邮箱地址]");
-//                return;
-//            }
+            if (args.length != 3) {
+                logger.error("输入参数错误：[依赖jar地址] [要测试服务名] [测试文件接收邮箱地址]");
+                return;
+            }
 
             loader = ReflectionUtils.addJar(args[0]);
 
@@ -119,8 +119,7 @@ public class NewGetAll {
 
             JavaMailWithAttachment se = new JavaMailWithAttachment(true);
             File affix = new File(zipOut);
-            System.out.println("-------"+args[2]);
-            se.doSendHtmlEmail("dubbo接口测试文件", "dubbo接口测试文件", args[2], affix);
+            se.doSendHtmlEmail("dubbo接口测试文件", "这是程序自动生成的dubbo接口测试文件目录结构，文件名为suite不能修改,其余case可以参照现有的结构编写", args[2], affix);
 //            affix.delete();
 
         } catch (Exception e) {
