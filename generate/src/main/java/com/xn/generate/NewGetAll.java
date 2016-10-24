@@ -97,10 +97,10 @@ public class NewGetAll {
     public static void main(String[] args) {
 
         try {
-            if (args.length != 3) {
-                logger.error("输入参数错误：[依赖jar地址] [要测试服务名] [测试文件接收邮箱地址]");
-                return;
-            }
+//            if (args.length != 3) {
+//                logger.error("输入参数错误：[依赖jar地址] [要测试服务名] [测试文件接收邮箱地址]");
+//                return;
+//            }
 
             loader = ReflectionUtils.addJar(args[0]);
 
