@@ -82,6 +82,6 @@ public class RunTestSuite {
         runTestSuite.setTestSites(suites);
         runTestSuite.run();
 
-        logger.warn("执行报告的地址在 /data/autotest/report");
+        logger.warn("执行报告的地址在 /data/autotest/user/report");
     }
 }
