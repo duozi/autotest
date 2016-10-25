@@ -134,6 +134,9 @@ public class StringUtil {
         String key = "";
         for (String line : lines) {
             if (!line.startsWith("#")&&line.split("=").length == 2) {
+                if(line.startsWith("isDay")){
+                    line.replace("isDay","day");
+                }
                 param += line + "&";
                 if (line.startsWith("systemType")) {
                     String value = line.split("=")[1];
