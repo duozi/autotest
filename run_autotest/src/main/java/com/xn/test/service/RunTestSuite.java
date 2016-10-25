@@ -32,7 +32,7 @@ public class RunTestSuite {
 
     public void run() throws InterruptedException {
         Report.getReport().setStartTime(new Date());
-        DBUtil.newDB();
+        boolean falg = DBUtil.newDB();
         for (int i = 0; i < testSuites.size(); i++) {
 
             final int finalI = i;
@@ -59,7 +59,9 @@ public class RunTestSuite {
             if (exe.isTerminated()) {
                 Report.getReport().setStopTime(new Date());
 
-                DBUtil.closeDB();
+                if (falg) {
+                    DBUtil.closeDB();
+                }
 //                Report.getReport().generateReport();
                 generateResultReport();
                 break;
