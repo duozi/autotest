@@ -87,7 +87,7 @@ public class NewReflect {
 
     public void getSetClass(Class cls, String folder, String para) {
         StringBuffer result = new StringBuffer();
-        setMethods = new ArrayList<>();
+        setMethods = new ArrayList();
 
         Method[] methods = cls.getMethods();
         for (Method method : methods) {

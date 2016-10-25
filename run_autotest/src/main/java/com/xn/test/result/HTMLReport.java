@@ -375,16 +375,16 @@ public class HTMLReport {
                     methodMap.put(methodName, caseList);
                 }
             } else {
-                ArrayList<Assert> caseList = new ArrayList<>();
+                ArrayList<Assert> caseList = new ArrayList();
                 caseList.add(ass);
-                LinkedHashMap<String, ArrayList<Assert>> methodMap = new LinkedHashMap<>();
+                LinkedHashMap<String, ArrayList<Assert>> methodMap = new LinkedHashMap();
                 methodMap.put(methodName, caseList);
                 interfaceMap.put(interfaceName, methodMap);
             }
         }
 
 
-        ArrayList<String> results = new ArrayList<>();
+        ArrayList<String> results = new ArrayList();
         int methodF = 0;
         int methodP = 0;
         int methodE = 0;
@@ -508,7 +508,7 @@ public class HTMLReport {
 
     private static String generateHeading(Map<String, String> att) {
         HEADING_TMPL = TEST_TMPL + HEADING_TMPL;
-        ArrayList<String> lines = new ArrayList<>();
+        ArrayList<String> lines = new ArrayList();
         for (String key : att.keySet()) {
             String line = HEADING_ATTRIBUTE_TMPL.replace("%(name)s", key).replace("%(value)s", att.get(key));
             lines.add(line);
@@ -550,7 +550,7 @@ public class HTMLReport {
         int failed = report.getFailed();
         int error = report.getError();
         int pass = total - error - failed;
-        LinkedHashMap<String, String> result = new LinkedHashMap<>();
+        LinkedHashMap<String, String> result = new LinkedHashMap();
         result.put("startTime", startTime);
         result.put("duration", duration);
         result.put("total", String.valueOf(total));

@@ -87,7 +87,7 @@ public class ReadSuite {
                         int jumpMethod = 1;//跳过service 1代表跳过
                         File[] files = methodFolder.listFiles();
                         //配置文件和case
-                        List<Command> testCaseCommandList = new ArrayList<>();
+                        List<Command> testCaseCommandList = new ArrayList();
                         suite = new Suite();
                         for (File file : files) {
                             if (file.getName().equals("config.properties")) {
@@ -164,7 +164,7 @@ public class ReadSuite {
     }
 
     public Command dealCaseFile(File file, String casePath) throws CaseErrorEqualException {
-        List<KeyValueStore> list = new ArrayList<>();
+        List<KeyValueStore> list = new ArrayList();
         List<String> lines = FileUtil.fileReadeForList(file);
         lines = StringUtil.listAddSign(lines);
         for (String line : lines) {
@@ -182,10 +182,10 @@ public class ReadSuite {
 
     public Command dealAssertFile(File file, String caseName) {
         Assert assertItem = new Assert(serviceDesc.getClazz(), serviceDesc.getMethodName(), caseName);
-        List<KeyValueStore> paralist = new ArrayList<>();
-        List<KeyValueStore> redislist = new ArrayList<>();
-        List<Command> redisAssertCommandList = new ArrayList<>();
-        List<Command> dbAssertCommandList = new ArrayList<>();
+        List<KeyValueStore> paralist = new ArrayList();
+        List<KeyValueStore> redislist = new ArrayList();
+        List<Command> redisAssertCommandList = new ArrayList();
+        List<Command> dbAssertCommandList = new ArrayList();
         ParaAssertCommand paraAssertCommand=null;
         DBAssertCommand dbAssertCommand = null;
         List<String> lines = FileUtil.fileReadeForList(file);
@@ -260,7 +260,7 @@ public class ReadSuite {
 
     public List<Command> dealBeforeClassFile(File file) {
 
-        List<Command> beforeClass = new ArrayList<>();
+        List<Command> beforeClass = new ArrayList();
         List<String> lines = FileUtil.fileReadeForList(file);
         for (String line : lines) {
             if (line.equalsIgnoreCase("DB")) {
@@ -276,7 +276,7 @@ public class ReadSuite {
 
     public List<Command> dealAfterClassFile(File file) {
 
-        List<Command> afterClass = new ArrayList<>();
+        List<Command> afterClass = new ArrayList();
         List<String> lines = FileUtil.fileReadeForList(file);
         for (String line : lines) {
             if (line.equalsIgnoreCase("DB")) {
@@ -291,7 +291,7 @@ public class ReadSuite {
     }
 
     public List<Command> dealFile(File file) {
-        List<Command> list = new ArrayList<>();
+        List<Command> list = new ArrayList();
 
         List<String> lines = FileUtil.fileReadeForList(file);
         RedisCommand redisCommand = null;

@@ -20,7 +20,7 @@ import static com.xn.test.result.HTMLReport.generateResultReport;
 public class RunTestSuite {
     private static final Logger logger = LoggerFactory.getLogger(RunTestSuite.class);
     public static ExecutorService exe = Executors.newFixedThreadPool(50);
-    public static String path = "/data/autotest/";
+    public static String path = "/data/autotest/user/";
     public static URLClassLoader loader = null;
     public static String sendMailTo="zhouxi2@xiaoniu66.com";
 
