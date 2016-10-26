@@ -107,19 +107,19 @@ public class NewGetAll {
             String[] service = args[1].trim().split(",");
 //            String[] service = "cn.xn.user.service.ICustomerInfoService".trim().split(",");
             for (String s : service) {
-                getParam(s, loader, "/data/autotest/generate/");
+                getParam(s, loader, "/data/autotest/user/generate/");
 //                getParam(s, loader, "d:\\test\\");
             }
 
-            logger.warn("存放地址在 {}suite", "/data/autotest/generate/");
-            String zipOut = "/data/autotest/generate/suite.zip";
+            logger.warn("存放地址在 {}suite", "/data/autotest/user/generate/");
+            String zipOut = "/data/autotest/user/generate/suite.zip";
             FileZip fileZip = new FileZip();
-            fileZip.zipFile("/data/autotest/generate/suite", zipOut);
+            fileZip.zipFile("/data/autotest/user/generate/suite", zipOut);
 
 
             JavaMailWithAttachment se = new JavaMailWithAttachment(true);
             File affix = new File(zipOut);
-            se.doSendHtmlEmail("dubbo接口测试文件", "这是程序自动生成的dubbo接口测试文件目录结构，文件名为suite不能修改,其余case可以参照现有的结构编写", args[2], affix);
+            se.doSendHtmlEmail("dubbo接口测试文件结构", "这是程序自动生成的dubbo接口测试文件目录结构，文件名为suite不能修改,其余case可以参照现有的结构编写", args[2], affix);
 //            affix.delete();
 
         } catch (Exception e) {
