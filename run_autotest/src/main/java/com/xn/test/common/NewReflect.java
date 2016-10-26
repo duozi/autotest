@@ -104,7 +104,7 @@ public class NewReflect {
          Collections.sort(this.setMethods);
         for (String s : this.setMethods) {
 
-            result.append( s + "\n");
+            result.append( s + "\r\n");
         }
 
         FileUtil.fileWrite(folder + "demo_1/demo_1", result.toString());

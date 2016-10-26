@@ -37,8 +37,8 @@ public class NewGetAll {
                 result.setLength(0);
                 String methodName = method.getName();
                 //获得调用的接口的所有方法
-                result.append("interfaceName=" + interface_Name + "\n");
-                result.append("methodName=" + methodName + "\n");
+                result.append("interfaceName=" + interface_Name + "\r\n");
+                result.append("methodName=" + methodName + "\r\n");
 
                 String folder = writePath + "/suite/" + interface_Name + "/" + methodName + "/";
                 Type[] types = method.getGenericParameterTypes();//参数类型
@@ -61,24 +61,24 @@ public class NewGetAll {
                 FileUtil.fileWrite(folder + "beforeClass", "");
                 FileUtil.fileWrite(folder + "afterClass", "");
                 StringBuffer config = new StringBuffer();
-                config.append("url=\n");
-                config.append("appName=\n");
-                config.append("timeout=\n");
-                config.append("version=\n");
-                config.append("group=\n");
+                config.append("url=\r\n");
+                config.append("appName=\r\n");
+                config.append("timeout=\r\n");
+                config.append("version=\r\n");
+                config.append("group=\r\n");
                 FileUtil.fileWrite(writePath + "suite/" + interface_Name + "/serviceConfig.properties", config.toString());
 
             }
             //数据库配置文件
-            String jdbcString = "jdbc_url=\njdbc_username=\njdbc_password=";
+            String jdbcString = "jdbc_url=\r\njdbc_username=\r\njdbc_password=";
             FileUtil.fileWrite(writePath + "suite/jdbc.properties", jdbcString);
-            String redisString = "redis.slaver.host1=\n" +
-                    "redis.slaver.port1=\n" +
-                    "redis.slaver.host2=\n" +
-                    "redis.slaver.port2=\n" +
-                    "redis.slaver.host3=\n" +
-                    "redis.slaver.port3=\n" +
-                    "redis.timeout=\n" +
+            String redisString = "redis.slaver.host1=\r\n" +
+                    "redis.slaver.port1=\r\n" +
+                    "redis.slaver.host2=\r\n" +
+                    "redis.slaver.port2=\r\n" +
+                    "redis.slaver.host3=\r\n" +
+                    "redis.slaver.port3=\r\n" +
+                    "redis.timeout=\r\n" +
                     "redis.max.redirections=";
             FileUtil.fileWrite(writePath + "suite/redis.properties", redisString);
 
