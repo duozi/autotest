@@ -63,7 +63,7 @@ public class ReadSuite {
         //接口名层
         for (File interfaceFolder : interfaces) {
 
-            if (!interfaceFolder.getName().startsWith("#") && interfaceFolder.isDirectory()) {
+            if (!interfaceFolder.getName().startsWith("#")&&!interfaceFolder.getName().startsWith(".") && interfaceFolder.isDirectory()) {
                 File[] methods = interfaceFolder.listFiles();
                 //方法名层
                 for (File methodFolder : methods) {
