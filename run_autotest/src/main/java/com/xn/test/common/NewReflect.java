@@ -87,7 +87,7 @@ public class NewReflect {
 
     public void getSetClass(Class cls, String folder, String para) {
         StringBuffer result = new StringBuffer();
-        setMethods = new ArrayList<>();
+        setMethods = new ArrayList();
 
         Method[] methods = cls.getMethods();
         for (Method method : methods) {
@@ -104,7 +104,7 @@ public class NewReflect {
          Collections.sort(this.setMethods);
         for (String s : this.setMethods) {
 
-            result.append( s + "\n");
+            result.append( s + "\r\n");
         }
 
         FileUtil.fileWrite(folder + "demo_1/demo_1", result.toString());

@@ -3,12 +3,8 @@ package com.xn.test.util;
 import cn.xn.cache.domain.Param;
 import cn.xn.cache.service.ICommonRedisService;
 import cn.xn.cache.service.IUserRedisService;
-
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Service;
 import redis.clients.jedis.HostAndPort;
 import redis.clients.jedis.JedisCluster;
@@ -65,22 +61,24 @@ public class RedisUtil {
     }
 
     public RedisUtil() {
-        File file=new File(path+"suite/redis.properties");
+        File file = new File(path + "suite/redis.properties");
 
-        String host1=StringUtil.getConfig(file, "redis.slaver.host1","10.17.2.150");
-        String host2=StringUtil.getConfig(file, "redis.slaver.host2","10.17.2.150");
-        String host3=StringUtil.getConfig(file, "redis.slaver.host3","10.17.2.150");
-        int port1=Integer.parseInt(StringUtil.getConfig(file, "redis.slaver.port1","7000"));
-        int port2=Integer.parseInt(StringUtil.getConfig(file, "redis.slaver.port2","7001"));
-        int port3=Integer.parseInt(StringUtil.getConfig(file, "redis.slaver.port3","7002"));
-        HostAndPort hostAndPort1 = new HostAndPort(host1, port1);
-        HostAndPort hostAndPort2 = new HostAndPort(host2, port2);
-        HostAndPort hostAndPort3 = new HostAndPort(host3, port3);
-        HashSet<HostAndPort> nodes = new HashSet();
-        nodes.add(hostAndPort1);
-        nodes.add(hostAndPort2);
-        nodes.add(hostAndPort3);
-       this.jedisCluster = new JedisCluster(nodes, 3000, 30);
+        String host1 = StringUtil.getConfig(file, "redis.slaver.host1", "");
+        String host2 = StringUtil.getConfig(file, "redis.slaver.host2", "");
+        String host3 = StringUtil.getConfig(file, "redis.slaver.host3", "");
+        int port1 = Integer.parseInt(StringUtil.getConfig(file, "redis.slaver.port1", "0"));
+        int port2 = Integer.parseInt(StringUtil.getConfig(file, "redis.slaver.port2", "0"));
+        int port3 = Integer.parseInt(StringUtil.getConfig(file, "redis.slaver.port3", "0"));
+        if (!host1.equals("") && !host2.equals("") && !host3.equals("") && port1 != 0 && port2 != 0 && port3 != 0) {
+            HostAndPort hostAndPort1 = new HostAndPort(host1, port1);
+            HostAndPort hostAndPort2 = new HostAndPort(host2, port2);
+            HostAndPort hostAndPort3 = new HostAndPort(host3, port3);
+            HashSet<HostAndPort> nodes = new HashSet();
+            nodes.add(hostAndPort1);
+            nodes.add(hostAndPort2);
+            nodes.add(hostAndPort3);
+            this.jedisCluster = new JedisCluster(nodes, 3000, 30);
+        }
     }
 
     /**

@@ -22,22 +22,25 @@ public class DBUtil {
     public static Statement stmt;
     public static ResultSet rs;
 
-    public static void newDB() {
+    public static boolean newDB() {
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            File file=new File(path+"suite/jdbc.properties");
-            String url = StringUtil.getConfig(file, "jdbc_url","");
-            String user = StringUtil.getConfig(file, "jdbc_username","");
-            String pwd = StringUtil.getConfig(file, "jdbc_password","");
-            con = (Connection) DriverManager.getConnection(url, user, pwd);
-            stmt = con.createStatement();
-            logger.warn("new DB connection");
+            File file = new File(path + "suite/jdbc.properties");
+            String url = StringUtil.getConfig(file, "jdbc_url", "");
+            String user = StringUtil.getConfig(file, "jdbc_username", "");
+            String pwd = StringUtil.getConfig(file, "jdbc_password", "");
+            if (!url.equals("") && !user.equals("") && !pwd.equals("")) {
+                con = (Connection) DriverManager.getConnection(url, user, pwd);
+                stmt = con.createStatement();
+                logger.warn("new DB connection");
+                return true;
+            }
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
         }
-
+        return false;
     }
 
     public static void closeDB() {
@@ -56,7 +59,7 @@ public class DBUtil {
 
     public static ResultSet selectFromDB(String sql) {
         try {
-            logger.warn("execute sql:{}",sql);
+            logger.warn("execute sql:{}", sql);
             rs = stmt.executeQuery(sql);
             while (rs.next()) {
                 for (int i = 0; i < rs.getMetaData().getColumnCount(); ++i) {
@@ -78,7 +81,7 @@ public class DBUtil {
     public static String getCountFromDB(String sql) {
         String count = "";
         try {
-            logger.warn("execute sql:{}",sql);
+            logger.warn("execute sql:{}", sql);
             rs = stmt.executeQuery(sql);
 
             while (rs.next()) {
@@ -92,10 +95,10 @@ public class DBUtil {
         }
     }
 
-    public static int  updateDB(String sql) {
+    public static int updateDB(String sql) {
         int rs = -1;
         try {
-            logger.warn("execute sql:{}",sql);
+            logger.warn("execute sql:{}", sql);
             rs = stmt.executeUpdate(sql);
 //            System.out.println(rs.getString(1));
             return rs;

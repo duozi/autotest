@@ -13,7 +13,7 @@
     <packaging>jar</packaging>
 
     <build>
-        <finalName>run_autotest</finalName>
+        <finalName>run_autotest_user</finalName>
         <resources>
             <resource>
                 <directory>${project.basedir}/src/resources</directory>
@@ -34,7 +34,7 @@
                             <mainClass>com.xn.test.service.RunTestSuite</mainClass>
                         </manifest>
                     </archive>
-                    <outputDirectory>/data/autotest</outputDirectory>
+                    <outputDirectory>/data/autotest/user</outputDirectory>
                 </configuration>
                 <executions>
                     <execution>
