@@ -5,7 +5,6 @@ package com.xn.test.service;/**
 import com.xn.test.model.Suite;
 import com.xn.test.result.Report;
 import com.xn.test.util.DBUtil;
-import com.xn.test.util.ReflectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -16,6 +15,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 import static com.xn.test.result.HTMLReport.generateResultReport;
+import static com.xn.test.util.JarUtil.addJar;
 
 public class RunTestSuite {
     private static final Logger logger = LoggerFactory.getLogger(RunTestSuite.class);
@@ -75,7 +75,7 @@ public class RunTestSuite {
 //            return;
 //        }
 //path="d:\\";
-        loader = ReflectionUtils.addJar(args[0]);
+        loader = addJar(args[0]);
 //        loader=ReflectionUtils.addJar("d:/user-interface-2.0.0-20160926.085005-12.jar");
         sendMailTo=args[1];
 //        sendMailTo="zhouxi2@xiaoniu66.com";

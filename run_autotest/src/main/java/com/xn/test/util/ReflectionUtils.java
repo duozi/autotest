@@ -6,13 +6,10 @@ import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.File;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
-import java.net.MalformedURLException;
-import java.net.URL;
 import java.net.URLClassLoader;
 import java.util.*;
 import java.util.regex.Matcher;
@@ -217,21 +214,7 @@ public abstract class ReflectionUtils {
         }
     }
 
-    public static  URLClassLoader addJar(String jarPath)  {
-        URLClassLoader loader = null;
-        try {
-            File jar = new File(jarPath);
-            URL[] urls = new URL[]{jar.toURI().toURL()};
-             loader = new URLClassLoader(urls);
 
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-            throw new Exception("load  jar error");
-        }finally {
-            return loader;
-        }
-
-    }
 
     public static Method getMethod(Object service, String methodName) throws Exception {
         return getMethod(methodName, service.getClass());

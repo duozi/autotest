@@ -120,7 +120,7 @@ public class NewGetAll {
             JavaMailWithAttachment se = new JavaMailWithAttachment(true);
             File affix = new File(zipOut);
             se.doSendHtmlEmail("dubbo接口测试文件结构", "这是程序自动生成的dubbo接口测试文件目录结构，文件名为suite不能修改,其余case可以参照现有的结构编写", args[2], affix);
-//            affix.delete();
+            affix.delete();
 
         } catch (Exception e) {
             e.printStackTrace();
