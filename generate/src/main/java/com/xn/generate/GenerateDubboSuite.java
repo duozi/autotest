@@ -70,19 +70,19 @@ public class GenerateDubboSuite {
                 FileUtil.fileWrite(writePath + "suite/dubbo/" + interface_Name + "/serviceConfig.properties", config.toString());
 
             }
-//            //数据库配置文件
-//            String jdbcString = "jdbc_url=\r\njdbc_username=\r\njdbc_password=";
-//            FileUtil.fileWrite(writePath + "suite/dubbo/jdbc.properties", jdbcString);
-//            //redis 配置文件
-//            String redisString = "redis.slaver.host1=\r\n" +
-//                    "redis.slaver.port1=\r\n" +
-//                    "redis.slaver.host2=\r\n" +
-//                    "redis.slaver.port2=\r\n" +
-//                    "redis.slaver.host3=\r\n" +
-//                    "redis.slaver.port3=\r\n" +
-//                    "redis.timeout=\r\n" +
-//                    "redis.max.redirections=";
-//            FileUtil.fileWrite(writePath + "suite/dubbo/redis.properties", redisString);
+            //数据库配置文件
+            String jdbcString = "jdbc_url=\r\njdbc_username=\r\njdbc_password=";
+            FileUtil.fileWrite(writePath + "suite/jdbc.properties", jdbcString);
+            //redis 配置文件
+            String redisString = "redis.slaver.host1=\r\n" +
+                    "redis.slaver.port1=\r\n" +
+                    "redis.slaver.host2=\r\n" +
+                    "redis.slaver.port2=\r\n" +
+                    "redis.slaver.host3=\r\n" +
+                    "redis.slaver.port3=\r\n" +
+                    "redis.timeout=\r\n" +
+                    "redis.max.redirections=";
+            FileUtil.fileWrite(writePath + "suite/redis.properties", redisString);
 
         }  catch (Exception e){
             e.printStackTrace();

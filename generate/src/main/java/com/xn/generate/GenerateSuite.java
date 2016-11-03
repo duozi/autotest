@@ -22,12 +22,12 @@ public class GenerateSuite {
             String type=args[0];
             String writePath = args[1];
             if (type.equals("http")) {
-                logger.info("only generate http suite file");
+                logger.info(" generate http suite file");
 
                 GenerateHttpSuite generateHttpSuite=new GenerateHttpSuite();
                 generateHttpSuite.getParam(writePath);
             } else if (type.equals("dubbo")) {
-                logger.info("generate http and dubbo suite");
+                logger.info("generate  dubbo suite file");
 
                 String serviceName = args[3];
                 String jarPath = args[4];
