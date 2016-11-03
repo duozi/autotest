@@ -9,8 +9,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.net.URLClassLoader;
-public class GenrateSuite {
-    private static final Logger logger = LoggerFactory.getLogger(GenrateSuite.class);
+public class GenerateSuite {
+    private static final Logger logger = LoggerFactory.getLogger(GenerateSuite.class);
 
 
     //一般来说有五个参数，第一个是生成的类型，第二个是suite写入的路径,第三个是收件人，第四个是如果生成Dubbo的服务名，第五个是如果生成Dubbo的依赖jar的地址，后两个在生成Dubbo的时候是必填的,否则只生成http

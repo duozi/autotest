@@ -7,30 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f03f9033-a17d-480a-ba82-e1f91e2004da" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/autotest_dubbo/autotest_dubbo.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/autotest_dubbo/pom.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/autotest_dubbo/src/test.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/autotest_dubbo/src/test/com/xn/changePwdTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/autotest_dubbo/src/test/com/xn/friendLineTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/autotest_dubbo/src/test/com/xn/oldDataChangePwdTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/autotest_dubbo/src/test/com/xn/ruleTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/autotest_http/autotest_http.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/autotest_http/pom.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/autotest_dubbo/src/main/java/com/xn/dubbo/ReadDubboSuite.java" afterPath="$PROJECT_DIR$/run_suite/src/main/java/com/xn/run/dubbo/ReadDubboSuite.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/autotest_dubbo/src/main/java/com/xn/dubbo/RunDubboSuite.java" afterPath="$PROJECT_DIR$/run_suite/src/main/java/com/xn/run/dubbo/RunDubboSuite.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/autotest_http/src/main/java/com/xn/http/ReadHttpSuite.java" afterPath="$PROJECT_DIR$/run_suite/src/main/java/com/xn/run/http/ReadHttpSuite.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/autotest_http/src/main/java/com/xn/http/RunHttpSuite.java" afterPath="$PROJECT_DIR$/run_suite/src/main/java/com/xn/run/http/RunHttpSuite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/util/FileUtil.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/util/FileUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/FileZip.java" afterPath="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/FileZip.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/GenrateSuite.java" afterPath="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/GenrateSuite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_suite/pom.xml" afterPath="$PROJECT_DIR$/run_suite/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_suite/run_suite.iml" afterPath="$PROJECT_DIR$/run_suite/run_suite.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_suite/src/main/java/com/xn/run/RunSuite.java" afterPath="$PROJECT_DIR$/run_suite/src/main/java/com/xn/run/RunSuite.java" />
     </list>
     <ignored path="autotest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,10 +69,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
+            <state relative-caret-position="22">
               <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
               <folding />
             </state>
@@ -122,10 +99,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileZip.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FileZip.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/generate/src/main/java/com/xn/generate/FileZip.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="533">
+            <state relative-caret-position="464">
               <caret line="58" column="44" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
               <folding />
             </state>
@@ -1358,7 +1335,7 @@
       <workItem from="1477965713241" duration="23084000" />
       <workItem from="1478052569708" duration="19484000" />
       <workItem from="1478138781755" duration="17434000" />
-      <workItem from="1478171564156" duration="25000" />
+      <workItem from="1478171564156" duration="228000" />
     </task>
     <task id="LOCAL-00001" summary="delete long name">
       <created>1475033772575</created>
@@ -1676,7 +1653,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="737074000" />
+    <option name="totallyTimeSpent" value="737277000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1688,7 +1665,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-15" y="-2" width="1936" height="1056" extended-state="1" />
+    <frame x="-15" y="-2" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1700,7 +1677,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.62891567" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18554217" sideWeight="0.63906926" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29759037" sideWeight="0.5714286" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29759037" sideWeight="0.5714286" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21807359" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -2123,6 +2100,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="123">
           <caret line="122" column="26" selection-start-line="122" selection-start-column="26" selection-end-line="122" selection-end-column="26" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2137,6 +2115,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5478">
           <caret line="265" column="19" selection-start-line="265" selection-start-column="19" selection-end-line="265" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2166,6 +2145,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
           <caret line="36" column="43" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2174,6 +2154,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-604">
           <caret line="203" column="62" selection-start-line="203" selection-start-column="62" selection-end-line="203" selection-end-column="62" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2305,6 +2286,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="178">
           <caret line="104" column="38" selection-start-line="104" selection-start-column="38" selection-end-line="104" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2377,14 +2359,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/generate/src/main/java/com/xn/generate/GenrateSuite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="924">
@@ -2403,8 +2377,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/generate/src/main/java/com/xn/generate/FileZip.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
+        <state relative-caret-position="464">
           <caret line="58" column="44" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
           <folding />
         </state>
       </provider>
