@@ -1,2 +1,10 @@
-target/*
-suite/*
+autotest_http/src/test/
+autotest_http/target
+common/src/test/
+common/target/
+generate/src/test/
+generate/target/
+run_suite/src/test/
+run_suite/target/
+suite/
+report/

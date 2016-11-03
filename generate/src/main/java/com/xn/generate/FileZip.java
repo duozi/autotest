@@ -12,7 +12,7 @@ import java.util.zip.ZipOutputStream;
 public class FileZip {
     private static final Logger logger = LoggerFactory.getLogger(FileZip.class);
 
-    public  void zipFile(String input, String output) {
+    public   void zipFile(String input, String output) {
         File f = new File(input);
         ZipOutputStream out = null;
         try {
@@ -32,9 +32,9 @@ public class FileZip {
 
     }
 
-    private static void zip(ZipOutputStream out, File f, String base)
+    private  void zip(ZipOutputStream out, File f, String base)
             throws Exception {
-        System.out.println("zipping " + f.getAbsolutePath());
+        logger.debug("zipping " + f.getAbsolutePath());
         if (f.isDirectory()) {
             File[] fc = f.listFiles();
             if (base != null)

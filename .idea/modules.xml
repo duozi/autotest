@@ -3,8 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/autotest.iml" filepath="$PROJECT_DIR$/autotest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/autotest_dubbo/autotest_dubbo.iml" filepath="$PROJECT_DIR$/autotest_dubbo/autotest_dubbo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/autotest_http/autotest_http.iml" filepath="$PROJECT_DIR$/autotest_http/autotest_http.iml" />
+      <module fileurl="file://$PROJECT_DIR$/common/common.iml" filepath="$PROJECT_DIR$/common/common.iml" />
       <module fileurl="file://$PROJECT_DIR$/generate/generate.iml" filepath="$PROJECT_DIR$/generate/generate.iml" />
-      <module fileurl="file://$PROJECT_DIR$/run_autotest/run_autotest.iml" filepath="$PROJECT_DIR$/run_autotest/run_autotest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/run_suite/run_suite.iml" filepath="$PROJECT_DIR$/run_suite/run_suite.iml" />
     </modules>
   </component>
 </project>

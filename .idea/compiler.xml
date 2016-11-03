@@ -22,15 +22,23 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="autotest_dubbo" />
+        <module name="autotest_http" />
+        <module name="common" />
         <module name="generate" />
         <module name="run_autotest" />
+        <module name="run_suite" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="autotest" target="1.7" />
+      <module name="autotest_dubbo" target="1.7" />
+      <module name="autotest_http" target="1.7" />
+      <module name="common" target="1.7" />
       <module name="generate" target="1.7" />
       <module name="lineTest" target="1.8" />
       <module name="run_autotest" target="1.7" />
+      <module name="run_suite" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

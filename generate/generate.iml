@@ -30,7 +30,7 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module" module-name="run_autotest" />
+    <orderEntry type="module" module-name="common" />
     <orderEntry type="library" name="Maven: com.xiaoniu.dataplatform.ruleengine:ruleengine-skeleton:1.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:fastjson:1.1.35" level="project" />
     <orderEntry type="library" name="Maven: cn.xn.cache:xn-cache-skeleton:1.0.0-SNAPSHOT" level="project" />
