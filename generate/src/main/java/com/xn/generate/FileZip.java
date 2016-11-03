@@ -22,7 +22,6 @@ public class FileZip {
             zip(out, f, null);
             System.out.println("zip done");
             out.close();
-            System.out.println("de----l");
             FileUtil.deleteAllFilesOfDir(f);
         } catch (FileNotFoundException e) {
             logger.error("zip file error");
