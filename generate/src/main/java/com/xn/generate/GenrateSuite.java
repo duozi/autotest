@@ -32,8 +32,6 @@ public class GenrateSuite {
                 String serviceName = args[3];
                 String jarPath = args[4];
 
-                GenerateHttpSuite generateHttpSuite=new GenerateHttpSuite();
-                generateHttpSuite.getParam(writePath);
 
                 URLClassLoader loader = JarUtil.addJar(jarPath);
                 GetPara getPara=new GetPara();

@@ -8,8 +8,8 @@ import com.xn.common.result.Report;
 import com.xn.common.service.GetPara;
 import com.xn.common.util.DBUtil;
 import com.xn.common.util.JarUtil;
-import com.xn.dubbo.ReadDubboSuite;
-import com.xn.http.ReadHttpSuite;
+import com.xn.run.dubbo.ReadDubboSuite;
+import com.xn.run.http.ReadHttpSuite;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

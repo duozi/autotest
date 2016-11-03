@@ -2,6 +2,7 @@ package com.xn.generate;/**
  * Created by xn056839 on 2016/10/24.
  */
 
+import com.xn.common.util.FileUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -21,6 +22,8 @@ public class FileZip {
             zip(out, f, null);
             System.out.println("zip done");
             out.close();
+            System.out.println("de----l");
+            FileUtil.deleteAllFilesOfDir(f);
         } catch (FileNotFoundException e) {
             logger.error("zip file error");
             e.printStackTrace();
@@ -56,6 +59,6 @@ public class FileZip {
     public static void main(String[] args) {
         FileZip f=new FileZip();
 
-        f.zipFile("d:\\suite1","d:\\suite1.zip");
+        f.zipFile("d:\\suite2","d:\\suite2.zip");
     }
 }

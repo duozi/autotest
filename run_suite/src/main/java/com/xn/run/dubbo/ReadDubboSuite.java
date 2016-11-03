@@ -1,4 +1,4 @@
-package com.xn.dubbo;/**
+package com.xn.run.dubbo;/**
  * Created by xn056839 on 2016/9/2.
  */
 
@@ -21,7 +21,7 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.xn.dubbo.RunDubboSuite.loader;
+import static com.xn.run.dubbo.RunDubboSuite.loader;
 
 public class ReadDubboSuite {
     private static final Logger logger = LoggerFactory.getLogger(ReadDubboSuite.class);

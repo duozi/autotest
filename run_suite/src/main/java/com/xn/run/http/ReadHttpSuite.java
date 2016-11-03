@@ -1,4 +1,4 @@
-package com.xn.http;/**
+package com.xn.run.http;/**
  * Created by xn056839 on 2016/10/28.
  */
 
@@ -23,7 +23,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.TreeMap;
 
-import static com.xn.http.RunHttpSuite.httpUseSign;
+import static com.xn.run.http.RunHttpSuite.httpUseSign;
 
 
 public class ReadHttpSuite {
