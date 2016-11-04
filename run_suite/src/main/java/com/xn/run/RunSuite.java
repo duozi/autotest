@@ -22,44 +22,37 @@ import java.util.concurrent.Executors;
 
 public class RunSuite {
     private static final Logger logger = LoggerFactory.getLogger(RunSuite.class);
-    public static boolean httpUseSign = true;
-    public static String path = "/data/autotest/user/";
-    public static String sendMailTo = "zhouxi2@xiaoniu66.com";
     public static ExecutorService exe = Executors.newFixedThreadPool(50);
-
-
-
 
 
     /**
      * @param suitePath 不包括suite那一层
      * @param jarPath   不包括具体的jar名
      */
-    public void runSuiteService(String suitePath, String jarPath) {
+    public void runSuiteService(String type, String sendMailTo, String suitePath, String jarPath) {
 
         File dubbo = new File(suitePath + "suite/dubbo/");
-        File http=new File(suitePath+"suite/http/");
-        GetPara getPara=new GetPara();
+        File http = new File(suitePath + "suite/http/");
+        GetPara getPara = new GetPara();
         getPara.setPath(suitePath);
         Report.getReport().setStartTime(new Date());
         boolean falg = DBUtil.newDB();
-        if (dubbo.exists() && dubbo.isDirectory()) {
-            URLClassLoader loader= JarUtil.addJar(jarPath);
+        if (type.equals("dubbo") && dubbo.exists() && dubbo.isDirectory()) {
+            URLClassLoader loader = JarUtil.addJar(jarPath);
             getPara.setLoader(loader);
 
-            ReadDubboSuite readDubboSuite=new ReadDubboSuite();
-            List<Suite> dubboTestSuites=readDubboSuite.getSuites(suitePath);
+            ReadDubboSuite readDubboSuite = new ReadDubboSuite();
+            List<Suite> dubboTestSuites = readDubboSuite.getSuites(suitePath);
             try {
                 run(dubboTestSuites);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
 
-        }
-        if(http.exists()&&http.isDirectory()){
+        } else if (type.equals("http") && http.exists() && http.isDirectory()) {
 
-            ReadHttpSuite readHttpSuite=new ReadHttpSuite();
-            List<Suite> httpTestSuites=readHttpSuite.getSuites(suitePath);
+            ReadHttpSuite readHttpSuite = new ReadHttpSuite();
+            List<Suite> httpTestSuites = readHttpSuite.getSuites(suitePath);
             try {
                 run(httpTestSuites);
             } catch (InterruptedException e) {
@@ -75,7 +68,7 @@ public class RunSuite {
                     DBUtil.closeDB();
                 }
 //                Report.getReport().generateReport();
-                HTMLReport.generateResultReport(path, sendMailTo);
+                HTMLReport.generateResultReport(suitePath, sendMailTo);
                 break;
             }
         }
@@ -107,10 +100,13 @@ public class RunSuite {
 
     }
 
+    //一般有四个参数 第一个是type的地址，第二个是报告的邮件接收者，第三个是suite文件地址，第四个是jar文件的地址
     public static void main(String[] args) {
-        String suitePath="";
-
-        RunSuite runSuite=new RunSuite();
-        runSuite.runSuiteService(suitePath,"d:/jar/");
+        String type = args[0];
+        String sendMailTo = args[1];
+        String suitePath = args[2];
+        String jarPath = args[3];
+        RunSuite runSuite = new RunSuite();
+        runSuite.runSuiteService(type, sendMailTo, suitePath, jarPath);
     }
 }
