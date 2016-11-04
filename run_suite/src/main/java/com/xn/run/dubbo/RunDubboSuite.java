@@ -31,7 +31,7 @@ public class RunDubboSuite {
 
     List<Suite> testSuites;
 
-    public void run() throws InterruptedException {
+    public void run() throws InterruptedException,Exception {
         Report.getReport().setStartTime(new Date());
         boolean falg = DBUtil.newDB();
         for (int i = 0; i < testSuites.size(); i++) {
@@ -70,7 +70,7 @@ public class RunDubboSuite {
         }
     }
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws Exception {
 //        if (args.length < 2) {
 //            logger.error("输入参数错误：[依赖jar地址] [测试报告邮件接受人]");
 //            return;
