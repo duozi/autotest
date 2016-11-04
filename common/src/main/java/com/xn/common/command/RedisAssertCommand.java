@@ -119,10 +119,10 @@ public class RedisAssertCommand implements Command {
 
     }
 
-//    @Override
-//    public void executeWithException() throws Exception {
-//        doExecuteRedisAssert(redisParams);
-//    }
+    @Override
+    public void executeWithException() throws Exception {
+        doExecuteRedisAssert(redisParams);
+    }
 
 
 }

@@ -72,10 +72,10 @@ public class DBAssertCommand implements Command {
 
     }
 
-//    @Override
-//    public void executeWithException() throws Exception {
-//        doExecuteDBAssert();
-//    }
+    @Override
+    public void executeWithException() throws Exception {
+        doExecuteDBAssert();
+    }
 
 
 }

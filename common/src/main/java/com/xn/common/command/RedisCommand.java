@@ -167,10 +167,10 @@ public class RedisCommand implements Command {
         }
     }
 
-//    @Override
-//    public void executeWithException() throws Exception {
-//
-//    }
+    @Override
+    public void executeWithException() throws Exception {
+
+    }
 
     public static void main(String[] args) {
         RedisCommand redisCommand=new RedisCommand();

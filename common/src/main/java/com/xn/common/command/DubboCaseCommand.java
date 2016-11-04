@@ -93,7 +93,7 @@ public class DubboCaseCommand implements CaseCommand {
 
 
     @Override
-    public void execute() throws Exception {
+    public void execute()  {
 
         try {
             Object service = getRpcService(serviceDesc);
@@ -113,7 +113,7 @@ public class DubboCaseCommand implements CaseCommand {
             Report.errorPlus();
             result = "error";
             response.setException(ite.getTargetException());
-            throw ite;
+
         }
 //        catch (IllegalAccessException e) {
 //            Report.errorPlus();
@@ -126,13 +126,13 @@ public class DubboCaseCommand implements CaseCommand {
             response.setException(e);
             result = "error";
             Report.errorPlus();
-            throw e;
+
         }
 
     }
 
-//    @Override
-//    public void executeWithException() throws Exception {
-//
-//    }
+    @Override
+    public void executeWithException() throws Exception {
+
+    }
 }

@@ -65,7 +65,7 @@ public class Suite {
     }
 
 
-    public void execute() throws Exception {
+    public void execute() {
         if (beforeClass != null) {
 
             for(Command command:beforeClass){
