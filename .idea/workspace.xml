@@ -84,14 +84,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AssertCommand.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AssertCommand.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/command/AssertCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="100" column="38" selection-start-line="100" selection-start-column="38" selection-end-line="100" selection-end-column="38" />
+            <state relative-caret-position="374">
+              <caret line="120" column="9" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestCaseCommand.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/command/TestCaseCommand.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="188">
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -116,10 +126,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParaAssertCommand.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ParaAssertCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/command/ParaAssertCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="869">
+            <state relative-caret-position="275">
               <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
               <folding />
             </state>
@@ -210,12 +220,12 @@
         <option value="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/RedisCommand.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/xn/common/model/Suite.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/Command.java" />
-        <option value="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/TestCaseCommand.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/RedisAssertCommand.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/DBAssertCommand.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/ParaAssertCommand.java" />
-        <option value="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/AssertCommand.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/xn/common/model/ServiceDesc.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/TestCaseCommand.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/AssertCommand.java" />
       </list>
     </option>
   </component>
@@ -1289,7 +1299,7 @@
       <workItem from="1478171564156" duration="2191000" />
       <workItem from="1478224420947" duration="9582000" />
       <workItem from="1478245953295" duration="2255000" />
-      <workItem from="1478248739779" duration="3138000" />
+      <workItem from="1478248739779" duration="3692000" />
     </task>
     <task id="LOCAL-00001" summary="delete long name">
       <created>1475033772575</created>
@@ -1614,7 +1624,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="754215000" />
+    <option name="totallyTimeSpent" value="754769000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1626,7 +1636,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2295,14 +2305,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/command/TestCaseCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="53" column="32" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run_suite/src/main/java/com/xn/run/dubbo/ReadDubboSuite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
@@ -2374,16 +2376,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/command/AssertCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="100" column="38" selection-start-line="100" selection-start-column="38" selection-end-line="100" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/command/Command.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -2394,9 +2386,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/command/ParaAssertCommand.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="869">
+        <state relative-caret-position="275">
           <caret line="54" column="16" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/command/TestCaseCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/command/AssertCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="120" column="9" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
