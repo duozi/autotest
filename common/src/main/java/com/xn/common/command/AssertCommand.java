@@ -97,30 +97,30 @@ public class AssertCommand implements Command {
 
     @Override
     public void execute() {
-        if (!assertItem.getResult().equals("error")) {
-            try {
-                if (paramAssertCommand != null) {
-                    paramAssertCommand.executeWithException();
-                }
-                if (DBAssertCommandList != null && DBAssertCommandList.size() > 0) {
-                    for (Command command : DBAssertCommandList) {
-                        command.executeWithException();
-                    }
-                }
-                if (redisAssertCommandList != null && redisAssertCommandList.size() > 0) {
-                    for (Command command : redisAssertCommandList) {
-                        command.executeWithException();
-                    }
 
-
-                }
-            } catch (Exception e) {
-                logger.error("assert error");
-            } finally {
-                Report.getReport().assertAdd(assertItem);
+        try {
+            if (paramAssertCommand != null) {
+                paramAssertCommand.executeWithException();
             }
+            if (DBAssertCommandList != null && DBAssertCommandList.size() > 0) {
+                for (Command command : DBAssertCommandList) {
+                    command.executeWithException();
+                }
+            }
+            if (redisAssertCommandList != null && redisAssertCommandList.size() > 0) {
+                for (Command command : redisAssertCommandList) {
+                    command.executeWithException();
+                }
+
+
+            }
+        } catch (Exception e) {
+            logger.error("assert error");
+        } finally {
+            Report.getReport().assertAdd(assertItem);
         }
     }
+
 
     @Override
     public void executeWithException() throws Exception {

@@ -28,24 +28,7 @@ public class Report {
     private int error;
     private int failed;
     private int total;
-    private int dubboTotal;
-    private int httpTotal;
 
-    public int getDubboTotal() {
-        return dubboTotal;
-    }
-
-    public int getHttpTotal() {
-        return httpTotal;
-    }
-
-    public void setDubboTotal(int dubboTotal) {
-        this.dubboTotal = dubboTotal;
-    }
-
-    public void setHttpTotal(int httpTotal) {
-        this.httpTotal = httpTotal;
-    }
 
     public ArrayList<Assert> getAssertList() {
         return assertList;

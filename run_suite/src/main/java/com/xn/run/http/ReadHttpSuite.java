@@ -147,7 +147,6 @@ public class ReadHttpSuite {
         }
 
         Report.getReport().setTotal(totalCase);
-        Report.getReport().setHttpTotal(totalCase);
     }
 
     private HttpCaseCommand dealCaseFile(File f, String casePath) throws CaseErrorEqualException {

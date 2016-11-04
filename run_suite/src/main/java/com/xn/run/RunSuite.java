@@ -100,7 +100,7 @@ public class RunSuite {
 
     }
 
-    //一般有四个参数 第一个是type的地址，第二个是报告的邮件接收者，第三个是suite文件地址，第四个是jar文件的地址
+    //一般有四个参数 第一个是type的类型，第二个是报告的邮件接收者，第三个是suite文件地址，第四个是jar文件的地址
     public static void main(String[] args) {
         String type = args[0];
         String sendMailTo = args[1];

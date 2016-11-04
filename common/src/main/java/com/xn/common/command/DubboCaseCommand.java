@@ -20,7 +20,7 @@ import org.slf4j.LoggerFactory;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.net.URLClassLoader;
+
 import java.util.List;
 
 
@@ -34,7 +34,7 @@ public class DubboCaseCommand implements CaseCommand {
     private String request;
     private String casePath;
     private String result;
-    private URLClassLoader loader;
+
 
     public String getResult() {
         return result;
@@ -48,12 +48,12 @@ public class DubboCaseCommand implements CaseCommand {
         return request;
     }
 
-    public DubboCaseCommand(List<KeyValueStore> params, ServiceDesc serviceDesc, String casePath, URLClassLoader loader) {
+    public DubboCaseCommand(List<KeyValueStore> params, ServiceDesc serviceDesc, String casePath) {
 
         this.params = params;
         this.serviceDesc = serviceDesc;
         this.casePath = casePath;
-        this.loader = loader;
+
 
     }
 

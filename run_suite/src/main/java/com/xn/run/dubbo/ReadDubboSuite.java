@@ -21,8 +21,6 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.xn.run.dubbo.RunDubboSuite.loader;
-
 public class ReadDubboSuite {
     private static final Logger logger = LoggerFactory.getLogger(ReadDubboSuite.class);
     /**
@@ -163,7 +161,7 @@ public class ReadDubboSuite {
             }
         }
         Report.getReport().setTotal(totalCase);
-        Report.getReport().setDubboTotal(totalCase);
+
 
 
     }
@@ -190,7 +188,7 @@ public class ReadDubboSuite {
         }
         if (list.size() > 0)
             totalCase++;
-        return new DubboCaseCommand(list, serviceDesc, casePath, loader);
+        return new DubboCaseCommand(list, serviceDesc, casePath);
     }
 
     public static void main(String[] args) {
