@@ -60,8 +60,6 @@ public class AssertCommand implements Command {
             if (jsonObject.containsKey(array[0])) {
 
                 deepAssert(jsonObject.getJSONObject(array[0]), array[1], value, assertItem);
-
-
             } else {
                 Report.failedPlus();
                 AssertItem item = new AssertItem(key, value, "校验字段不存在");
