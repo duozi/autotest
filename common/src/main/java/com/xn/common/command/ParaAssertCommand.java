@@ -38,6 +38,7 @@ public class ParaAssertCommand implements Command {
 
         } catch (AssertNotEqualException e) {
             String message = "assert para step invoke has error,expect=" + expectation + separator + "result=" + preResult;
+            assertItem.setResult("failed");
             logger.error(message,e);
             throw e;
         }

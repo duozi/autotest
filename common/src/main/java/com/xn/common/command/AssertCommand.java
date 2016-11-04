@@ -40,6 +40,7 @@ public class AssertCommand implements Command {
         this.redisAssertCommandList = redisAssertCommandList;
         this.DBAssertCommandList = DBAssertCommandList;
     }
+
     public static Map<String, String> convertKeyValueStoreToMap(List<KeyValueStore> params) {
         Map<String, String> result = new HashMap<String, String>();
         for (KeyValueStore kvs : params) {
@@ -52,6 +53,7 @@ public class AssertCommand implements Command {
         }
         return result;
     }
+
     public static void deepAssert(JSONObject jsonObject, String key, String value, Assert assertItem) throws AssertNotEqualException {
         if (key.contains(".")) {
             String[] array = key.split("\\.", 2);
@@ -68,7 +70,7 @@ public class AssertCommand implements Command {
                 throw new AssertNotEqualException("assert is not Equal");
             }
         } else {
-            Set set=jsonObject.keySet();
+            Set set = jsonObject.keySet();
             if (set.contains(key)) {
                 String returnValue = String.valueOf(jsonObject.get(key));
                 if (!returnValue.equals(value)) {
@@ -95,28 +97,29 @@ public class AssertCommand implements Command {
 
     @Override
     public void execute() {
-        try {
-            if (paramAssertCommand != null) {
-                paramAssertCommand.executeWithException();
-            }
-            if (DBAssertCommandList != null && DBAssertCommandList.size() > 0) {
-                for (Command command : DBAssertCommandList) {
-                    command.executeWithException();
+        if (!assertItem.getResult().equals("error")) {
+            try {
+                if (paramAssertCommand != null) {
+                    paramAssertCommand.executeWithException();
                 }
-            }
-            if (redisAssertCommandList != null && redisAssertCommandList.size() > 0) {
-                for (Command command : redisAssertCommandList) {
-                    command.executeWithException();
+                if (DBAssertCommandList != null && DBAssertCommandList.size() > 0) {
+                    for (Command command : DBAssertCommandList) {
+                        command.executeWithException();
+                    }
                 }
+                if (redisAssertCommandList != null && redisAssertCommandList.size() > 0) {
+                    for (Command command : redisAssertCommandList) {
+                        command.executeWithException();
+                    }
 
 
+                }
+            } catch (Exception e) {
+                logger.error("assert error");
+            } finally {
+                Report.getReport().assertAdd(assertItem);
             }
-        } catch (Exception e) {
-            logger.error("assert error");
-        }finally {
-            Report.getReport().assertAdd(assertItem);
         }
-
     }
 
     @Override
