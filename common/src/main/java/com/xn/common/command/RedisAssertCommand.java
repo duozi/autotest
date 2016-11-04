@@ -114,8 +114,8 @@ public class RedisAssertCommand implements Command {
     }
 
     @Override
-    public void execute() throws AssertNotEqualException {
-        doExecuteRedisAssert(redisParams);
+    public void execute()  {
+
 
     }
 
