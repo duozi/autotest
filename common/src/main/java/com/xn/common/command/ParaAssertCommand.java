@@ -46,13 +46,14 @@ public class ParaAssertCommand implements Command {
 
 
     @Override
-    public void execute() {
-    }
-
-    @Override
-    public void executeWithException() throws AssertNotEqualException {
+    public void execute() throws AssertNotEqualException {
         doExecuteParaAssert(assertItem.getResponse(), processedParams);
     }
+
+//    @Override
+//    public void executeWithException() throws AssertNotEqualException {
+//        doExecuteParaAssert(assertItem.getResponse(), processedParams);
+//    }
 
 
 }

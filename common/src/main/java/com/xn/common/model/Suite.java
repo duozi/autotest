@@ -65,7 +65,7 @@ public class Suite {
     }
 
 
-    public void execute() {
+    public void execute() throws Exception {
         if (beforeClass != null) {
 
             for(Command command:beforeClass){
@@ -78,7 +78,11 @@ public class Suite {
                                     @Override
                                     public void run() {
 //                                        addSize();
-                                        testCase.get(finalI).execute();
+                                        try {
+                                            testCase.get(finalI).execute();
+                                        } catch (Exception e) {
+                                            e.printStackTrace();
+                                        }
                                     }
                                 }
                     );

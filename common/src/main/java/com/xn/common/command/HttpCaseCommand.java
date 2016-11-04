@@ -150,10 +150,10 @@ public class HttpCaseCommand implements CaseCommand {
         httpRequest();
     }
 
-    @Override
-    public void executeWithException() throws Exception {
-
-    }
+//    @Override
+//    public void executeWithException() throws Exception {
+//
+//    }
 
     public static void main(String[] args) throws IOException {
 //        request = "sourceType=android&systemType=QGZ&appVersion=2.4.0&loginName=13480979901&loginPwd=123456&sign_type=md5&sign=05e43dfab5297e4f39cc96a4a18a7de4";

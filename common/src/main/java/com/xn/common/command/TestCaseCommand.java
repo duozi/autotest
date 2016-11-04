@@ -36,7 +36,7 @@ public class TestCaseCommand implements Command {
 
 
     @Override
-    public void execute() {
+    public void execute() throws Exception {
         if (caseCommand != null) {
             if (beforeCommand != null) {
 
@@ -59,8 +59,8 @@ public class TestCaseCommand implements Command {
         }
     }
 
-    @Override
-    public void executeWithException() throws Exception {
-
-    }
+//    @Override
+//    public void executeWithException() throws Exception {
+//
+//    }
 }

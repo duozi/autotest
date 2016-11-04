@@ -11,10 +11,9 @@ public interface CaseCommand extends Command {
     String casePath = null;
 
     @Override
-    void execute();
+    void execute() throws Exception;
 
-    @Override
-    void executeWithException() throws Exception;
+
 
     Response getResponse();
 

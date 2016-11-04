@@ -97,16 +97,16 @@ public class AssertCommand implements Command {
     public void execute() {
         try {
             if (paramAssertCommand != null) {
-                paramAssertCommand.executeWithException();
+                paramAssertCommand.execute();
             }
             if (DBAssertCommandList != null && DBAssertCommandList.size() > 0) {
                 for (Command command : DBAssertCommandList) {
-                    command.executeWithException();
+                    command.execute();
                 }
             }
             if (redisAssertCommandList != null && redisAssertCommandList.size() > 0) {
                 for (Command command : redisAssertCommandList) {
-                    command.executeWithException();
+                    command.execute();
                 }
 
 
@@ -119,8 +119,8 @@ public class AssertCommand implements Command {
 
     }
 
-    @Override
-    public void executeWithException() throws Exception {
-
-    }
+//    @Override
+//    public void executeWithException() throws Exception {
+//
+//    }
 }
