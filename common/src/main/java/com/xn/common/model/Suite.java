@@ -101,8 +101,8 @@ public class Suite {
 //                        System.out.println("-----------");
                         if (afterClass != null) {
 
-                            for(Command comand:afterClass){
-                                comand.execute();
+                            for(Command command:afterClass){
+                                command.execute();
                             }
                         }
                         Report.getReport().setStopTime(new Date());
