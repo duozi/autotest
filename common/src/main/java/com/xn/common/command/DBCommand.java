@@ -23,9 +23,9 @@ public class DBCommand implements Command {
             DBUtil.updateDB(sql);
         }
     }
-
-    @Override
-    public void executeWithException() throws Exception {
-
-    }
+//
+//    @Override
+//    public void executeWithException() throws Exception {
+//
+//    }
 }

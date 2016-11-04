@@ -67,15 +67,15 @@ public class DBAssertCommand implements Command {
 
 
     @Override
-    public void execute() {
-
-
-    }
-
-    @Override
-    public void executeWithException() throws Exception {
+    public void execute() throws AssertNotEqualException {
         doExecuteDBAssert();
+
     }
+
+//    @Override
+//    public void executeWithException() throws Exception {
+//        doExecuteDBAssert();
+//    }
 
 
 }

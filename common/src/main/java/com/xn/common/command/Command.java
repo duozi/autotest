@@ -5,7 +5,7 @@ package com.xn.common.command;
  */
 public interface Command {
 
-     void execute();
+     void execute() throws Exception;
 
-     void executeWithException() throws Exception;
+//     void executeWithException() throws Exception;
 }
