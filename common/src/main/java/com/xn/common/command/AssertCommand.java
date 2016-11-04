@@ -97,20 +97,22 @@ public class AssertCommand implements Command {
     public void execute() {
 
         try {
-            if (paramAssertCommand != null) {
-                paramAssertCommand.executeWithException();
-            }
-            if (DBAssertCommandList != null && DBAssertCommandList.size() > 0) {
-                for (Command command : DBAssertCommandList) {
-                    command.executeWithException();
+            if (!assertItem.getResult().equals("error")) {
+                if (paramAssertCommand != null) {
+                    paramAssertCommand.executeWithException();
                 }
-            }
-            if (redisAssertCommandList != null && redisAssertCommandList.size() > 0) {
-                for (Command command : redisAssertCommandList) {
-                    command.executeWithException();
+                if (DBAssertCommandList != null && DBAssertCommandList.size() > 0) {
+                    for (Command command : DBAssertCommandList) {
+                        command.executeWithException();
+                    }
                 }
+                if (redisAssertCommandList != null && redisAssertCommandList.size() > 0) {
+                    for (Command command : redisAssertCommandList) {
+                        command.executeWithException();
+                    }
 
 
+                }
             }
         } catch (Exception e) {
             logger.error("assert error");

@@ -50,9 +50,9 @@ public class TestCaseCommand implements Command {
             String request = caseCommand.getRequest();
             String result = caseCommand.getResult();
             assertCommand.setAssertItem(request, response, result);
-            if (!result.equals("error")) {
+
                 assertCommand.execute();
-            }
+
             if (afterCommand != null) {
                 for (Command command : afterCommand) {
                     command.execute();
