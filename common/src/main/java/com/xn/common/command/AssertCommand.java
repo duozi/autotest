@@ -98,7 +98,7 @@ public class AssertCommand implements Command {
 
         try {
             String result=assertItem.getResult();
-            if (!result.equals("error")) {
+            if (result==null||!result.equals("error")) {
                 if (paramAssertCommand != null) {
                     paramAssertCommand.executeWithException();
                 }

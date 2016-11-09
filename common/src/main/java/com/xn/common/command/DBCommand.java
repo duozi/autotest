@@ -9,7 +9,7 @@ import org.slf4j.LoggerFactory;
 
 public class DBCommand implements Command {
     private static final Logger logger = LoggerFactory.getLogger(DBCommand.class);
-    String sql;
+    private String sql;
 
     public DBCommand(String sql) {
         this.sql = sql;

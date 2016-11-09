@@ -4,11 +4,9 @@ package com.xn.common.model;
  */
 
 import com.xn.common.command.Command;
-import com.xn.common.result.Report;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.Date;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -109,7 +107,7 @@ public class Suite {
                                 command.execute();
                             }
                         }
-                        Report.getReport().setStopTime(new Date());
+//                        Report.getReport().setStopTime(new Date());
                         break;
                     }
 
