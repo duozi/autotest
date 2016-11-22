@@ -14,6 +14,8 @@ import com.xn.common.result.Report;
 import com.xn.common.service.PaserFile;
 import com.xn.common.util.FileUtil;
 import com.xn.common.util.StringUtil;
+import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -46,6 +48,8 @@ public class ReadDubboSuite {
     String timeout;
     String version;
     String group;
+    String useSign;
+    String signType;
 
     /**
      * 以行为单位读取文件，常用于读面向行的格式化文件
@@ -93,6 +97,8 @@ public class ReadDubboSuite {
                             if (file.getName().equals("config.properties")) {
                                 interfaceName = StringUtil.getConfig(file, "interfaceName", "");
                                 methodName = StringUtil.getConfig(file, "methodName", "");
+                                useSign = StringUtil.getConfig(file, "useSign", "true");
+                                signType=StringUtil.getConfig(file,"signType","");
                                 this.serviceDesc = new ServiceDesc(interfaceName, methodName, url, version, group, timeout, appName);
                                 break;
                             }
@@ -124,7 +130,7 @@ public class ReadDubboSuite {
                                             testCaseCommand.setAssertCommand((AssertCommand) paser.dealAssertFile(f, caseName, serviceDesc.getClazz(), serviceDesc.getMethodName()));
                                         } else if (!f.getName().equals("log")) {
                                             try {
-                                                testCaseCommand.setCaseCommand( dealCaseFile(f, casePath));
+                                                testCaseCommand.setCaseCommand(dealCaseFile(f, casePath));
                                                 jumpMethod = 0;
                                             } catch (CaseErrorEqualException e) {
                                                 logger.error("jump this case {}", interfaceName + "/" + methodName + "/" + caseName);
@@ -163,7 +169,6 @@ public class ReadDubboSuite {
         Report.getReport().setTotal(totalCase);
 
 
-
     }
 
     /**
@@ -176,19 +181,31 @@ public class ReadDubboSuite {
      */
     public DubboCaseCommand dealCaseFile(File file, String casePath) throws CaseErrorEqualException {
         List<KeyValueStore> list = new ArrayList();
-        List<String> lines = FileUtil.fileReadeForList(file);
-        lines = StringUtil.dubboAddSign(lines);
-        for (String line : lines) {
-            if (!line.startsWith("#") & line.contains("=") && line.split("=").length == 2) {
-                String type = line.split("=")[0];
-                String value = line.split("=")[1];
-                KeyValueStore keyValueStore = new KeyValueStore(type, value);
-                list.add(keyValueStore);
-            }
+        String param = FileUtil.fileReadeForStr(file);
+        JSONObject paramObject=JSONObject.fromObject(param);
+        JSONArray array=paramObject.getJSONArray("param");
+        for(int i=0;i<array.size();i++){
+            KeyValueStore keyValueStore=new KeyValueStore("var"+i,array.getString(i));
+            list.add(keyValueStore);
         }
+
+
+
+//        List<String> lines = FileUtil.fileReadeForList(file);
+//        if (Boolean.parseBoolean(useSign)) {
+//            lines = StringUtil.dubboAddSign(lines);
+//        }
+//        for (String line : lines) {
+//            if (!line.startsWith("#") & line.contains("=") && line.split("=").length == 2) {
+//                String type = line.split("=")[0];
+//                String value = line.split("=")[1];
+//                KeyValueStore keyValueStore = new KeyValueStore(type, value);
+//                list.add(keyValueStore);
+//            }
+//        }
         if (list.size() > 0)
             totalCase++;
-        return new DubboCaseCommand(list, serviceDesc, casePath);
+        return new DubboCaseCommand(list, serviceDesc, casePath,useSign,signType);
     }
 
     public static void main(String[] args) {
@@ -196,6 +213,21 @@ public class ReadDubboSuite {
 //        re.readSuitFile();
 //        dealFile("suite");
 //        dealDBFile("suite");
+        String s="{\n" +
+                "\t\t\t\"param\":\n" +
+                "\t\t\t[\n" +
+                "\t\t\t{\n" +
+                "\t\t\t\t\"appVersion\":\"2.4.0\",\n" +
+                "\t\t\t\t\"sourceType\":\"android\",\n" +
+                "\t\t\t\t\"systemType\":\"QGZ\",\n" +
+                "\t\t\t\t\"sign\":\"\",\n" +
+                "\t\t\t\t\"mobile\":\"1232545\",\n" +
+                "\t\t\t\t\"memberNo\":\"8e299dbf-fd2a-4282-966a-d1f946683133\",\n" +
+                "\t\t\t\t\"friendJson\":[{\"friendMemberNo\":\"e0a77f8e-92c3-447b-9196-0167f533e1bb\",\"friendMobile\":\"17777777777\",\"friendName\":\"测试88\",\"friendUserName\":\"\",\"isRegister\":\"Y\"}]\n" +
+                "\t\t\t},\n" +
+                "\t\t\t]\n" +
+                "\t\t}";
+        JSONObject paramObject=JSONObject.fromObject(s);
     }
 
 }

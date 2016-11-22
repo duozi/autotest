@@ -107,7 +107,7 @@ public class DateTimeFactory extends InstanceFactory {
 
 
     @Override
-    protected boolean support(Type type) {
+    public boolean support(Type type) {
         return type.equals(Date.class)
                 || type.equals(java.sql.Date.class)
                 || type.equals(Time.class)

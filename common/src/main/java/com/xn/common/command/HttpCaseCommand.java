@@ -25,12 +25,16 @@ public class HttpCaseCommand implements CaseCommand {
     private  String url;
     private String timeout;
 
+
     public HttpCaseCommand(String casePath, String request, String url, String timeout) {
         this.request = request;
         this.casePath = casePath;
         this.url = url;
         this.timeout = timeout;
+
     }
+
+
 
     public Response getResponse() {
         return response;
@@ -104,7 +108,7 @@ public class HttpCaseCommand implements CaseCommand {
             // DataOutputStream.writeBytes将字符串中的16位的unicode字符以8位的字符形式写道流里面
             out.writeBytes(request);
 
-                logger.info("Http request start: params={}", request);
+                logger.info("Http request start: params=[{}]", request);
 
             out.flush();
             out.close(); // flush and close

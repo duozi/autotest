@@ -47,7 +47,7 @@ public class DBAssertCommand implements Command {
 
             } catch (AssertNotEqualException e) {
                 assertItem.setResult("failed");
-                String message = "assert DB step invoke has error,expect count=" + expectCount + separator + "exact count=" + exact;
+                String message = "assert DB step invoke has error,sql="+sql+separator+"expect count=" + expectCount + separator + "exact count=" + exact;
                 logger.error(message, e);
                 throw e;
 

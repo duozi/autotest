@@ -13,7 +13,7 @@ public class LongFactory extends InstanceFactory {
     }
 
     @Override
-    protected boolean support(Type type) {
+    public boolean support(Type type) {
         return type.equals(Long.class) || type.equals(Long.TYPE);
     }
 }

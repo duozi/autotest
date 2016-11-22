@@ -25,9 +25,9 @@ public class ObjectFactory extends InstanceFactory {
         if (!(type instanceof Class)) {
             throw new RuntimeException("现在还不支持自定义泛型类型");
         }
-        if (value instanceof String && ReflectionUtils.hasDefaultConstructor((Class) type)) {
-            return jsonObject((Class) type, trim(value.toString()));
-        }
+//        if (value instanceof String && ReflectionUtils.hasDefaultConstructor((Class) type)) {
+//            return jsonObject((Class) type, trim(value.toString()));
+//        }
         if (value instanceof String) {
             value = jsonMap(value);
         }
@@ -68,7 +68,7 @@ public class ObjectFactory extends InstanceFactory {
     }
 
     @Override
-    protected boolean support(Type type) {
+    public boolean support(Type type) {
         return false;
     }
 

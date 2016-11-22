@@ -13,12 +13,11 @@ import java.util.zip.ZipOutputStream;
 public class FileZip {
     private static final Logger logger = LoggerFactory.getLogger(FileZip.class);
 
-    public   void zipFile(String input, String output) {
+    public void zipFile(String input, String output) {
         File f = new File(input);
         ZipOutputStream out = null;
         try {
-            out = new ZipOutputStream(new FileOutputStream(
-                    output));
+            out = new ZipOutputStream(new FileOutputStream(output));
             zip(out, f, null);
             System.out.println("zip done");
             out.close();
@@ -34,7 +33,7 @@ public class FileZip {
 
     }
 
-    private  void zip(ZipOutputStream out, File f, String base)
+    private void zip(ZipOutputStream out, File f, String base)
             throws Exception {
         logger.debug("zipping " + f.getAbsolutePath());
         if (f.isDirectory()) {
@@ -56,8 +55,8 @@ public class FileZip {
     }
 
     public static void main(String[] args) {
-        FileZip f=new FileZip();
+        FileZip f = new FileZip();
 
-        f.zipFile("d:\\suite2","d:\\suite2.zip");
+        f.zipFile("d:\\suite2", "d:\\suite2.zip");
     }
 }

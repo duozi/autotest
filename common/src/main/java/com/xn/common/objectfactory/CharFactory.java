@@ -14,7 +14,7 @@ public class CharFactory extends InstanceFactory {
     }
 
     @Override
-    protected boolean support(Type type) {
+    public boolean support(Type type) {
         return type.equals(Character.class) || type.equals(Character.TYPE);
     }
 }

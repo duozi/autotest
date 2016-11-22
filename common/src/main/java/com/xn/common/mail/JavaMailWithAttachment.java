@@ -100,7 +100,7 @@ public class JavaMailWithAttachment {
             transport.sendMessage(message, message.getAllRecipients());
 
             System.out.println("send e-mail success! please check ");
-            attachment.delete();
+//            attachment.delete();
         } catch (Exception e) {
             e.printStackTrace();
         } finally {

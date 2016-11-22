@@ -15,7 +15,7 @@ public class EnumFactory extends InstanceFactory {
     }
 
     @Override
-    protected boolean support(Type type) {
+    public boolean support(Type type) {
         if (type instanceof Class) {
             return ((Class) type).isEnum();
         }

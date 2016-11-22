@@ -2,10 +2,11 @@ package com.xn.common.util;
 
 
 
+import org.apache.commons.codec.binary.Base64;
+
 import java.nio.charset.Charset;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
-import org.apache.commons.codec.binary.Base64;
 /**
  * 登录密码相关加密类
  * @author 颜彩云
@@ -40,7 +41,6 @@ public final class EncryptUtil {
 	/**
 	 * 
 	 * @param str
-	 * @param charset
 	 * @return
 	 */
 	private static String md5(String str) {

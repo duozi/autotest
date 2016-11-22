@@ -12,7 +12,7 @@ public class DoubleFactory extends InstanceFactory {
     }
 
     @Override
-    protected boolean support(Type type) {
+    public boolean support(Type type) {
         return type.equals(Double.class) || type.equals(Double.TYPE);
     }
 }

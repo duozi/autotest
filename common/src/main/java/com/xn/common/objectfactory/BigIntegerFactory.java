@@ -15,7 +15,7 @@ public class BigIntegerFactory extends InstanceFactory {
     }
 
     @Override
-    protected boolean support(Type type) {
+    public boolean support(Type type) {
         return type.equals(BigInteger.class);
     }
 }

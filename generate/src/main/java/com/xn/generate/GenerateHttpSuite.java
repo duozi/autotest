@@ -10,11 +10,11 @@ public class GenerateHttpSuite {
     private static final Logger logger = LoggerFactory.getLogger(GenerateHttpSuite.class);
     public static StringBuffer result = new StringBuffer();
 
-    public  void getParam(String writePath) {
+    public  void getHttpSuite(String writePath) {
         String path = writePath + "suite/http/";
         result.setLength(0);
 
-        String configString = "url=\r\ntimeout=\r\n";
+        String configString = "url=\r\ntimeout=\r\nuseSign=\r\nsignType=\r\n";
         FileUtil.fileWrite(path + "/interfaceName/config.properties", configString);
         FileUtil.fileWrite(path + "/interfaceName/beforeClass", "");
         FileUtil.fileWrite(path + "/interfaceName/afterClass", "");
@@ -39,7 +39,8 @@ public class GenerateHttpSuite {
                 "redis.max.redirections=";
         FileUtil.fileWrite(writePath + "suite/redis.properties", redisString);
 
-
+        String keyString="key.QGZ=";
+        FileUtil.fileWrite(writePath+"suite/key.properties",keyString);
 //        System.out.println(result);
 
         return;

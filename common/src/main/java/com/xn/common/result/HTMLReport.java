@@ -340,6 +340,7 @@ public class HTMLReport {
         String timeStmp = format.format(new Date());
         String reportName = path + "report/report_" + timeStmp + ".html";
         FileUtil.fileWrite(reportName, result);
+        logger.info("-----------------"+reportName);
         JavaMailWithAttachment se = new JavaMailWithAttachment(true);
 
 
@@ -489,7 +490,7 @@ public class HTMLReport {
                     assertError = ERROR_STRING.replace("%(content)s", assertError);
                     response = request + "\n" + response + "\n" + assertError;
                 } else if (tid.startsWith("e")) {
-                    System.out.println("---------" + ass.getResponse().getException());
+//                    System.out.println("---------" + ass.getResponse().getException());
                     exception = "【Exception】\n" + ass.getResponse().getException().getCause().getMessage();
                     exception = ERROR_STRING.replace("%(content)s", exception);
                     response = request + "\n" + response + "\n" + exception;

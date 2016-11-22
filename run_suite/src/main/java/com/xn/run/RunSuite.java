@@ -29,12 +29,13 @@ public class RunSuite {
      * @param suitePath 不包括suite那一层
      * @param jarPath   不包括具体的jar名
      */
-    public void runSuiteService(String type, String sendMailTo, String suitePath, String jarPath) {
+    public void runSuiteService(String type,String system, String sendMailTo, String suitePath, String jarPath) {
 
         File dubbo = new File(suitePath + "suite/dubbo/");
         File http = new File(suitePath + "suite/http/");
         GetPara getPara = new GetPara();
         getPara.setPath(suitePath);
+        getPara.setSystem(system);
         Report.getReport().setStartTime(new Date());
         boolean falg = DBUtil.newDB();
         if (type.equals("dubbo") && dubbo.exists() && dubbo.isDirectory()) {
@@ -103,10 +104,11 @@ public class RunSuite {
     //一般有四个参数 第一个是type的类型，第二个是报告的邮件接收者，第三个是suite文件地址，第四个是jar文件的地址
     public static void main(String[] args) {
         String type = args[0];
-        String sendMailTo = args[1];
-        String suitePath = args[2];
-        String jarPath = args[3];
+        String system=args[1];
+        String sendMailTo = args[2];
+        String suitePath = args[3];
+        String jarPath = args[4];
         RunSuite runSuite = new RunSuite();
-        runSuite.runSuiteService(type, sendMailTo, suitePath, jarPath);
+        runSuite.runSuiteService(type, system,sendMailTo, suitePath, jarPath);
     }
 }

@@ -23,7 +23,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.TreeMap;
 
-import static com.xn.run.http.RunHttpSuite.httpUseSign;
+import static com.xn.common.util.SignUtil.httpAddSign;
 
 
 public class ReadHttpSuite {
@@ -34,6 +34,8 @@ public class ReadHttpSuite {
     String interfaceName;
     String url;
     String timeout;
+    String useSign;
+    String signType;
     public static int totalCase = 0;
     public static String path = "";
 
@@ -71,6 +73,9 @@ public class ReadHttpSuite {
                         if (caseFile.getName().equals("serviceConfig.properties")) {
                             url = StringUtil.getConfig(caseFile, "url", "");
                             timeout = StringUtil.getConfig(caseFile, "timeout", "200000");
+                            //这个参数的逻辑是true带别访问这个借口需要计算签名，如果sign不为空，则由框架计算签名，如果sign不为空，则使用传入的签名
+                            useSign=StringUtil.getConfig(caseFile,"useSign","false");
+                            signType=StringUtil.getConfig(caseFile,"signType","");
                             break;
                         }
                     }
@@ -161,7 +166,7 @@ public class ReadHttpSuite {
             outMap.put(key, json.getString(key));
         }
 
-        String para = StringUtil.httpAddSign(outMap, httpUseSign);
+        String para = httpAddSign(outMap, Boolean.parseBoolean(useSign),signType);
 
         if (para.length() > 0)
             totalCase++;

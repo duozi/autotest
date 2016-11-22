@@ -75,7 +75,7 @@ public class ListFactory extends InstanceFactory {
     }
 
     @Override
-    protected boolean support(Type type) {
+    public boolean support(Type type) {
         if (type instanceof Class) {
             return Collection.class.isAssignableFrom((Class) type);
         }

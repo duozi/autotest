@@ -3,6 +3,7 @@ package com.xn.common.command;/**
  */
 
 
+import com.xn.common.service.GetPara;
 import com.xn.common.util.RedisUtil;
 import com.xn.common.util.StringUtil;
 import org.slf4j.Logger;
@@ -18,9 +19,6 @@ public class RedisCommand implements Command {
     private String loginName;
     private int times;
     private String methodName;
-    private String sourceType;
-    private String memberNo;
-    private String tokenId;
     private String key;
     private String value;
     private int time;
@@ -30,41 +28,23 @@ public class RedisCommand implements Command {
     }
 
     public void setValue(String value) {
-        if(value.contains("getTime")){
-            value=value.replace("getTime",String.valueOf(new Date().getTime()));
+        if (value.contains("getTime")) {
+            value = value.replace("getTime", String.valueOf(new Date().getTime()));
         }
 
         this.value = value;
-        System.out.println("--------"+this.value);
+//        System.out.println("--------"+this.value);
     }
 
     public void setTime(int time) {
         this.time = time;
     }
 
-    public void setTokenId(String tokenId) {
-        this.tokenId = tokenId;
-    }
-
-    public void setMemberNo(String memberNo) {
-        this.memberNo = memberNo;
-    }
-
-    public void setSourceType(String sourceType) {
-        this.sourceType = sourceType;
-    }
-
-    public String getSystemType() {
-        return systemType;
-    }
 
     public void setSystemType(String systemType) {
         this.systemType = systemType;
     }
 
-    public String getLoginName() {
-        return loginName;
-    }
 
     public void setLoginName(String loginName) {
         this.loginName = loginName;
@@ -134,35 +114,29 @@ public class RedisCommand implements Command {
 //        redisUtil.saveToken2Redis(systemType, sourceType, loginName, tokenId, memberNo);
 //    }
 
-    private void set(String key,String value,int time) {
-        if(StringUtil.isEmpty(key)||StringUtil.isEmpty(value)){
-            return ;
+    private void set(String key, String value, int time) {
+        if (StringUtil.isEmpty(key) || StringUtil.isEmpty(value)) {
+            return;
         }
-        redisUtil.set(key,value,time);
+        redisUtil.set(key, value, time);
     }
 
     private String get(String key) {
-        if(StringUtil.isEmpty(key)){
+        if (StringUtil.isEmpty(key)) {
             return null;
         }
         return redisUtil.get(key);
     }
-    private  void del(String key){
+
+    private void del(String key) {
         redisUtil.del(key);
     }
+
     @Override
     public void execute() {
-        if (methodName.equalsIgnoreCase("saveErrorTime")) {
-            saveErrorTime();
-        } else if (methodName.equalsIgnoreCase("getErrorTimes")) {
-            getErrorTimes();
-        } else if (methodName.equalsIgnoreCase("loginSaveToken")) {
-//            loginSaveToken();
-        } else if (methodName.equalsIgnoreCase("logoutDelToken")) {
-//            logoutDelToken();
-        }else if (methodName.equalsIgnoreCase("set")) {
-            set(key,value,time);
-        }else if (methodName.equalsIgnoreCase("del")) {
+        if (methodName.equalsIgnoreCase("set")) {
+            set(key, value, time);
+        } else if (methodName.equalsIgnoreCase("del")) {
             del(key);
         }
     }
@@ -173,9 +147,15 @@ public class RedisCommand implements Command {
     }
 
     public static void main(String[] args) {
-        RedisCommand redisCommand=new RedisCommand();
-        redisCommand.setKey("UNIUSER-login-QGZ-77683f51-da44-4f2d-8120-e009ef3bf351");
-        redisCommand.setValue("[{\"bid\":\"UNIUSER\",\"date\":1474513018036,\"source\":\"app\",\"tokenId\":\"77683f51-da44-4f2d-8120-e009ef3bf351\",\"uid\":\"login-QGZ-77683f51-da44-4f2d-8120-e009ef3bf351\"}]");
-        redisCommand.del(redisCommand.getKey());
+        GetPara getPara = new GetPara();
+        getPara.setPath("");
+        RedisCommand redisCommand = new RedisCommand();
+//        redisCommand.setKey("UNIUSER-login-QGZ-77683f51-da44-4f2d-8120-e009ef3bf351");
+//        redisCommand.setValue("[{\"bid\":\"UNIUSER\",\"date\":1474513018036,\"source\":\"app\",\"tokenId\":\"77683f51-da44-4f2d-8120-e009ef3bf351\",\"uid\":\"login-QGZ-77683f51-da44-4f2d-8120-e009ef3bf351\"}]");
+//        redisCommand.del(redisCommand.getKey());
+
+
+        redisCommand.set("UNIUSER-loginPwd-QGZ-33333333335", "2", 0);
+
     }
 }

@@ -34,6 +34,8 @@ public class DubboCaseCommand implements CaseCommand {
     private String request;
     private String casePath;
     private String result;
+    private String useSign;
+    private  String signType;
 
 
     public String getResult() {
@@ -48,11 +50,13 @@ public class DubboCaseCommand implements CaseCommand {
         return request;
     }
 
-    public DubboCaseCommand(List<KeyValueStore> params, ServiceDesc serviceDesc, String casePath) {
+    public DubboCaseCommand(List<KeyValueStore> params, ServiceDesc serviceDesc, String casePath,String useSign,String signType) {
 
         this.params = params;
         this.serviceDesc = serviceDesc;
         this.casePath = casePath;
+        this.useSign=useSign;
+        this.signType=signType;
 
 
     }
@@ -98,8 +102,8 @@ public class DubboCaseCommand implements CaseCommand {
         try {
             Object service = getRpcService(serviceDesc);
             Method executeMethod = ReflectionUtils.getMethod(serviceDesc.getMethodName(), serviceDesc.getServiceClass());
-            Object[] parameters = BeanUtils.getParameters(params, executeMethod.getGenericParameterTypes());
-            request = String.valueOf(JSON.toJSONString(parameters[0]));
+            Object[] parameters = BeanUtils.getParameters(params, executeMethod.getGenericParameterTypes(),useSign,signType);
+            request = JSON.toJSONString(parameters);
 
                 logger.info("Rpc request start: params={}", new Object[]{JSON.toJSONString(parameters)});
 

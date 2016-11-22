@@ -5,12 +5,10 @@ import com.xn.common.mail.JavaMailWithAttachment;
 import com.xn.common.service.GetPara;
 import com.xn.common.util.FileUtil;
 import com.xn.common.util.ReflectionUtils;
-import com.xn.common.util.StringUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.lang.reflect.Method;
-import java.lang.reflect.Type;
 import java.net.URLClassLoader;
 
 import static com.xn.common.util.JarUtil.addJar;
@@ -25,7 +23,7 @@ public class GenerateDubboSuite {
     public static StringBuffer result = new StringBuffer();
     public static URLClassLoader loader = null;
 
-    public  void getParam(String interfaceName,  String writePath)  {
+    public void getDubboSuite(String interfaceName, String writePath) {
         result.setLength(0);
         String interface_Name = interfaceName;
 
@@ -40,24 +38,16 @@ public class GenerateDubboSuite {
                 //获得调用的接口的所有方法
                 result.append("interfaceName=" + interface_Name + "\r\n");
                 result.append("methodName=" + methodName + "\r\n");
+                result.append("useSign=true\r\n");
+                result.append("signType=md5\r\n");
 
                 String folder = writePath + "suite/dubbo/" + interface_Name + "/" + methodName + "/";
-                Type[] types = method.getGenericParameterTypes();//参数类型
-                Type returnType = method.getGenericReturnType();// 返回类型
-                String[] returnTypeList = returnType.toString().split("<");
-                for (int i = 0; i < returnTypeList.length; i++) {
-                    returnTypeList[i] = returnTypeList[i].substring(returnTypeList[i].lastIndexOf(".") + 1);
-                }
-                for (Type type : types) {
-                    String parname = type.toString().substring(6);
-                    String parname_short = parname.substring(parname.lastIndexOf(".") + 1);
-
-                    c = ReflectionUtils.loadClass(parname);
-                    if (!NewReflect.isBaseDataType(c)) {
-                        NewReflect f = new NewReflect(c);
-                        f.getSetClass(c, folder, StringUtil.firstToLow(parname_short));
-                    }
-                }
+                GetJsonServiceImpl getJsonService = new GetJsonServiceImpl();
+                String paramResult = getJsonService.getJson(interfaceName, methodName);
+                FileUtil.fileWrite(folder + "demo_1/demo_1", paramResult.toString());
+                FileUtil.fileWrite(folder + "demo_1/assert", "");
+                FileUtil.fileWrite(folder + "demo_1/before", "");
+                FileUtil.fileWrite(folder + "demo_1/after", "");
                 FileUtil.fileWrite(folder + "config.properties", result.toString());
                 FileUtil.fileWrite(folder + "beforeClass", "");
                 FileUtil.fileWrite(folder + "afterClass", "");
@@ -84,7 +74,10 @@ public class GenerateDubboSuite {
                     "redis.max.redirections=";
             FileUtil.fileWrite(writePath + "suite/redis.properties", redisString);
 
-        }  catch (Exception e){
+            String keyString="key.QGZ=";
+            FileUtil.fileWrite(writePath+"suite/key.properties",keyString);
+
+        } catch (Exception e) {
             e.printStackTrace();
         }
 //        System.out.println(result);
@@ -101,13 +94,13 @@ public class GenerateDubboSuite {
             }
 
             loader = addJar(args[0]);
-            GetPara getPara=new GetPara();
+            GetPara getPara = new GetPara();
             getPara.setLoader(loader);
-            GenerateDubboSuite generateDubboSuite=new GenerateDubboSuite();
+            GenerateDubboSuite generateDubboSuite = new GenerateDubboSuite();
             String[] service = args[1].trim().split(",");
 //            String[] service = "cn.xn.user.service.ICustomerInfoService".trim().split(",");
             for (String s : service) {
-                generateDubboSuite.getParam(s, "/data/autotest/user/generate/");
+                generateDubboSuite.getDubboSuite(s, "/data/autotest/user/generate/");
 //                getParam(s, loader, "d:\\test\\");
             }
 

@@ -11,22 +11,32 @@ public class GetPara {
     private static final Logger logger = LoggerFactory.getLogger(GetPara.class);
 
 
-    private  static URLClassLoader loader =null;
-    private   static  String path;
+    private static URLClassLoader loader = null;
+    private static String path;
 
-    public  URLClassLoader getLoader() {
+    public static String getSystem() {
+        return system;
+    }
+
+    public static void setSystem(String system) {
+        GetPara.system = system;
+    }
+
+    private static String system;
+
+    public URLClassLoader getLoader() {
         return loader;
     }
 
-    public  void setLoader(URLClassLoader loader) {
+    public void setLoader(URLClassLoader loader) {
         this.loader = loader;
     }
 
-    public  String getPath() {
+    public String getPath() {
         return path;
     }
 
-    public  void setPath(String path) {
-       this.path = path;
+    public void setPath(String path) {
+        this.path = path;
     }
 }

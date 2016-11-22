@@ -12,7 +12,7 @@ public class IntFactory extends InstanceFactory {
     }
 
     @Override
-    protected boolean support(Type type) {
+    public boolean support(Type type) {
         return type.equals(Integer.class) || type.equals(Integer.TYPE);
     }
 }

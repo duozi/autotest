@@ -78,6 +78,9 @@ public class PaserFile {
                         } else if (key.equalsIgnoreCase("key")) {
                             redisAssertCommand.setKey(value);
                         } else {
+                            if(value.equals("null")){
+                                value=null;
+                            }
                             KeyValueStore keyValueStore = new KeyValueStore(key, value);
                             redislist.add(keyValueStore);
                         }
@@ -156,19 +159,14 @@ public class PaserFile {
                     if (!line.startsWith("#") && line.split("=").length == 2) {
                         String key = line.split("=")[0];
                         String value = line.split("=")[1];
-                        if (line.startsWith("loginName")) {
-                            redisCommand.setLoginName(line.split("=")[1]);
-                        } else if (line.startsWith("systemType")) {
-                            redisCommand.setSystemType(line.split("=")[1]);
-                        } else if (line.startsWith("times")) {
-                            redisCommand.setTimes(Integer.valueOf(line.split("=")[1]));
-                        } else if (line.startsWith("sourceType")) {
-                            redisCommand.setSourceType(line.split("=")[1]);
-                        } else if (line.startsWith("memberNo")) {
-                            redisCommand.setMemberNo(line.split("=")[1]);
-                        } else if (line.startsWith("tokenId")) {
-                            redisCommand.setTokenId(line.split("=")[1]);
-                        } else if (key.equalsIgnoreCase("key")) {
+//                        if (line.startsWith("loginName")) {
+//                            redisCommand.setLoginName(line.split("=")[1]);
+//                        } else if (line.startsWith("systemType")) {
+//                            redisCommand.setSystemType(line.split("=")[1]);
+//                        } else if (line.startsWith("times")) {
+//                            redisCommand.setTimes(Integer.valueOf(line.split("=")[1]));
+//                        } else
+                            if (key.equalsIgnoreCase("key")) {
                             redisCommand.setKey(value);
                         } else if (key.equalsIgnoreCase("value")) {
                             redisCommand.setValue(value);

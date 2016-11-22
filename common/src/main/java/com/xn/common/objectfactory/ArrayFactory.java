@@ -67,7 +67,7 @@ public class ArrayFactory extends InstanceFactory {
     }
 
     @Override
-    protected boolean support(Type type) {
+    public boolean support(Type type) {
         if (type instanceof Class) {
             if (((Class) type).isArray()) return true;
         }

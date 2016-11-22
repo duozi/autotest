@@ -12,7 +12,7 @@ public class BooleanFactory extends InstanceFactory {
     }
 
     @Override
-    protected boolean support(Type type) {
+    public boolean support(Type type) {
         return type.equals(Boolean.class) || type.equals(Boolean.TYPE);
     }
 }

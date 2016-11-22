@@ -7,6 +7,7 @@ import com.xn.common.Exception.AssertNotEqualException;
 import com.xn.common.model.KeyValueStore;
 import com.xn.common.response.Assert;
 import com.xn.common.response.AssertItem;
+import com.xn.common.result.Report;
 import com.xn.common.util.RedisUtil;
 import com.xn.common.util.StringUtil;
 import net.sf.json.JSONObject;
@@ -69,52 +70,64 @@ public class RedisAssertCommand implements Command {
 
                 if (redisMethod.equalsIgnoreCase("getValue")) {
                     String redisValue = getValue(key);
-                    exact=redisValue;
+                    exact = redisValue;
                     logger.info("redis assert getValue method command<{}> is starting... ", expectation);
-                    redisVerifyValue(expectation,redisValue);
+                    redisVerifyValue(expectation, redisValue);
                 } else if (redisMethod.equalsIgnoreCase("getTime")) {
                     Long time = getTime(key);
-                    exact=String.valueOf(time);
+                    exact = String.valueOf(time);
                     logger.info("redis assert getTime method command<{}> is starting... ", expectation);
-                    redisVerifyTime(expectation,time);
+                    redisVerifyTime(expectation, time);
                 }
 
             } catch (AssertNotEqualException e) {
                 assertItem.setResult("failed");
                 String message = "assert redis step invoke has error,expect=" + expectation + separator + "result=" + exact;
                 logger.error(message, e);
-                throw  e;
+                throw e;
 
             }
         }
 
     }
 
-    private void redisVerifyTime(Map<String, String> expectation,Long exactTime)throws AssertNotEqualException {
+    private void redisVerifyTime(Map<String, String> expectation, Long exactTime) throws AssertNotEqualException {
 
 
-                Long time= Long.valueOf(expectation.get("time"));
-                if(time!=exactTime){
-                    AssertItem item = new AssertItem("redis.getTime", expectation.get("time"), String.valueOf(exactTime));
-                    assertItem.addDiff(item);
-                    throw new AssertNotEqualException("assert is not Equal");
-                }
-            }
+        Long time = Long.valueOf(expectation.get("time"));
+        if (time != exactTime) {
+            AssertItem item = new AssertItem("redis.getTime", expectation.get("time"), String.valueOf(exactTime));
+            assertItem.addDiff(item);
+            throw new AssertNotEqualException("assert is not Equal");
+        }
+    }
 
-    private void redisVerifyValue(Map<String, String> expected,String redisValue) throws AssertNotEqualException {
-        if (redisValue != null) {
-            JSONObject jsonObject = JSONObject.fromObject(redisValue);
-            for (String key : expected.keySet()) {
-                String value = expected.get(key);
-                deepAssert(jsonObject, key, value, assertItem);
+    private void redisVerifyValue(Map<String, String> expected, String redisValue) throws AssertNotEqualException {
+        if (expected.containsKey("valueEqual")) {
+            String value = expected.get("valueEqual");
+            if (!value.equals(redisValue)) {
+                Report.failedPlus();
+                AssertItem item = new AssertItem(key, value, redisValue);
+                assertItem.addDiff(item);
+                throw new AssertNotEqualException("assert is not Equal");
             }
         }
+        if (!expected.isEmpty()) {
+            if (redisValue != null) {
 
+                JSONObject jsonObject = JSONObject.fromObject(redisValue);
+
+                for (String key : expected.keySet()) {
+                    String value = expected.get(key);
+                    deepAssert(jsonObject, key, value, assertItem);
+                }
+            }
+        }
 
     }
 
     @Override
-    public void execute()  {
+    public void execute() {
 
 
     }
