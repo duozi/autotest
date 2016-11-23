@@ -217,7 +217,7 @@ public class SignUtil {
     }
 
     public static void main(String[] args) {
-        Map<String, String> map = new TreeMap<>();
+        Map<String, String> map = new TreeMap<String, String>();
         map.put("test", "test");
         String s = map.remove("jest");
         System.out.println(StringUtils.isEmpty(s));

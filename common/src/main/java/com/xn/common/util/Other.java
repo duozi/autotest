@@ -44,7 +44,7 @@ public class Other {
                                     FileUtil.fileWrite(newPath + path.replace("#", ""), content);
                                 } else if (!fileName.equals("log")) {
                                     List<String> lines = FileUtil.fileReadeForList(file);
-                                    Map<String, String> oldMap = new HashMap<>();
+                                    Map<String, String> oldMap = new HashMap<String, String>();
                                     for (String line : lines) {
                                         String key = "";
                                         String value = "";

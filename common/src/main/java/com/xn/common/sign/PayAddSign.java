@@ -34,7 +34,7 @@ public class PayAddSign {
 
 
                 treeMap.remove("sign");
-                TreeMap<String, String> treeMapWithoutSignType = new TreeMap<>();
+                TreeMap<String, String> treeMapWithoutSignType = new TreeMap<String, String>();
                 treeMapWithoutSignType.putAll(treeMap);
                 treeMapWithoutSignType.remove("sign_type");
                 String withSignType = mapToString(treeMap);
