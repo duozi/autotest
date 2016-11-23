@@ -63,15 +63,16 @@ public class JarUtil {
             }
         } else {
             String oldJar = files[0].getAbsolutePath();
-            oldJar = oldJar.substring(oldJar.lastIndexOf("/") + 1);
-            if (!newJarName.equals("") && !oldJar.equals(newJarName)) {
+            String oldJarName = oldJar.substring(oldJar.lastIndexOf("/") + 1);
+            if (!newJarName.equals("") && !oldJarName.equals(newJarName)) {
 
                 try {
                     downloadJar(repository, artifact,  group, version, jarPath,newJarName);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
-                files[0].delete();
+                File oldJarFile=new File(oldJar);
+                oldJarFile.delete();
             }
 
         }
