@@ -76,6 +76,8 @@ public class GenerateDubboSuite {
 
             String keyString="key.QGZ=";
             FileUtil.fileWrite(writePath+"suite/key.properties",keyString);
+            String jarString="repository=\r\nartifact=\r\ngroup=\r\nversion=";
+            FileUtil.fileWrite(writePath+"suite/jar.properties",jarString);
 
         } catch (Exception e) {
             e.printStackTrace();

@@ -18,13 +18,12 @@ public class DBUtil {
     public static Connection con;
     public static Statement stmt;
     public static ResultSet rs;
-    public static String path;
     private static BasicDataSource bds = null;
 
 
     public static boolean newDB() {
         GetPara getPara = new GetPara();
-        path = getPara.getPath();
+        String path = getPara.getPath();
         File file = new File(path + "suite/jdbc.properties");
         String url = StringUtil.getConfig(file, "jdbc_url", "");
         String user = StringUtil.getConfig(file, "jdbc_username", "");

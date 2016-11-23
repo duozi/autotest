@@ -2,6 +2,7 @@ package com.xn.common.util;/**
  * Created by xn056839 on 2016/10/27.
  */
 
+import com.xn.common.service.GetPara;
 import org.apache.commons.io.FileUtils;
 import org.dom4j.Document;
 import org.dom4j.DocumentException;
@@ -39,14 +40,16 @@ public class JarUtil {
     }
 
     public static void checkNew(String jarPath)  {
-
+        GetPara getPara = new GetPara();
+        String path = getPara.getPath();
+        File profile = new File(path + "suite/jar.properties");
         String checkurl = StringUtil.getPro("jar.properties", "checkurl");
-        String r = StringUtil.getPro("jar.properties", "r");
-        String artifact = StringUtil.getPro("jar.properties", "artifact");
-        String group = StringUtil.getPro("jar.properties", "group");
-        String version = StringUtil.getPro("jar.properties", "version");
+        String repository = StringUtil.getConfig(profile, "repository","snapshots");
+        String artifact = StringUtil.getConfig(profile, "artifact","");
+        String group = StringUtil.getConfig(profile, "group","");
+        String version = StringUtil.getConfig(profile, "version","");
 
-        checkurl = String.format(checkurl, r, group, artifact, version);
+        checkurl = String.format(checkurl, repository, group, artifact, version);
 
 
         String newJarName = getNewJarName(checkurl);
@@ -54,7 +57,7 @@ public class JarUtil {
         File[] files = file.listFiles();
         if (files.length == 0) {
             try {
-                downloadJar(r, artifact, group, version, jarPath,newJarName);
+                downloadJar(repository, artifact, group, version, jarPath,newJarName);
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -64,7 +67,7 @@ public class JarUtil {
             if (!newJarName.equals("") && !oldJar.equals(newJarName)) {
 
                 try {
-                    downloadJar(r, artifact,  group, version, jarPath,newJarName);
+                    downloadJar(repository, artifact,  group, version, jarPath,newJarName);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

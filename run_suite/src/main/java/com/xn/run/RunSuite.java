@@ -109,6 +109,7 @@ public class RunSuite {
         String suitePath = args[3];
         String jarPath = args[4];
         RunSuite runSuite = new RunSuite();
+        jarPath=jarPath+"/"+system+"/";
         runSuite.runSuiteService(type, system,sendMailTo, suitePath, jarPath);
     }
 }
