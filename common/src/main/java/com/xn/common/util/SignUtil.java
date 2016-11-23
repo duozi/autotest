@@ -128,7 +128,7 @@ public class SignUtil {
         } else if (system.equalsIgnoreCase("message")) {
             MessageAddSign messageAddSign = new MessageAddSign();
             return messageAddSign.MessageHttpAddSing(map, useSign, signType);
-        } else if (system.equalsIgnoreCase("pay")) {
+        } else if (system.equalsIgnoreCase("unipay")) {
             PayAddSign payAddSign = new PayAddSign();
             return payAddSign.PayHttpAddSing(map, useSign, signType);
         } else {

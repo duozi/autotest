@@ -7,63 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f03f9033-a17d-480a-ba82-e1f91e2004da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_xiaoniu_user_user_interface_2_0_0_SNAPSHOT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/sign/MessageAddSign.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/sign/PayAddSign.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/sign/UserAddSign.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/util/ConnectionPool.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/util/Other.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/util/SignUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/GetJsonServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/JsonReflect.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/NewReflect.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autotest.iml" afterPath="$PROJECT_DIR$/autotest.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/common.iml" afterPath="$PROJECT_DIR$/common/common.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/pom.xml" afterPath="$PROJECT_DIR$/common/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/DBAssertCommand.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/DBAssertCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/DubboCaseCommand.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/DubboCaseCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/HttpCaseCommand.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/HttpCaseCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/RedisAssertCommand.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/RedisAssertCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/RedisCommand.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/RedisCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/mail/JavaMailWithAttachment.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/mail/JavaMailWithAttachment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/ArrayFactory.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/ArrayFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/BeanUtils.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/BeanUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/BigDecimalFactory.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/BigDecimalFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/BigIntegerFactory.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/BigIntegerFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/BooleanFactory.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/BooleanFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/CharFactory.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/CharFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/DateTimeFactory.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/DateTimeFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/DoubleFactory.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/DoubleFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/EnumFactory.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/EnumFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/FloatFactory.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/FloatFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/InstanceFactory.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/InstanceFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/IntFactory.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/IntFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/ListFactory.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/ListFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/LongFactory.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/LongFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/MapFactory.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/MapFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/ObjectFactory.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/ObjectFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/StreamFactory.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/StreamFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/StringFactory.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/objectfactory/StringFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/result/HTMLReport.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/result/HTMLReport.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/service/GetPara.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/service/GetPara.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/service/PaserFile.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/service/PaserFile.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/util/DBUtil.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/util/DBUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/util/EncryptUtil.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/util/EncryptUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/util/RedisUtil.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/util/RedisUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/util/StringUtil.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/util/StringUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/resources/spring.xml" afterPath="$PROJECT_DIR$/common/src/main/resources/spring.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/resources/test.properties" afterPath="$PROJECT_DIR$/common/src/main/resources/test.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/generate.iml" afterPath="$PROJECT_DIR$/generate/generate.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/FileZip.java" afterPath="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/FileZip.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/GenerateDubboSuite.java" afterPath="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/GenerateDubboSuite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/GenerateHttpSuite.java" afterPath="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/GenerateHttpSuite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/GenerateSuite.java" afterPath="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/GenerateSuite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_suite/run_suite.iml" afterPath="$PROJECT_DIR$/run_suite/run_suite.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_suite/src/main/java/com/xn/run/RunSuite.java" afterPath="$PROJECT_DIR$/run_suite/src/main/java/com/xn/run/RunSuite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_suite/src/main/java/com/xn/run/dubbo/ReadDubboSuite.java" afterPath="$PROJECT_DIR$/run_suite/src/main/java/com/xn/run/dubbo/ReadDubboSuite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_suite/src/main/java/com/xn/run/http/ReadHttpSuite.java" afterPath="$PROJECT_DIR$/run_suite/src/main/java/com/xn/run/http/ReadHttpSuite.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/sign/PayAddSign.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/sign/PayAddSign.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/sign/UserAddSign.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/sign/UserAddSign.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/util/SignUtil.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/util/SignUtil.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/resources/mail.properties" afterPath="$PROJECT_DIR$/common/src/main/resources/mail.properties" />
     </list>
     <ignored path="autotest.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -96,36 +44,33 @@
       <file leaf-file-name="RunSuite.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_suite/src/main/java/com/xn/run/RunSuite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-66">
+            <state relative-caret-position="528">
               <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GetPara.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/service/GetPara.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
               <folding>
-                <element signature="e#393#394#0" expanded="true" />
-                <element signature="e#422#423#0" expanded="true" />
-                <element signature="e#473#474#0" expanded="true" />
-                <element signature="e#512#513#0" expanded="true" />
-                <element signature="e#803#804#0" expanded="true" />
-                <element signature="e#835#836#0" expanded="true" />
+                <element signature="imports" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HttpCaseCommand.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HttpCaseCommand.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/command/HttpCaseCommand.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-              <folding />
+            <state relative-caret-position="242">
+              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#1045#1046#0" expanded="false" />
+                <element signature="e#1076#1077#0" expanded="false" />
+                <element signature="e#1111#1112#0" expanded="false" />
+                <element signature="e#1141#1142#0" expanded="false" />
+                <element signature="e#1175#1176#0" expanded="false" />
+                <element signature="e#1204#1205#0" expanded="false" />
+                <element signature="e#1248#1249#0" expanded="false" />
+                <element signature="e#1284#1285#0" expanded="false" />
+                <element signature="e#5165#5166#0" expanded="false" />
+                <element signature="e#5194#5195#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -133,9 +78,11 @@
       <file leaf-file-name="ReadHttpSuite.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_suite/src/main/java/com/xn/run/http/ReadHttpSuite.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
+            <state relative-caret-position="3256">
               <caret line="168" column="0" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -143,8 +90,8 @@
       <file leaf-file-name="SignUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/util/SignUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+            <state relative-caret-position="440">
+              <caret line="133" column="16" selection-start-line="133" selection-start-column="16" selection-end-line="133" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -153,9 +100,13 @@
       <file leaf-file-name="StringUtil.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/util/StringUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-269">
+            <state relative-caret-position="770">
               <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#2418#2419#0" expanded="false" />
+                <element signature="e#2490#2491#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -163,8 +114,8 @@
       <file leaf-file-name="UserAddSign.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/sign/UserAddSign.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
+            <state relative-caret-position="243">
+              <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -173,9 +124,11 @@
       <file leaf-file-name="MessageAddSign.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/sign/MessageAddSign.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
+            <state relative-caret-position="770">
               <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -183,8 +136,28 @@
       <file leaf-file-name="PayAddSign.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/sign/PayAddSign.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+            <state relative-caret-position="561">
+              <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="JavaMailWithAttachment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/mail/JavaMailWithAttachment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="706">
+              <caret line="121" column="1" selection-start-line="121" selection-start-column="1" selection-end-line="121" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mail.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/common/src/main/resources/mail.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -250,7 +223,6 @@
         <option value="$PROJECT_DIR$/common/src/main/java/com/xn/common/util/Other.java" />
         <option value="$PROJECT_DIR$/common/src/main/resources/spring.xml" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/xn/common/util/RedisUtil.java" />
-        <option value="$PROJECT_DIR$/common/src/main/resources/mail.properties" />
         <option value="$PROJECT_DIR$/run_suite/src/main/java/com/xn/run/dubbo/ReadDubboSuite.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/DBAssertCommand.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/xn/common/mail/JavaMailWithAttachment.java" />
@@ -269,10 +241,11 @@
         <option value="$PROJECT_DIR$/common/src/main/java/com/xn/common/sign/UserHttpAddSing.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/xn/common/sign/UserAddSing.java" />
         <option value="$PROJECT_DIR$/run_suite/src/main/java/com/xn/run/http/ReadHttpSuite.java" />
+        <option value="$PROJECT_DIR$/common/src/main/java/com/xn/common/sign/MessageAddSign.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/xn/common/sign/UserAddSign.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/xn/common/util/SignUtil.java" />
-        <option value="$PROJECT_DIR$/common/src/main/java/com/xn/common/sign/MessageAddSign.java" />
         <option value="$PROJECT_DIR$/common/src/main/java/com/xn/common/sign/PayAddSign.java" />
+        <option value="$PROJECT_DIR$/common/src/main/resources/mail.properties" />
       </list>
     </option>
   </component>
@@ -329,8 +302,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1920" />
-    <option name="height" value="1040" />
+    <option name="x" value="-1928" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -376,8 +351,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -485,42 +458,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autotest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sign" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -528,7 +469,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="E:/user" />
+    <property name="last_opened_file_path" value="D:/case/unipay/suite" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -575,7 +516,7 @@
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.xn.run.RunSuite" />
       <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="http pay  zhouxi2@xiaoniu66.com d:\suite2\ d:\jar" />
+      <option name="PROGRAM_PARAMETERS" value="http unipay  zhouxi2@xiaoniu66.com d:\case\unipay\ d:\jar" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -1161,9 +1102,9 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.RunSuite" />
-        <item index="1" class="java.lang.String" itemvalue="Application.ReadDubboSuite" />
-        <item index="2" class="java.lang.String" itemvalue="Application.RedisCommand" />
-        <item index="3" class="java.lang.String" itemvalue="Application.JavaMailWithAttachment" />
+        <item index="1" class="java.lang.String" itemvalue="Application.JavaMailWithAttachment" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ReadDubboSuite" />
+        <item index="3" class="java.lang.String" itemvalue="Application.RedisCommand" />
         <item index="4" class="java.lang.String" itemvalue="Application.Other" />
       </list>
     </recent_temporary>
@@ -1243,7 +1184,8 @@
       <workItem from="1479437114068" duration="13606000" />
       <workItem from="1479519705610" duration="6336000" />
       <workItem from="1479693375510" duration="9309000" />
-      <workItem from="1479718026323" duration="14775000" />
+      <workItem from="1479718026323" duration="17700000" />
+      <workItem from="1479867574060" duration="5760000" />
     </task>
     <task id="LOCAL-00001" summary="delete long name">
       <created>1475033772575</created>
@@ -1568,7 +1510,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="907429000" />
+    <option name="totallyTimeSpent" value="916114000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1580,31 +1522,31 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1040" extended-state="0" />
+    <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35421687" sideWeight="0.6049784" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35380834" sideWeight="0.6049784" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36506024" sideWeight="0.512987" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13528138" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.07616708" sideWeight="0.63906926" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.62891567" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.73333335" sideWeight="0.63906926" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32921347" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19156626" sideWeight="0.5714286" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3862069" sideWeight="0.5714286" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24563318" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24350649" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991362" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30958232" sideWeight="0.48701298" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30958232" sideWeight="0.48701298" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20515971" sideWeight="0.495671" order="3" side_tool="false" content_ui="tabs" x="29" y="588" width="1848" height="389" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20515971" sideWeight="0.495671" order="3" side_tool="false" content_ui="tabs" x="29" y="588" width="1848" height="389" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -2106,13 +2048,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/resources/mail.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="9" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/suite/redis.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -2162,13 +2097,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/mail/JavaMailWithAttachment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="48" column="30" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -2202,9 +2130,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="858">
           <caret line="44" column="41" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2212,7 +2137,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2640">
           <caret line="126" column="31" selection-start-line="126" selection-start-column="31" selection-end-line="126" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2220,11 +2144,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10450">
           <caret line="488" column="0" selection-start-line="488" selection-start-column="0" selection-end-line="488" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#15537#15538#0" expanded="false" />
-            <element signature="e#15571#15572#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2239,15 +2158,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1408">
           <caret line="75" column="16" selection-start-line="75" selection-start-column="16" selection-end-line="75" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#659#660#0" expanded="false" />
-            <element signature="e#689#690#0" expanded="false" />
-            <element signature="e#743#744#0" expanded="false" />
-            <element signature="e#789#790#0" expanded="false" />
-            <element signature="e#841#842#0" expanded="false" />
-            <element signature="e#885#886#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2255,7 +2165,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2263,13 +2172,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="704">
           <caret line="44" column="5" selection-start-line="44" selection-start-column="5" selection-end-line="44" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#739#740#0" expanded="false" />
-            <element signature="e#793#794#0" expanded="false" />
-            <element signature="e#845#846#0" expanded="false" />
-            <element signature="e#889#890#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2346,9 +2248,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1562">
           <caret line="81" column="43" selection-start-line="81" selection-start-column="43" selection-end-line="81" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2356,7 +2255,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="434">
           <caret line="133" column="0" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2364,7 +2262,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="53" column="34" selection-start-line="53" selection-start-column="34" selection-end-line="53" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2372,7 +2269,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="605">
           <caret line="76" column="12" selection-start-line="76" selection-start-column="12" selection-end-line="77" selection-end-column="75" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2380,7 +2276,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="484">
           <caret line="36" column="43" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2388,7 +2283,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="372">
           <caret line="104" column="50" selection-start-line="104" selection-start-column="50" selection-end-line="104" selection-end-column="50" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2404,46 +2298,42 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/service/GetPara.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
+        <state relative-caret-position="374">
           <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
           <folding>
-            <element signature="e#393#394#0" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#473#474#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-            <element signature="e#803#804#0" expanded="true" />
-            <element signature="e#835#836#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#588#589#0" expanded="false" />
+            <element signature="e#617#618#0" expanded="false" />
+            <element signature="e#669#670#0" expanded="false" />
+            <element signature="e#705#706#0" expanded="false" />
+            <element signature="e#736#737#0" expanded="false" />
+            <element signature="e#763#764#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/util/StringUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-269">
-          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/run_suite/src/main/java/com/xn/run/RunSuite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-66">
+        <state relative-caret-position="528">
           <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/run_suite/src/main/java/com/xn/run/http/ReadHttpSuite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
+        <state relative-caret-position="3256">
           <caret line="168" column="0" selection-start-line="168" selection-start-column="0" selection-end-line="168" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2451,15 +2341,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="8" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/sign/UserAddSign.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="30" column="17" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2467,41 +2348,87 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/command/HttpCaseCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
           <folding>
-            <element signature="e#812#813#0" expanded="true" />
-            <element signature="e#867#868#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#1045#1046#0" expanded="false" />
+            <element signature="e#1076#1077#0" expanded="false" />
+            <element signature="e#1111#1112#0" expanded="false" />
+            <element signature="e#1141#1142#0" expanded="false" />
+            <element signature="e#1175#1176#0" expanded="false" />
+            <element signature="e#1204#1205#0" expanded="false" />
+            <element signature="e#1248#1249#0" expanded="false" />
+            <element signature="e#1284#1285#0" expanded="false" />
+            <element signature="e#5165#5166#0" expanded="false" />
+            <element signature="e#5194#5195#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/util/SignUtil.java">
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/util/StringUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+        <state relative-caret-position="770">
+          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#2418#2419#0" expanded="false" />
+            <element signature="e#2490#2491#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/sign/UserAddSign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/sign/MessageAddSign.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
+        <state relative-caret-position="770">
           <caret line="46" column="9" selection-start-line="46" selection-start-column="9" selection-end-line="46" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/util/SignUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="133" column="16" selection-start-line="133" selection-start-column="16" selection-end-line="133" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/sign/PayAddSign.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state relative-caret-position="561">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/command/HttpCaseCommand.java">
+    <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/mail/JavaMailWithAttachment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        <state relative-caret-position="706">
+          <caret line="121" column="1" selection-start-line="121" selection-start-column="1" selection-end-line="121" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common/src/main/resources/mail.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>

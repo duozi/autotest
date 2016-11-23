@@ -42,7 +42,7 @@ public class UserAddSign {
                 treeMap.remove("sign_type");
                 String sign_sb = mapToString(treeMap);
                 String signPara = sign_sb + "&key=" + key;
-                String sign = md5(signPara);
+                String sign = md5(signPara,"");
                 sign_sb += "&sign=" + sign;
                 return sign_sb;
             }
