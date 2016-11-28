@@ -82,7 +82,7 @@ public class RedisAssertCommand implements Command {
 
             } catch (AssertNotEqualException e) {
                 assertItem.setResult("failed");
-                String message = "assert redis step invoke has error,expect=" + expectation + separator + "result=" + exact;
+                String message = assertItem.getInterfaceName()+"/"+assertItem.getMethodName()+"/"+assertItem.getCaseName()+"====assert redis step invoke has error,expect=" + expectation + separator + "result=" + exact;
                 logger.error(message, e);
                 throw e;
 
@@ -111,6 +111,7 @@ public class RedisAssertCommand implements Command {
                 assertItem.addDiff(item);
                 throw new AssertNotEqualException("assert is not Equal");
             }
+            return;
         }
         if (!expected.isEmpty()) {
             if (redisValue != null) {

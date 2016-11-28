@@ -116,7 +116,7 @@ public class AssertCommand implements Command {
                 }
             }
         } catch (Exception e) {
-            logger.error("assert error");
+            logger.error(assertItem.getInterfaceName()+"/"+assertItem.getMethodName()+"/"+assertItem.getCaseName()+"=====[assert error]");
         } finally {
             Report.getReport().assertAdd(assertItem);
         }

@@ -183,6 +183,7 @@ public class ReadDubboSuite {
         List<KeyValueStore> list = new ArrayList();
         String param = FileUtil.fileReadeForStr(file);
         JSONObject paramObject=JSONObject.fromObject(param);
+
         JSONArray array=paramObject.getJSONArray("param");
         for(int i=0;i<array.size();i++){
             KeyValueStore keyValueStore=new KeyValueStore("var"+i,array.getString(i));
