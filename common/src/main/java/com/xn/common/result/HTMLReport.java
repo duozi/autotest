@@ -491,7 +491,7 @@ public class HTMLReport {
                     response = request + "\n" + response + "\n" + assertError;
                 } else if (tid.startsWith("e")) {
 //                    System.out.println("---------" + ass.getResponse().getException());
-                    exception = "【Exception】\n" + ass.getResponse().getException().getCause().getMessage();
+                    exception = "【Exception】\n" + ass.getResponse().getException();
                     exception = ERROR_STRING.replace("%(content)s", exception);
                     response = request + "\n" + response + "\n" + exception;
                 } else {
