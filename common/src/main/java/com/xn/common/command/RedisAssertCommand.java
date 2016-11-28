@@ -105,7 +105,10 @@ public class RedisAssertCommand implements Command {
     private void redisVerifyValue(Map<String, String> expected, String redisValue) throws AssertNotEqualException {
         if (expected.containsKey("valueEqual")) {
             String value = expected.get("valueEqual");
-            if (!value.equals(redisValue)) {
+            if(value==null&&redisValue==null){
+                return;
+            }
+            if (value==null||redisValue==null||!value.equals(redisValue)) {
                 Report.failedPlus();
                 AssertItem item = new AssertItem(key, value, redisValue);
                 assertItem.addDiff(item);
