@@ -49,7 +49,7 @@ public class GenerateSuite {
             FileZip fileZip = new FileZip();
             fileZip.zipFile(writePath + "suite", zipOut);
             JavaMailWithAttachment se = new JavaMailWithAttachment(true);
-            se.doSendHtmlEmail("dubbo接口测试文件结构", "这是程序自动生成的dubbo接口测试文件目录结构，文件名为suite不能修改,其余case可以参照现有的结构编写", args[2], zipOut);
+            se.doSendHtmlEmail("dubbo接口测试文件结构", "这是程序自动生成的接口测试文件目录结构，请下载附件", args[2], zipOut);
         }
     }
 }

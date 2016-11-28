@@ -23,7 +23,7 @@ public class JarUtil {
     private static final Logger logger = LoggerFactory.getLogger(JarUtil.class);
 
     public static URLClassLoader addJar(String jarPath) {
-        checkNew(jarPath);
+//        checkNew(jarPath);
         URLClassLoader loader = null;
         try {
             File jar = new File(jarPath);
