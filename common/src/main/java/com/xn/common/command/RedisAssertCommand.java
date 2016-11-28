@@ -113,8 +113,10 @@ public class RedisAssertCommand implements Command {
                 AssertItem item = new AssertItem(key, value, redisValue);
                 assertItem.addDiff(item);
                 throw new AssertNotEqualException("assert is not Equal");
+            }else{
+                return;
             }
-            return;
+
         }
         if (!expected.isEmpty()) {
             if (redisValue != null) {
