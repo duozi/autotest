@@ -21,7 +21,8 @@ public class GenerateSuite {
 //            String writePath = "d:/generate/";
 
             String type = args[0];
-            String writePath = args[1];
+            String systemName=args[1];
+            String writePath = args[2];
             if (type.equals("http")) {
                 logger.info(" generate http suite file");
 
@@ -30,8 +31,8 @@ public class GenerateSuite {
             } else if (type.equals("dubbo")) {
                 logger.info("generate  dubbo suite file");
 
-                String serviceName = args[3];
-                String jarPath = args[4];
+                String serviceName = args[4];
+                String jarPath = args[5]+systemName+"/";
 
 
                 URLClassLoader loader = JarUtil.addJar(jarPath);
@@ -49,7 +50,7 @@ public class GenerateSuite {
             FileZip fileZip = new FileZip();
             fileZip.zipFile(writePath + "suite", zipOut);
             JavaMailWithAttachment se = new JavaMailWithAttachment(true);
-            se.doSendHtmlEmail("dubbo接口测试文件结构", "这是程序自动生成的接口测试文件目录结构，请下载附件", args[2], zipOut);
+            se.doSendHtmlEmail("dubbo接口测试文件结构", "这是程序自动生成的接口测试文件目录结构，请下载附件", args[3], zipOut);
         }
     }
 }
