@@ -19,6 +19,11 @@ public class DBAssertCommand implements Command {
     private Assert assertItem;
     private String sql;
     private String expectCount;
+    private String name;
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public void setSql(String sql) {
         this.sql = sql;
@@ -39,7 +44,7 @@ public class DBAssertCommand implements Command {
 
             try {
 
-                exact = DBUtil.getCountFromDB(sql);
+                exact = DBUtil.getCountFromDB(name,sql);
 
                 logger.info("DB assert getCount method command<{}> is starting... ", "sql=" + sql + ",count=" + expectCount);
                 DBVerify(exact);

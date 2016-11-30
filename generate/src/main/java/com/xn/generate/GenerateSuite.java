@@ -14,7 +14,7 @@ public class GenerateSuite {
     private static final Logger logger = LoggerFactory.getLogger(GenerateSuite.class);
 
 
-    //一般来说有五个参数，第一个是生成的类型，第二个是suite写入的路径,第三个是收件人，第四个是如果生成Dubbo的服务名，第五个是如果生成Dubbo的依赖jar的地址，后两个在生成Dubbo的时候是必填的,否则只生成http
+    //一般来说有六个参数，第一个是生成的类型，第二个是依赖的系统名称 第三个是suite写入的路径,第四个是收件人，第五个是如果生成Dubbo的服务名，第六个是如果生成Dubbo的依赖jar的地址，后两个在生成Dubbo的时候是必填的,否则只生成http
     public static void main(String[] args) {
 
         if (args.length > 0) {

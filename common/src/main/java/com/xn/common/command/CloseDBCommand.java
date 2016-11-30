@@ -11,7 +11,7 @@ public class CloseDBCommand implements Command {
 
     @Override
     public void execute() {
-        DBUtil.closeDB();
+        DBUtil.DBClose();
     }
 
     @Override

@@ -26,7 +26,7 @@ public class GenerateHttpSuite {
         FileUtil.fileWrite(path + "/interfaceName/caseName/caseName", "");
 
         //数据库配置文件
-        String jdbcString = "jdbc_url=\r\njdbc_username=\r\njdbc_password=";
+        String jdbcString = "db_name=\r\n.jdbc_url=\r\n.jdbc_username=\r\n.jdbc_password=";
         FileUtil.fileWrite(writePath + "suite/jdbc.properties", jdbcString);
         //redis配置文件
         String redisString = "redis.slaver.host1=\r\n" +

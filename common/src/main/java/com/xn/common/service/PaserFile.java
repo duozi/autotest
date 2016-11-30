@@ -30,6 +30,7 @@ public class PaserFile {
         int redisFlag = 0;
         int dbFlag = 0;
         RedisAssertCommand redisAssertCommand = null;
+        String name="";
         for (String line : lines) {
             if (!line.startsWith("#")) {
                 if (redisFlag == 0) {
@@ -42,9 +43,11 @@ public class PaserFile {
                         } else if (line.trim().equalsIgnoreCase("redis")) {
                             redisFlag = 1;
                             redisAssertCommand = new RedisAssertCommand();
-                        } else if (line.trim().equalsIgnoreCase("DB")) {
+                        } else if (line.trim().endsWith("DB")) {
                             dbFlag = 1;
                             dbAssertCommand = new DBAssertCommand();
+                            name=line.split("\\.",2)[0];
+                            dbAssertCommand.setName(name);
                         }
                     } else if (dbFlag == 1) {
                         if (line.contains("=")) {
@@ -56,7 +59,7 @@ public class PaserFile {
                             } else if (type.equalsIgnoreCase("count")) {
                                 dbAssertCommand.setExpectCount(value);
                             }
-                        } else if (line.trim().equalsIgnoreCase("DB end")) {
+                        } else if (line.trim().equalsIgnoreCase(name+".DB end")) {
                             dbFlag = 0;
                             dbAssertCommand.setAssertItem(assertItem);
                             dbAssertCommandList.add(dbAssertCommand);
@@ -104,12 +107,11 @@ public class PaserFile {
         List<Command> beforeClass = new ArrayList();
         List<String> lines = FileUtil.fileReadeForList(file);
         for (String line : lines) {
-            if (line.equalsIgnoreCase("DB")) {
-                beforeClass.add(new NewDBCommand());
-            } else if (line.startsWith("DB")) {
+            if (line.contains("DB")) {
 
                 String sql = line.split("=", 2)[1];
-                beforeClass.add(new DBCommand(sql));
+                String name=line.split("\\.",2)[0];
+                beforeClass.add(new DBCommand(name,sql));
             }
         }
         return beforeClass;
@@ -120,12 +122,11 @@ public class PaserFile {
         List<Command> afterClass = new ArrayList();
         List<String> lines = FileUtil.fileReadeForList(file);
         for (String line : lines) {
-            if (line.equalsIgnoreCase("DB")) {
-                afterClass.add(new CloseDBCommand());
-            } else if (line.startsWith("DB")) {
+             if (line.startsWith("DB")) {
 
                 String sql = line.split("=", 2)[1];
-                afterClass.add(new DBCommand(sql));
+                 String name=line.split("\\.",2)[0];
+                afterClass.add(new DBCommand(name,sql));
             }
         }
         return afterClass;
@@ -138,9 +139,10 @@ public class PaserFile {
         RedisCommand redisCommand = null;
         int redisFlag = 0;
         for (String line : lines) {
-            if (redisFlag == 0 && line.startsWith("DB")) {
+            if (redisFlag == 0 && line.trim().contains("DB")) {
                 String sql = line.split("=", 2)[1];
-                list.add(new DBCommand(sql));
+                String name=line.split("\\.",2)[0];
+                list.add(new DBCommand(name,sql));
             } else if (line.trim().equalsIgnoreCase("redis")) {
                 redisFlag = 1;
                 redisCommand = new RedisCommand();
@@ -209,5 +211,12 @@ public class PaserFile {
                 dealDBFile(interfaceFolder.getPath());
             }
         }
+    }
+
+    public static void main(String[] args) {
+        String s="s.123";
+        String s1=s.split("\\.")[0];
+        System.out.println(s1);
+
     }
 }

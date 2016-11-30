@@ -37,7 +37,8 @@ public class RunSuite {
         getPara.setPath(suitePath);
         getPara.setSystem(system);
         Report.getReport().setStartTime(new Date());
-        boolean falg = DBUtil.newDB();
+        boolean falg  = DBUtil.DBInit();
+
         if (type.equals("dubbo") && dubbo.exists() && dubbo.isDirectory()) {
             URLClassLoader loader = JarUtil.addJar(jarPath);
             getPara.setLoader(loader);
@@ -66,9 +67,8 @@ public class RunSuite {
                 Report.getReport().setStopTime(new Date());
 
                 if (falg) {
-                    DBUtil.closeDB();
+                    DBUtil.DBClose();
                 }
-//                Report.getReport().generateReport();
                 HTMLReport.generateResultReport(suitePath, sendMailTo);
                 break;
             }

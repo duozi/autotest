@@ -11,7 +11,7 @@ public class NewDBCommand implements Command {
 
     @Override
     public void execute() {
-        DBUtil.newDB();
+        DBUtil.DBInit();
     }
 
     @Override

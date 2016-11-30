@@ -33,7 +33,7 @@ public class RunDubboSuite {
 
     public void run() throws InterruptedException {
         Report.getReport().setStartTime(new Date());
-        boolean falg = DBUtil.newDB();
+        boolean falg = DBUtil.DBInit();
         for (int i = 0; i < testSuites.size(); i++) {
 
             final int finalI = i;
@@ -61,7 +61,7 @@ public class RunDubboSuite {
                 Report.getReport().setStopTime(new Date());
 
                 if (falg) {
-                    DBUtil.closeDB();
+                    DBUtil.DBClose();
                 }
 //                Report.getReport().generateReport();
                 HTMLReport.generateResultReport(path, sendMailTo);

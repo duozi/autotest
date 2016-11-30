@@ -10,17 +10,19 @@ import org.slf4j.LoggerFactory;
 public class DBCommand implements Command {
     private static final Logger logger = LoggerFactory.getLogger(DBCommand.class);
     private String sql;
+    private String name;
 
-    public DBCommand(String sql) {
+    public DBCommand(String name,String sql) {
+        this.name=name;
         this.sql = sql;
     }
 
     @Override
     public void execute() {
         if (sql.toLowerCase().startsWith("select")) {
-            DBUtil.selectFromDB(sql);
+            DBUtil.selectFromDB(name,sql);
         }else{
-            DBUtil.updateDB(sql);
+            DBUtil.updateDB(name,sql);
         }
     }
 
