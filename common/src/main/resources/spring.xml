@@ -17,7 +17,13 @@
             <!--</list>-->
         <!--</property>-->
     <!--</bean>-->
-    <import resource="dubbo.xml"/>
+
+
+
+    <!--<import resource="dubbo.xml"/>-->
+
+
+
     <!--<bean id="jedisCluster" class="redis.clients.jedis.JedisCluster">-->
 
         <!--<constructor-arg index="0">-->

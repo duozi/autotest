@@ -52,11 +52,14 @@ public class GenerateDubboSuite {
                 FileUtil.fileWrite(folder + "beforeClass", "");
                 FileUtil.fileWrite(folder + "afterClass", "");
                 StringBuffer config = new StringBuffer();
+                config.append("#是否通过zk调用，如果是true,那属性zk必填，如果是false,那将使用点对点直连，url属性必填\r\nuseZk=\r\n");
                 config.append("url=\r\n");
+                config.append("zk=\r\n");
                 config.append("appName=\r\n");
                 config.append("timeout=\r\n");
                 config.append("version=\r\n");
                 config.append("group=\r\n");
+
                 FileUtil.fileWrite(writePath + "suite/dubbo/" + interface_Name + "/serviceConfig.properties", config.toString());
 
             }

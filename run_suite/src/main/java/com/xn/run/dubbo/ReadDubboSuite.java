@@ -44,12 +44,15 @@ public class ReadDubboSuite {
     String interfaceName;
     String methodName;
     String url;
+    String zk;
+    String useZk;
     String appName;
     String timeout;
     String version;
     String group;
     String useSign;
     String signType;
+
 
     /**
      * 以行为单位读取文件，常用于读面向行的格式化文件
@@ -75,9 +78,11 @@ public class ReadDubboSuite {
                     if (methodFolder.getName().equals("serviceConfig.properties")) {
                         url = StringUtil.getConfig(methodFolder, "url", "");
                         appName = StringUtil.getConfig(methodFolder, "appName", "");
-                        timeout = StringUtil.getConfig(methodFolder, "timeout", "0");
+                        timeout = StringUtil.getConfig(methodFolder, "timeout", "20000");
                         version = StringUtil.getConfig(methodFolder, "version", "1.0");
                         group = StringUtil.getConfig(methodFolder, "group", "");
+                        zk=StringUtil.getConfig(methodFolder, "zk", "");
+                        useZk=StringUtil.getConfig(methodFolder, "useZk", "false");
                         break;
                     }
 
@@ -99,7 +104,7 @@ public class ReadDubboSuite {
                                 methodName = StringUtil.getConfig(file, "methodName", "");
                                 useSign = StringUtil.getConfig(file, "useSign", "true");
                                 signType=StringUtil.getConfig(file,"signType","");
-                                this.serviceDesc = new ServiceDesc(interfaceName, methodName, url, version, group, timeout, appName);
+                                this.serviceDesc = new ServiceDesc(interfaceName, methodName, url, zk,version, group, timeout, appName,Boolean.valueOf(useZk));
                                 break;
                             }
                         }

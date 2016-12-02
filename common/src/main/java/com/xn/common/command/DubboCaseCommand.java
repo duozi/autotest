@@ -6,6 +6,7 @@ package com.xn.common.command;
 
 import com.alibaba.dubbo.config.ApplicationConfig;
 import com.alibaba.dubbo.config.ReferenceConfig;
+import com.alibaba.dubbo.config.RegistryConfig;
 import com.alibaba.fastjson.JSON;
 import com.xn.common.model.KeyValueStore;
 import com.xn.common.model.ServiceDesc;
@@ -20,13 +21,15 @@ import org.slf4j.LoggerFactory;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 
 
 public class DubboCaseCommand implements CaseCommand {
     private static final Logger logger = LoggerFactory.getLogger(DubboCaseCommand.class);
-
+    private static final Map<String, Object> serviceCache = new ConcurrentHashMap<String, Object>();
     List<KeyValueStore> params;
 
     private final ServiceDesc serviceDesc;
@@ -35,7 +38,7 @@ public class DubboCaseCommand implements CaseCommand {
     private String casePath;
     private String result;
     private String useSign;
-    private  String signType;
+    private String signType;
 
 
     public String getResult() {
@@ -50,13 +53,13 @@ public class DubboCaseCommand implements CaseCommand {
         return request;
     }
 
-    public DubboCaseCommand(List<KeyValueStore> params, ServiceDesc serviceDesc, String casePath,String useSign,String signType) {
+    public DubboCaseCommand(List<KeyValueStore> params, ServiceDesc serviceDesc, String casePath, String useSign, String signType) {
 
         this.params = params;
         this.serviceDesc = serviceDesc;
         this.casePath = casePath;
-        this.useSign=useSign;
-        this.signType=signType;
+        this.useSign = useSign;
+        this.signType = signType;
 
 
     }
@@ -71,41 +74,94 @@ public class DubboCaseCommand implements CaseCommand {
         return sb.toString();
     }
 
-    public  Object getRpcService(ServiceDesc serviceDesc) throws  NoSuchMethodException, InvocationTargetException {
+    public Object getRpcService(ServiceDesc serviceDesc) throws NoSuchMethodException, InvocationTargetException {
+       if(serviceDesc.getUseZk()){
+           return getRpcServiceUseZk(serviceDesc);
+       }else{
+           return getRpcServiceUseUrl(serviceDesc);
+       }
+    }
+
+    public Object getRpcServiceUseUrl(ServiceDesc serviceDesc)throws NoSuchMethodException, InvocationTargetException{
         String rpcUrl = getRpcServiceUrl(serviceDesc.getUrl());
         Class<?> interfaceClass = ReflectionUtils.loadClass(serviceDesc.getClazz());
-
-        Object service = null;
-        ApplicationConfig application = new ApplicationConfig();
-        application.setName(serviceDesc.getAppName());
-        ReferenceConfig<?> reference = new ReferenceConfig();
-        reference.setApplication(application);
-        reference.setInterface(interfaceClass);
-        if (StringUtils.isNotBlank(serviceDesc.getVersion()) && !serviceDesc.getVersion().equals("*")) {
-            reference.setVersion(serviceDesc.getVersion());
+        String cacheKey = serviceDesc.getCacheKey();
+        Object service = serviceCache.get(cacheKey);
+        if (service == null) {
+            synchronized (serviceCache) {
+                ApplicationConfig application = new ApplicationConfig();
+                application.setName(serviceDesc.getAppName());
+                ReferenceConfig<?> reference = new ReferenceConfig();
+                reference.setApplication(application);
+                reference.setInterface(interfaceClass);
+                if (StringUtils.isNotBlank(serviceDesc.getVersion()) && !serviceDesc.getVersion().equals("*")) {
+                    reference.setVersion(serviceDesc.getVersion());
+                }
+                reference.setUrl(rpcUrl);
+                if (StringUtils.isNotBlank(serviceDesc.getGroup())) {
+                    reference.setGroup(serviceDesc.getGroup());
+                }
+                reference.setTimeout(Integer.valueOf(serviceDesc.getTimeout()));
+                service = reference.get();
+                serviceCache.put(cacheKey, service);
+            }
         }
-        reference.setUrl(rpcUrl);
-        if (StringUtils.isNotBlank(serviceDesc.getGroup())) {
-            reference.setGroup(serviceDesc.getGroup());
-        }
-        reference.setTimeout(Integer.valueOf(serviceDesc.getTimeout()));
-        service = reference.get();
-//        reference.destroy();
-
         return service;
     }
 
 
+    public Object getRpcServiceUseZk(ServiceDesc serviceDesc) throws NoSuchMethodException, InvocationTargetException{
+        String zkLine = serviceDesc.getZk();
+        Class<?> interfaceClass = ReflectionUtils.loadClass(serviceDesc.getClazz());
+        String cacheKey = serviceDesc.getCacheKey();
+        Object service = serviceCache.get(cacheKey);
+        if (service == null) {
+            synchronized (serviceCache) {
+                // 当前应用配置
+                ApplicationConfig application = new ApplicationConfig();
+                application.setName(serviceDesc.getAppName());
+                String[] zkList = zkLine.split(",");
+                List list = new ArrayList();
+                // 连接注册中心配置
+                for (String zk : zkList) {
+                    RegistryConfig registry = new RegistryConfig();
+                    registry.setAddress("zookeeper://" + zk);
+                    list.add(registry);
+                }
+
+
+                // 注意：ReferenceConfig为重对象，内部封装了与注册中心的连接，以及与服务提供方的连接
+                // 引用远程服务
+                ReferenceConfig<?> reference = new ReferenceConfig(); // 此实例很重，封装了与注册中心的连接以及与提供者的连接，请自行缓存，否则可能造成内存和连接泄漏
+                reference.setApplication(application);
+                reference.setRegistries(list);
+                // 多个注册中心可以用setRegistries()
+                reference.setInterface(interfaceClass);
+                if (StringUtils.isNotBlank(serviceDesc.getVersion()) && !serviceDesc.getVersion().equals("*")) {
+                    reference.setVersion(serviceDesc.getVersion());
+                }
+
+                if (StringUtils.isNotBlank(serviceDesc.getGroup())) {
+                    reference.setGroup(serviceDesc.getGroup());
+                }
+                reference.setTimeout(Integer.valueOf(serviceDesc.getTimeout()));
+                service = reference.get();
+                serviceCache.put(cacheKey, service);
+            }
+        }
+        return service;
+    }
+
     @Override
-    public void execute()  {
+    public void execute() {
 
         try {
             Object service = getRpcService(serviceDesc);
             Method executeMethod = ReflectionUtils.getMethod(serviceDesc.getMethodName(), serviceDesc.getServiceClass());
-            Object[] parameters = BeanUtils.getParameters(params, executeMethod.getGenericParameterTypes(),useSign,signType);
+            Object[] parameters = BeanUtils.getParameters(params, executeMethod.getGenericParameterTypes(), useSign, signType);
             request = JSON.toJSONString(parameters);
 
-                logger.info("Rpc request start: params={}", new Object[]{JSON.toJSONString(parameters)});
+            logger.info("Rpc request start: params={}", new Object[]{JSON.toJSONString(parameters)});
 
             Object result = executeMethod.invoke(service, parameters);
 
