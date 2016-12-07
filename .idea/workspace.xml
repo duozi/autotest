@@ -6,1215 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f03f9033-a17d-480a-ba82-e1f91e2004da" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/images/Sorting icons.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/images/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/images/sort_asc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/images/sort_asc_disabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/images/sort_both.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/images/sort_desc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/images/sort_desc_disabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/src/main/webapp/WEB-INF/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/src/main/webapp/WEB-INF/bootstrap/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/src/main/webapp/WEB-INF/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/jline/jline32.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/jline/jline64.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/log4j/lf5/viewer/images/channelexplorer_new.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/log4j/lf5/viewer/images/channelexplorer_satellite.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/log4j/lf5/viewer/images/lf5_small_icon.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/springframework/oxm/config/spring-oxm.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/springframework/transaction/config/spring-tx.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/classes/com/xn/front/controller/ReflectController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/classes/com/xn/front/utils/PropertyUtil.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/activation-1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/aopalliance-1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/aspectjweaver-1.8.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/bval-core-0.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/bval-jsr303-0.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/classmate-1.1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/commons-beanutils-core-1.8.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/commons-codec-1.9.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/commons-collections-3.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/commons-dbcp-1.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/commons-io-1.3.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/commons-lang-2.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/commons-lang3-3.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/commons-logging-1.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/commons-pool-1.5.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/commons-pool2-2.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/dom4j-1.6.1-hudson-3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/druid-1.0.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/dubbo-2.5.3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/ezmorph-1.0.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/fastjson-1.1.35.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/freemarker-2.3.23.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/guava-10.0.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/hamcrest-core-1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/hibernate-validator-5.2.4.Final.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/jackson-annotations-2.1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/jackson-core-2.1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/jackson-core-asl-1.9.13.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/jackson-databind-2.1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/jackson-mapper-asl-1.9.13.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/javassist-3.15.0-GA.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/jboss-logging-3.2.1.Final.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/jedis-2.7.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/jexample-4.4-378.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/jline-0.9.94.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/json-lib-2.2.2-jdk15-jdk15.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/jsr305-1.3.9.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/junit-4.11.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/log4j-1.2.12.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/mail-1.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/mockito-core-1.9.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/mybatis-3.2.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/mybatis-spring-1.2.2.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/mysql-connector-java-5.1.29.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/netty-3.2.5.Final.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/netty-3.7.0.Final.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/objenesis-1.0.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/run_autotest-1.0-SNAPSHOT.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/slf4j-api-1.6.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/slf4j-log4j12-1.6.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/spring-aop-4.1.4.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/spring-beans-4.1.4.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/spring-context-4.1.4.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/spring-context-support-4.1.4.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/spring-core-4.1.4.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/spring-expression-4.1.4.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/spring-jdbc-4.1.4.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/spring-oxm-4.1.4.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/spring-test-4.1.4.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/spring-tx-4.1.4.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/spring-web-4.1.4.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/spring-webmvc-4.1.4.RELEASE.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/validation-api-1.1.0.CR3.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/zkclient-0.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/lib/zookeeper-3.4.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/images/Sorting icons.psd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/images/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/images/sort_asc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/images/sort_asc_disabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/images/sort_both.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/images/sort_desc.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/images/sort_desc_disabled.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/fonts/FontAwesome.otf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/fonts/fontawesome-webfont.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/fonts/fontawesome-webfont.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/fonts/fontawesome-webfont.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/front/com/xn/front/controller/ReflectController.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/front/com/xn/front/utils/PropertyUtil.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/jline/jline32.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/jline/jline64.dll" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/log4j/lf5/viewer/images/channelexplorer_new.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/log4j/lf5/viewer/images/channelexplorer_satellite.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/log4j/lf5/viewer/images/lf5_small_icon.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/springframework/oxm/config/spring-oxm.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/springframework/transaction/config/spring-tx.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/front_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_1_9_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ant_ant_launcher_1_9_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_23.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/util/ExtClasspathLoader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/front.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/java/com.xn.front/controller/ReflectController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/java/com.xn.front/utils/PropertyUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/resources/application.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/resources/conf/freemarker.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/resources/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/resources/spring/spring-context.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/resources/spring/spring-mvc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/case/case.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/case/newPlane.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/data/flot-data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/data/morris-data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/dist/css/sb-admin-2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/dist/css/sb-admin-2.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/dist/js/sb-admin-2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/dist/js/sb-admin-2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/index.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/js/case.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/js/jquery-3.1.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/js/sb-admin-2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/less/sb-admin-2.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/less/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/pages/blank.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/pages/buttons.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/pages/flot.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/pages/forms.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/pages/grid.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/pages/icons.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/pages/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/pages/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/pages/morris.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/pages/notifications.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/pages/panels-wells.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/pages/tables.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/pages/typography.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/bootstrap-social/bootstrap-social.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/bootstrap-social/bootstrap-social.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/bootstrap-social/bootstrap-social.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/bootstrap/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/bootstrap/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/bootstrap/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/bootstrap/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables-plugins/dataTables.bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables-plugins/dataTables.bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables-plugins/dataTables.bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables-plugins/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables-responsive/dataTables.responsive.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables-responsive/dataTables.responsive.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables-responsive/dataTables.responsive.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/css/dataTables.bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/css/dataTables.bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/css/dataTables.bootstrap4.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/css/dataTables.bootstrap4.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/css/dataTables.foundation.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/css/dataTables.foundation.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/css/dataTables.jqueryui.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/css/dataTables.jqueryui.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/css/dataTables.material.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/css/dataTables.material.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/css/dataTables.semanticui.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/css/dataTables.semanticui.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/css/dataTables.uikit.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/css/dataTables.uikit.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/css/jquery.dataTables.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/css/jquery.dataTables.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/css/jquery.dataTables_themeroller.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/js/dataTables.bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/js/dataTables.bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/js/dataTables.bootstrap4.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/js/dataTables.bootstrap4.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/js/dataTables.foundation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/js/dataTables.foundation.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/js/dataTables.jqueryui.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/js/dataTables.jqueryui.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/js/dataTables.material.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/js/dataTables.material.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/js/dataTables.semanticui.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/js/dataTables.semanticui.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/js/dataTables.uikit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/js/dataTables.uikit.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/js/jquery.dataTables.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/js/jquery.dataTables.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/datatables/js/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/flot-tooltip/jquery.flot.tooltip.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/flot-tooltip/jquery.flot.tooltip.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/flot-tooltip/jquery.flot.tooltip.source.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/flot/excanvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/flot/excanvas.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/flot/jquery.colorhelpers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/flot/jquery.flot.canvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/flot/jquery.flot.categories.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/flot/jquery.flot.crosshair.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/flot/jquery.flot.errorbars.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/flot/jquery.flot.fillbetween.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/flot/jquery.flot.image.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/flot/jquery.flot.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/flot/jquery.flot.navigate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/flot/jquery.flot.pie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/flot/jquery.flot.resize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/flot/jquery.flot.selection.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/flot/jquery.flot.stack.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/flot/jquery.flot.symbol.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/flot/jquery.flot.threshold.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/flot/jquery.flot.time.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/flot/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/HELP-US-OUT.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/css/font-awesome.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/less/animated.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/less/bordered-pulled.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/less/core.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/less/extras.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/less/fixed-width.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/less/font-awesome.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/less/icons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/less/larger.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/less/list.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/less/path.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/less/rotated-flipped.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/less/screen-reader.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/less/spinning.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/less/stacked.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/less/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/scss/_animated.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/scss/_bordered-pulled.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/scss/_core.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/scss/_extras.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/scss/_fixed-width.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/scss/_icons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/scss/_larger.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/scss/_list.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/scss/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/scss/_path.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/scss/_rotated-flipped.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/scss/_screen-reader.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/scss/_spinning.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/scss/_stacked.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/scss/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/font-awesome/scss/font-awesome.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/jquery/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/jquery/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/metisMenu/metisMenu.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/metisMenu/metisMenu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/metisMenu/metisMenu.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/metisMenu/metisMenu.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/morrisjs/morris.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/morrisjs/morris.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/morrisjs/morris.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/raphael/raphael.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/front/src/main/webapp/vendor/raphael/raphael.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/interaction.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/src/main/java/com/xiaoniu/test/controller/ReflectController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/src/main/java/com/xiaoniu/test/utils/PropertyUtil.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/src/main/resources/application.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/src/main/resources/conf/freemarker.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/src/main/resources/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/src/main/resources/spring/spring-context.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/src/main/resources/spring/spring-mvc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/src/main/webapp/WEB-INF/bootstrap/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/src/main/webapp/WEB-INF/bootstrap/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/src/main/webapp/WEB-INF/bootstrap/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/src/main/webapp/WEB-INF/bootstrap/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/src/main/webapp/WEB-INF/bootstrap/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/src/main/webapp/WEB-INF/bootstrap/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/src/main/webapp/WEB-INF/js/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/src/main/webapp/WEB-INF/js/jquery-3.1.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/src/main/webapp/WEB-INF/style/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/src/main/webapp/WEB-INF/view/index.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/src/main/webapp/WEB-INF/view/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/src/main/webapp/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/src/main/webapp/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/src/main/webapp/index.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/COPYRIGHT.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/INDEX.LIST" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/NOTICE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/NOTICE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/assembly/bin/dump.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/assembly/bin/restart.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/assembly/bin/server.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/assembly/bin/start.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/assembly/bin/start.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/assembly/bin/stop.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/druid-driver.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/druid-filter.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/druid/wall/mysql/deny-function.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/druid/wall/mysql/deny-schema.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/druid/wall/mysql/deny-variant.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/druid/wall/mysql/permit-function.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/druid/wall/mysql/permit-variant.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/druid/wall/oracle/deny-function.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/druid/wall/oracle/deny-object.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/druid/wall/oracle/deny-schema.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/druid/wall/oracle/deny-table.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/druid/wall/oracle/deny-variant.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/druid/wall/oracle/permit-function.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/druid/wall/postgres/deny-function.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/druid/wall/sqlserver/deny-function.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/druid/wall/sqlserver/deny-object.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/druid/wall/sqlserver/deny-schema.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/druid/wall/sqlserver/deny-table.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/druid/wall/sqlserver/deny-variant.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.cache.CacheFactory" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.common.compiler.Compiler" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.common.extension.ExtensionFactory" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.common.logger.LoggerAdapter" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.common.serialize.Serialization" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.common.status.StatusChecker" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.common.store.DataStore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.common.threadpool.ThreadPool" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.container.Container" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.container.page.PageHandler" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.monitor.MonitorFactory" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.registry.RegistryFactory" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.remoting.Codec2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.remoting.Dispatcher" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.remoting.Transporter" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.remoting.exchange.Exchanger" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.remoting.http.HttpBinder" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.remoting.p2p.Networker" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.remoting.telnet.TelnetHandler" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.rpc.Filter" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.rpc.InvokerListener" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.rpc.Protocol" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.rpc.ProxyFactory" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.rpc.cluster.Cluster" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.rpc.cluster.LoadBalance" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.rpc.cluster.Merger" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.rpc.cluster.RouterFactory" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.rpc.protocol.thrift.ClassNameGenerator" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/dubbo/internal/com.alibaba.dubbo.validation.Validation" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/jboss-beans.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/maven/com.alibaba/druid/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/maven/com.alibaba/druid/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/maven/com.alibaba/dubbo/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/maven/com.alibaba/dubbo/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/maven/com.alibaba/fastjson/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/maven/com.alibaba/fastjson/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/maven/com.fasterxml/classmate/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/maven/com.fasterxml/classmate/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/maven/commons-beanutils/commons-beanutils/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/maven/commons-beanutils/commons-beanutils/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/maven/commons-codec/commons-codec/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/maven/commons-codec/commons-codec/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/maven/commons-collections/commons-collections/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/maven/commons-collections/commons-collections/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/maven/commons-logging/commons-logging/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/maven/commons-logging/commons-logging/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/maven/jline/jline/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/maven/jline/jline/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/maven/net.sf.jexample/jexample/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/maven/net.sf.jexample/jexample/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/maven/org.javassist/javassist/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/maven/org.javassist/javassist/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/maven/org.slf4j/slf4j-api/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/maven/org.slf4j/slf4j-api/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/services/com.sun.tools.jconsole.JConsolePlugin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/services/java.sql.Driver" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/spring.handlers" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/spring.schemas" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/META-INF/spring.tooling" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/For.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/Given.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/Injection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/InjectionPolicy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/JExample.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/internal/Example.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/internal/ExampleClass.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/internal/ExampleGraph.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/internal/ExampleRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/internal/InjectionStrategy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/internal/InjectionValues.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/internal/ReturnValue.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/internal/deepcopy/ArrayCloning.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/internal/deepcopy/CloneFactory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/internal/deepcopy/DeepCloneException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/internal/deepcopy/DeepCloneStrategy.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/internal/deepcopy/DeepCloneStrategyCache.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/internal/deepcopy/HashMapCloning.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/internal/deepcopy/ImmutableClasses.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/internal/deepcopy/UnsafeCloning.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/internal/deepcopy/UnsafeWithoutTransientCloning.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/internal/deepcopy/UseCloneMethod.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/internal/graph/Cycle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/internal/graph/Edge.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/internal/graph/Node.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/internal/util/CompositeRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/internal/util/InvalidDeclarationError.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/internal/util/JExampleError.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/internal/util/MethodLocator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/internal/util/MethodReference.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/ch/unibe/jexample/internal/util/Reflection.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/jexample/Depends.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/jexample/JExampleRunner.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/jexample/internal/CycleDetector.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/jexample/internal/DependencyParser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/jexample/internal/DependencyValidator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/jexample/internal/MethodCollector.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/jexample/internal/MethodValidator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/jexample/internal/TestClass.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/jexample/internal/TestGraph.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/jexample/internal/TestMethod.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/jline/CandidateListCompletionHandler.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/jline/keybindings.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/jline/windowsbindings.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_approx_any.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_approx_common.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_approx_cyrillic.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_approx_english.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_approx_french.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_approx_german.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_approx_hebrew.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_approx_hungarian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_approx_polish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_approx_romanian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_approx_russian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_approx_spanish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_exact_any.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_exact_approx_common.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_exact_common.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_exact_cyrillic.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_exact_english.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_exact_french.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_exact_german.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_exact_hebrew.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_exact_hungarian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_exact_polish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_exact_romanian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_exact_russian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_exact_spanish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_hebrew_common.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_languages.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_rules_any.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_rules_cyrillic.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_rules_english.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_rules_french.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_rules_german.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_rules_hebrew.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_rules_hungarian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_rules_polish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_rules_romanian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_rules_russian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/ash_rules_spanish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_approx_any.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_approx_arabic.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_approx_common.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_approx_cyrillic.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_approx_czech.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_approx_dutch.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_approx_english.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_approx_french.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_approx_german.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_approx_greek.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_approx_greeklatin.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_approx_hebrew.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_approx_hungarian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_approx_italian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_approx_polish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_approx_portuguese.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_approx_romanian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_approx_russian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_approx_spanish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_approx_turkish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_exact_any.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_exact_approx_common.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_exact_arabic.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_exact_common.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_exact_cyrillic.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_exact_czech.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_exact_dutch.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_exact_english.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_exact_french.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_exact_german.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_exact_greek.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_exact_greeklatin.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_exact_hebrew.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_exact_hungarian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_exact_italian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_exact_polish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_exact_portuguese.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_exact_romanian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_exact_russian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_exact_spanish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_exact_turkish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_hebrew_common.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_languages.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_rules_any.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_rules_arabic.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_rules_cyrillic.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_rules_czech.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_rules_dutch.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_rules_english.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_rules_french.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_rules_german.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_rules_greek.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_rules_greeklatin.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_rules_hebrew.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_rules_hungarian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_rules_italian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_rules_polish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_rules_portuguese.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_rules_romanian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_rules_russian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_rules_spanish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/gen_rules_turkish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/lang.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/sep_approx_any.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/sep_approx_common.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/sep_approx_french.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/sep_approx_hebrew.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/sep_approx_italian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/sep_approx_portuguese.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/sep_approx_spanish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/sep_exact_any.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/sep_exact_approx_common.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/sep_exact_common.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/sep_exact_french.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/sep_exact_hebrew.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/sep_exact_italian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/sep_exact_portuguese.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/sep_exact_spanish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/sep_hebrew_common.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/sep_languages.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/sep_rules_any.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/sep_rules_french.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/sep_rules_hebrew.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/sep_rules_italian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/sep_rules_portuguese.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/commons/codec/language/bm/sep_rules_spanish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/log4j/lf5/config/defaultconfig.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/apache/log4j/xml/log4j.dtd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/springframework/oxm/config/spring-oxm-3.0.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/springframework/oxm/config/spring-oxm-3.1.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/springframework/oxm/config/spring-oxm-3.2.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/springframework/oxm/config/spring-oxm-4.0.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/springframework/oxm/config/spring-oxm-4.1.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/springframework/transaction/config/spring-tx-2.0.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/springframework/transaction/config/spring-tx-2.5.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/springframework/transaction/config/spring-tx-3.0.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/springframework/transaction/config/spring-tx-3.1.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/springframework/transaction/config/spring-tx-3.2.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/springframework/transaction/config/spring-tx-4.0.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/org/springframework/transaction/config/spring-tx-4.1.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/http/resources/activeConnectionStackTrace.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/http/resources/api.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/http/resources/connectionInfo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/http/resources/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/http/resources/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/http/resources/datasource.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/http/resources/header.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/http/resources/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/http/resources/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/http/resources/js/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/http/resources/js/doT.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/http/resources/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/http/resources/js/lang.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/http/resources/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/http/resources/nopermit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/http/resources/spring-detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/http/resources/spring.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/http/resources/sql-detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/http/resources/sql.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/http/resources/wall.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/http/resources/webapp.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/http/resources/websession-detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/http/resources/websession.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/http/resources/weburi-detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/http/resources/weburi.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/monitor/mysql/basic.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/monitor/mysql/const.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/monitor/mysql/datasource.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/monitor/mysql/springmethod.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/monitor/mysql/sql.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/monitor/mysql/wall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/monitor/mysql/webapp.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/monitor/mysql/weburi.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interaction/target/support/monitor/resources/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/classes/application.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/classes/conf/freemarker.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/classes/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/classes/spring/spring-context.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/classes/spring/spring-mvc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/bower.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/case/case.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/case/newPlane.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/data/flot-data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/data/morris-data.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/dist/css/sb-admin-2.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/dist/css/sb-admin-2.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/dist/js/sb-admin-2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/dist/js/sb-admin-2.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/gulpfile.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/index.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/js/case.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/js/jquery-3.1.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/js/sb-admin-2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/less/sb-admin-2.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/less/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/package.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/pages/blank.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/pages/buttons.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/pages/flot.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/pages/forms.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/pages/grid.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/pages/icons.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/pages/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/pages/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/pages/morris.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/pages/notifications.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/pages/panels-wells.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/pages/tables.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/pages/typography.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/bootstrap-social/bootstrap-social.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/bootstrap-social/bootstrap-social.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/bootstrap-social/bootstrap-social.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/bootstrap/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/bootstrap/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/bootstrap/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/bootstrap/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables-plugins/dataTables.bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables-plugins/dataTables.bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables-plugins/dataTables.bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables-plugins/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables-responsive/dataTables.responsive.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables-responsive/dataTables.responsive.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables-responsive/dataTables.responsive.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/css/dataTables.bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/css/dataTables.bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/css/dataTables.bootstrap4.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/css/dataTables.bootstrap4.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/css/dataTables.foundation.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/css/dataTables.foundation.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/css/dataTables.jqueryui.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/css/dataTables.jqueryui.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/css/dataTables.material.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/css/dataTables.material.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/css/dataTables.semanticui.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/css/dataTables.semanticui.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/css/dataTables.uikit.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/css/dataTables.uikit.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/css/jquery.dataTables.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/css/jquery.dataTables.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/css/jquery.dataTables_themeroller.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/js/dataTables.bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/js/dataTables.bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/js/dataTables.bootstrap4.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/js/dataTables.bootstrap4.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/js/dataTables.foundation.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/js/dataTables.foundation.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/js/dataTables.jqueryui.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/js/dataTables.jqueryui.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/js/dataTables.material.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/js/dataTables.material.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/js/dataTables.semanticui.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/js/dataTables.semanticui.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/js/dataTables.uikit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/js/dataTables.uikit.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/js/jquery.dataTables.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/js/jquery.dataTables.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/datatables/js/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/flot-tooltip/jquery.flot.tooltip.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/flot-tooltip/jquery.flot.tooltip.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/flot-tooltip/jquery.flot.tooltip.source.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/flot/excanvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/flot/excanvas.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/flot/jquery.colorhelpers.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/flot/jquery.flot.canvas.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/flot/jquery.flot.categories.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/flot/jquery.flot.crosshair.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/flot/jquery.flot.errorbars.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/flot/jquery.flot.fillbetween.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/flot/jquery.flot.image.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/flot/jquery.flot.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/flot/jquery.flot.navigate.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/flot/jquery.flot.pie.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/flot/jquery.flot.resize.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/flot/jquery.flot.selection.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/flot/jquery.flot.stack.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/flot/jquery.flot.symbol.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/flot/jquery.flot.threshold.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/flot/jquery.flot.time.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/flot/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/HELP-US-OUT.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/css/font-awesome.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/css/font-awesome.css.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/fonts/fontawesome-webfont.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/fonts/fontawesome-webfont.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/less/animated.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/less/bordered-pulled.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/less/core.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/less/extras.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/less/fixed-width.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/less/font-awesome.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/less/icons.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/less/larger.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/less/list.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/less/mixins.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/less/path.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/less/rotated-flipped.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/less/screen-reader.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/less/spinning.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/less/stacked.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/less/variables.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/scss/_animated.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/scss/_bordered-pulled.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/scss/_core.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/scss/_extras.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/scss/_fixed-width.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/scss/_icons.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/scss/_larger.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/scss/_list.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/scss/_mixins.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/scss/_path.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/scss/_rotated-flipped.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/scss/_screen-reader.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/scss/_spinning.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/scss/_stacked.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/scss/_variables.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/font-awesome/scss/font-awesome.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/jquery/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/jquery/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/metisMenu/metisMenu.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/metisMenu/metisMenu.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/metisMenu/metisMenu.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/metisMenu/metisMenu.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/morrisjs/morris.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/morrisjs/morris.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/morrisjs/morris.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/raphael/raphael.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/front_war_exploded/vendor/raphael/raphael.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/front/application.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/front/conf/freemarker.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/front/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/front/spring/spring-context.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/production/front/spring/spring-mvc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/artifacts/interaction2_war.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/artifacts/interaction2_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__com_alibaba_druid_1_0_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__com_alibaba_dubbo_2_5_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__com_alibaba_fastjson_1_1_35.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__com_fasterxml_classmate_1_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__com_github_sgroschupf_zkclient_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__com_google_guava_guava_10_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__commons_codec_commons_codec_1_9.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__commons_collections_commons_collections_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__commons_dbcp_commons_dbcp_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__commons_io_commons_io_1_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__commons_pool_commons_pool_1_5_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__io_netty_netty_3_7_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__javax_mail_mail_1_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_CR3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__jline_jline_0_9_94.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__junit_junit_4_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__log4j_log4j_1_2_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_29.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__net_sf_ezmorph_ezmorph_1_0_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__net_sf_jexample_jexample_4_4_378.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__net_sf_json_json_lib_jdk15_2_2_2_jdk15.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_apache_bval_bval_core_0_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_apache_bval_bval_jsr303_0_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_freemarker_freemarker_2_3_23.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_2_4_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_javassist_javassist_3_15_0_GA.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_2_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_jboss_netty_netty_3_2_5_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_jvnet_hudson_dom4j_dom4j_1_6_1_hudson_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_mockito_mockito_core_1_9_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_mybatis_mybatis_3_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_2_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_objenesis_objenesis_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_6_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_spring_2_5_6_SEC03.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_spring_aop_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_spring_beans_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_spring_context_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_spring_context_support_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_spring_core_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_spring_expression_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_spring_jdbc_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_spring_oxm_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_spring_test_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_spring_tx_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_spring_web_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__org_springframework_spring_webmvc_4_1_4_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__redis_clients_jedis_2_7_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__xn_zx_autotest_run_autotest_1_0_SNAPSHOT.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/README.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/autotest.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/common/common.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/common/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/common/src/main/resources/dubbo.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/common/src/main/resources/jar.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/common/src/main/resources/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/common/src/main/resources/mail.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/common/src/main/resources/redis.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/common/src/main/resources/spring.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/common/src/main/resources/test.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/front/front.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/front/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/generate/generate.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/generate/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/generate/src/resources/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/interaction2.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/src/main/resources/application.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/src/main/resources/conf/freemarker.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/src/main/resources/log4j.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/src/main/resources/spring/spring-context.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/src/main/resources/spring/spring-mvc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/src/main/webapp/WEB-INF/js/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/src/main/webapp/WEB-INF/js/jquery-3.1.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/src/main/webapp/WEB-INF/style/index.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/src/main/webapp/WEB-INF/view/index.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/src/main/webapp/WEB-INF/view/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/src/main/webapp/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/src/main/webapp/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/src/main/webapp/index.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/COPYRIGHT.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/INDEX.LIST" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/LICENSE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/LICENSE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/NOTICE" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/NOTICE.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/assembly/bin/dump.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/assembly/bin/restart.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/assembly/bin/server.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/assembly/bin/start.bat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/assembly/bin/start.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/assembly/bin/stop.sh" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/druid-driver.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/druid-filter.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/druid/wall/mysql/deny-function.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/druid/wall/mysql/deny-schema.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/druid/wall/mysql/deny-variant.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/druid/wall/mysql/permit-function.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/druid/wall/mysql/permit-variant.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/druid/wall/oracle/deny-function.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/druid/wall/oracle/deny-object.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/druid/wall/oracle/deny-schema.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/druid/wall/oracle/deny-table.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/druid/wall/oracle/deny-variant.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/druid/wall/oracle/permit-function.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/druid/wall/postgres/deny-function.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/druid/wall/sqlserver/deny-function.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/druid/wall/sqlserver/deny-object.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/druid/wall/sqlserver/deny-schema.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/druid/wall/sqlserver/deny-table.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/druid/wall/sqlserver/deny-variant.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.cache.CacheFactory" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.common.compiler.Compiler" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.common.extension.ExtensionFactory" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.common.logger.LoggerAdapter" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.common.serialize.Serialization" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.common.status.StatusChecker" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.common.store.DataStore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.common.threadpool.ThreadPool" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.container.Container" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.container.page.PageHandler" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.monitor.MonitorFactory" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.registry.RegistryFactory" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.remoting.Codec2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.remoting.Dispatcher" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.remoting.Transporter" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.remoting.exchange.Exchanger" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.remoting.http.HttpBinder" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.remoting.p2p.Networker" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.remoting.telnet.TelnetHandler" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.remoting.zookeeper.ZookeeperTransporter" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.rpc.Filter" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.rpc.InvokerListener" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.rpc.Protocol" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.rpc.ProxyFactory" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.rpc.cluster.Cluster" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.rpc.cluster.ConfiguratorFactory" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.rpc.cluster.LoadBalance" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.rpc.cluster.Merger" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.rpc.cluster.RouterFactory" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.rpc.protocol.thrift.ClassNameGenerator" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/dubbo/internal/com.alibaba.dubbo.validation.Validation" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/jboss-beans.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/maven/com.alibaba/druid/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/maven/com.alibaba/druid/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/maven/com.alibaba/dubbo/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/maven/com.alibaba/dubbo/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/maven/com.alibaba/fastjson/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/maven/com.alibaba/fastjson/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/maven/com.fasterxml/classmate/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/maven/com.fasterxml/classmate/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/maven/commons-beanutils/commons-beanutils/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/maven/commons-beanutils/commons-beanutils/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/maven/commons-codec/commons-codec/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/maven/commons-codec/commons-codec/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/maven/commons-collections/commons-collections/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/maven/commons-collections/commons-collections/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/maven/commons-logging/commons-logging/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/maven/commons-logging/commons-logging/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/maven/jline/jline/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/maven/jline/jline/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/maven/net.sf.jexample/jexample/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/maven/net.sf.jexample/jexample/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/maven/org.javassist/javassist/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/maven/org.javassist/javassist/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/maven/org.slf4j/slf4j-api/pom.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/maven/org.slf4j/slf4j-api/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/services/com.sun.tools.jconsole.JConsolePlugin" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/services/java.sql.Driver" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/spring.handlers" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/spring.schemas" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/META-INF/spring.tooling" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/jline/CandidateListCompletionHandler.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/jline/keybindings.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/jline/windowsbindings.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_approx_any.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_approx_common.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_approx_cyrillic.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_approx_english.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_approx_french.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_approx_german.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_approx_hebrew.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_approx_hungarian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_approx_polish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_approx_romanian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_approx_russian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_approx_spanish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_exact_any.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_exact_approx_common.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_exact_common.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_exact_cyrillic.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_exact_english.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_exact_french.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_exact_german.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_exact_hebrew.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_exact_hungarian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_exact_polish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_exact_romanian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_exact_russian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_exact_spanish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_hebrew_common.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_languages.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_rules_any.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_rules_cyrillic.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_rules_english.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_rules_french.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_rules_german.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_rules_hebrew.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_rules_hungarian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_rules_polish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_rules_romanian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_rules_russian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/ash_rules_spanish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_approx_any.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_approx_arabic.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_approx_common.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_approx_cyrillic.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_approx_czech.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_approx_dutch.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_approx_english.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_approx_french.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_approx_german.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_approx_greek.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_approx_greeklatin.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_approx_hebrew.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_approx_hungarian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_approx_italian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_approx_polish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_approx_portuguese.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_approx_romanian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_approx_russian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_approx_spanish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_approx_turkish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_exact_any.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_exact_approx_common.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_exact_arabic.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_exact_common.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_exact_cyrillic.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_exact_czech.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_exact_dutch.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_exact_english.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_exact_french.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_exact_german.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_exact_greek.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_exact_greeklatin.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_exact_hebrew.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_exact_hungarian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_exact_italian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_exact_polish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_exact_portuguese.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_exact_romanian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_exact_russian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_exact_spanish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_exact_turkish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_hebrew_common.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_languages.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_rules_any.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_rules_arabic.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_rules_cyrillic.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_rules_czech.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_rules_dutch.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_rules_english.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_rules_french.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_rules_german.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_rules_greek.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_rules_greeklatin.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_rules_hebrew.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_rules_hungarian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_rules_italian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_rules_polish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_rules_portuguese.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_rules_romanian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_rules_russian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_rules_spanish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/gen_rules_turkish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/lang.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/sep_approx_any.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/sep_approx_common.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/sep_approx_french.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/sep_approx_hebrew.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/sep_approx_italian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/sep_approx_portuguese.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/sep_approx_spanish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/sep_exact_any.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/sep_exact_approx_common.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/sep_exact_common.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/sep_exact_french.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/sep_exact_hebrew.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/sep_exact_italian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/sep_exact_portuguese.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/sep_exact_spanish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/sep_hebrew_common.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/sep_languages.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/sep_rules_any.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/sep_rules_french.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/sep_rules_hebrew.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/sep_rules_italian.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/sep_rules_portuguese.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/commons/codec/language/bm/sep_rules_spanish.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/log4j/lf5/config/defaultconfig.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/apache/log4j/xml/log4j.dtd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/springframework/oxm/config/spring-oxm-3.0.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/springframework/oxm/config/spring-oxm-3.1.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/springframework/oxm/config/spring-oxm-3.2.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/springframework/oxm/config/spring-oxm-4.0.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/springframework/oxm/config/spring-oxm-4.1.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/springframework/transaction/config/spring-tx-2.0.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/springframework/transaction/config/spring-tx-2.5.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/springframework/transaction/config/spring-tx-3.0.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/springframework/transaction/config/spring-tx-3.1.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/springframework/transaction/config/spring-tx-3.2.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/springframework/transaction/config/spring-tx-4.0.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/org/springframework/transaction/config/spring-tx-4.1.xsd" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/http/resources/activeConnectionStackTrace.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/http/resources/api.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/http/resources/connectionInfo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/http/resources/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/http/resources/css/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/http/resources/datasource.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/http/resources/header.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/http/resources/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/http/resources/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/http/resources/js/common.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/http/resources/js/doT.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/http/resources/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/http/resources/js/lang.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/http/resources/login.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/http/resources/nopermit.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/http/resources/spring-detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/http/resources/spring.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/http/resources/sql-detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/http/resources/sql.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/http/resources/wall.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/http/resources/webapp.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/http/resources/websession-detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/http/resources/websession.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/http/resources/weburi-detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/http/resources/weburi.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/monitor/mysql/basic.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/monitor/mysql/const.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/monitor/mysql/datasource.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/monitor/mysql/springmethod.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/monitor/mysql/sql.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/monitor/mysql/wall.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/monitor/mysql/webapp.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/monitor/mysql/weburi.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/interaction2/target/support/monitor/resources/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/run_suite/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/run_suite/run_suite.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/sh.exe.stackdump" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/autotest2_jar2.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/autotest_jar.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cn_xn_cache_xn_cache_skeleton_1_0_0_SNAPSHOT.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cn_xn_user_xn_user_skeleton_1_0_5_SNAPSHOT.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_xiaoniu_dataplatform_ruleengine_ruleengine_skeleton_1_0_0.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_2.xml" afterPath="$PROJECT_DIR$/target/classes/.idea/libraries/Maven__commons_beanutils_commons_beanutils_core_1_8_3.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_10_0_1.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_10_0_1.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_15_0_GA.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_15_0_GA.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/autotest.iml" afterPath="$PROJECT_DIR$/autotest.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/common.iml" afterPath="$PROJECT_DIR$/common/common.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/pom.xml" afterPath="$PROJECT_DIR$/common/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/DBAssertCommand.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/DBAssertCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/DubboCaseCommand.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/DubboCaseCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/HttpCaseCommand.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/HttpCaseCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/RedisAssertCommand.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/RedisAssertCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/RedisCommand.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/command/RedisCommand.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/response/Response.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/response/Response.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/util/JarUtil.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/util/JarUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/util/Other.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/util/Other.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/util/RedisUtil.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/util/RedisUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/util/ReflectionUtils.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/util/ReflectionUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/java/com/xn/common/util/SignUtil.java" afterPath="$PROJECT_DIR$/common/src/main/java/com/xn/common/util/SignUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/resources/dubbo.xml" afterPath="$PROJECT_DIR$/common/src/main/resources/dubbo.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/src/main/resources/log4j.properties" afterPath="$PROJECT_DIR$/common/src/main/resources/log4j.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/generate.iml" afterPath="$PROJECT_DIR$/generate/generate.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/pom.xml" afterPath="$PROJECT_DIR$/generate/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/GenerateDubboSuite.java" afterPath="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/GenerateDubboSuite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/GenerateSuite.java" afterPath="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/GenerateSuite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/GetJsonServiceImpl.java" afterPath="$PROJECT_DIR$/generate/src/main/java/com/xn/generate/GetJsonServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_suite/pom.xml" afterPath="$PROJECT_DIR$/run_suite/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_suite/run_suite.iml" afterPath="$PROJECT_DIR$/run_suite/run_suite.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_suite/src/main/java/com/xn/run/RunSuite.java" afterPath="$PROJECT_DIR$/run_suite/src/main/java/com/xn/run/RunSuite.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/run_suite/src/main/java/com/xn/run/dubbo/RunDubboSuite.java" afterPath="$PROJECT_DIR$/run_suite/src/main/java/com/xn/run/dubbo/RunDubboSuite.java" />
-    </list>
+    <list default="true" id="f03f9033-a17d-480a-ba82-e1f91e2004da" name="Default" comment="" />
     <ignored path="autotest.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -1261,16 +53,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="167">
               <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Command.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/common/src/main/java/com/xn/common/command/Command.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -1336,11 +118,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1179">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+            <state relative-caret-position="185">
+              <caret line="69" column="29" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/run_suite/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-563">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -1551,6 +343,34 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="run_suite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="autotest" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -1564,7 +384,7 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="D:/jar/user/user-interface-2.0.0-20161115.095252-17.jar!/" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2925398" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/test" />
@@ -2453,7 +1273,7 @@
       <workItem from="1480923315843" duration="1107000" />
       <workItem from="1480924450671" duration="28902000" />
       <workItem from="1481036451759" duration="2504000" />
-      <workItem from="1481075354438" duration="1945000" />
+      <workItem from="1481075354438" duration="2371000" />
     </task>
     <task id="LOCAL-00001" summary="delete long name">
       <created>1475033772575</created>
@@ -2778,7 +1598,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1076997000" />
+    <option name="totallyTimeSpent" value="1077423000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2791,7 +1611,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38072288" sideWeight="0.46103895" order="7" side_tool="true" content_ui="tabs" />
@@ -2812,7 +1632,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27349398" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29885057" sideWeight="0.63906926" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.254023" sideWeight="0.5714286" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.254023" sideWeight="0.5714286" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20941558" sideWeight="0.4922179" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991362" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28084415" sideWeight="0.5077821" order="3" side_tool="true" content_ui="tabs" />
@@ -3293,14 +2113,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/generate/src/main/java/com/xn/generate/GenerateSuite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/run_suite/src/main/java/com/xn/run/RunSuite.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -3649,8 +2461,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1179">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="185">
+          <caret line="69" column="29" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_suite/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-563">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -3687,7 +2507,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring</last-edited>
+          <last-edited>Web (front)|Web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -3727,6 +2547,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2925398" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>
