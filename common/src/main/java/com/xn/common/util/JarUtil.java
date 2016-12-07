@@ -38,7 +38,7 @@ public class JarUtil {
 //            return loader;
 //        }
         ExtClasspathLoader extClasspathLoader = new ExtClasspathLoader();
-        extClasspathLoader.addJarPath("D:\\jar\\user");
+        extClasspathLoader.addJarPath(jarPath);
         extClasspathLoader.loadClasspath();
     }
 
