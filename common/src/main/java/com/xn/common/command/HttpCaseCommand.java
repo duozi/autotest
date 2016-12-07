@@ -10,10 +10,7 @@ import net.sf.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.BufferedReader;
-import java.io.DataOutputStream;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.net.*;
 
 public class HttpCaseCommand implements CaseCommand {
@@ -160,9 +157,69 @@ public class HttpCaseCommand implements CaseCommand {
     }
 
     public static void main(String[] args) throws IOException {
-//        request = "sourceType=android&systemType=QGZ&appVersion=2.4.0&loginName=13480979901&loginPwd=123456&sign_type=md5&sign=05e43dfab5297e4f39cc96a4a18a7de4";
-//        url = "http://10.17.2.124:8080/xn-user-web/login/exe";
-//        HttpCaseCommand httpCaseCommand = new HttpCaseCommand("suite/http/interfaceName/caseName/log", request, url, "2000");
-//        httpCaseCommand.httpRequest();
-    }
+        String request = "{\n" +
+                "\"buyer_uin\":\"87f4246c-831b-4296-be28-b45cab4a410e\",\n" +
+                "\"input_charset\":\"UTF-8\",\n" +
+                "\"partner_id\":\"10002\",\n" +
+                "\"partner_trade_no\":\"20161206123456\",\n" +
+                "\"sign_type\":\"md5\",\n" +
+                "\"sign\":\"fvdasfsdfdg\"\n" +
+                "}";
+        String url1 = "http://10.17.2.125:8098/unipay/gateway/query_payment.do";
+//        String url1 = "www.2cto.com";
+        try {
+            //创建连接
+            URL url = new URL(url1);
+            HttpURLConnection connection = (HttpURLConnection) url
+                    .openConnection();
+            connection.setDoOutput(true);
+            connection.setDoInput(true);
+            connection.setRequestMethod("POST");
+            connection.setUseCaches(false);
+            connection.setInstanceFollowRedirects(true);
+            connection.setConnectTimeout(20000);
+            connection.setReadTimeout(300000);
+            connection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+
+            connection.connect();
+
+            //POST请求
+            DataOutputStream out = new DataOutputStream(
+                    connection.getOutputStream());
+JSONObject object=JSONObject.fromObject(request);
+
+            out.writeBytes(object.toString());
+            out.flush();
+            out.close();
+//            InputStream is;
+//            if (connection.getResponseCode() >= 400) {
+//                is = connection.getErrorStream();
+//            } else {
+//                is = connection.getInputStream();
+//            }
+
+
+            //读取响应
+            BufferedReader reader = new BufferedReader(new InputStreamReader(
+                    connection.getInputStream()));
+            String lines;
+            StringBuffer sb = new StringBuffer("");
+            while ((lines = reader.readLine()) != null) {
+                lines = new String(lines.getBytes(), "utf-8");
+                sb.append(lines);
+            }
+            System.out.println(sb);
+            reader.close();
+            // 断开连接
+            connection.disconnect();
+        } catch (MalformedURLException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (UnsupportedEncodingException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }}
 }

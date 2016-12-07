@@ -3,7 +3,6 @@ package com.xn.generate;/**
  */
 
 
-import com.xn.common.util.JarUtil;
 import com.xn.common.util.ReflectionUtils;
 import com.xn.common.util.StringUtil;
 import org.apache.commons.lang.StringUtils;
@@ -12,7 +11,6 @@ import org.slf4j.LoggerFactory;
 
 import java.lang.reflect.Method;
 import java.lang.reflect.Type;
-import java.net.URLClassLoader;
 
 public class GetJsonServiceImpl {
     private final static Logger logger = LoggerFactory.getLogger(GetJsonServiceImpl.class);
@@ -85,9 +83,9 @@ public class GetJsonServiceImpl {
     }
 
     public static void main(String[] args) throws Exception {
-        URLClassLoader loader = JarUtil.addJar("d:/jar/");
+//        URLClassLoader loader = JarUtil.addJar("d:/jar/");
         GetJsonServiceImpl getJsonService = new GetJsonServiceImpl();
-        getJsonService.getJson( "cn.xn.user.service.ICustomerInfoService", "updateRefereeInfo");
+        getJsonService.getJson( "cn.xn.user.controller.ICustomerInfoService", "updateRefereeInfo");
 //        String s = "{\"param\":[{\"appVersion\":\"\",\"sourceType\":\"\",\"systemType\":\"\",\"sign\":\"\",\"memberNo\":\"\",\"refereeNo\":\"\",\"refereeId\":\"\",\"days\":3,\"hour\":72,\"isDay\":true},{\"test\":false}]}";
 //        JSONObject o= JSONObject.fromObject(s);
 //        JSONArray array=o.getJSONArray("param");
@@ -96,7 +94,7 @@ public class GetJsonServiceImpl {
 //
 //        Class<?> c = null;
 //
-//        c = loader.loadClass("cn.xn.user.service.ICustomerInfoService");
+//        c = loader.loadClass("cn.xn.user.controller.ICustomerInfoService");
 //
 //        Method[] methods = c.getDeclaredMethods();
 //        Type[] types=null;

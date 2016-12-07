@@ -6,9 +6,7 @@ package com.xn.run.dubbo;/**
 import com.xn.common.model.Suite;
 import com.xn.common.result.HTMLReport;
 import com.xn.common.result.Report;
-import com.xn.common.service.GetPara;
 import com.xn.common.util.DBUtil;
-import com.xn.common.util.JarUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -76,10 +74,10 @@ public class RunDubboSuite {
 //            return;
 //        }
 //path="d:\\";
-        loader = JarUtil.addJar(args[0]);
-        GetPara getPara=new GetPara();
-        getPara.setLoader(loader);
-        getPara.setPath(path);
+//        loader = JarUtil.addJar(args[0]);
+//        GetPara getPara=new GetPara();
+//        getPara.setLoader(loader);
+//        getPara.setPath(path);
 //        loader=ReflectionUtils.addJar("d:/user-interface-2.0.0-20160926.085005-12.jar");
         sendMailTo = args[1];
 //        sendMailTo="zhouxi2@xiaoniu66.com";

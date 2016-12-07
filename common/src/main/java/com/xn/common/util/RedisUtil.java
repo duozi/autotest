@@ -1,8 +1,5 @@
 package com.xn.common.util;
 
-import cn.xn.cache.domain.Param;
-import cn.xn.cache.service.ICommonRedisService;
-import cn.xn.cache.service.IUserRedisService;
 import com.xn.common.service.GetPara;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,9 +7,7 @@ import org.springframework.stereotype.Service;
 import redis.clients.jedis.HostAndPort;
 import redis.clients.jedis.JedisCluster;
 
-import javax.annotation.Resource;
 import java.io.File;
-import java.util.Date;
 import java.util.HashSet;
 
 
@@ -22,11 +17,10 @@ public class RedisUtil {
     //    public ApplicationContext context = new ClassPathXmlApplicationContext(
 //            "spring.xml");
 //    public JedisCluster jedisCluster = (JedisCluster) context.getBean("jedisCluster");
-    @Resource
-    private IUserRedisService userService;
+//    @Resource
+//    private IUserRedisService userService;
 
-    @Resource
-    private ICommonRedisService commonService;
+
 
     private JedisCluster jedisCluster;
 
@@ -81,40 +75,40 @@ public class RedisUtil {
         }
     }
 
-    /**
-     * token保存到redis中
-     *
-     * @param memberNo 用户id（用户数据分离后加上了systemType）
-     * @param tokenId  token
-     * @param source   来源（ios和安卓统一为app）
-     * @throws Exception
-     */
-    public void setTokenId(String memberNo, String tokenId, String source) throws Exception {
-        Param p = new Param();
-        p.setBid(BID);
-        p.setUid(PREFIX_LOGIN + "-" + memberNo);
-        p.setTokenId(tokenId);
-        p.setDate(new Date());
-        p.setSource(source);
-        userService.set(p);
-    }
+//    /**
+//     * token保存到redis中
+//     *
+//     * @param memberNo 用户id（用户数据分离后加上了systemType）
+//     * @param tokenId  token
+//     * @param source   来源（ios和安卓统一为app）
+//     * @throws Exception
+//     */
+//    public void setTokenId(String memberNo, String tokenId, String source) throws Exception {
+//        Param p = new Param();
+//        p.setBid(BID);
+//        p.setUid(PREFIX_LOGIN + "-" + memberNo);
+//        p.setTokenId(tokenId);
+//        p.setDate(new Date());
+//        p.setSource(source);
+//        userService.set(p);
+//    }
 
-    /**
-     * 删除token
-     *
-     * @param memberNo 用户id（用户数据分离后加上了systemType）
-     * @param tokenId  token
-     * @param source   来源（ios和安卓统一为app）
-     * @throws Exception
-     */
-    public void delTokenId(String memberNo, String tokenId, String source) throws Exception {
-        Param p = new Param();
-        p.setBid(BID);
-        p.setUid(PREFIX_LOGIN + "-" + memberNo);
-        p.setTokenId(tokenId);
-        p.setSource(source);
-        userService.del(p);
-    }
+//    /**
+//     * 删除token
+//     *
+//     * @param memberNo 用户id（用户数据分离后加上了systemType）
+//     * @param tokenId  token
+//     * @param source   来源（ios和安卓统一为app）
+//     * @throws Exception
+//     */
+//    public void delTokenId(String memberNo, String tokenId, String source) throws Exception {
+//        Param p = new Param();
+//        p.setBid(BID);
+//        p.setUid(PREFIX_LOGIN + "-" + memberNo);
+//        p.setTokenId(tokenId);
+//        p.setSource(source);
+//        userService.del(p);
+//    }
 
 //    public void logout(String systemType, String sourceType, String tokenId, String memberNo) throws Exception {
 //        String tmpSource = getSourceType(systemType, sourceType);
@@ -122,84 +116,84 @@ public class RedisUtil {
 //        delTokenId(tmpSystemType + "-" + memberNo, tokenId, tmpSource);
 //    }
 
-    /**
-     * 获取token
-     *
-     * @param memberNo 用户id（用户数据分离后加上了systemType）
-     * @param tokenId  token
-     * @return
-     * @throws Exception
-     */
-    public boolean getTokenId(String memberNo, String tokenId) throws Exception {
-        Param p = new Param();
-        p.setBid(BID);
-        p.setUid(PREFIX_LOGIN + "-" + memberNo);
-        p.setTokenId(tokenId);
-        p.setDate(new Date());
-        return userService.get(p, loginExpire);
-    }
+//    /**
+//     * 获取token
+//     *
+//     * @param memberNo 用户id（用户数据分离后加上了systemType）
+//     * @param tokenId  token
+//     * @return
+//     * @throws Exception
+//     */
+//    public boolean getTokenId(String memberNo, String tokenId) throws Exception {
+//        Param p = new Param();
+//        p.setBid(BID);
+//        p.setUid(PREFIX_LOGIN + "-" + memberNo);
+//        p.setTokenId(tokenId);
+//        p.setDate(new Date());
+//        return userService.get(p, loginExpire);
+//    }
 
-    /**
-     * 延长token过期时间
-     *
-     * @param memberNo 用户id（用户数据分离后加上了systemType）
-     * @param tokenId  token
-     * @param source   来源（ios和安卓统一为app）
-     * @throws Exception
-     */
-    public void delayToken(String memberNo, String tokenId, String source) throws Exception {
-        Param p = new Param();
-        p.setBid(BID);
-        p.setUid(PREFIX_LOGIN + "-" + memberNo);
-        p.setTokenId(tokenId);
-        p.setDate(new Date());
-        p.setSource(source);
-        userService.delayToken(p);
-    }
+//    /**
+//     * 延长token过期时间
+//     *
+//     * @param memberNo 用户id（用户数据分离后加上了systemType）
+//     * @param tokenId  token
+//     * @param source   来源（ios和安卓统一为app）
+//     * @throws Exception
+//     */
+//    public void delayToken(String memberNo, String tokenId, String source) throws Exception {
+//        Param p = new Param();
+//        p.setBid(BID);
+//        p.setUid(PREFIX_LOGIN + "-" + memberNo);
+//        p.setTokenId(tokenId);
+//        p.setDate(new Date());
+//        p.setSource(source);
+//        userService.delayToken(p);
+//    }
 
-    /**
-     * 获取登录失败次数
-     *
-     * @param key 登录手机号（用户数据分离后加上了systemType）
-     * @return
-     * @throws Exception
-     */
-    public int getErrorTime(String key) throws Exception {
-        int count = 0;
-        String value = commonService.get(BID, key);
-        if (!StringUtil.isEmpty(value)) {
-            count = Integer.parseInt(value);
-        }
-        return count;
-    }
+//    /**
+//     * 获取登录失败次数
+//     *
+//     * @param key 登录手机号（用户数据分离后加上了systemType）
+//     * @return
+//     * @throws Exception
+//     */
+//    public int getErrorTime(String key) throws Exception {
+//        int count = 0;
+//        String value = commonService.get(BID, key);
+//        if (!StringUtil.isEmpty(value)) {
+//            count = Integer.parseInt(value);
+//        }
+//        return count;
+//    }
 
-    /**
-     * 保存登录失败次数
-     *
-     * @param key   登录手机号（用户数据分离后加上了systemType）
-     * @param count 次数
-     * @param flag
-     * @throws Exception
-     */
-    public void putErrorTime(String key, int count, String flag) throws Exception {
-        if (flag.equals("login")) {
+//    /**
+//     * 保存登录失败次数
+//     *
+//     * @param key   登录手机号（用户数据分离后加上了systemType）
+//     * @param count 次数
+//     * @param flag
+//     * @throws Exception
+//     */
+//    public void putErrorTime(String key, int count, String flag) throws Exception {
+//        if (flag.equals("login")) {
+//
+//            commonService.set(BID, key, String.valueOf(count), loginPwdErrorExpire);
+//        }
+//        if (flag.equals("pay")) {
+//            commonService.set(BID, key, String.valueOf(count), payPwdErrorExpire);
+//        }
+//    }
 
-            commonService.set(BID, key, String.valueOf(count), loginPwdErrorExpire);
-        }
-        if (flag.equals("pay")) {
-            commonService.set(BID, key, String.valueOf(count), payPwdErrorExpire);
-        }
-    }
-
-    /**
-     * 删除登录失败次数
-     *
-     * @param key 登录手机号（用户数据分离后加上了systemType）
-     * @throws Exception
-     */
-    public void deleteErrorTime(String key) throws Exception {
-        commonService.del(BID, key);
-    }
+//    /**
+//     * 删除登录失败次数
+//     *
+//     * @param key 登录手机号（用户数据分离后加上了systemType）
+//     * @throws Exception
+//     */
+//    public void deleteErrorTime(String key) throws Exception {
+//        commonService.del(BID, key);
+//    }
 
 //    /**
 //     * 登录令牌存入redis中并返回给前置系统

@@ -27,6 +27,7 @@ import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 
+
 public class DubboCaseCommand implements CaseCommand {
     private static final Logger logger = LoggerFactory.getLogger(DubboCaseCommand.class);
     private static final Map<String, Object> serviceCache = new ConcurrentHashMap<String, Object>();
@@ -39,7 +40,6 @@ public class DubboCaseCommand implements CaseCommand {
     private String result;
     private String useSign;
     private String signType;
-
 
     public String getResult() {
         return result;
@@ -87,6 +87,7 @@ public class DubboCaseCommand implements CaseCommand {
         Class<?> interfaceClass = ReflectionUtils.loadClass(serviceDesc.getClazz());
         String cacheKey = serviceDesc.getCacheKey();
         Object service = serviceCache.get(cacheKey);
+
         if (service == null) {
             synchronized (serviceCache) {
                 ApplicationConfig application = new ApplicationConfig();

@@ -2,7 +2,6 @@ package com.xn.common.util;
 
 
 import com.xn.common.objectfactory.BeanUtils;
-import com.xn.common.service.GetPara;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,7 +24,6 @@ public abstract class ReflectionUtils {
     private static final Map<String, Method> METHOD_MAP = new HashMap<String, Method>();
 
 
-
     public static List<Field> getAllFields(Class clazz) {
         if (clazz.equals(Object.class)) {
             return Collections.EMPTY_LIST;
@@ -39,7 +37,7 @@ public abstract class ReflectionUtils {
     public static void setFieldValue(Object target, String fieldName, Object value) {
         Field field = getField(target.getClass(), fieldName);
         field.setAccessible(true);
-        value= BeanUtils.create(field.getType(),value);
+        value = BeanUtils.create(field.getType(), value);
         setFieldValue(target, field, value);
     }
 
@@ -184,7 +182,7 @@ public abstract class ReflectionUtils {
         return false;
     }
 
-//    public static Class loadClass(String className) {
+    //    public static Class loadClass(String className) {
 //        try {
 //
 //            return  Class.forName(className);
@@ -196,26 +194,15 @@ public abstract class ReflectionUtils {
 //    }
     public static Class loadClass(String className) {
         try {
-                return  Class.forName(className);
+            return Class.forName(className);
 
         } catch (ClassNotFoundException e) {
-            GetPara getPara=new GetPara();
-            if(getPara.getLoader()==null){
-                throw new RuntimeException(e.getMessage(), e);
-            }else{
-                try {
-                    return  getPara.getLoader().loadClass(className);
-                } catch (ClassNotFoundException e1) {
-                    logger.error("load class error");
-                    logger.error(e.getMessage(), e);
-                    throw new RuntimeException(e.getMessage(), e);
-                }
-            }
 
-
+            logger.error("load class error");
+            logger.error(e.getMessage(), e);
+            throw new RuntimeException(e.getMessage(), e);
         }
     }
-
 
 
     public static Method getMethod(Object service, String methodName) throws Exception {

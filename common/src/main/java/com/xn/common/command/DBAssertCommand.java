@@ -6,6 +6,7 @@ package com.xn.common.command;
 import com.xn.common.response.Assert;
 import com.xn.common.response.AssertItem;
 import com.xn.common.Exception.AssertNotEqualException;
+import com.xn.common.result.Report;
 import com.xn.common.util.DBUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -64,6 +65,7 @@ public class DBAssertCommand implements Command {
     private void DBVerify(String exactCount) throws AssertNotEqualException {
 
         if (!exactCount.equals(expectCount)) {
+            Report.failedPlus();
             AssertItem item = new AssertItem("DB.getCount", expectCount, exactCount);
             assertItem.addDiff(item);
             throw new AssertNotEqualException("assert is not Equal");

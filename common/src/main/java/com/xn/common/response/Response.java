@@ -12,15 +12,12 @@ import com.xn.common.Exception.AssertNotEqualException;
 import com.xn.common.fastjson.TestDoubleSerializer;
 import com.xn.common.util.StringUtil;
 import net.sf.json.JSONObject;
-import org.apache.commons.lang.StringUtils;
-import org.hamcrest.core.Is;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.util.Map;
 
 import static com.xn.common.command.AssertCommand.deepAssert;
-import static org.junit.Assert.assertThat;
 
 public class Response {
     private final static Logger logger = LoggerFactory.getLogger(Response.class);
@@ -91,20 +88,20 @@ public class Response {
         }
     }
 
-
-    private void assertString(String actual, String expected) {
-        if (!isJson(actual)) {
-            try {
-                assertThat("接口返回的是字符串(非json)，使用字符串对比失败",
-                        StringUtils.trim(actual),
-                        Is.is(StringUtils.trim(expected)));
-            } catch (AssertionError e) {
-                assertThat("接口返回的是字符串(非json)，使用字符串对比失败",
-                        String.format("\"%s\"", StringUtils.trim(actual)),
-                        Is.is(StringUtils.trim(expected)));
-            }
-        }
-    }
+//
+//    private void assertString(String actual, String expected) {
+//        if (!isJson(actual)) {
+//            try {
+//                assertThat("接口返回的是字符串(非json)，使用字符串对比失败",
+//                        StringUtils.trim(actual),
+//                        Is.is(StringUtils.trim(expected)));
+//            } catch (AssertionError e) {
+//                assertThat("接口返回的是字符串(非json)，使用字符串对比失败",
+//                        String.format("\"%s\"", StringUtils.trim(actual)),
+//                        Is.is(StringUtils.trim(expected)));
+//            }
+//        }
+//    }
 
     private String bodyInString(Object body) {
         if (body instanceof String)

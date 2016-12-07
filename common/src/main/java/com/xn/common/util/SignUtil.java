@@ -2,7 +2,6 @@ package com.xn.common.util;/**
  * Created by xn056839 on 2016/11/14.
  */
 
-import cn.xn.user.utils.RequestSignUtils;
 import com.xn.common.Exception.CaseErrorEqualException;
 import com.xn.common.service.GetPara;
 import com.xn.common.sign.MessageAddSign;
@@ -18,8 +17,6 @@ import java.security.MessageDigest;
 import java.util.Iterator;
 import java.util.Map;
 import java.util.TreeMap;
-
-import static com.xn.common.util.StringUtil.getPro;
 
 public class SignUtil {
     private static final Logger logger = LoggerFactory.getLogger(SignUtil.class);
@@ -179,22 +176,22 @@ public class SignUtil {
         return "";
     }
 
-    public static boolean validateSign(Object obj) {
-
-        TreeMap<String, String> map = RequestSignUtils.beanToSortMap(obj);
-        String sign = map.remove("sign");
-
-
-        String key = getPro("test.properties", "key.QGZ");
-
-        String addSign = RequestSignUtils.addSign(map, key);
-        if (StringUtils.isNotEmpty(addSign) && addSign.equals(sign)) {
-            return true;
-        } else {
-            logger.info("isPassSign@, 签名错误，传入签名:{},计算出的签名:{}", sign, addSign);
-            return false;
-        }
-    }
+//    public static boolean validateSign(Object obj) {
+//
+//        TreeMap<String, String> map = RequestSignUtils.beanToSortMap(obj);
+//        String sign = map.remove("sign");
+//
+//
+//        String key = getPro("test.properties", "key.QGZ");
+//
+//        String addSign = RequestSignUtils.addSign(map, key);
+//        if (StringUtils.isNotEmpty(addSign) && addSign.equals(sign)) {
+//            return true;
+//        } else {
+//            logger.info("isPassSign@, 签名错误，传入签名:{},计算出的签名:{}", sign, addSign);
+//            return false;
+//        }
+//    }
 
     public static String addSignDubboMd5(TreeMap<String, String> treeMap, String key) {
         //遍历签名参数

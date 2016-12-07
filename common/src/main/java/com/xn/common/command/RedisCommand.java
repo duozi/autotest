@@ -72,34 +72,34 @@ public class RedisCommand implements Command {
 
     RedisUtil redisUtil = new RedisUtil();
 
-    /**
-     * 从redis中获取登录错误次数
-     */
-    private int getErrorTimes() {
-        try {
-            int errorTime = redisUtil.getErrorTime(PREFIX_LOGINPWD + "-" + systemType + "-" + loginName);
-            logger.info("错误次数为---------------" + errorTime);
-            return errorTime;
-        } catch (Exception e1) {
-            logger.error(String.format("~~~[%s]缓存中获取登录密码错误次数异常~~~", loginName), e1);
-        }
-        return 0;
-    }
+//    /**
+//     * 从redis中获取登录错误次数
+//     */
+//    private int getErrorTimes() {
+//        try {
+//            int errorTime = redisUtil.getErrorTime(PREFIX_LOGINPWD + "-" + systemType + "-" + loginName);
+//            logger.info("错误次数为---------------" + errorTime);
+//            return errorTime;
+//        } catch (Exception e1) {
+//            logger.error(String.format("~~~[%s]缓存中获取登录密码错误次数异常~~~", loginName), e1);
+//        }
+//        return 0;
+//    }
 
-    /**
-     * 把用户登录密码错误次数存入redis
-     */
-    private void saveErrorTime() {
-        String key = PREFIX_LOGINPWD + "-" + systemType + "-" + loginName;
-        try {
-            redisUtil.putErrorTime(key, times, "login");
-        } catch (Exception e) {
-            logger.error(String.format("~~~~用户名:[%s],密码错误次数存入redis中报错：[%s]~~~~", loginName, e));
-            e.printStackTrace();
-        }
-
-
-    }
+//    /**
+//     * 把用户登录密码错误次数存入redis
+//     */
+//    private void saveErrorTime() {
+//        String key = PREFIX_LOGINPWD + "-" + systemType + "-" + loginName;
+//        try {
+//            redisUtil.putErrorTime(key, times, "login");
+//        } catch (Exception e) {
+//            logger.error(String.format("~~~~用户名:[%s],密码错误次数存入redis中报错：[%s]~~~~", loginName, e));
+//            e.printStackTrace();
+//        }
+//
+//
+//    }
 
 //    private void logoutDelToken() {
 //        try {

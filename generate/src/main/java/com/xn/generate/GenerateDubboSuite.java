@@ -11,8 +11,6 @@ import org.slf4j.LoggerFactory;
 import java.lang.reflect.Method;
 import java.net.URLClassLoader;
 
-import static com.xn.common.util.JarUtil.addJar;
-
 
 /**
  * Created by Administrator on 2016/8/22.
@@ -98,12 +96,12 @@ public class GenerateDubboSuite {
                 return;
             }
 
-            loader = addJar(args[0]);
+//            loader = addJar(args[0]);
             GetPara getPara = new GetPara();
             getPara.setLoader(loader);
             GenerateDubboSuite generateDubboSuite = new GenerateDubboSuite();
             String[] service = args[1].trim().split(",");
-//            String[] service = "cn.xn.user.service.ICustomerInfoService".trim().split(",");
+//            String[] controller = "cn.xn.user.controller.ICustomerInfoService".trim().split(",");
             for (String s : service) {
                 generateDubboSuite.getDubboSuite(s, "/data/autotest/user/generate/");
 //                getParam(s, loader, "d:\\test\\");

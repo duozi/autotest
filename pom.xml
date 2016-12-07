@@ -12,6 +12,8 @@
         <module>generate</module>
         <module>common</module>
         <module>run_suite</module>
+        <module>interaction</module>
+        <module>front</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -29,11 +31,11 @@
             <!--<artifactId>user-interface</artifactId>-->
             <!--<version>2.0.0-SNAPSHOT</version>-->
         <!--</dependency>-->
-        <dependency>
-            <groupId>com.xiaoniu.dataplatform.ruleengine</groupId>
-            <artifactId>ruleengine-skeleton</artifactId>
-            <version>1.0.0</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>com.xiaoniu.dataplatform.ruleengine</groupId>-->
+            <!--<artifactId>ruleengine-skeleton</artifactId>-->
+            <!--<version>1.0.0</version>-->
+        <!--</dependency>-->
 
         <dependency>
             <groupId>com.alibaba</groupId>
@@ -41,16 +43,16 @@
             <version>1.1.35</version>
         </dependency>
         <!--redis-->
-        <dependency>
-            <groupId>cn.xn.cache</groupId>
-            <artifactId>xn-cache-skeleton</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>cn.xn.user</groupId>
-            <artifactId>xn-user-skeleton</artifactId>
-            <version>1.0.5-SNAPSHOT</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>cn.xn.cache</groupId>-->
+            <!--<artifactId>xn-cache-skeleton</artifactId>-->
+            <!--<version>1.0.0-SNAPSHOT</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>cn.xn.user</groupId>-->
+            <!--<artifactId>xn-user-skeleton</artifactId>-->
+            <!--<version>1.0.5-SNAPSHOT</version>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
@@ -62,6 +64,11 @@
             <artifactId>guava</artifactId>
             <version>10.0.1</version>
         </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.springframework</groupId>-->
+            <!--<artifactId>spring</artifactId>-->
+            <!--<version>${spring.version}</version>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
@@ -179,6 +186,9 @@
             <artifactId>slf4j-log4j12</artifactId>
             <version>${slf4j.version}</version>
         </dependency>
+
+
+
         <!-- log end -->
         <dependency>
             <groupId>org.aspectj</groupId>
@@ -189,6 +199,12 @@
             <groupId>com.alibaba</groupId>
             <artifactId>dubbo</artifactId>
             <version>2.5.3</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>spring</artifactId>
+                    <groupId>org.springframework</groupId>
+                </exclusion>
+            </exclusions>
         </dependency>
         <!--zk-->
         <dependency>
@@ -265,6 +281,37 @@
             <artifactId>dom4j</artifactId>
             <version>1.6.1-hudson-3</version>
         </dependency>
+        <!--js-->
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>3.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.freemarker</groupId>
+            <artifactId>freemarker</artifactId>
+            <version>2.3.23</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.1.0</version>
+        </dependency>
     </dependencies>
     <build>
         <finalName>autotest</finalName>
@@ -321,6 +368,11 @@
                     <source>1.7</source>
                     <target>1.7</target>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-archetype-plugin</artifactId>
+                <version>2.2</version>
             </plugin>
         </plugins>
     </build>

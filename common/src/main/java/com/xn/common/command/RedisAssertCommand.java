@@ -96,6 +96,7 @@ public class RedisAssertCommand implements Command {
 
         Long time = Long.valueOf(expectation.get("time"));
         if (time != exactTime) {
+            Report.failedPlus();
             AssertItem item = new AssertItem("redis.getTime", expectation.get("time"), String.valueOf(exactTime));
             assertItem.addDiff(item);
             throw new AssertNotEqualException("assert is not Equal");

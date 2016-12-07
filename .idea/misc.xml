@@ -41,6 +41,12 @@
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/interaction" />
+  </component>
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="JSX" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -51,6 +57,8 @@
       <set>
         <option value="$PROJECT_DIR$/autotest_dubbo/pom.xml" />
         <option value="$PROJECT_DIR$/autotest_http/pom.xml" />
+        <option value="$PROJECT_DIR$/front/pom.xml" />
+        <option value="$PROJECT_DIR$/interaction/pom.xml" />
         <option value="$PROJECT_DIR$/lineTest/pom.xml" />
       </set>
     </option>
@@ -68,4 +76,5 @@
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" default="true" assert-keyword="true" jdk-15="true" project-jdk-name="1.7 " project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
+  <component name="WebServicesPlugin" addRequiredLibraries="true" />
 </project>

@@ -3,12 +3,9 @@ package com.xn.generate;/**
  */
 
 import com.xn.common.mail.JavaMailWithAttachment;
-import com.xn.common.service.GetPara;
 import com.xn.common.util.JarUtil;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.net.URLClassLoader;
 
 public class GenerateSuite {
     private static final Logger logger = LoggerFactory.getLogger(GenerateSuite.class);
@@ -35,9 +32,7 @@ public class GenerateSuite {
                 String jarPath = args[5]+systemName+"/";
 
 
-                URLClassLoader loader = JarUtil.addJar(jarPath);
-                GetPara getPara = new GetPara();
-                getPara.setLoader(loader);
+                JarUtil.addJar(jarPath);
                 String[] services = serviceName.trim().split(",");
                 GenerateDubboSuite generateDubboSuite = new GenerateDubboSuite();
                 for (String s : services) {

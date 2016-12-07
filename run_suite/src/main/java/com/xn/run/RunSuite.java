@@ -14,7 +14,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.File;
-import java.net.URLClassLoader;
 import java.util.Date;
 import java.util.List;
 import java.util.concurrent.ExecutorService;
@@ -37,12 +36,11 @@ public class RunSuite {
         getPara.setPath(suitePath);
         getPara.setSystem(system);
         Report.getReport().setStartTime(new Date());
+
         boolean falg  = DBUtil.DBInit();
 
         if (type.equals("dubbo") && dubbo.exists() && dubbo.isDirectory()) {
-            URLClassLoader loader = JarUtil.addJar(jarPath);
-            getPara.setLoader(loader);
-
+            JarUtil.addJar(jarPath);
             ReadDubboSuite readDubboSuite = new ReadDubboSuite();
             List<Suite> dubboTestSuites = readDubboSuite.getSuites(suitePath);
             try {
@@ -66,7 +64,7 @@ public class RunSuite {
             if (exe.isTerminated()) {
                 Report.getReport().setStopTime(new Date());
 
-                if (falg) {
+         if (falg) {
                     DBUtil.DBClose();
                 }
                 HTMLReport.generateResultReport(suitePath, sendMailTo);

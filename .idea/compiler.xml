@@ -23,7 +23,9 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="common" />
+        <module name="front" />
         <module name="generate" />
+        <module name="interaction2" />
         <module name="run_autotest" />
         <module name="run_suite" />
       </profile>
@@ -33,7 +35,10 @@
       <module name="autotest_dubbo" target="1.7" />
       <module name="autotest_http" target="1.7" />
       <module name="common" target="1.7" />
+      <module name="front" target="1.7" />
       <module name="generate" target="1.7" />
+      <module name="interaction" target="1.7" />
+      <module name="interaction2" target="1.7" />
       <module name="lineTest" target="1.8" />
       <module name="run_autotest" target="1.7" />
       <module name="run_suite" target="1.7" />

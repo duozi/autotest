@@ -16,27 +16,30 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.net.URLClassLoader;
 import java.net.URLConnection;
 
 public class JarUtil {
     private static final Logger logger = LoggerFactory.getLogger(JarUtil.class);
 
-    public static URLClassLoader addJar(String jarPath) {
+    public static void addJar(String jarPath) {
 //        checkNew(jarPath);
-        URLClassLoader loader = null;
-        try {
-            File jar = new File(jarPath);
-            URL[] urls = new URL[]{jar.toURI().toURL()};
-            loader = new URLClassLoader(urls);
-
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-            throw new Exception("load  jar error");
-        } finally {
-            return loader;
-        }
-
+//        URLClassLoader loader = null;
+//        try {
+//            File file = new File(jarPath);
+//            File jar=file.listFiles()[0];
+//            URL url=new URL("file:"+jar.getAbsolutePath());
+//            URL[] urls = new URL[]{url};
+//            loader = new URLClassLoader(urls,Thread.currentThread().getContextClassLoader());
+//
+//        } catch (Exception e) {
+//            e.printStackTrace();
+//            throw new Exception("load  jar error");
+//        } finally {
+//            return loader;
+//        }
+        ExtClasspathLoader extClasspathLoader = new ExtClasspathLoader();
+        extClasspathLoader.addJarPath("D:\\jar\\user");
+        extClasspathLoader.loadClasspath();
     }
 
     public static void checkNew(String jarPath)  {
@@ -142,6 +145,16 @@ public class JarUtil {
     }
 
     public static void main(String[] args) {
-        checkNew("D:/jar");
+//        URLClassLoader urlClassLoader=addJar("d:\\jar\\user\\");
+//        try {
+//            Class<?> c =urlClassLoader.loadClass("cn.xn.user.controller.IRegisterService");
+//            Method[] methods = c.getDeclaredMethods();
+//            for(Method method:methods){
+//                System.out.println(method.getName());
+//            }
+//
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//        }
     }
 }
