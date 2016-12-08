@@ -116,7 +116,7 @@ public class SignUtil {
     }
 
 
-    public static String httpAddSign(TreeMap<String, String> map, boolean useSign, String signType) throws CaseErrorEqualException {
+    public static String httpAddSign(TreeMap<String, String> map, boolean useSign, String signType,String paramType) throws CaseErrorEqualException {
 
         String system = new GetPara().getSystem();
         if (system.equalsIgnoreCase("user")) {
@@ -127,7 +127,7 @@ public class SignUtil {
             return messageAddSign.MessageHttpAddSing(map, useSign, signType);
         } else if (system.equalsIgnoreCase("unipay")) {
             PayAddSign payAddSign = new PayAddSign();
-            return payAddSign.PayHttpAddSing(map, useSign, signType);
+            return payAddSign.PayHttpAddSing(map, useSign, signType,paramType);
         } else {
             return null;
         }

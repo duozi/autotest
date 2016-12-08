@@ -36,6 +36,8 @@ public class ReadHttpSuite {
     String timeout;
     String useSign;
     String signType;
+    String requestType;
+    String paramType;
     public static int totalCase = 0;
     public static String path = "";
 
@@ -73,9 +75,11 @@ public class ReadHttpSuite {
                         if (caseFile.getName().equals("serviceConfig.properties")) {
                             url = StringUtil.getConfig(caseFile, "url", "");
                             timeout = StringUtil.getConfig(caseFile, "timeout", "200000");
-                            //这个参数的逻辑是true带别访问这个借口需要计算签名，如果sign不为空，则由框架计算签名，如果sign不为空，则使用传入的签名
+                            //这个参数的逻辑是true代表访问这个借口需要计算签名，如果sign不为空，则由框架计算签名，如果sign不为空，则使用传入的签名
                             useSign=StringUtil.getConfig(caseFile,"useSign","false");
                             signType=StringUtil.getConfig(caseFile,"signType","");
+                            requestType=StringUtil.getConfig(caseFile,"requestType","POST");
+                            paramType=StringUtil.getConfig(caseFile,"paramType","text");
                             break;
                         }
                     }
@@ -166,11 +170,11 @@ public class ReadHttpSuite {
             outMap.put(key, json.getString(key));
         }
 
-        String para = httpAddSign(outMap, Boolean.parseBoolean(useSign),signType);
+        String para = httpAddSign(outMap, Boolean.parseBoolean(useSign),signType,paramType);
 
         if (para.length() > 0)
             totalCase++;
-        return new HttpCaseCommand(casePath, para, url, timeout);
+        return new HttpCaseCommand(casePath, para, url, timeout,requestType);
     }
 
     public static void main(String[] args) {

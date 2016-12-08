@@ -21,13 +21,16 @@ public class HttpCaseCommand implements CaseCommand {
     private String result;
     private  String url;
     private String timeout;
+    private String requestType;
 
 
-    public HttpCaseCommand(String casePath, String request, String url, String timeout) {
+    public HttpCaseCommand(String casePath, String request, String url, String timeout,String requestType) {
         this.request = request;
         this.casePath = casePath;
         this.url = url;
         this.timeout = timeout;
+        this.requestType=requestType;
+
 
     }
 
@@ -71,7 +74,7 @@ public class HttpCaseCommand implements CaseCommand {
             // Read from the connection. Default is true.
             connection.setDoInput(true);
             // Set the post method. Default is GET
-            connection.setRequestMethod("POST");
+            connection.setRequestMethod(requestType);
             // Post cannot use caches
             // Post 请求不能使用缓存
             connection.setUseCaches(false);
@@ -85,6 +88,8 @@ public class HttpCaseCommand implements CaseCommand {
             // instance.
             // URLConnection.setInstanceFollowRedirects是成员函数，仅作用于当前函数
             connection.setInstanceFollowRedirects(true);
+            connection.setConnectTimeout(20000);
+            connection.setReadTimeout(300000);
             // Set the content type to urlencoded,
             // because we will write
             // some URL-encoded content to the
@@ -92,8 +97,7 @@ public class HttpCaseCommand implements CaseCommand {
             // 配置本次连接的Content-type，配置为application/x-www-form-urlencoded的
             // 意思是正文是urlencoded编码过的form参数，下面我们可以看到我们对正文内容使用URLEncoder.encode
             // 进行编码
-            connection.setRequestProperty("Content-Type",
-                    "application/x-www-form-urlencoded");
+            connection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
             // 连接，从postUrl.openConnection()至此的配置必须要在connect之前完成，
             // 要注意的是connection.getOutputStream会隐含的进行connect。
             connection.connect();

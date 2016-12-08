@@ -5,6 +5,7 @@ package com.xn.common.sign;/**
 import com.xn.common.Exception.CaseErrorEqualException;
 import com.xn.common.service.GetPara;
 import com.xn.common.util.StringUtil;
+import net.sf.json.JSONObject;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,7 +19,7 @@ import static com.xn.common.util.SignUtil.md5;
 public class PayAddSign {
     private static final Logger logger = LoggerFactory.getLogger(PayAddSign.class);
 
-    public String PayHttpAddSing(TreeMap<String, String> treeMap, boolean useSign, String signType) throws CaseErrorEqualException {
+    public String PayHttpAddSing(TreeMap<String, String> treeMap, boolean useSign, String signType, String paramType) throws CaseErrorEqualException {
         String key = "";
         //只有useSign为true&&传入sign为空才会计算sign
         if (useSign) {
@@ -41,15 +42,25 @@ public class PayAddSign {
                 String sign_sb = mapToString(treeMapWithoutSignType);
                 String signPara = sign_sb + "&key=" + key;
                 String sign = md5(signPara, treeMap.get("input_charset"));
-                withSignType += "&sign=" + sign;
-                return withSignType;
+                if (paramType.equalsIgnoreCase("text")) {
+                    withSignType += "&sign=" + sign;
+                    return withSignType;
+                } else if (paramType.equalsIgnoreCase("text")) {
+                    treeMap.put("sign", sign);
+                    String request = JSONObject.fromObject(treeMap).toString();
+                    return request;
+                }
             }
         }
 
-
-        String sign_sb = mapToString(treeMap);
-        return sign_sb;
-
+        if (paramType.equalsIgnoreCase("text")) {
+            String sign_sb = mapToString(treeMap);
+            return sign_sb;
+        } else if (paramType.equalsIgnoreCase("json")) {
+            String request = JSONObject.fromObject(treeMap).toString();
+            return request;
+        }
+        return null;
     }
 
 }

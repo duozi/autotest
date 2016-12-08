@@ -1,4 +1,4 @@
-package com.xn.front.controller;/**
+package com.xn.front.test.controller;/**
  * Created by xn056839 on 2016/12/3.
  */
 
@@ -25,7 +25,6 @@ public class ReflectController {
     }
 
     @RequestMapping(value="index", method= RequestMethod.GET)
-    @ResponseBody
     public ModelAndView getView(String interfaceName){
         ModelAndView m = new ModelAndView("index");
         return m;

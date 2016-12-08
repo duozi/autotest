@@ -14,7 +14,7 @@ public class GenerateHttpSuite {
         String path = writePath + "suite/http/";
         result.setLength(0);
 
-        String configString = "url=\r\ntimeout=\r\nuseSign=\r\nsignType=\r\n";
+        String configString = "url=\r\ntimeout=\r\nuseSign=\r\nsignType=\r\nrequestType=\r\nparamType=";
         FileUtil.fileWrite(path + "/interfaceName/config.properties", configString);
         FileUtil.fileWrite(path + "/interfaceName/beforeClass", "");
         FileUtil.fileWrite(path + "/interfaceName/afterClass", "");

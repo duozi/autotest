@@ -429,7 +429,7 @@
             url: "http://localhost:8080/get/queryIndex",//传入后台的地址http:/方法
             data: {'RID':value},//参数，这里是一个json语句
             success: function (data) {
-                var result = data.d;
+                var result = data;
                 alert(result);
                 $('#getData').html(result);
 

@@ -378,7 +378,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">新增测试计划</h1>
-                    <div class="form-group">
+                    <div class="form-group" id="formGroup">
                         <label>计划名</label>
                         <input class="form-control" required="required">
                         <p class="help-block">不能重复</p>
@@ -419,6 +419,9 @@
     $('#btn').on('click',function(){
         var value = $('#interface').val();
         console.log('value',value);
+        var appendDiv = '<div>frae</div>';
+        $('#formGroup').append(appendDiv);
+
         $.ajax({
             type: "get",
             contentType: "application/json; charset=utf-8",
@@ -426,7 +429,7 @@
             url: "http://localhost:8080/get/queryIndex",//传入后台的地址http:/方法
             data: {'RID':value},//参数，这里是一个json语句
             success: function (data) {
-                var result = data.d;
+                var result = data;
                 alert(result);
                 $('#getData').html(result);
 
