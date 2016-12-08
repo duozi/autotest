@@ -61,7 +61,6 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-context-support:4.1.4.RELEASE" />
           <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2" />
           <element id="library" level="project" name="Maven: net.sf.json:json-lib:jdk15:2.2.2-jdk15" />
-          <element id="library" level="project" name="Maven: com.alibaba:druid:1.0.2" />
           <element id="library" level="project" name="Maven: com.alibaba:dubbo:2.5.3" />
           <element id="library" level="project" name="Maven: net.sf.jexample:jexample:4.4-378" />
           <element id="library" level="project" name="Maven: org.mybatis:mybatis:3.2.4" />
@@ -72,6 +71,7 @@
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.13" />
           <element id="library" level="project" name="Maven: javax.mail:mail:1.4" />
           <element id="library" level="project" name="Maven: com.google.guava:guava:10.0.1" />
+          <element id="library" level="project" name="Maven: com.alibaba:druid:1.0.14" />
         </element>
       </element>
       <element id="javaee-facet-resources" facet="front/web/Web" />

@@ -1,4 +1,4 @@
-package com.xn.front.test.controller;/**
+package com.xn.front.interaction.controller;/**
  * Created by xn056839 on 2016/12/3.
  */
 

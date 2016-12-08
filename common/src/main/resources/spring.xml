@@ -10,7 +10,7 @@
     </context:component-scan>
     
     <context:annotation-config/>
-    <!--<bean id="propertyConfigurer" class="com.xn.test.common.PropertyPlaceholderConfigurer">-->
+    <!--<bean id="propertyConfigurer" class="com.xn.interaction.common.PropertyPlaceholderConfigurer">-->
         <!--<property name="locations">-->
             <!--<list>-->
                 <!--<value>classpath*:redis.properties</value>-->

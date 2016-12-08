@@ -1,4 +1,4 @@
-package com.xn.front.test.utils;
+package com.xn.front.interaction.utils;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;

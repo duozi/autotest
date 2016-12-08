@@ -288,8 +288,8 @@ public class RedisUtil {
 
     public static void main(String[] args) {
         RedisUtil redisUtil = new RedisUtil();
-        redisUtil.set("test", "{\"data\":\"111\"}", 0);
-//        redisUtil.expire("test",200);
+        redisUtil.set("interaction", "{\"data\":\"111\"}", 0);
+//        redisUtil.expire("interaction",200);
 //        redisUtil.isExit("UNIUSER-login-QGZ-00683f51-da44-4f2d-8120-e009ef3bf351");
 //        System.out.println(redisUtil.isExit("UNIUSER-login-QGZ-00683f51-da44-4f2d-8120-e009ef3bf351"));
 

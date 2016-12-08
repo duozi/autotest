@@ -17,7 +17,7 @@
 	<context:annotation-config />
 	<context:component-scan base-package="com.xiaoniu.test" />
 
-	<!--<bean id="propertyConfigurer" class="com.xiaoniu.test.utils.PropertyUtil">-->
+	<!--<bean id="propertyConfigurer" class="com.xiaoniu.interaction.utils.PropertyUtil">-->
        <!--<property name="locations">e-->
            <!--<list>-->
               <!--<value>classpath:properties/*.properties</value>-->

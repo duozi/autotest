@@ -111,7 +111,7 @@ public class StringUtil {
 //
 //        String systemType = map.get(SYSTEM_TYPE);
 //
-//        String key = getPro("test.properties", "key." + systemType);
+//        String key = getPro("interaction.properties", "key." + systemType);
 //
 //        String addSign = addSign(map, key);
 //        if (org.apache.commons.lang.StringUtils.isNotEmpty(addSign)) {

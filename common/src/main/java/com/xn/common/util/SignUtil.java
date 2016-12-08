@@ -72,7 +72,7 @@ public class SignUtil {
 //                param += line + "&";
 //                if (line.startsWith("systemType")) {
 //                    String value = line.split("=")[1];
-//                    key = getPro("test.properties", "key." + value);
+//                    key = getPro("interaction.properties", "key." + value);
 //                }
 //            }
 //        }
@@ -182,7 +182,7 @@ public class SignUtil {
 //        String sign = map.remove("sign");
 //
 //
-//        String key = getPro("test.properties", "key.QGZ");
+//        String key = getPro("interaction.properties", "key.QGZ");
 //
 //        String addSign = RequestSignUtils.addSign(map, key);
 //        if (StringUtils.isNotEmpty(addSign) && addSign.equals(sign)) {
@@ -215,7 +215,7 @@ public class SignUtil {
 
     public static void main(String[] args) {
         Map<String, String> map = new TreeMap<String, String>();
-        map.put("test", "test");
+        map.put("test", "interaction");
         String s = map.remove("jest");
         System.out.println(StringUtils.isEmpty(s));
     }

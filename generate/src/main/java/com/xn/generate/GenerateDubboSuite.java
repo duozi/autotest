@@ -104,7 +104,7 @@ public class GenerateDubboSuite {
 //            String[] controller = "cn.xn.user.controller.ICustomerInfoService".trim().split(",");
             for (String s : service) {
                 generateDubboSuite.getDubboSuite(s, "/data/autotest/user/generate/");
-//                getParam(s, loader, "d:\\test\\");
+//                getParam(s, loader, "d:\\interaction\\");
             }
 
             logger.info("存放地址在 {}suite", "/data/autotest/user/generate/");

@@ -86,7 +86,7 @@ public class GetJsonServiceImpl {
 //        URLClassLoader loader = JarUtil.addJar("d:/jar/");
         GetJsonServiceImpl getJsonService = new GetJsonServiceImpl();
         getJsonService.getJson( "cn.xn.user.controller.ICustomerInfoService", "updateRefereeInfo");
-//        String s = "{\"param\":[{\"appVersion\":\"\",\"sourceType\":\"\",\"systemType\":\"\",\"sign\":\"\",\"memberNo\":\"\",\"refereeNo\":\"\",\"refereeId\":\"\",\"days\":3,\"hour\":72,\"isDay\":true},{\"test\":false}]}";
+//        String s = "{\"param\":[{\"appVersion\":\"\",\"sourceType\":\"\",\"systemType\":\"\",\"sign\":\"\",\"memberNo\":\"\",\"refereeNo\":\"\",\"refereeId\":\"\",\"days\":3,\"hour\":72,\"isDay\":true},{\"interaction\":false}]}";
 //        JSONObject o= JSONObject.fromObject(s);
 //        JSONArray array=o.getJSONArray("param");
 //        System.out.println(array.getString(1));

@@ -45,7 +45,7 @@ public class PayAddSign {
                 if (paramType.equalsIgnoreCase("text")) {
                     withSignType += "&sign=" + sign;
                     return withSignType;
-                } else if (paramType.equalsIgnoreCase("text")) {
+                } else if (paramType.equalsIgnoreCase("json")) {
                     treeMap.put("sign", sign);
                     String request = JSONObject.fromObject(treeMap).toString();
                     return request;
