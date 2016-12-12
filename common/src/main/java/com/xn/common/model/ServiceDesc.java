@@ -36,7 +36,10 @@ public class ServiceDesc {
         return zk;
     }
 
-    public ServiceDesc(String interfaceName, String methodName, String url, String zk, String version, String group, String timeout, String appName,Boolean useZK) {
+    public ServiceDesc() {
+    }
+
+    public ServiceDesc(String interfaceName, String methodName, String url, String zk, String version, String group, String timeout, String appName, Boolean useZK) {
         this.interfaceName = interfaceName;
         this.methodName = methodName;
         this.url = url;

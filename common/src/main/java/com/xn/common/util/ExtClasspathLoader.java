@@ -3,14 +3,16 @@ package com.xn.common.util;/**
  */
 
 import com.google.common.collect.Lists;
+import sun.misc.ClassLoaderUtil;
 
 import java.io.File;
+import java.io.IOException;
 import java.lang.reflect.Method;
 import java.net.URL;
 import java.net.URLClassLoader;
 import java.util.List;
 
-public final class ExtClasspathLoader {
+public final class ExtClasspathLoader  {
     /**
      * URLClassLoader的addURL方法
      */
@@ -18,6 +20,8 @@ public final class ExtClasspathLoader {
 
     private static URLClassLoader classloader = (URLClassLoader) ClassLoader.getSystemClassLoader();
     private static List<String> jarList = Lists.newArrayList();
+
+
 
     public void addJarPath(String jarPath) {
         jarList.add(jarPath);
@@ -108,6 +112,7 @@ public final class ExtClasspathLoader {
      */
     private void addURL(File file) {
         try {
+//返回类型和值
             addURL.invoke(classloader, new Object[]{file.toURI().toURL()});
         } catch (Exception e) {
         }
@@ -134,11 +139,21 @@ public final class ExtClasspathLoader {
         return null;
     }
 
-    public static void main(String[] args) throws ClassNotFoundException {
+    public static void main(String[] args) throws ClassNotFoundException, IOException {
+
         ExtClasspathLoader extClasspathLoader = new ExtClasspathLoader();
         extClasspathLoader.addJarPath("D:\\jar\\user");
         extClasspathLoader.loadClasspath();
         Class<?> c = Class.forName("cn.xn.user.service.IPwdService");
         System.out.println(c.getName());
+
+        classloader.close();
+
+
+        ClassLoaderUtil.releaseLoader(classloader);
+        Class<?> c1 = Class.forName("cn.xn.user.service.IFriendService");
+        System.out.println(c1.getName());
+
+
     }
 }
