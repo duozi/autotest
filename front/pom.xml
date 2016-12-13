@@ -17,6 +17,11 @@
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
+          <dependency>
+            <groupId>xn.zx.autotest</groupId>
+            <artifactId>common</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
