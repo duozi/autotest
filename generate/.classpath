@@ -7,6 +7,12 @@
 	<classpathentry kind="src" path="src/resources"/>
 	<classpathentry kind="var" path="USER_HOME/Downloads/org.springframework.transaction-3.2.4.RELEASE.jar"/>
 	<classpathentry kind="var" path="USER_HOME/Downloads/org.springframework.transaction-3.2.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/jconsole.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/tools.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/jconsole.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/tools.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/jconsole.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/tools.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/common"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: commons-dbcp:commons-dbcp:1.4"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: commons-pool:commons-pool:1.5.4"/>
