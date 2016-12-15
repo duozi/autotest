@@ -15,9 +15,7 @@ public class RedisCommand implements Command {
 
     private static final Logger logger = LoggerFactory.getLogger(RedisCommand.class);
     public static final String PREFIX_LOGINPWD = "loginPwd";
-    private String systemType;
-    private String loginName;
-    private int times;
+
     private String methodName;
     private String key;
     private String value;
@@ -41,22 +39,11 @@ public class RedisCommand implements Command {
     }
 
 
-    public void setSystemType(String systemType) {
-        this.systemType = systemType;
-    }
-
-
-    public void setLoginName(String loginName) {
-        this.loginName = loginName;
-    }
 
     public void setMethodName(String methodName) {
         this.methodName = methodName;
     }
 
-    public void setTimes(int times) {
-        this.times = times;
-    }
 
     public String getKey() {
         return key;

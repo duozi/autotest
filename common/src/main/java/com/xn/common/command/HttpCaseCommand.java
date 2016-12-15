@@ -16,24 +16,25 @@ import java.net.*;
 public class HttpCaseCommand implements CaseCommand {
     private static final Logger logger = LoggerFactory.getLogger(HttpCaseCommand.class);
     private Response response = new Response();
-    private  String request;
+    private String request;
     private String casePath;
     private String result;
-    private  String url;
+    private String url;
     private String timeout;
     private String requestType;
+    private String paramType;
 
 
-    public HttpCaseCommand(String casePath, String request, String url, String timeout,String requestType) {
+    public HttpCaseCommand(String casePath, String request, String url, String timeout, String requestType, String paramType) {
         this.request = request;
         this.casePath = casePath;
         this.url = url;
         this.timeout = timeout;
-        this.requestType=requestType;
+        this.requestType = requestType;
+        this.paramType = paramType;
 
 
     }
-
 
 
     public Response getResponse() {
@@ -97,7 +98,13 @@ public class HttpCaseCommand implements CaseCommand {
             // 配置本次连接的Content-type，配置为application/x-www-form-urlencoded的
             // 意思是正文是urlencoded编码过的form参数，下面我们可以看到我们对正文内容使用URLEncoder.encode
             // 进行编码
-            connection.setRequestProperty("Content-Type", "application/json; charset=utf-8");
+            String type = "";
+            if (paramType.equalsIgnoreCase("form")) {
+                type = "x-www-form-urlencoded";
+            } else if (paramType.equalsIgnoreCase("json")) {
+                type = "json";
+            }
+            connection.setRequestProperty("Content-Type", "application/" + type + "; charset=utf-8");
             // 连接，从postUrl.openConnection()至此的配置必须要在connect之前完成，
             // 要注意的是connection.getOutputStream会隐含的进行connect。
             connection.connect();
@@ -109,7 +116,7 @@ public class HttpCaseCommand implements CaseCommand {
             // DataOutputStream.writeBytes将字符串中的16位的unicode字符以8位的字符形式写道流里面
             out.writeBytes(request);
 
-                logger.info("Http request start: params=[{}]", request);
+            logger.info("Http request start: params=[{}]", request);
 
             out.flush();
             out.close(); // flush and close
@@ -136,7 +143,7 @@ public class HttpCaseCommand implements CaseCommand {
             response.setException(e);
             result = "error";
             Report.errorPlus();
-        } catch (ConnectException e){
+        } catch (ConnectException e) {
 
             e.printStackTrace();
             response.setException(e);
@@ -161,15 +168,16 @@ public class HttpCaseCommand implements CaseCommand {
     }
 
     public static void main(String[] args) throws IOException {
-        String request = "{\n" +
-                "\"buyer_uin\":\"87f4246c-831b-4296-be28-b45cab4a410e\",\n" +
-                "\"input_charset\":\"UTF-8\",\n" +
-                "\"partner_id\":\"10002\",\n" +
-                "\"partner_trade_no\":\"20161206123456\",\n" +
-                "\"sign_type\":\"md5\",\n" +
-                "\"sign\":\"fvdasfsdfdg\"\n" +
-                "}";
-        String url1 = "http://10.17.2.125:8098/unipay/gateway/query_payment.do";
+//        String request = "{\n" +
+//                "\"buyer_uin\":\"87f4246c-831b-4296-be28-b45cab4a410e\",\n" +
+//                "\"input_charset\":\"UTF-8\",\n" +
+//                "\"partner_id\":\"10002\",\n" +
+//                "\"partner_trade_no\":\"20161206123456\",\n" +
+//                "\"sign_type\":\"md5\",\n" +
+//                "\"sign\":\"fvdasfsdfdg\"\n" +
+//                "}";
+        String request = "planeName=acd";
+        String url1 = "http://localhost:8080/new_plane/check_plane_name";
 //        String url1 = "www.2cto.com";
         try {
             //创建连接
@@ -190,9 +198,9 @@ public class HttpCaseCommand implements CaseCommand {
             //POST请求
             DataOutputStream out = new DataOutputStream(
                     connection.getOutputStream());
-JSONObject object=JSONObject.fromObject(request);
+//JSONObject object=JSONObject.fromObject(request);
 
-            out.writeBytes(object.toString());
+            out.writeBytes(request);
             out.flush();
             out.close();
 //            InputStream is;
@@ -225,5 +233,6 @@ JSONObject object=JSONObject.fromObject(request);
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
-        }}
+        }
+    }
 }

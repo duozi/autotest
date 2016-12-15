@@ -42,7 +42,7 @@ public class PayAddSign {
                 String sign_sb = mapToString(treeMapWithoutSignType);
                 String signPara = sign_sb + "&key=" + key;
                 String sign = md5(signPara, treeMap.get("input_charset"));
-                if (paramType.equalsIgnoreCase("text")) {
+                if (paramType.equalsIgnoreCase("form")) {
                     withSignType += "&sign=" + sign;
                     return withSignType;
                 } else if (paramType.equalsIgnoreCase("json")) {
@@ -53,7 +53,7 @@ public class PayAddSign {
             }
         }
 
-        if (paramType.equalsIgnoreCase("text")) {
+        if (paramType.equalsIgnoreCase("form")) {
             String sign_sb = mapToString(treeMap);
             return sign_sb;
         } else if (paramType.equalsIgnoreCase("json")) {

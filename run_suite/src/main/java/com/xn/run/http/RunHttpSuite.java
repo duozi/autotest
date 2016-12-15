@@ -18,7 +18,7 @@ import java.util.concurrent.Executors;
 public class RunHttpSuite {
     private static final Logger logger = LoggerFactory.getLogger(RunHttpSuite.class);
     public static ExecutorService exe = Executors.newFixedThreadPool(50);
-    public static boolean httpUseSign=true;
+
     public static String path = "/data/autotest/user/";
     public static String sendMailTo = "zhouxi2@xiaoniu66.com";
 
@@ -27,6 +27,7 @@ public class RunHttpSuite {
     }
 
     List<Suite> testSuites;
+
     public void run() throws InterruptedException {
         Report.getReport().setStartTime(new Date());
         boolean falg = DBUtil.DBInit();
@@ -65,18 +66,19 @@ public class RunHttpSuite {
             }
         }
     }
+
     public static void main(String[] args) throws InterruptedException {
 //        if (args.length < 2) {
 //            logger.error("输入参数错误：[依赖jar地址] [测试报告邮件接受人]");
 //            return;
 //        }
-path="";
+        path = "";
 
-GetPara getPara=new GetPara();
+        GetPara getPara = new GetPara();
         getPara.setPath(path);
 //        loader=ReflectionUtils.addJar("d:/user-interface-2.0.0-20160926.085005-12.jar");
 //        sendMailTo = args[1];
-        sendMailTo="zhouxi2@xiaoniu66.com";
+        sendMailTo = "zhouxi2@xiaoniu66.com";
 
         ReadHttpSuite readHttpSuite = new ReadHttpSuite();
         RunHttpSuite runHttpSuite = new RunHttpSuite();

@@ -79,7 +79,7 @@ public class ReadHttpSuite {
                             useSign=StringUtil.getConfig(caseFile,"useSign","false");
                             signType=StringUtil.getConfig(caseFile,"signType","");
                             requestType=StringUtil.getConfig(caseFile,"requestType","POST");
-                            paramType=StringUtil.getConfig(caseFile,"paramType","text");
+                            paramType=StringUtil.getConfig(caseFile,"paramType","form");
                             break;
                         }
                     }
@@ -174,7 +174,7 @@ public class ReadHttpSuite {
 
         if (para.length() > 0)
             totalCase++;
-        return new HttpCaseCommand(casePath, para, url, timeout,requestType);
+        return new HttpCaseCommand(casePath, para, url, timeout,requestType,paramType);
     }
 
     public static void main(String[] args) {
