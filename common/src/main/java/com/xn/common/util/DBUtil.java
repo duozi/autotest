@@ -31,17 +31,19 @@ public class DBUtil {
             String url = StringUtil.getConfig(file, name + ".jdbc_url", "");
             String user = StringUtil.getConfig(file, name + ".jdbc_username", "");
             String pwd = StringUtil.getConfig(file, name + ".jdbc_password", "");
-            DBService dbService = new DBService(url, user, pwd);
+            if (!url.equals("") && !user.equals("") && !pwd.equals("")) {
+                DBService dbService = new DBService(url, user, pwd);
 
-            try {
-                dbService.newDB();
-            } catch (SQLException e) {
-                e.printStackTrace();
-                return false;
+                try {
+                    dbService.newDB();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                    return false;
+                }
+
+                DbMap.put(name, dbService);
+                logger.info("new db ----{}", name);
             }
-
-            DbMap.put(name, dbService);
-            logger.info("new db ----{}", name);
         }
         return true;
     }
@@ -57,14 +59,17 @@ public class DBUtil {
         DBService dbService = DbMap.get(name);
         return dbService.getCountFromDB(sql);
     }
-    public static ResultSet selectFromDB(String name,String sql) {
+
+    public static ResultSet selectFromDB(String name, String sql) {
         DBService dbService = DbMap.get(name);
         return dbService.selectFromDB(sql);
     }
+
     public static int updateDB(String name, String sql) {
         DBService dbService = DbMap.get(name);
         return dbService.updateDB(sql);
     }
+
     public static void main(String[] args) {
 //        selectFromDB("");
 //        int i=updateDB("UPDATE customer_info set ENC_TYPE=\"KK\" WHERE MOBILE=\"18514762028\"");
