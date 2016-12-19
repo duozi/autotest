@@ -1,13 +1,14 @@
 package com.xn.common.objectfactory;
 
 
-
 import com.xn.common.model.KeyValueStore;
+import com.xn.common.service.GetPara;
 import com.xn.common.util.ReflectionUtils;
 import com.xn.common.util.SignUtil;
 import com.xn.common.util.StringUtil;
 import org.apache.commons.lang.StringUtils;
 
+import java.io.File;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
@@ -82,12 +83,14 @@ public class BeanUtils {
             if (useSign.equals("true") && StringUtils.isEmpty(sign)) {
                 if (signType.equalsIgnoreCase("md5")) {
                     String systemType = map.get("systemType");
-
-                    String key = StringUtil.getPro("test.properties", signType+".key." + systemType);
+                    String path = new GetPara().getPath() + "/suite/key.properties";
+                    File file = new File(path);
+                    String key = StringUtil.getConfig(file, signType + ".key." + systemType, "");
 
                     String addSign = SignUtil.addSignDubboMd5(map, key);
                     ReflectionUtils.setFieldValue(result[i], "sign", addSign);
-                }else if (signType.equalsIgnoreCase("sha")){}
+                } else if (signType.equalsIgnoreCase("sha")) {
+                }
             }
         }
         return result;
