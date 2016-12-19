@@ -98,6 +98,7 @@ public class HttpCaseCommand implements CaseCommand {
             // 配置本次连接的Content-type，配置为application/x-www-form-urlencoded的
             // 意思是正文是urlencoded编码过的form参数，下面我们可以看到我们对正文内容使用URLEncoder.encode
             // 进行编码
+
             String type = "";
             if (paramType.equalsIgnoreCase("form")) {
                 type = "x-www-form-urlencoded";
@@ -114,7 +115,8 @@ public class HttpCaseCommand implements CaseCommand {
             // 正文，正文内容其实跟get的URL中'?'后的参数字符串一致
 
             // DataOutputStream.writeBytes将字符串中的16位的unicode字符以8位的字符形式写道流里面
-            out.writeBytes(request);
+
+            out.write(request.getBytes());
 
             logger.info("Http request start: params=[{}]", request);
 
