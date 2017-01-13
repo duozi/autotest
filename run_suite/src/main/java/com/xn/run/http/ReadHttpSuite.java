@@ -83,7 +83,7 @@ public class ReadHttpSuite {
                             signType=StringUtil.getConfig(caseFile,"signType","");
                             requestType=StringUtil.getConfig(caseFile,"requestType","POST");
                             paramType=StringUtil.getConfig(caseFile,"paramType","form");
-                            signAddSignType=StringUtil.getConfig(caseFile,"addSignType","false");
+                            signAddSignType=StringUtil.getConfig(caseFile,"signAddSignType","false");
                             break;
                         }
                     }
