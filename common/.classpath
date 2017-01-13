@@ -4,14 +4,14 @@
 	<classpathentry kind="src" path="src/main/resources"/>
 	<classpathentry kind="src" path="src/test/java"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/jconsole.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/tools.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/jconsole.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/tools.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/jconsole.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/tools.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/jconsole.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/tools.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/jconsole.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/tools.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/jconsole.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/tools.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/jconsole.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/tools.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/jconsole.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/tools.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: commons-dbcp:commons-dbcp:1.4"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: commons-pool:commons-pool:1.5.4"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: com.alibaba:dubbo:2.5.3"/>
@@ -48,8 +48,8 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: mysql:mysql-connector-java:5.1.29"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: junit:junit:4.11"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: com.alibaba:druid:1.0.14"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/jconsole.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/tools.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/jconsole.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/tools.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.13"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.codehaus.jackson:jackson-core-asl:1.9.13"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: log4j:log4j:1.2.12"/>

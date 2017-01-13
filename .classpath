@@ -8,24 +8,24 @@
 	<classpathentry kind="src" path="src/test"/>
 	<classpathentry kind="src" path=""/>
 	<classpathentry kind="var" path="USER_HOME/Downloads/jexample.jar" sourcepath="/USER_HOME/Downloads/jexample.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/jconsole.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/tools.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/jconsole.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/tools.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/jconsole.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/tools.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/jconsole.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/tools.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/jconsole.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/tools.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/jconsole.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/tools.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/jconsole.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/tools.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/jconsole.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/tools.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/jconsole.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/tools.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/jconsole.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/tools.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/jconsole.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/tools.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/jconsole.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/tools.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/jconsole.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/tools.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/jconsole.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/tools.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/jconsole.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/tools.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/jconsole.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/tools.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/jconsole.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/tools.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/jconsole.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/tools.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: com.alibaba:fastjson:1.1.35"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.mockito:mockito-core:1.9.5"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.hamcrest:hamcrest-core:1.1"/>
@@ -51,8 +51,8 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: mysql:mysql-connector-java:5.1.29"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: junit:junit:4.11"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: com.alibaba:druid:1.0.14"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/jconsole.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/tools.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/jconsole.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/tools.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.13"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.codehaus.jackson:jackson-core-asl:1.9.13"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: log4j:log4j:1.2.12"/>

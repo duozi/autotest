@@ -19,7 +19,7 @@ import static com.xn.common.util.SignUtil.md5;
 public class PayAddSign {
     private static final Logger logger = LoggerFactory.getLogger(PayAddSign.class);
 
-    public String PayHttpAddSing(TreeMap<String, String> treeMap, boolean useSign, String signType, String paramType) throws CaseErrorEqualException {
+    public String PayHttpAddSing(TreeMap<String, String> treeMap, boolean useSign, String signType, String paramType, String signAddSignType) throws CaseErrorEqualException {
         String key = "";
         //只有useSign为true&&传入sign为空才会计算sign
         if (useSign) {
@@ -35,11 +35,13 @@ public class PayAddSign {
 
 
                 treeMap.remove("sign");
-                TreeMap<String, String> treeMapWithoutSignType = new TreeMap<String, String>();
-                treeMapWithoutSignType.putAll(treeMap);
-                treeMapWithoutSignType.remove("sign_type");
+                TreeMap<String, String> treeMapForSign = new TreeMap<String, String>();
+                treeMapForSign.putAll(treeMap);
+                if (signAddSignType.equals("false")) {
+                    treeMapForSign.remove("sign_type");
+                }
                 String withSignType = mapToString(treeMap);
-                String sign_sb = mapToString(treeMapWithoutSignType);
+                String sign_sb = mapToString(treeMapForSign);
                 String signPara = sign_sb + "&key=" + key;
                 String sign = md5(signPara, treeMap.get("input_charset"));
                 if (paramType.equalsIgnoreCase("form")) {
