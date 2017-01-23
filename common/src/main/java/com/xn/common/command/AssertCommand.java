@@ -9,6 +9,7 @@ import com.xn.common.response.Assert;
 import com.xn.common.response.AssertItem;
 import com.xn.common.response.Response;
 import com.xn.common.result.Report;
+import com.xn.common.util.StringUtil;
 import net.sf.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -71,15 +72,23 @@ public class AssertCommand implements Command {
             Set set = jsonObject.keySet();
             if (set.contains(key)) {
                 String returnValue = String.valueOf(jsonObject.get(key));
-                if (!returnValue.equals(value)) {
-                    Report.failedPlus();
-//                int error=Report.getReport().getError();
-//                int failed=Report.getReport().getFailed();
-                    AssertItem item = new AssertItem(key, value, returnValue);
-                    assertItem.addDiff(item);
-//                    Report.getReport().assertAdd(assertItem);
-                    throw new AssertNotEqualException("assert is not Equal");
+                if (value.equals("NOTNULL")) {
+                    if (StringUtil.isEmpty(returnValue)||!returnValue.equals("null")||!returnValue.equals("{}")) {
+                        Report.failedPlus();
 
+                        AssertItem item = new AssertItem(key, value, returnValue);
+                        assertItem.addDiff(item);
+                        throw new AssertNotEqualException("assert is not Equal");
+                    }
+                } else {
+                    if (!returnValue.equals(value)) {
+                        Report.failedPlus();
+
+                        AssertItem item = new AssertItem(key, value, returnValue);
+                        assertItem.addDiff(item);
+                        throw new AssertNotEqualException("assert is not Equal");
+
+                    }
                 }
             } else {
                 Report.failedPlus();
@@ -97,8 +106,8 @@ public class AssertCommand implements Command {
     public void execute() {
 
         try {
-            String result=assertItem.getResult();
-            if (result==null||!result.equals("error")) {
+            String result = assertItem.getResult();
+            if (result == null || !result.equals("error")) {
                 if (paramAssertCommand != null) {
                     paramAssertCommand.executeWithException();
                 }
@@ -116,7 +125,7 @@ public class AssertCommand implements Command {
                 }
             }
         } catch (Exception e) {
-            logger.error(assertItem.getInterfaceName()+"/"+assertItem.getMethodName()+"/"+assertItem.getCaseName()+"=====[assert error]");
+            logger.error(assertItem.getInterfaceName() + "/" + assertItem.getMethodName() + "/" + assertItem.getCaseName() + "=====[assert error]");
         } finally {
             Report.getReport().assertAdd(assertItem);
         }
@@ -126,5 +135,11 @@ public class AssertCommand implements Command {
     @Override
     public void executeWithException() throws Exception {
 
+    }
+
+    public static void main(String[] args) throws AssertNotEqualException {
+        String s="{\"batch_id\":{},\"error_msg\":\"成功\",\"error_no\":0}";
+        JSONObject jsonObject=JSONObject.fromObject(s);
+        deepAssert(jsonObject,"batch_id","NOTNULL",null);
     }
 }
