@@ -19,15 +19,15 @@ public class UserAddSign {
     private static final Logger logger = LoggerFactory.getLogger(UserAddSign.class);
 
 
-    public String UserHttpAddSing(TreeMap<String, String> treeMap, boolean useSign, String signType) throws CaseErrorEqualException {
+    public String UserHttpAddSing(TreeMap<String, Object> treeMap, boolean useSign, String signType) throws CaseErrorEqualException {
         String key = "";
         //只有useSign为true&&传入sign为空才会计算sign
         if (useSign) {
-            String oldSign = treeMap.get("sign");
+            String oldSign = String.valueOf(treeMap.get("sign"));
             if (StringUtils.isEmpty(oldSign)) {
                 String type = "";
                 if (treeMap.containsKey("systemType")) {
-                    type = treeMap.get("systemType");
+                    type =String.valueOf( treeMap.get("systemType"));
                 }
 
                 GetPara getPara = new GetPara();

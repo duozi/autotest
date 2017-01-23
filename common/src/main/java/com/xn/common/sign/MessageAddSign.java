@@ -18,15 +18,15 @@ import static com.xn.common.util.SignUtil.md5;
 public class MessageAddSign {
     private static final Logger logger = LoggerFactory.getLogger(MessageAddSign.class);
 
-    public String MessageHttpAddSing(TreeMap<String, String> treeMap, boolean useSign, String signType) throws CaseErrorEqualException {
+    public String MessageHttpAddSing(TreeMap<String, Object> treeMap, boolean useSign, String signType) throws CaseErrorEqualException {
         String key = "";
         //只有useSign为true&&传入sign为空才会计算sign
         if (useSign) {
-            String oldSign = treeMap.get("sign");
+            String oldSign = String.valueOf(treeMap.get("sign"));
             if (StringUtils.isEmpty(oldSign)) {
                 String type = "";
                 if (treeMap.containsKey("partnerId")) {
-                    type = treeMap.get("partnerId");
+                    type = String.valueOf(treeMap.get("partnerId"));
                 }
 
                 GetPara getPara = new GetPara();

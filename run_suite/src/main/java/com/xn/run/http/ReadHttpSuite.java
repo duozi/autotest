@@ -3,6 +3,7 @@ package com.xn.run.http;/**
  */
 
 
+import com.google.common.collect.Lists;
 import com.xn.common.Exception.CaseErrorEqualException;
 import com.xn.common.command.AssertCommand;
 import com.xn.common.command.Command;
@@ -13,6 +14,7 @@ import com.xn.common.result.Report;
 import com.xn.common.service.PaserFile;
 import com.xn.common.util.FileUtil;
 import com.xn.common.util.StringUtil;
+import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -68,7 +70,7 @@ public class ReadHttpSuite {
                 File[] cases = interfaceFolder.listFiles();
                 //cese名层
                 int jumpMethod = 1;//跳过service 1代表跳过
-                List<Command> testCaseCommandList=new ArrayList();
+                List<Command> testCaseCommandList = new ArrayList();
                 suite = new Suite();
                 for (File caseFile : cases) {
 
@@ -79,11 +81,11 @@ public class ReadHttpSuite {
                             url = StringUtil.getConfig(caseFile, "url", "");
                             timeout = StringUtil.getConfig(caseFile, "timeout", "200000");
                             //这个参数的逻辑是true代表访问这个接口需要计算签名，如果sign不为空，则由框架计算签名，如果sign不为空，则使用传入的签名
-                            useSign=StringUtil.getConfig(caseFile,"useSign","false");
-                            signType=StringUtil.getConfig(caseFile,"signType","");
-                            requestType=StringUtil.getConfig(caseFile,"requestType","POST");
-                            paramType=StringUtil.getConfig(caseFile,"paramType","form");
-                            signAddSignType=StringUtil.getConfig(caseFile,"signAddSignType","false");
+                            useSign = StringUtil.getConfig(caseFile, "useSign", "false");
+                            signType = StringUtil.getConfig(caseFile, "signType", "");
+                            requestType = StringUtil.getConfig(caseFile, "requestType", "POST");
+                            paramType = StringUtil.getConfig(caseFile, "paramType", "form");
+                            signAddSignType = StringUtil.getConfig(caseFile, "signAddSignType", "false");
                             break;
                         }
                     }
@@ -104,49 +106,48 @@ public class ReadHttpSuite {
                         } else if (caseFile.isDirectory()) {
                             String caseName = caseFile.getName();
 
-                                int jump = 0;//跳过case,1代表跳过
-                                File[] fs = caseFile.listFiles();
+                            int jump = 0;//跳过case,1代表跳过
+                            File[] fs = caseFile.listFiles();
 
-                                TestCaseCommand testCaseCommand = new TestCaseCommand();
+                            TestCaseCommand testCaseCommand = new TestCaseCommand();
 
-                                String casePath = caseFile.getPath() + "/log";
-                                for (File f : fs) {
-                                    if (f.getName().equals("before")) {
-                                        testCaseCommand.setBeforeCommand(paser.dealFile(f));
-                                    } else if (f.getName().equals("after")) {
-                                        testCaseCommand.setAfterCommand(paser.dealFile(f));
-                                    } else if (f.getName().equals("assert")) {
+                            String casePath = caseFile.getPath() + "/log";
+                            for (File f : fs) {
+                                if (f.getName().equals("before")) {
+                                    testCaseCommand.setBeforeCommand(paser.dealFile(f));
+                                } else if (f.getName().equals("after")) {
+                                    testCaseCommand.setAfterCommand(paser.dealFile(f));
+                                } else if (f.getName().equals("assert")) {
 
-                                        testCaseCommand.setAssertCommand((AssertCommand) paser.dealAssertFile(f, "#"+caseName, interfaceName, caseName));
-                                    } else if (!f.getName().equals("log")) {
-                                        try {
-                                            testCaseCommand.setCaseCommand(dealCaseFile(f, casePath));
-                                            jumpMethod = 0;
-                                        } catch (CaseErrorEqualException e) {
-                                            logger.error("jump this case {}", interfaceName + "/" + caseName + "/" + caseName);
-                                            jump = 1;
-
-                                        }
-
+                                    testCaseCommand.setAssertCommand((AssertCommand) paser.dealAssertFile(f, "#" + caseName, interfaceName, caseName));
+                                } else if (!f.getName().equals("log")) {
+                                    try {
+                                        testCaseCommand.setCaseCommand(dealCaseFile(f, casePath));
+                                        jumpMethod = 0;
+                                    } catch (CaseErrorEqualException e) {
+                                        logger.error("jump this case {}", interfaceName + "/" + caseName + "/" + caseName);
+                                        jump = 1;
 
                                     }
 
+
                                 }
-                                if (jump == 0) {
-                                    testCaseCommandList.add(testCaseCommand);
-                                }
+
+                            }
+                            if (jump == 0) {
+                                testCaseCommandList.add(testCaseCommand);
+                            }
 
                         }
 
 
-
-
                     } else {
-                        if(caseFile.isDirectory()){
-                        logger.error("jump this case {}", interfaceName + "/" + caseFile.getName());}
+                        if (caseFile.isDirectory()) {
+                            logger.error("jump this case {}", interfaceName + "/" + caseFile.getName());
+                        }
                     }
                 }
-                if (jumpMethod == 0 ) {
+                if (jumpMethod == 0) {
                     suite.setTestCase(testCaseCommandList);
 
                 }
@@ -165,20 +166,43 @@ public class ReadHttpSuite {
     private HttpCaseCommand dealCaseFile(File f, String casePath) throws CaseErrorEqualException {
         String content = FileUtil.fileReadeForStr(f);
         JSONObject json = JSONObject.fromObject(content);
-
         Iterator<String> keyItr = json.keys();
-        String key;
-        TreeMap<String, String> outMap = new TreeMap();
+        String key = "";
+        TreeMap<String, Object> outMap = new TreeMap();
         while (keyItr.hasNext()) {
             key = keyItr.next();
             outMap.put(key, json.getString(key));
         }
+        String para = "";
 
-        String para = httpAddSign(outMap, Boolean.parseBoolean(useSign),signType,paramType,signAddSignType);
+        if (outMap.size() == 1) {
+            ArrayList<String> arrayList = Lists.newArrayList();
+            JSONArray jsonArray = json.getJSONArray(key);
+            int index = jsonArray.size();
+            int i = 0;
+            while (i < index) {
+                JSONObject jsonObject = jsonArray.getJSONObject(i);
+                Iterator<String> keys = jsonObject.keys();
+                String arrayKey = "";
+                TreeMap<String, Object> arrayOutMap = new TreeMap();
+                while (keys.hasNext()) {
+                    arrayKey = keys.next();
+                    arrayOutMap.put(arrayKey, jsonObject.getString(arrayKey));
+                }
+                String arrayPara = httpAddSign(arrayOutMap, Boolean.parseBoolean(useSign), signType, paramType, signAddSignType);
+                arrayList.add(arrayPara);
+                i++;
+            }
+
+            outMap.put(key, arrayList);
+            para = JSONObject.fromObject(outMap).toString();
+        } else {
+            para = httpAddSign(outMap, Boolean.parseBoolean(useSign), signType, paramType, signAddSignType);
+        }
 
         if (para.length() > 0)
             totalCase++;
-        return new HttpCaseCommand(casePath, para, url, timeout,requestType,paramType);
+        return new HttpCaseCommand(casePath, para, url, timeout, requestType, paramType);
     }
 
     public static void main(String[] args) {

@@ -116,7 +116,7 @@ public class SignUtil {
     }
 
 
-    public static String httpAddSign(TreeMap<String, String> map, boolean useSign, String signType,String paramType,String signAddSignType) throws CaseErrorEqualException {
+    public static String httpAddSign(TreeMap<String, Object> map, boolean useSign, String signType,String paramType,String signAddSignType) throws CaseErrorEqualException {
 
         String system = new GetPara().getSystem();
         if (system.equalsIgnoreCase("user")) {
@@ -134,14 +134,14 @@ public class SignUtil {
 
     }
 
-    public static String mapToString(TreeMap<String, String> treeMap) {
+    public static String mapToString(TreeMap<String, Object> treeMap) {
         //遍历签名参数
         StringBuilder sign_sb = new StringBuilder();
 
         Iterator<String> it = treeMap.keySet().iterator();
         while (it.hasNext()) {
             String mapKey = it.next();
-            if (StringUtils.isEmpty(treeMap.get(mapKey)))
+            if (StringUtils.isEmpty(String.valueOf(treeMap.get(mapKey))))
                 continue;
             if (StringUtils.isEmpty(sign_sb.toString())) {
                 sign_sb.append(mapKey + "=" + treeMap.get(mapKey));
