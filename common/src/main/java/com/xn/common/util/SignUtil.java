@@ -23,7 +23,7 @@ public class SignUtil {
     private static final String CHARSET = "UTF-8";
 
     public static String md5(String str, String charset) {
-        if (StringUtils.isEmpty(charset)) {
+        if (StringUtils.isEmpty(charset)||charset.equals("null")) {
             return encrypt(str, CHARSET);
         } else {
             return encrypt(str, charset);
@@ -34,7 +34,7 @@ public class SignUtil {
     private static String encrypt(String str, String charset) {
         try {
             MessageDigest md = MessageDigest.getInstance("MD5");
-            if (org.apache.commons.lang.StringUtils.isNotBlank(charset)) {
+            if (StringUtils.isNotBlank(charset)) {
                 md.update(str.getBytes(charset));
             } else {
                 md.update(str.getBytes());
