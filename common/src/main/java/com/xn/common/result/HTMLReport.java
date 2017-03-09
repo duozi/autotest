@@ -4,6 +4,7 @@ package com.xn.common.result;/**
 
 import com.xn.common.mail.JavaMailWithAttachment;
 import com.xn.common.response.Assert;
+import com.xn.common.service.GetPara;
 import com.xn.common.util.FileUtil;
 import org.apache.commons.lang.StringUtils;
 import org.slf4j.Logger;
@@ -338,7 +339,8 @@ public class HTMLReport {
         String result = HTML_TMPL.replace("%(title)s", Title).replace("%(stylesheet)s", styleSheet).replace("%(heading)s", heading).replace("%(report)s", report).replace("%(ending)s", ending);
         SimpleDateFormat format = new SimpleDateFormat("yyyyMMddHHmm");
         String timeStmp = format.format(new Date());
-        String reportName = path + "report/report_" + timeStmp + ".html";
+        String remark = new GetPara().getRemark();
+        String reportName = path + "report/report_" + timeStmp +"_"+remark+".html";
         FileUtil.fileWrite(reportName, result);
         logger.info("-----------------"+reportName);
         JavaMailWithAttachment se = new JavaMailWithAttachment(true);

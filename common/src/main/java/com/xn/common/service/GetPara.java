@@ -13,6 +13,15 @@ public class GetPara {
 
     private static URLClassLoader loader = null;
     private static String path;
+    private static String remark;
+
+    public static String getRemark() {
+        return remark;
+    }
+
+    public static void setRemark(String remark) {
+        GetPara.remark = remark;
+    }
 
     public static String getSystem() {
         return system;

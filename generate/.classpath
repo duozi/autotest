@@ -7,14 +7,14 @@
 	<classpathentry kind="src" path="src/resources"/>
 	<classpathentry kind="var" path="USER_HOME/Downloads/org.springframework.transaction-3.2.4.RELEASE.jar"/>
 	<classpathentry kind="var" path="USER_HOME/Downloads/org.springframework.transaction-3.2.4.RELEASE.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/jconsole.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/tools.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/jconsole.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/tools.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/jconsole.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/tools.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/jconsole.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/tools.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/jconsole.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/tools.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/jconsole.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/tools.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/jconsole.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/tools.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/jconsole.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/tools.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/common"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: commons-dbcp:commons-dbcp:1.4"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: commons-pool:commons-pool:1.5.4"/>
@@ -73,8 +73,8 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.springframework:spring-context:4.1.4.RELEASE"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.springframework:spring-expression:4.1.4.RELEASE"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: aopalliance:aopalliance:1.0"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/jconsole.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/lib/tools.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/jconsole.jar"/>
+	<classpathentry kind="lib" path="D:/Program Files/Java/jdk1.7.0_79/jre/../lib/tools.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.codehaus.jackson:jackson-core-asl:1.9.13"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.javassist:javassist:3.15.0-GA"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Maven: org.jboss.netty:netty:3.2.5.Final"/>

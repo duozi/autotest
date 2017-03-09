@@ -22,22 +22,23 @@ import java.util.concurrent.Executors;
 public class RunSuite {
     private static final Logger logger = LoggerFactory.getLogger(RunSuite.class);
     public static ExecutorService exe = Executors.newFixedThreadPool(50);
-
+    public static String REMARK = "";
 
     /**
      * @param suitePath 不包括suite那一层
      * @param jarPath   不包括具体的jar名
      */
-    public void runSuiteService(String type,String system, String sendMailTo, String suitePath, String jarPath) {
+    public void runSuiteService(String type, String system, String sendMailTo, String suitePath, String jarPath, String remark) {
 
         File dubbo = new File(suitePath + "suite/dubbo/");
         File http = new File(suitePath + "suite/http/");
         GetPara getPara = new GetPara();
         getPara.setPath(suitePath);
         getPara.setSystem(system);
+        getPara.setRemark(remark);
         Report.getReport().setStartTime(new Date());
 
-        boolean falg  = DBUtil.DBInit();
+        boolean falg = DBUtil.DBInit();
 
         if (type.equals("dubbo") && dubbo.exists() && dubbo.isDirectory()) {
             JarUtil.addJar(jarPath);
@@ -64,7 +65,7 @@ public class RunSuite {
             if (exe.isTerminated()) {
                 Report.getReport().setStopTime(new Date());
 
-         if (falg) {
+                if (falg) {
                     DBUtil.DBClose();
                 }
                 HTMLReport.generateResultReport(suitePath, sendMailTo);
@@ -99,15 +100,17 @@ public class RunSuite {
 
     }
 
-    //一般有四个参数 第一个是type的类型，第二个是报告的邮件接收者，第三个是suite文件地址，第四个是jar文件的地址
+    //一般有四个参数 第一个是type的类型，第二个是报告的邮件接收者，第三个是自己给测试报告取的名字，第四个是suite文件地址，第五个是jar文件的地址
     public static void main(String[] args) {
+
         String type = args[0];
-        String system=args[1];
-        String sendMailTo = args[2];
-        String suitePath = args[3];
-        String jarPath = args[4];
+        String system = args[1];
+        String remark = args[2];
+        String sendMailTo = args[3];
+        String suitePath = args[4];
+        String jarPath = args[5];
         RunSuite runSuite = new RunSuite();
-        jarPath=jarPath+"/"+system+"/";
-        runSuite.runSuiteService(type, system,sendMailTo, suitePath, jarPath);
+        jarPath = jarPath + "/" + system + "/";
+        runSuite.runSuiteService(type, system, sendMailTo, suitePath, jarPath, remark);
     }
 }
