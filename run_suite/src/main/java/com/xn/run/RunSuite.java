@@ -28,7 +28,7 @@ public class RunSuite {
      * @param suitePath 不包括suite那一层
      * @param jarPath   不包括具体的jar名
      */
-    public void runSuiteService(String type, String system, String sendMailTo, String suitePath, String jarPath, String remark) {
+    public void runSuiteService(String type, String system, String sendMailTo, String suitePath, String jarPath, String remark,String otherJarPath) {
 
         File dubbo = new File(suitePath + "suite/dubbo/");
         File http = new File(suitePath + "suite/http/");
@@ -39,7 +39,11 @@ public class RunSuite {
         Report.getReport().setStartTime(new Date());
 
         boolean falg = DBUtil.DBInit();
-
+//加载除了直接测试的jar包
+        String otherJarPathList[]=otherJarPath.split(",");
+        for (String path:otherJarPathList){
+            JarUtil.addJar(path);
+        }
         if (type.equals("dubbo") && dubbo.exists() && dubbo.isDirectory()) {
             JarUtil.addJar(jarPath);
             ReadDubboSuite readDubboSuite = new ReadDubboSuite();
@@ -100,7 +104,7 @@ public class RunSuite {
 
     }
 
-    //一般有四个参数 第一个是type的类型，第二个是报告的邮件接收者，第三个是自己给测试报告取的名字，第四个是suite文件地址，第五个是jar文件的地址
+    //一般有四个参数 第一个是type的类型，第二个是系统名，第三个是自己给测试报告取的名字，第四个是报告的邮件接收者，第五个是suite文件地址，第六个是jar文件的地址，第七个是依赖的其他jar包
     public static void main(String[] args) {
 
         String type = args[0];
@@ -109,8 +113,9 @@ public class RunSuite {
         String sendMailTo = args[3];
         String suitePath = args[4];
         String jarPath = args[5];
+        String otherJarPath=args[6];
         RunSuite runSuite = new RunSuite();
         jarPath = jarPath + "/" + system + "/";
-        runSuite.runSuiteService(type, system, sendMailTo, suitePath, jarPath, remark);
+        runSuite.runSuiteService(type, system, sendMailTo, suitePath, jarPath, remark,otherJarPath);
     }
 }
